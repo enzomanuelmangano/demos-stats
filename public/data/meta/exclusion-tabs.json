@@ -1,0 +1,175 @@
+{
+  "animation_slug": "exclusion-tabs",
+  "content_hash": "3729aad06dd8d1fe4a218b9cc012da6c4370f3380b61556a4945b06cbb0b6eb4",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.743Z",
+  "file_structure": {
+    "entry": "src/index.tsx",
+    "components": [
+      "src/components/exclusion-tabs/exclusion-tab-box.tsx",
+      "src/components/exclusion-tabs/exclusion-tab-text.tsx",
+      "src/components/exclusion-tabs/hooks/use-animated-path-data.ts",
+      "src/components/exclusion-tabs/hooks/use-text-widths.ts"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [
+      "src/constants.ts"
+    ],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@shopify/react-native-skia",
+    "expo-haptics",
+    "react",
+    "react-native",
+    "react-native-reanimated",
+    "react-native-skia-gesture",
+    "react-native-worklets"
+  ],
+  "packages_with_versions": {
+    "@shopify/react-native-skia": "2.2.12",
+    "expo-haptics": "~15.0.7",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-skia-gesture": "0.4.5-beta.1",
+    "react-native-worklets": "0.5.1"
+  },
+  "packages_detail": {
+    "@shopify/react-native-skia": {
+      "imports": [
+        "Blur",
+        "ColorMatrix",
+        "Group",
+        "Paint",
+        "Skia",
+        "Text",
+        "matchFont",
+        "rect",
+        "rrect"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": [
+        "Blur",
+        "ColorMatrix",
+        "Group",
+        "Paint",
+        "Text"
+      ]
+    },
+    "expo-haptics": {
+      "imports": [],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "useCallback",
+        "useMemo",
+        "useState"
+      ],
+      "hooks": [
+        "useCallback",
+        "useMemo",
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "Platform",
+        "StyleSheet",
+        "View",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "useDerivedValue",
+        "withTiming"
+      ],
+      "hooks": [
+        "useDerivedValue"
+      ],
+      "functions": [
+        "withTiming"
+      ],
+      "components": []
+    },
+    "react-native-skia-gesture": {
+      "imports": [],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-worklets": {
+      "imports": [
+        "scheduleOnRN"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedPathData",
+    "useBoxWidths",
+    "useCallback",
+    "useDerivedValue",
+    "useMemo",
+    "useState",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "getPreviousBoxWidth",
+    "matchFont",
+    "onPress",
+    "onTabChange",
+    "rect",
+    "rrect",
+    "scheduleOnRN",
+    "setActiveTabIndex",
+    "withTiming"
+  ],
+  "components": [
+    "Blur",
+    "ColorMatrix",
+    "ExclusionTabBox",
+    "ExclusionTabText",
+    "ExclusionTabs",
+    "Group",
+    "Paint",
+    "Text",
+    "Touchable.Canvas",
+    "Touchable.Path",
+    "View"
+  ],
+  "patterns": [
+    "derived-computation",
+    "timing-animation",
+    "skia-graphics"
+  ],
+  "techniques": [
+    "timing-based-transitions",
+    "canvas-rendering",
+    "blur-effects"
+  ],
+  "stats": {
+    "total_files": 8,
+    "total_packages": 7,
+    "total_hooks": 7,
+    "total_functions": 9,
+    "total_components": 11,
+    "total_patterns": 3,
+    "total_techniques": 3
+  }
+}

@@ -6,7 +6,13 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "npm run copy-data && expo start --web",
+    "build:web": "npm run copy-data && expo export --platform web",
+    "extract": "node scripts/extract-metadata.js --all",
+    "extract:single": "node scripts/extract-metadata.js",
+    "sync": "node scripts/sync-demos.js",
+    "stats": "node scripts/meta-stats.js",
+    "copy-data": "mkdir -p public/data && cp -r data/* public/data/"
   },
   "dependencies": {
     "expo": "~54.0.20",
@@ -17,7 +23,9 @@
     "react-native-web": "^0.21.0"
   },
   "devDependencies": {
+    "@types/node": "^22.0.0",
     "@types/react": "~19.1.0",
+    "simple-git": "^3.25.0",
     "typescript": "~5.9.2"
   },
   "private": true

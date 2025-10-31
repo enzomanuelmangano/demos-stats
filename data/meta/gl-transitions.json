@@ -1,0 +1,289 @@
+{
+  "animation_slug": "gl-transitions",
+  "content_hash": "9c619e1d9ff1bc8ed0423ff596258e023cbf75971beedb6ff83ae0a7229374fb",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.799Z",
+  "file_structure": {
+    "entry": "src/the-magic/index.tsx",
+    "components": [],
+    "hooks": [],
+    "utils": [
+      "src/providers/gl-transitions/utils/shader-lib.ts",
+      "src/providers/gl-transitions/utils/transition.ts"
+    ],
+    "types": [],
+    "constants": [
+      "src/constants/theme.ts"
+    ],
+    "assets": [],
+    "other": [
+      "src/atoms/notes.ts",
+      "src/providers/gl-transitions/hooks.ts",
+      "src/providers/gl-transitions/provider.tsx",
+      "src/screens/add-note-screen.tsx",
+      "src/screens/home-screen.tsx",
+      "src/the-magic/cross-zoom.ts",
+      "src/the-magic/directional-warp.ts",
+      "src/the-magic/hexagonalize.ts",
+      "src/the-magic/linear-blur.ts"
+    ]
+  },
+  "packages": [
+    "@expo/vector-icons",
+    "@react-native-seoul/masonry-list",
+    "@react-navigation/native",
+    "@react-navigation/native-stack",
+    "@shopify/react-native-skia",
+    "expo-linear-gradient",
+    "jotai",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-safe-area-context",
+    "react-native-worklets"
+  ],
+  "packages_with_versions": {
+    "@expo/vector-icons": "^15.0.3",
+    "@react-native-seoul/masonry-list": "^1.4.2",
+    "@react-navigation/native": "^7.1.8",
+    "@react-navigation/native-stack": "^7.3.16",
+    "@shopify/react-native-skia": "2.2.12",
+    "expo-linear-gradient": "~15.0.7",
+    "jotai": "^2.9.3",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-worklets": "0.5.1"
+  },
+  "packages_detail": {
+    "@expo/vector-icons": {
+      "imports": [
+        "AntDesign"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "@react-native-seoul/masonry-list": {
+      "imports": [],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "@react-navigation/native": {
+      "imports": [
+        "useNavigation"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "@react-navigation/native-stack": {
+      "imports": [
+        "createNativeStackNavigator"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "@shopify/react-native-skia": {
+      "imports": [
+        "Canvas",
+        "Fill",
+        "ImageShader",
+        "Shader",
+        "Skia",
+        "makeImageFromView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": [
+        "Canvas",
+        "Fill",
+        "LinearGradient",
+        "Text"
+      ]
+    },
+    "expo-linear-gradient": {
+      "imports": [
+        "LinearGradient"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "jotai": {
+      "imports": [
+        "atom",
+        "useAtom"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "createContext",
+        "useCallback",
+        "useContext",
+        "useMemo",
+        "useRef"
+      ],
+      "hooks": [
+        "useCallback",
+        "useContext",
+        "useMemo",
+        "useRef"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "Alert",
+        "StyleSheet",
+        "Text",
+        "TextInput",
+        "View",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "GestureHandlerRootView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Easing",
+        "FadeInDown",
+        "FadeOutDown",
+        "LinearTransition",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "withTiming"
+      ],
+      "components": [
+        "Animated.View"
+      ]
+    },
+    "react-native-safe-area-context": {
+      "imports": [
+        "SafeAreaProvider",
+        "useSafeAreaInsets"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-worklets": {
+      "imports": [
+        "scheduleOnRN"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedStyle",
+    "useAtom",
+    "useCallback",
+    "useContext",
+    "useDerivedValue",
+    "useGLTransition",
+    "useMemo",
+    "useNavigation",
+    "useNotes",
+    "useRef",
+    "useSafeAreaInsets",
+    "useSharedValue",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "atom",
+    "createContext",
+    "createNativeStackNavigator",
+    "glsl",
+    "goBack",
+    "makeImageFromView",
+    "prepareTransition",
+    "runTransition",
+    "scheduleOnRN",
+    "setNotes",
+    "setTimeout",
+    "transition",
+    "withTiming"
+  ],
+  "components": [
+    "Animated.View",
+    "AntDesign",
+    "Canvas",
+    "Fill",
+    "GLTransitionsContext.Provider",
+    "GLTransitionsProvider",
+    "GestureHandlerRootView",
+    "ImageShader",
+    "LinearGradient",
+    "MasonryList",
+    "PressableScale",
+    "SafeAreaProvider",
+    "Shader",
+    "Stack.Group",
+    "Stack.Navigator",
+    "Stack.Screen",
+    "Text",
+    "TextInput",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "timing-animation",
+    "reactive-styling-pattern",
+    "skia-graphics"
+  ],
+  "techniques": [
+    "timing-based-transitions",
+    "canvas-rendering",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 17,
+    "total_packages": 14,
+    "total_hooks": 13,
+    "total_functions": 13,
+    "total_components": 19,
+    "total_patterns": 6,
+    "total_techniques": 3
+  }
+}

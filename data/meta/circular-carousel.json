@@ -1,0 +1,137 @@
+{
+  "animation_slug": "circular-carousel",
+  "content_hash": "8383cf98138a2c1357afcac0f47a697f8f4c2f31276694cbb8e63286da6ecc91",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.633Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "components/circular-list/list-item.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "expo-image",
+    "react",
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "expo-image": "~3.0.10",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "expo-image": {
+      "imports": [
+        "Image"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "useCallback",
+        "useState"
+      ],
+      "hooks": [
+        "useCallback",
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "Dimensions",
+        "StyleSheet",
+        "Switch",
+        "Text",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Extrapolation",
+        "SharedValue",
+        "interpolate",
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withSpring"
+      ],
+      "hooks": [
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate",
+        "withSpring"
+      ],
+      "components": [
+        "Animated.FlatList",
+        "Animated.View"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedScrollHandler",
+    "useAnimatedStyle",
+    "useCallback",
+    "useDerivedValue",
+    "useSharedValue",
+    "useState"
+  ],
+  "functions": [
+    "interpolate",
+    "setScaleEnabled",
+    "withSpring"
+  ],
+  "components": [
+    "Animated.FlatList",
+    "Animated.View",
+    "CircularList",
+    "CircularListItem",
+    "Image",
+    "Switch",
+    "Text",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "scroll-animation",
+    "spring-animation",
+    "value-interpolation",
+    "reactive-styling-pattern"
+  ],
+  "techniques": [
+    "scroll-based-animation",
+    "spring-physics",
+    "value-mapping",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 3,
+    "total_packages": 4,
+    "total_hooks": 6,
+    "total_functions": 3,
+    "total_components": 8,
+    "total_patterns": 7,
+    "total_techniques": 4
+  }
+}

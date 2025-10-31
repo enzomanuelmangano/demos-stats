@@ -1,0 +1,73 @@
+name: Daily Analytics Sync
+
+on:
+  # Run daily at 2 AM UTC
+  schedule:
+    - cron: '0 2 * * *'
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+  # Run on push to main (for testing)
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/daily-sync.yml'
+
+jobs:
+  sync-and-extract:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Sync demos repo and extract metadata
+        run: npm run extract
+
+      - name: Generate aggregate statistics
+        run: npm run stats
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/ || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/
+          git commit -m "chore: update analytics data - $(date +'%Y-%m-%d')"
+          git push
+
+      - name: Report summary
+        run: |
+          echo "## Analytics Sync Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f data/stats.json ]; then
+            echo "**Total Animations:** $(jq -r '.total_animations' data/stats.json)" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Top 5 Packages" >> $GITHUB_STEP_SUMMARY
+            jq -r '.packages | to_entries | .[0:5] | .[] | "- \(.key): \(.value)"' data/stats.json >> $GITHUB_STEP_SUMMARY
+          fi

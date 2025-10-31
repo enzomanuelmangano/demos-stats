@@ -1,0 +1,146 @@
+{
+  "animation_slug": "spiral",
+  "content_hash": "9295170e0f90e0bfde6ca64a327ca3d66bfab0bb4f9d9631a51cd4aca55a6cff",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.999Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "utils.ts"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@shopify/react-native-skia",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "@shopify/react-native-skia": "2.2.12",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "@shopify/react-native-skia": {
+      "imports": [
+        "BlurMask",
+        "Canvas",
+        "Extrapolate",
+        "Group",
+        "Path",
+        "SweepGradient",
+        "interpolate",
+        "usePathValue",
+        "vec"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": [
+        "BlurMask",
+        "Canvas",
+        "Group",
+        "Path",
+        "SweepGradient"
+      ]
+    },
+    "pressto": {
+      "imports": [
+        "PressableWithoutFeedback"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "useMemo"
+      ],
+      "hooks": [
+        "useMemo"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "Dimensions",
+        "StyleSheet",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "makeMutable",
+        "useAnimatedReaction",
+        "useSharedValue",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedReaction",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate",
+        "withTiming"
+      ],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedReaction",
+    "useMemo",
+    "usePathValue",
+    "useSharedValue"
+  ],
+  "functions": [
+    "interpolate",
+    "logarithmicSpiral",
+    "makeMutable",
+    "vec",
+    "withTiming"
+  ],
+  "components": [
+    "BlurMask",
+    "Canvas",
+    "Group",
+    "Path",
+    "PressableWithoutFeedback",
+    "SweepGradient",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-reaction",
+    "timing-animation",
+    "value-interpolation",
+    "skia-graphics"
+  ],
+  "techniques": [
+    "reactive-side-effects",
+    "timing-based-transitions",
+    "value-mapping",
+    "canvas-rendering",
+    "blur-effects"
+  ],
+  "stats": {
+    "total_files": 2,
+    "total_packages": 5,
+    "total_hooks": 4,
+    "total_functions": 5,
+    "total_components": 7,
+    "total_patterns": 5,
+    "total_techniques": 5
+  }
+}

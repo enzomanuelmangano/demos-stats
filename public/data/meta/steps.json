@@ -1,0 +1,173 @@
+{
+  "animation_slug": "steps",
+  "content_hash": "2eaa54fde72262268f9ff1f46136258b2c9f80fbdff1bfb06c4644a08a7485d6",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:01.031Z",
+  "file_structure": {
+    "entry": "src/steps/step-buttons/index.tsx",
+    "components": [],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": [
+      "src/steps/dots/dot.tsx"
+    ]
+  },
+  "packages": [
+    "@expo/vector-icons",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-worklets"
+  ],
+  "packages_with_versions": {
+    "@expo/vector-icons": "^15.0.3",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-worklets": "0.5.1"
+  },
+  "packages_detail": {
+    "@expo/vector-icons": {
+      "imports": [
+        "AntDesign"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "memo",
+        "useCallback",
+        "useState"
+      ],
+      "hooks": [
+        "useCallback",
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "View",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "GestureHandlerRootView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "interpolate",
+        "useAnimatedReaction",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withSpring",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedReaction",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate",
+        "withSpring",
+        "withTiming"
+      ],
+      "components": [
+        "Animated.Text",
+        "Animated.View"
+      ]
+    },
+    "react-native-worklets": {
+      "imports": [
+        "scheduleOnRN"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedReaction",
+    "useAnimatedStyle",
+    "useCallback",
+    "useDerivedValue",
+    "useSharedValue",
+    "useState",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "interpolate",
+    "memo",
+    "scheduleOnRN",
+    "withSpring",
+    "withTiming"
+  ],
+  "components": [
+    "Animated.Text",
+    "Animated.View",
+    "AntDesign",
+    "App",
+    "Dot",
+    "Dots",
+    "GestureHandlerRootView",
+    "PressableScale",
+    "StepButtons",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "animated-reaction",
+    "timing-animation",
+    "spring-animation",
+    "value-interpolation",
+    "reactive-styling-pattern"
+  ],
+  "techniques": [
+    "reactive-side-effects",
+    "timing-based-transitions",
+    "spring-physics",
+    "value-mapping",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 5,
+    "total_packages": 7,
+    "total_hooks": 7,
+    "total_functions": 5,
+    "total_components": 10,
+    "total_patterns": 8,
+    "total_techniques": 5
+  }
+}

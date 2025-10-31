@@ -1,0 +1,150 @@
+{
+  "animation_slug": "smooth-dropdown",
+  "content_hash": "73a9b009644e880b972bdffa44e49bb0ff543d3e7065f5740d0a7741fef072c7",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.992Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "components/dropdown/dropdrop-item.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@expo/vector-icons",
+    "color",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "@expo/vector-icons": "^15.0.3",
+    "color": "^4.2.3",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "@expo/vector-icons": {
+      "imports": [
+        "AntDesign",
+        "MaterialIcons"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "color": {
+      "imports": [],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "ComponentProps",
+        "memo",
+        "useCallback"
+      ],
+      "hooks": [
+        "useCallback"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "Text",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Extrapolation",
+        "SharedValue",
+        "interpolate",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withSpring"
+      ],
+      "hooks": [
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate",
+        "withSpring"
+      ],
+      "components": [
+        "Animated.View"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedStyle",
+    "useCallback",
+    "useDerivedValue",
+    "useSharedValue"
+  ],
+  "functions": [
+    "Color",
+    "interpolate",
+    "memo",
+    "onPick",
+    "onPress",
+    "withSpring"
+  ],
+  "components": [
+    "Animated.View",
+    "AntDesign",
+    "Dropdown",
+    "DropdownItem",
+    "MaterialIcons",
+    "PressableScale",
+    "Text",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "spring-animation",
+    "value-interpolation",
+    "reactive-styling-pattern"
+  ],
+  "techniques": [
+    "spring-physics",
+    "value-mapping",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 3,
+    "total_packages": 6,
+    "total_hooks": 4,
+    "total_functions": 6,
+    "total_components": 8,
+    "total_patterns": 6,
+    "total_techniques": 3
+  }
+}

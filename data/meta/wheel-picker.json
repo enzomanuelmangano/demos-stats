@@ -1,0 +1,270 @@
+{
+  "animation_slug": "wheel-picker",
+  "content_hash": "633d669d8ff5bc78057de415bc4789a73a750c19615bb28ca01537edd584024e",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:01.115Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "components/animated-count/animated-count.tsx",
+      "components/animated-count/animated-digit.tsx",
+      "components/draggable-slider/constants.ts",
+      "components/draggable-slider/utils/get-lines-path.ts",
+      "components/draggable-slider/utils/snap-point.ts",
+      "components/draggable-slider/utils/unwrap-reanimated-value.ts"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@expo/vector-icons",
+    "@shopify/react-native-skia",
+    "color",
+    "expo-blur",
+    "expo-haptics",
+    "expo-linear-gradient",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-worklets"
+  ],
+  "packages_with_versions": {
+    "@expo/vector-icons": "^15.0.3",
+    "@shopify/react-native-skia": "2.2.12",
+    "color": "^4.2.3",
+    "expo-blur": "~15.0.7",
+    "expo-haptics": "~15.0.7",
+    "expo-linear-gradient": "~15.0.7",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-worklets": "0.5.1"
+  },
+  "packages_detail": {
+    "@expo/vector-icons": {
+      "imports": [
+        "MaterialCommunityIcons"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "@shopify/react-native-skia": {
+      "imports": [
+        "Canvas",
+        "LinearGradient",
+        "Path",
+        "Rect",
+        "Skia",
+        "rect",
+        "rrect"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": [
+        "Canvas",
+        "LinearGradient",
+        "Path",
+        "Rect",
+        "Text"
+      ]
+    },
+    "color": {
+      "imports": [],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "expo-blur": {
+      "imports": [
+        "BlurView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "expo-haptics": {
+      "imports": [],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "expo-linear-gradient": {
+      "imports": [
+        "LinearGradient"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "memo",
+        "useCallback",
+        "useMemo",
+        "useState"
+      ],
+      "hooks": [
+        "useCallback",
+        "useMemo",
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "Dimensions",
+        "Platform",
+        "StyleSheet",
+        "Text",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "Gesture",
+        "GestureDetector"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "SharedValue",
+        "cancelAnimation",
+        "clamp",
+        "interpolate",
+        "isSharedValue",
+        "useAnimatedReaction",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withSpring",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedReaction",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "cancelAnimation",
+        "interpolate",
+        "withSpring",
+        "withTiming"
+      ],
+      "components": [
+        "Animated.View",
+        "Animated.createAnimatedComponent"
+      ]
+    },
+    "react-native-worklets": {
+      "imports": [
+        "scheduleOnRN"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedReaction",
+    "useAnimatedStyle",
+    "useCallback",
+    "useDerivedValue",
+    "useMemo",
+    "useSharedValue",
+    "useState"
+  ],
+  "functions": [
+    "Color",
+    "cancelAnimation",
+    "clamp",
+    "getDigitByIndex",
+    "getLinesPath",
+    "interpolate",
+    "isBigLine",
+    "isSharedValue",
+    "memo",
+    "onProgressChange",
+    "parseInt",
+    "rect",
+    "rrect",
+    "scheduleOnRN",
+    "setIsExpanded",
+    "setTimeout",
+    "snapPoint",
+    "unwrapReanimatedValue",
+    "withSpring",
+    "withTiming"
+  ],
+  "components": [
+    "Animated.View",
+    "Animated.createAnimatedComponent",
+    "AnimatedBlurView",
+    "AnimatedCount",
+    "AnimatedDigit",
+    "BoundaryGradient",
+    "Canvas",
+    "DraggableSlider",
+    "GestureDetector",
+    "LinearGradient",
+    "MaterialCommunityIcons",
+    "Path",
+    "PressableScale",
+    "Rect",
+    "Text",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "animated-reaction",
+    "timing-animation",
+    "spring-animation",
+    "value-interpolation",
+    "reactive-styling-pattern",
+    "skia-graphics"
+  ],
+  "techniques": [
+    "reactive-side-effects",
+    "timing-based-transitions",
+    "spring-physics",
+    "value-mapping",
+    "canvas-rendering",
+    "blur-effects",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 9,
+    "total_packages": 12,
+    "total_hooks": 7,
+    "total_functions": 20,
+    "total_components": 16,
+    "total_patterns": 9,
+    "total_techniques": 7
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "animation_slug": "story-list",
+  "content_hash": "7d3dc8eb9995fdfd1d7360889a94f81062e419b98ea0689d8cd97f5bd6486e4b",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:01.037Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "components/story-list/story-item.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "expo-image",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "expo-image": "~3.0.10",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "expo-image": {
+      "imports": [
+        "Image"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "memo",
+        "useMemo"
+      ],
+      "hooks": [
+        "useMemo"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "View",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "Gesture",
+        "GestureDetector",
+        "GestureHandlerRootView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "cancelAnimation",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withDecay",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "cancelAnimation",
+        "withDecay",
+        "withTiming"
+      ],
+      "components": [
+        "Animated.View"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedStyle",
+    "useDerivedValue",
+    "useMemo",
+    "useSharedValue",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "cancelAnimation",
+    "clamp",
+    "findClosestSnapPoint",
+    "memo",
+    "renderItem",
+    "require",
+    "withDecay",
+    "withTiming"
+  ],
+  "components": [
+    "Animated.View",
+    "GestureDetector",
+    "GestureHandlerRootView",
+    "Image",
+    "StoryList",
+    "StoryListContainer",
+    "StoryListItem",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "timing-animation",
+    "reactive-styling-pattern"
+  ],
+  "techniques": [
+    "timing-based-transitions",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 4,
+    "total_packages": 5,
+    "total_hooks": 5,
+    "total_functions": 8,
+    "total_components": 8,
+    "total_patterns": 5,
+    "total_techniques": 2
+  }
+}

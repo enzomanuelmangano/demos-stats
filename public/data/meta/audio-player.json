@@ -1,0 +1,158 @@
+{
+  "animation_slug": "audio-player",
+  "content_hash": "5c123d9980d4de0ee9665b658d63b2bdafc4f7f4c13d3150b3067c831f063e64",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.588Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "components/waveform-scrubber/waveform-sample/use-current-playing-value.ts",
+      "constants.ts"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": [
+      "helpers/generate-waveform.ts",
+      "helpers/normalize-array.ts",
+      "helpers/pick-n-values-from-array.ts",
+      "helpers/zero-pad.ts"
+    ]
+  },
+  "packages": [
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-redash"
+  ],
+  "packages_with_versions": {
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-redash": "^18.1.4"
+  },
+  "packages_detail": {
+    "react": {
+      "imports": [
+        "memo",
+        "useEffect"
+      ],
+      "hooks": [
+        "useEffect"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "Text",
+        "View",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "Gesture",
+        "GestureDetector",
+        "GestureHandlerRootView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Easing",
+        "cancelAnimation",
+        "useAnimatedReaction",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedReaction",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "cancelAnimation",
+        "withTiming"
+      ],
+      "components": [
+        "Animated.View"
+      ]
+    },
+    "react-native-redash": {
+      "imports": [
+        "ReText"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedReaction",
+    "useAnimatedStyle",
+    "useCurrentPlayingValue",
+    "useDerivedValue",
+    "useEffect",
+    "useSharedValue",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "String",
+    "cancelAnimation",
+    "generateWaveform",
+    "getNextScaleY",
+    "isFinite",
+    "isNaN",
+    "memo",
+    "normalizeArray",
+    "pickNValuesFromArray",
+    "withTiming",
+    "zeroPad"
+  ],
+  "components": [
+    "Animated.View",
+    "GestureDetector",
+    "GestureHandlerRootView",
+    "ReText",
+    "Text",
+    "View",
+    "WaveformScrubber",
+    "WaveformScrubberSample"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "animated-reaction",
+    "timing-animation",
+    "reactive-styling-pattern"
+  ],
+  "techniques": [
+    "reactive-side-effects",
+    "timing-based-transitions",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 10,
+    "total_packages": 5,
+    "total_hooks": 7,
+    "total_functions": 11,
+    "total_components": 8,
+    "total_patterns": 6,
+    "total_techniques": 3
+  }
+}

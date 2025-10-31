@@ -1,0 +1,96 @@
+{
+  "animation_slug": "stacked-list",
+  "content_hash": "43c23359ae5fdf924a8a58faf7b7ea11759dd6a09e1941c8e4bc08acd57482f3",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:01.015Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "react-native": {
+      "imports": [
+        "Dimensions",
+        "StyleSheet",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Extrapolation",
+        "interpolate",
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "hooks": [
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate"
+      ],
+      "components": [
+        "Animated.FlatList",
+        "Animated.View"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedScrollHandler",
+    "useAnimatedStyle",
+    "useDerivedValue",
+    "useSharedValue"
+  ],
+  "functions": [
+    "interpolate"
+  ],
+  "components": [
+    "Animated.FlatList",
+    "Animated.View",
+    "ListItem",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "scroll-animation",
+    "value-interpolation",
+    "reactive-styling-pattern"
+  ],
+  "techniques": [
+    "scroll-based-animation",
+    "value-mapping",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 1,
+    "total_packages": 2,
+    "total_hooks": 4,
+    "total_functions": 1,
+    "total_components": 4,
+    "total_patterns": 6,
+    "total_techniques": 3
+  }
+}

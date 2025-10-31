@@ -1,0 +1,167 @@
+{
+  "animation_slug": "animated-indicator-list",
+  "content_hash": "69428424899a9585b084be0b7d6fdce9bf063380a2dcb96334ad663293fbf7bd",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.571Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "components/MeasureableAnimatedView.tsx",
+      "components/SectionListItem.tsx",
+      "constants.ts",
+      "typings.ts"
+    ],
+    "hooks": [
+      "hooks/useConst.ts",
+      "hooks/useHeaderLayout.ts",
+      "hooks/useHeaderStyle.ts",
+      "hooks/useMounted.ts",
+      "hooks/useTimeout.ts"
+    ],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "react",
+    "react-native",
+    "react-native-reanimated",
+    "react-native-safe-area-context"
+  ],
+  "packages_with_versions": {
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-safe-area-context": "~5.6.0"
+  },
+  "packages_detail": {
+    "react": {
+      "imports": [
+        "createRef",
+        "forwardRef",
+        "useCallback",
+        "useEffect",
+        "useImperativeHandle",
+        "useMemo",
+        "useRef"
+      ],
+      "hooks": [
+        "useCallback",
+        "useEffect",
+        "useImperativeHandle",
+        "useMemo",
+        "useRef"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "Text",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Extrapolation",
+        "SharedValue",
+        "interpolate",
+        "measure",
+        "useAnimatedRef",
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "hooks": [
+        "useAnimatedRef",
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate"
+      ],
+      "components": [
+        "Animated.FlatList",
+        "Animated.View"
+      ]
+    },
+    "react-native-safe-area-context": {
+      "imports": [
+        "useSafeAreaInsets"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedRef",
+    "useAnimatedScrollHandler",
+    "useAnimatedStyle",
+    "useCallback",
+    "useDerivedValue",
+    "useEffect",
+    "useHeaderLayout",
+    "useHeaderStyle",
+    "useImperativeHandle",
+    "useMemo",
+    "useMounted",
+    "useRef",
+    "useSafeAreaInsets",
+    "useSharedValue",
+    "useTimeout"
+  ],
+  "functions": [
+    "Boolean",
+    "clearTimeout",
+    "createRef",
+    "forwardRef",
+    "interpolate",
+    "isHeader",
+    "measure",
+    "onSelectHeaderItem",
+    "runTimeout",
+    "setTimeout"
+  ],
+  "components": [
+    "Animated.FlatList",
+    "Animated.View",
+    "MeasureableAnimatedView",
+    "SectionListItem",
+    "Text",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "scroll-animation",
+    "value-interpolation",
+    "reactive-styling-pattern",
+    "imperative-animation-api"
+  ],
+  "techniques": [
+    "scroll-based-animation",
+    "value-mapping",
+    "ref-based-control",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 10,
+    "total_packages": 4,
+    "total_hooks": 15,
+    "total_functions": 10,
+    "total_components": 6,
+    "total_patterns": 7,
+    "total_techniques": 4
+  }
+}

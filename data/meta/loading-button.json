@@ -1,0 +1,202 @@
+{
+  "animation_slug": "loading-button",
+  "content_hash": "b0da8af8f5c06943ba3505ddbbc3f553e78cde59e9d8dde4e640d49abefe4f46",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.854Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "components/loading-button/activity-indicator.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@shopify/react-native-skia",
+    "color",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "@shopify/react-native-skia": "2.2.12",
+    "color": "^4.2.3",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "@shopify/react-native-skia": {
+      "imports": [
+        "Canvas",
+        "Circle",
+        "Group",
+        "ImageSVG",
+        "Path",
+        "Skia",
+        "fitbox",
+        "rect"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": [
+        "Canvas",
+        "Circle",
+        "Group",
+        "ImageSVG",
+        "Path"
+      ]
+    },
+    "color": {
+      "imports": [],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "useCallback",
+        "useEffect",
+        "useMemo",
+        "useRef",
+        "useState"
+      ],
+      "hooks": [
+        "useCallback",
+        "useEffect",
+        "useMemo",
+        "useRef",
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "GestureHandlerRootView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Easing",
+        "FadeIn",
+        "FadeOut",
+        "LinearTransition",
+        "cancelAnimation",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withRepeat",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "cancelAnimation",
+        "withRepeat",
+        "withTiming"
+      ],
+      "components": [
+        "Animated.Text",
+        "Animated.View"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedStyle",
+    "useCallback",
+    "useDerivedValue",
+    "useEffect",
+    "useMemo",
+    "useMutation",
+    "useRef",
+    "useSharedValue",
+    "useState"
+  ],
+  "functions": [
+    "Color",
+    "cancelAnimation",
+    "clearTimeout",
+    "fitbox",
+    "mutateAsync",
+    "mutationFn",
+    "rect",
+    "reset",
+    "setIsLoading",
+    "setStatus",
+    "setTimeout",
+    "wait",
+    "withRepeat",
+    "withTiming"
+  ],
+  "components": [
+    "ActivityIndicator",
+    "Animated.Text",
+    "Animated.View",
+    "App",
+    "Canvas",
+    "Circle",
+    "GestureHandlerRootView",
+    "Group",
+    "ImageSVG",
+    "LoadingButton",
+    "Path",
+    "PressableScale",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "timing-animation",
+    "repeating-animation",
+    "reactive-styling-pattern",
+    "skia-graphics"
+  ],
+  "techniques": [
+    "timing-based-transitions",
+    "loop-animations",
+    "canvas-rendering",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 3,
+    "total_packages": 7,
+    "total_hooks": 9,
+    "total_functions": 14,
+    "total_components": 13,
+    "total_patterns": 7,
+    "total_techniques": 4
+  }
+}

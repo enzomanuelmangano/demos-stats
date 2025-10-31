@@ -1,0 +1,245 @@
+{
+  "animation_slug": "interaction-appearance",
+  "content_hash": "fff3f1918377edddf981c021037b661ab78bc83d96cc129151674a9d5458a97e",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.825Z",
+  "file_structure": {
+    "entry": "src/theme/index.ts",
+    "components": [
+      "src/components/animated-blur-view.tsx",
+      "src/components/bottom-linear-gradient.tsx",
+      "src/components/movie-image.tsx",
+      "src/components/theme-switch/floating-button-theme.tsx",
+      "src/components/theme-switch/theme-blur.tsx",
+      "src/components/theme-switch/theme-rescaler.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": [
+      "src/screens/movie-detail.tsx",
+      "src/theme/components.ts",
+      "src/theme/palette.ts",
+      "src/theme/provider.tsx",
+      "src/theme/shared-value.ts"
+    ]
+  },
+  "packages": [
+    "@expo/vector-icons",
+    "@shopify/react-native-skia",
+    "color",
+    "expo-blur",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-safe-area-context"
+  ],
+  "packages_with_versions": {
+    "@expo/vector-icons": "^15.0.3",
+    "@shopify/react-native-skia": "2.2.12",
+    "color": "^4.2.3",
+    "expo-blur": "~15.0.7",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-safe-area-context": "~5.6.0"
+  },
+  "packages_detail": {
+    "@expo/vector-icons": {
+      "imports": [
+        "MaterialIcons"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "@shopify/react-native-skia": {
+      "imports": [
+        "Blur",
+        "Canvas",
+        "Fill",
+        "Group",
+        "Image",
+        "LinearGradient",
+        "rect",
+        "rrect",
+        "useImage"
+      ],
+      "hooks": [
+        "useImage"
+      ],
+      "functions": [],
+      "components": [
+        "Blur",
+        "Canvas",
+        "Fill",
+        "Group",
+        "Image",
+        "LinearGradient",
+        "Text"
+      ]
+    },
+    "color": {
+      "imports": [],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "expo-blur": {
+      "imports": [
+        "BlurView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "createContext",
+        "memo",
+        "useCallback",
+        "useContext",
+        "useMemo",
+        "useState"
+      ],
+      "hooks": [
+        "useCallback",
+        "useContext",
+        "useMemo",
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "ScrollView",
+        "StyleSheet",
+        "Text",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "GestureHandlerRootView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "makeMutable",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedStyle",
+        "useDerivedValue"
+      ],
+      "functions": [
+        "withTiming"
+      ],
+      "components": [
+        "Animated.View",
+        "Animated.createAnimatedComponent"
+      ]
+    },
+    "react-native-safe-area-context": {
+      "imports": [
+        "SafeAreaProvider",
+        "useSafeAreaInsets"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedStyle",
+    "useCallback",
+    "useContext",
+    "useDerivedValue",
+    "useImage",
+    "useMemo",
+    "useSafeAreaInsets",
+    "useState",
+    "useTheme"
+  ],
+  "functions": [
+    "Color",
+    "createContext",
+    "makeMutable",
+    "memo",
+    "rect",
+    "rrect",
+    "setTheme",
+    "withTiming"
+  ],
+  "components": [
+    "Animated.View",
+    "Animated.createAnimatedComponent",
+    "AnimatedBlurView",
+    "App",
+    "Blur",
+    "BottomLinearGradient",
+    "Canvas",
+    "Fill",
+    "FloatingButtonTheme",
+    "GestureHandlerRootView",
+    "Group",
+    "Image",
+    "LinearGradient",
+    "MaterialIcons",
+    "MovieDetail",
+    "MovieImage",
+    "PressableScale",
+    "SafeAreaProvider",
+    "ScrollView",
+    "Text",
+    "ThemeBlurView",
+    "ThemeContext.Provider",
+    "ThemeProvider",
+    "ThemeRescaler",
+    "View"
+  ],
+  "patterns": [
+    "animated-styling",
+    "derived-computation",
+    "timing-animation",
+    "skia-graphics"
+  ],
+  "techniques": [
+    "timing-based-transitions",
+    "canvas-rendering",
+    "blur-effects",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 15,
+    "total_packages": 10,
+    "total_hooks": 9,
+    "total_functions": 8,
+    "total_components": 25,
+    "total_patterns": 4,
+    "total_techniques": 4
+  }
+}

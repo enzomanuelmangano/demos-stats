@@ -1,0 +1,171 @@
+{
+  "animation_slug": "motion-blur",
+  "content_hash": "bad8820075858fb5a910b2be1a0566b251ce3d7ff2b7623f2a7dda10fb10bac0",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.877Z",
+  "file_structure": {
+    "entry": "src/index.tsx",
+    "components": [],
+    "hooks": [],
+    "utils": [
+      "src/utils/generate-random-item.ts"
+    ],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@expo/vector-icons",
+    "expo-blur",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "@expo/vector-icons": "^15.0.3",
+    "expo-blur": "~15.0.7",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "@expo/vector-icons": {
+      "imports": [
+        "Entypo"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "expo-blur": {
+      "imports": [
+        "BlurView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "memo",
+        "useCallback",
+        "useEffect",
+        "useState"
+      ],
+      "hooks": [
+        "useCallback",
+        "useEffect",
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "Text",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Easing",
+        "FadeOutUp",
+        "Keyframe",
+        "interpolate",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withSpring",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate",
+        "withSpring",
+        "withTiming"
+      ],
+      "components": [
+        "Animated.View",
+        "Animated.createAnimatedComponent"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedStyle",
+    "useCallback",
+    "useDerivedValue",
+    "useEffect",
+    "useSharedValue",
+    "useState"
+  ],
+  "functions": [
+    "calculateTop",
+    "generateRandomItem",
+    "interpolate",
+    "memo",
+    "renderItem",
+    "renderItemWithBlur",
+    "setItems",
+    "withSpring",
+    "withTiming"
+  ],
+  "components": [
+    "AddButton",
+    "Animated.View",
+    "Animated.createAnimatedComponent",
+    "AnimatedBlurView",
+    "BlurredList",
+    "BlurredListItemContainer",
+    "EmojiCircle",
+    "Entypo",
+    "ItemDetails",
+    "ListItem",
+    "PressableScale",
+    "Text",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "timing-animation",
+    "spring-animation",
+    "value-interpolation",
+    "reactive-styling-pattern"
+  ],
+  "techniques": [
+    "timing-based-transitions",
+    "spring-physics",
+    "value-mapping",
+    "blur-effects",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 5,
+    "total_packages": 6,
+    "total_hooks": 6,
+    "total_functions": 9,
+    "total_components": 13,
+    "total_patterns": 7,
+    "total_techniques": 5
+  }
+}

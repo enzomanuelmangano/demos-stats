@@ -1,0 +1,181 @@
+{
+  "animation_slug": "github-contributions",
+  "content_hash": "8b3f1894a2e76f383ecad749f80b9cfaf3b6fc35a1002e3e4b9169a483f46fb1",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.783Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "contribution-data.tsx"
+    ],
+    "hooks": [],
+    "utils": [
+      "contribution-calendar/utils/animation-utils.tsx",
+      "contribution-calendar/utils/date-utils.tsx"
+    ],
+    "types": [
+      "contribution-calendar/types.tsx"
+    ],
+    "constants": [],
+    "assets": [],
+    "other": [
+      "config/defaults.tsx",
+      "contribution-calendar/contribution-square.tsx"
+    ]
+  },
+  "packages": [
+    "date-fns",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "date-fns": "^4.1.0",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "date-fns": {
+      "imports": [
+        "addDays",
+        "eachDayOfInterval",
+        "endOfWeek",
+        "format",
+        "startOfWeek",
+        "subDays"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "forwardRef",
+        "useCallback",
+        "useImperativeHandle",
+        "useMemo",
+        "useRef"
+      ],
+      "hooks": [
+        "useCallback",
+        "useImperativeHandle",
+        "useMemo",
+        "useRef"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "Text",
+        "View",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "cancelAnimation",
+        "interpolate",
+        "interpolateColor",
+        "useAnimatedStyle",
+        "useSharedValue",
+        "withDelay",
+        "withSpring"
+      ],
+      "hooks": [
+        "useAnimatedStyle",
+        "useSharedValue"
+      ],
+      "functions": [
+        "cancelAnimation",
+        "interpolate",
+        "interpolateColor",
+        "withDelay",
+        "withSpring"
+      ],
+      "components": [
+        "Animated.View"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedStyle",
+    "useCallback",
+    "useImperativeHandle",
+    "useMemo",
+    "useRef",
+    "useSharedValue",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "addDays",
+    "cancelAnimation",
+    "eachDayOfInterval",
+    "endOfWeek",
+    "format",
+    "forwardRef",
+    "generateContributionData",
+    "generateDayLabels",
+    "getColorForLevel",
+    "getDateRange",
+    "groupDaysIntoWeeks",
+    "interpolate",
+    "interpolateColor",
+    "resetAnimation",
+    "startAnimation",
+    "startOfWeek",
+    "subDays",
+    "withDelay",
+    "withSpring"
+  ],
+  "components": [
+    "Animated.View",
+    "ContributionSquare",
+    "GitHubContributionCalendar",
+    "PressableScale",
+    "Text",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "spring-animation",
+    "delayed-animation",
+    "value-interpolation",
+    "color-interpolation",
+    "reactive-styling-pattern",
+    "imperative-animation-api"
+  ],
+  "techniques": [
+    "spring-physics",
+    "staggered-timing",
+    "value-mapping",
+    "color-transitions",
+    "ref-based-control",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 8,
+    "total_packages": 5,
+    "total_hooks": 7,
+    "total_functions": 19,
+    "total_components": 6,
+    "total_patterns": 8,
+    "total_techniques": 6
+  }
+}

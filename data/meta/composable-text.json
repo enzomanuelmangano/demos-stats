@@ -1,0 +1,117 @@
+{
+  "animation_slug": "composable-text",
+  "content_hash": "8c1a24be7d3d8baa2c4bed4b7bc7c90bd2be461e854d88ba335adb7170fd0693",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.649Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "composable-text.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "memo",
+        "useMemo",
+        "useState"
+      ],
+      "hooks": [
+        "useMemo",
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "FadeIn",
+        "FadeOut",
+        "LayoutAnimationConfig",
+        "LinearTransition",
+        "useAnimatedStyle",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedStyle"
+      ],
+      "functions": [
+        "withTiming"
+      ],
+      "components": [
+        "Animated.Text",
+        "Animated.View"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedStyle",
+    "useMemo",
+    "useState"
+  ],
+  "functions": [
+    "memo",
+    "setText",
+    "withTiming"
+  ],
+  "components": [
+    "Animated.Text",
+    "Animated.View",
+    "ComposableText",
+    "LayoutAnimationConfig",
+    "PressableScale",
+    "View"
+  ],
+  "patterns": [
+    "animated-styling",
+    "timing-animation"
+  ],
+  "techniques": [
+    "timing-based-transitions",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 2,
+    "total_packages": 4,
+    "total_hooks": 3,
+    "total_functions": 3,
+    "total_components": 6,
+    "total_patterns": 2,
+    "total_techniques": 2
+  }
+}

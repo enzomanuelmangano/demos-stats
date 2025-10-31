@@ -1,0 +1,94 @@
+{
+  "animation_slug": "imessage-stack",
+  "content_hash": "de59fc41ba51c573c9de542492fff27038b14b05308c83e979816ec60aaa1776",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.810Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "card.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "react-native": {
+      "imports": [
+        "Dimensions",
+        "StyleSheet",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Extrapolation",
+        "interpolate",
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useSharedValue"
+      ],
+      "hooks": [
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate"
+      ],
+      "components": [
+        "Animated.ScrollView",
+        "Animated.View"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedScrollHandler",
+    "useAnimatedStyle",
+    "useSharedValue"
+  ],
+  "functions": [
+    "interpolate"
+  ],
+  "components": [
+    "Animated.ScrollView",
+    "Animated.View",
+    "Card",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "scroll-animation",
+    "value-interpolation",
+    "reactive-styling-pattern"
+  ],
+  "techniques": [
+    "scroll-based-animation",
+    "value-mapping",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 2,
+    "total_packages": 2,
+    "total_hooks": 3,
+    "total_functions": 1,
+    "total_components": 4,
+    "total_patterns": 5,
+    "total_techniques": 3
+  }
+}

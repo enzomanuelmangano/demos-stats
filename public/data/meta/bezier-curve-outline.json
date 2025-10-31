@@ -1,0 +1,229 @@
+{
+  "animation_slug": "bezier-curve-outline",
+  "content_hash": "d9ab00ba00ca758555cd962fcc709b133801712154a70349b2e4f0c818a3fcdf",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.608Z",
+  "file_structure": {
+    "entry": "src/index.tsx",
+    "components": [
+      "src/components/animated-square/chessboard-layout.tsx",
+      "src/components/bezier-outline.tsx",
+      "src/components/constants.ts"
+    ],
+    "hooks": [
+      "src/hooks/useAnimateThroughPath/utils/geometry.ts",
+      "src/hooks/useSharedControlPoint.tsx"
+    ],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": [
+      "src/global-animation-state.ts"
+    ]
+  },
+  "packages": [
+    "@shopify/react-native-skia",
+    "expo-blur",
+    "expo-image",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-reanimated",
+    "react-native-skia-gesture",
+    "react-native-worklets"
+  ],
+  "packages_with_versions": {
+    "@shopify/react-native-skia": "2.2.12",
+    "expo-blur": "~15.0.7",
+    "expo-image": "~3.0.10",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-skia-gesture": "0.4.5-beta.1",
+    "react-native-worklets": "0.5.1"
+  },
+  "packages_detail": {
+    "@shopify/react-native-skia": {
+      "imports": [
+        "Circle",
+        "Group",
+        "Path",
+        "Skia"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": [
+        "Circle",
+        "Group",
+        "Image",
+        "Path"
+      ]
+    },
+    "expo-blur": {
+      "imports": [
+        "BlurView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "expo-image": {
+      "imports": [
+        "Image"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "useCallback"
+      ],
+      "hooks": [
+        "useCallback"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "Dimensions",
+        "StyleSheet",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Easing",
+        "cancelAnimation",
+        "interpolate",
+        "interpolateColor",
+        "makeMutable",
+        "useAnimatedReaction",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withSpring",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedReaction",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "cancelAnimation",
+        "interpolate",
+        "interpolateColor",
+        "withSpring",
+        "withTiming"
+      ],
+      "components": [
+        "Animated.Text",
+        "Animated.View",
+        "Animated.createAnimatedComponent"
+      ]
+    },
+    "react-native-skia-gesture": {
+      "imports": [],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-worklets": {
+      "imports": [
+        "scheduleOnRN"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimateThroughPath",
+    "useAnimatedReaction",
+    "useAnimatedStyle",
+    "useCallback",
+    "useDerivedValue",
+    "useSharedControlPoint",
+    "useSharedValue"
+  ],
+  "functions": [
+    "Array",
+    "cancelAnimation",
+    "getPathPoints",
+    "interpolate",
+    "interpolateColor",
+    "makeMutable",
+    "onPathUpdate",
+    "require",
+    "reverseAnimation",
+    "scheduleOnRN",
+    "startAnimation",
+    "withCustomTiming",
+    "withSpring",
+    "withTiming"
+  ],
+  "components": [
+    "Animated.Text",
+    "Animated.View",
+    "Animated.createAnimatedComponent",
+    "AnimatedBlurView",
+    "AnimatedSquare",
+    "BezierOutline",
+    "ChessboardLayout",
+    "Circle",
+    "Group",
+    "Image",
+    "Path",
+    "PressableScale",
+    "Touchable.Canvas",
+    "Touchable.Circle",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "animated-reaction",
+    "timing-animation",
+    "spring-animation",
+    "value-interpolation",
+    "color-interpolation",
+    "reactive-styling-pattern",
+    "skia-graphics"
+  ],
+  "techniques": [
+    "reactive-side-effects",
+    "timing-based-transitions",
+    "spring-physics",
+    "value-mapping",
+    "color-transitions",
+    "canvas-rendering",
+    "blur-effects",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 11,
+    "total_packages": 9,
+    "total_hooks": 7,
+    "total_functions": 14,
+    "total_components": 15,
+    "total_patterns": 10,
+    "total_techniques": 8
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "animation_slug": "scrollable-bottom-sheet",
+  "content_hash": "45c25c701d7cb7c8ee31a09159e265f725118b6b50d84fc40193e01792622070",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.956Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "components/BottomSheet/BottomSheet.tsx",
+      "components/BottomSheet/ScrollableBottomSheet.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "expo-linear-gradient",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-worklets"
+  ],
+  "packages_with_versions": {
+    "expo-linear-gradient": "~15.0.7",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-worklets": "0.5.1"
+  },
+  "packages_detail": {
+    "expo-linear-gradient": {
+      "imports": [
+        "LinearGradient"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "forwardRef",
+        "memo",
+        "useCallback",
+        "useImperativeHandle",
+        "useMemo",
+        "useRef"
+      ],
+      "hooks": [
+        "useCallback",
+        "useImperativeHandle",
+        "useMemo",
+        "useRef"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "ColorValue",
+        "Dimensions",
+        "StyleSheet",
+        "Text",
+        "View",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "Gesture",
+        "GestureDetector"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Extrapolation",
+        "SharedValue",
+        "interpolate",
+        "useAnimatedProps",
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useSharedValue",
+        "withSpring",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedProps",
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate",
+        "withSpring",
+        "withTiming"
+      ],
+      "components": [
+        "Animated.ScrollView",
+        "Animated.View"
+      ]
+    },
+    "react-native-worklets": {
+      "imports": [
+        "scheduleOnRN"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedProps",
+    "useAnimatedScrollHandler",
+    "useAnimatedStyle",
+    "useCallback",
+    "useImperativeHandle",
+    "useMemo",
+    "useRef",
+    "useSharedValue",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "forwardRef",
+    "interpolate",
+    "memo",
+    "scheduleOnRN",
+    "scrollTo",
+    "scrollToY",
+    "setTimeout",
+    "withSpring",
+    "withTiming"
+  ],
+  "components": [
+    "Animated.ScrollView",
+    "Animated.View",
+    "Backdrop",
+    "BottomSheet",
+    "BottomSheetPage",
+    "GestureDetector",
+    "LinearGradient",
+    "PressableScale",
+    "ScrollableBottomSheet",
+    "Text",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "scroll-animation",
+    "timing-animation",
+    "spring-animation",
+    "value-interpolation",
+    "reactive-styling-pattern",
+    "imperative-animation-api"
+  ],
+  "techniques": [
+    "scroll-based-animation",
+    "timing-based-transitions",
+    "spring-physics",
+    "value-mapping",
+    "ref-based-control",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 5,
+    "total_packages": 7,
+    "total_hooks": 9,
+    "total_functions": 9,
+    "total_components": 11,
+    "total_patterns": 8,
+    "total_techniques": 6
+  }
+}

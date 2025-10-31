@@ -1,0 +1,121 @@
+{
+  "animation_slug": "coverflow-carousel",
+  "content_hash": "8385859411a9d4fe47efd96850a57501e2458d6000c5093f1f7cce9962b82225",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.651Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "components/coverflow-carousel/carousel-item.tsx",
+      "constants.ts"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "expo-image",
+    "react",
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "expo-image": "~3.0.10",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "expo-image": {
+      "imports": [
+        "Image"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "useCallback"
+      ],
+      "hooks": [
+        "useCallback"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "View",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Extrapolation",
+        "interpolate",
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useSharedValue"
+      ],
+      "hooks": [
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate"
+      ],
+      "components": [
+        "Animated.FlatList",
+        "Animated.View"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedScrollHandler",
+    "useAnimatedStyle",
+    "useCallback",
+    "useSharedValue",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "interpolate"
+  ],
+  "components": [
+    "Animated.FlatList",
+    "Animated.View",
+    "CarouselItem",
+    "CoverFlowCarousel",
+    "Image",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "scroll-animation",
+    "value-interpolation",
+    "reactive-styling-pattern"
+  ],
+  "techniques": [
+    "scroll-based-animation",
+    "value-mapping",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 4,
+    "total_packages": 4,
+    "total_hooks": 5,
+    "total_functions": 1,
+    "total_components": 6,
+    "total_patterns": 5,
+    "total_techniques": 3
+  }
+}

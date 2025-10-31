@@ -1,0 +1,237 @@
+{
+  "animation_slug": "dynamic-blur-tabs",
+  "content_hash": "2f3512df280702e9b7c80b98362f15625a0e38e05d6b2ae5d6c0750720224a0b",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.696Z",
+  "file_structure": {
+    "entry": "src/screens/scrollable-gradients/index.tsx",
+    "components": [
+      "src/components/bottom-tab-bar/states.ts",
+      "src/components/bottom-tab-bar/tab-bar-item.tsx",
+      "src/components/pressable-scale.tsx"
+    ],
+    "hooks": [
+      "src/hooks/use-bottom-bar-height.ts"
+    ],
+    "utils": [],
+    "types": [],
+    "constants": [
+      "src/constants/screens.ts"
+    ],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@expo/vector-icons",
+    "@react-navigation/bottom-tabs",
+    "@react-navigation/native",
+    "expo-blur",
+    "expo-linear-gradient",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-safe-area-context",
+    "react-native-worklets"
+  ],
+  "packages_with_versions": {
+    "@expo/vector-icons": "^15.0.3",
+    "@react-navigation/bottom-tabs": "^7.4.0",
+    "@react-navigation/native": "^7.1.8",
+    "expo-blur": "~15.0.7",
+    "expo-linear-gradient": "~15.0.7",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-worklets": "0.5.1"
+  },
+  "packages_detail": {
+    "@expo/vector-icons": {
+      "imports": [
+        "MaterialIcons"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "@react-navigation/bottom-tabs": {
+      "imports": [
+        "createBottomTabNavigator"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "@react-navigation/native": {
+      "imports": [
+        "StackActions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "expo-blur": {
+      "imports": [
+        "BlurView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "expo-linear-gradient": {
+      "imports": [
+        "LinearGradient"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "memo",
+        "useCallback"
+      ],
+      "hooks": [
+        "useCallback"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "ColorValue",
+        "Dimensions",
+        "Platform",
+        "StyleSheet",
+        "View",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "Gesture",
+        "GestureDetector"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "interpolate",
+        "makeMutable",
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withSpring",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate",
+        "withSpring",
+        "withTiming"
+      ],
+      "components": [
+        "Animated.FlatList",
+        "Animated.View",
+        "Animated.createAnimatedComponent"
+      ]
+    },
+    "react-native-safe-area-context": {
+      "imports": [
+        "useSafeAreaInsets"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-worklets": {
+      "imports": [
+        "scheduleOnRN"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedScrollHandler",
+    "useAnimatedStyle",
+    "useCallback",
+    "useDerivedValue",
+    "useSafeAreaInsets",
+    "useSafeBottomBarHeight",
+    "useSharedValue",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "Array",
+    "Boolean",
+    "createBottomTabNavigator",
+    "createScreensMap",
+    "generateHarmonicColors",
+    "getIconByScreenName",
+    "getRandomGradientStartEnd",
+    "interpolate",
+    "makeMutable",
+    "memo",
+    "onTapIcon",
+    "scheduleOnRN",
+    "withSpring",
+    "withTiming"
+  ],
+  "components": [
+    "Animated.FlatList",
+    "Animated.View",
+    "Animated.createAnimatedComponent",
+    "AnimatedBlurView",
+    "BottomTab.Navigator",
+    "BottomTab.Screen",
+    "BottomTabBar",
+    "GestureDetector",
+    "LinearGradient",
+    "MaterialIcons",
+    "PressableScale",
+    "TabBarItem",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "scroll-animation",
+    "timing-animation",
+    "spring-animation",
+    "value-interpolation",
+    "reactive-styling-pattern"
+  ],
+  "techniques": [
+    "scroll-based-animation",
+    "timing-based-transitions",
+    "spring-physics",
+    "value-mapping",
+    "blur-effects",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 9,
+    "total_packages": 11,
+    "total_hooks": 8,
+    "total_functions": 14,
+    "total_components": 13,
+    "total_patterns": 8,
+    "total_techniques": 6
+  }
+}

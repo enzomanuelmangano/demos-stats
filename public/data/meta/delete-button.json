@@ -1,0 +1,181 @@
+{
+  "animation_slug": "delete-button",
+  "content_hash": "2f866c277dd834858092b12d548cde472520b29d991b2078ff328de2f11eeb37",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.655Z",
+  "file_structure": {
+    "entry": "src/index.tsx",
+    "components": [
+      "src/components/constants.ts",
+      "src/components/delete-button.tsx",
+      "src/components/use-close-buttons-animations.ts",
+      "src/components/use-delete-button-animations.ts",
+      "src/components/use-gooey-layer.tsx",
+      "src/components/use-text-animations.ts"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@shopify/react-native-skia",
+    "expo-haptics",
+    "react",
+    "react-native",
+    "react-native-reanimated",
+    "react-native-skia-gesture",
+    "react-native-worklets"
+  ],
+  "packages_with_versions": {
+    "@shopify/react-native-skia": "2.2.12",
+    "expo-haptics": "~15.0.7",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-skia-gesture": "0.4.5-beta.1",
+    "react-native-worklets": "0.5.1"
+  },
+  "packages_detail": {
+    "@shopify/react-native-skia": {
+      "imports": [
+        "Blur",
+        "ColorMatrix",
+        "Group",
+        "ImageSVG",
+        "Paint",
+        "Skia",
+        "Text",
+        "matchFont"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": [
+        "Blur",
+        "ColorMatrix",
+        "Group",
+        "ImageSVG",
+        "Paint",
+        "Text"
+      ]
+    },
+    "expo-haptics": {
+      "imports": [],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "useMemo"
+      ],
+      "hooks": [
+        "useMemo"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "Platform",
+        "StyleSheet",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "useAnimatedReaction",
+        "useDerivedValue",
+        "useSharedValue",
+        "withSpring",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedReaction",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "withSpring",
+        "withTiming"
+      ],
+      "components": []
+    },
+    "react-native-skia-gesture": {
+      "imports": [
+        "useGestureHandler"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-worklets": {
+      "imports": [
+        "scheduleOnRN"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedReaction",
+    "useCloseButtonAnimations",
+    "useDeleteButtonAnimations",
+    "useDerivedValue",
+    "useGestureHandler",
+    "useGooeyLayer",
+    "useMemo",
+    "useSharedValue",
+    "useTextAnimations"
+  ],
+  "functions": [
+    "matchFont",
+    "onConfirmDeletion",
+    "scheduleOnRN",
+    "withSpring",
+    "withTiming"
+  ],
+  "components": [
+    "Blur",
+    "ColorMatrix",
+    "DeleteButton",
+    "Group",
+    "ImageSVG",
+    "Paint",
+    "Text",
+    "Touchable.Canvas",
+    "Touchable.Circle",
+    "Touchable.RoundedRect",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "derived-computation",
+    "animated-reaction",
+    "timing-animation",
+    "spring-animation",
+    "skia-graphics"
+  ],
+  "techniques": [
+    "reactive-side-effects",
+    "timing-based-transitions",
+    "spring-physics",
+    "canvas-rendering",
+    "blur-effects"
+  ],
+  "stats": {
+    "total_files": 8,
+    "total_packages": 7,
+    "total_hooks": 9,
+    "total_functions": 5,
+    "total_components": 11,
+    "total_patterns": 6,
+    "total_techniques": 5
+  }
+}

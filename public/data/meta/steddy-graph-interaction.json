@@ -1,0 +1,175 @@
+{
+  "animation_slug": "steddy-graph-interaction",
+  "content_hash": "520c0b0a7bcb26e32bda843952bbfda5e76962f6568926cd05081b31bb7d7003",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:01.024Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [
+      "constants/graph-scores.ts",
+      "constants/palette.ts"
+    ],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@shopify/react-native-skia",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "@shopify/react-native-skia": "2.2.12",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "@shopify/react-native-skia": {
+      "imports": [
+        "Canvas",
+        "CornerPathEffect",
+        "DashPathEffect",
+        "Line",
+        "Path",
+        "Skia",
+        "Text",
+        "useFont",
+        "vec"
+      ],
+      "hooks": [
+        "useFont"
+      ],
+      "functions": [],
+      "components": [
+        "Canvas",
+        "CornerPathEffect",
+        "DashPathEffect",
+        "Line",
+        "Path",
+        "Text"
+      ]
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "memo",
+        "useMemo",
+        "useState"
+      ],
+      "hooks": [
+        "useMemo",
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "Text",
+        "View",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "GestureHandlerRootView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "interpolate",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "withSpring"
+      ],
+      "hooks": [
+        "useAnimatedStyle",
+        "useDerivedValue"
+      ],
+      "functions": [
+        "interpolate",
+        "withSpring"
+      ],
+      "components": [
+        "Animated.View"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedStyle",
+    "useDerivedValue",
+    "useFont",
+    "useMemo",
+    "useState",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "interpolate",
+    "memo",
+    "onPress",
+    "require",
+    "setSelectedScoringDifficulty",
+    "vec",
+    "withSpring"
+  ],
+  "components": [
+    "Animated.View",
+    "App",
+    "Canvas",
+    "CornerPathEffect",
+    "DashPathEffect",
+    "GestureHandlerRootView",
+    "Graph",
+    "Line",
+    "Path",
+    "PressableScale",
+    "SegmentedControl",
+    "Text",
+    "View"
+  ],
+  "patterns": [
+    "animated-styling",
+    "derived-computation",
+    "spring-animation",
+    "value-interpolation",
+    "skia-graphics"
+  ],
+  "techniques": [
+    "spring-physics",
+    "value-mapping",
+    "canvas-rendering",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 5,
+    "total_packages": 6,
+    "total_hooks": 6,
+    "total_functions": 7,
+    "total_components": 13,
+    "total_patterns": 5,
+    "total_techniques": 4
+  }
+}

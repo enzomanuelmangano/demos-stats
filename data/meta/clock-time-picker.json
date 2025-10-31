@@ -1,0 +1,162 @@
+{
+  "animation_slug": "clock-time-picker",
+  "content_hash": "e3ae486a4c780a8924023a41916573b119b21b7afcc2093cb258733f552f31ca",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.646Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "components/clock.tsx",
+      "components/time-range.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@shopify/react-native-skia",
+    "date-fns",
+    "expo-linear-gradient",
+    "react",
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "@shopify/react-native-skia": "2.2.12",
+    "date-fns": "^4.1.0",
+    "expo-linear-gradient": "~15.0.7",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "@shopify/react-native-skia": {
+      "imports": [
+        "Canvas",
+        "Circle",
+        "Group",
+        "Line",
+        "Shadow"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": [
+        "Canvas",
+        "Circle",
+        "Group",
+        "Line",
+        "LinearGradient",
+        "Shadow",
+        "Text"
+      ]
+    },
+    "date-fns": {
+      "imports": [
+        "format"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "expo-linear-gradient": {
+      "imports": [
+        "LinearGradient"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "useCallback",
+        "useMemo"
+      ],
+      "hooks": [
+        "useCallback",
+        "useMemo"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "Text",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "interpolate",
+        "useAnimatedScrollHandler",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "hooks": [
+        "useAnimatedScrollHandler",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate"
+      ],
+      "components": [
+        "Animated.FlatList"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedScrollHandler",
+    "useCallback",
+    "useDerivedValue",
+    "useMemo",
+    "useSharedValue"
+  ],
+  "functions": [
+    "convertMsToHours",
+    "convertMsToMinutes",
+    "format",
+    "interpolate",
+    "onDateChange"
+  ],
+  "components": [
+    "Animated.FlatList",
+    "Canvas",
+    "Circle",
+    "Clock",
+    "Group",
+    "Line",
+    "LinearGradient",
+    "Shadow",
+    "Text",
+    "TimeRange",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "derived-computation",
+    "scroll-animation",
+    "value-interpolation",
+    "skia-graphics"
+  ],
+  "techniques": [
+    "scroll-based-animation",
+    "value-mapping",
+    "canvas-rendering"
+  ],
+  "stats": {
+    "total_files": 3,
+    "total_packages": 6,
+    "total_hooks": 5,
+    "total_functions": 5,
+    "total_components": 11,
+    "total_patterns": 5,
+    "total_techniques": 3
+  }
+}

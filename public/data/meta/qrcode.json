@@ -1,0 +1,212 @@
+{
+  "animation_slug": "qrcode",
+  "content_hash": "ae5e6825a5fbd835f0c239b0099ff5abf865ec784fffd2e3b5b80299feb599c3",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.916Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "components/slider/index.liquid.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@expo/ui/swift-ui",
+    "@shopify/react-native-skia",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-qrcode-skia",
+    "react-native-reanimated",
+    "react-native-safe-area-context",
+    "react-native-worklets"
+  ],
+  "packages_with_versions": {
+    "@shopify/react-native-skia": "2.2.12",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-qrcode-skia": "^0.3.1",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-worklets": "0.5.1"
+  },
+  "packages_detail": {
+    "@expo/ui/swift-ui": {
+      "imports": [
+        "Host",
+        "Slider"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "@shopify/react-native-skia": {
+      "imports": [
+        "DiscretePathEffect",
+        "LinearGradient",
+        "vec"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": [
+        "DiscretePathEffect",
+        "LinearGradient",
+        "Text"
+      ]
+    },
+    "react": {
+      "imports": [
+        "useCallback",
+        "useMemo",
+        "useState"
+      ],
+      "hooks": [
+        "useCallback",
+        "useMemo",
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "Keyboard",
+        "ScrollView",
+        "StyleSheet",
+        "Text",
+        "TextInput",
+        "TouchableWithoutFeedback",
+        "View",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "Gesture",
+        "GestureDetector"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-qrcode-skia": {
+      "imports": [],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Extrapolation",
+        "interpolate",
+        "useAnimatedProps",
+        "useAnimatedReaction",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedProps",
+        "useAnimatedReaction",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate",
+        "withTiming"
+      ],
+      "components": [
+        "Animated.View",
+        "Animated.createAnimatedComponent"
+      ]
+    },
+    "react-native-safe-area-context": {
+      "imports": [
+        "useSafeAreaInsets"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-worklets": {
+      "imports": [
+        "scheduleOnRN"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedProps",
+    "useAnimatedReaction",
+    "useAnimatedStyle",
+    "useCallback",
+    "useDerivedValue",
+    "useMemo",
+    "useSafeAreaInsets",
+    "useSharedValue",
+    "useState",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "clamp",
+    "interpolate",
+    "onUpdate",
+    "scheduleOnRN",
+    "setQRCode",
+    "vec",
+    "withTiming"
+  ],
+  "components": [
+    "Animated.View",
+    "Animated.createAnimatedComponent",
+    "DiscretePathEffect",
+    "GestureDetector",
+    "Host",
+    "LinearGradient",
+    "QRCode",
+    "ReanimatedSlider",
+    "ScrollView",
+    "Slider",
+    "Text",
+    "TextInput",
+    "TouchableWithoutFeedback",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "animated-reaction",
+    "timing-animation",
+    "value-interpolation",
+    "reactive-styling-pattern"
+  ],
+  "techniques": [
+    "reactive-side-effects",
+    "timing-based-transitions",
+    "value-mapping",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 3,
+    "total_packages": 9,
+    "total_hooks": 10,
+    "total_functions": 7,
+    "total_components": 14,
+    "total_patterns": 7,
+    "total_techniques": 4
+  }
+}

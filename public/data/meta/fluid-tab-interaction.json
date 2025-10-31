@@ -1,0 +1,157 @@
+{
+  "animation_slug": "fluid-tab-interaction",
+  "content_hash": "b41800473c334e9d8f29259d8ce18dfc2868c6e4702b350f8ac0c23498cf291e",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.771Z",
+  "file_structure": {
+    "entry": "src/index.tsx",
+    "components": [
+      "src/components/animated-blur-view.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [
+      "src/constants.ts"
+    ],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@expo/vector-icons",
+    "expo-blur",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "@expo/vector-icons": "^15.0.3",
+    "expo-blur": "~15.0.7",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "@expo/vector-icons": {
+      "imports": [
+        "MaterialCommunityIcons"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "expo-blur": {
+      "imports": [
+        "BlurView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "useMemo",
+        "useState"
+      ],
+      "hooks": [
+        "useMemo",
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "View",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Easing",
+        "cancelAnimation",
+        "interpolate",
+        "useAnimatedProps",
+        "useAnimatedStyle",
+        "useSharedValue",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedProps",
+        "useAnimatedStyle",
+        "useSharedValue"
+      ],
+      "functions": [
+        "cancelAnimation",
+        "interpolate",
+        "withTiming"
+      ],
+      "components": [
+        "Animated.Text",
+        "Animated.View",
+        "Animated.createAnimatedComponent"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedProps",
+    "useAnimatedStyle",
+    "useMemo",
+    "useSharedValue",
+    "useState",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "cancelAnimation",
+    "interpolate",
+    "onPress",
+    "setSelected",
+    "withTiming"
+  ],
+  "components": [
+    "Animated.Text",
+    "Animated.View",
+    "Animated.createAnimatedComponent",
+    "AnimatedBlurView",
+    "AnimatedIcon",
+    "PressableScale",
+    "SegmentedControl",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "timing-animation",
+    "value-interpolation",
+    "reactive-styling-pattern"
+  ],
+  "techniques": [
+    "timing-based-transitions",
+    "value-mapping",
+    "blur-effects",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 5,
+    "total_packages": 6,
+    "total_hooks": 6,
+    "total_functions": 5,
+    "total_components": 8,
+    "total_patterns": 5,
+    "total_techniques": 4
+  }
+}

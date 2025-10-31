@@ -1,0 +1,255 @@
+{
+  "animation_slug": "ios-home-bouncy",
+  "content_hash": "3c20f872c77ddf614148173a294ffb6d9b599097b11531af4ec38a6c115f61f4",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.832Z",
+  "file_structure": {
+    "entry": "screens/spring-customizer/index.tsx",
+    "components": [
+      "constants.ts",
+      "screens/spring-customizer/components/modal-content.tsx",
+      "screens/spring-customizer/components/pull-to-dismiss.tsx",
+      "screens/spring-customizer/components/spring-config-slider.tsx",
+      "screens/spring-customizer/components/spring-slider-container.tsx",
+      "screens/spring-customizer/components/tab-selector.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [
+      "screens/home/constants.ts"
+    ],
+    "assets": [],
+    "other": [
+      "animations/bouncy.ts",
+      "screens/home/app-item.tsx",
+      "screens/spring-customizer/animations.ts"
+    ]
+  },
+  "packages": [
+    "expo-blur",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-redash",
+    "react-native-safe-area-context",
+    "react-native-worklets"
+  ],
+  "packages_with_versions": {
+    "expo-blur": "~15.0.7",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-redash": "^18.1.4",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-worklets": "0.5.1"
+  },
+  "packages_detail": {
+    "expo-blur": {
+      "imports": [
+        "BlurView"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "useCallback",
+        "useEffect",
+        "useLayoutEffect",
+        "useMemo",
+        "useRef",
+        "useState"
+      ],
+      "hooks": [
+        "useCallback",
+        "useEffect",
+        "useLayoutEffect",
+        "useMemo",
+        "useRef",
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "Dimensions",
+        "Modal",
+        "Pressable",
+        "ScrollView",
+        "StyleSheet",
+        "Text",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "Gesture",
+        "GestureDetector"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Easing",
+        "Extrapolation",
+        "Keyframe",
+        "LayoutAnimationConfig",
+        "cancelAnimation",
+        "clamp",
+        "interpolate",
+        "makeMutable",
+        "measure",
+        "useAnimatedProps",
+        "useAnimatedReaction",
+        "useAnimatedRef",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withDelay",
+        "withSequence",
+        "withSpring"
+      ],
+      "hooks": [
+        "useAnimatedProps",
+        "useAnimatedReaction",
+        "useAnimatedRef",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "cancelAnimation",
+        "interpolate",
+        "withDelay",
+        "withSequence",
+        "withSpring"
+      ],
+      "components": [
+        "Animated.View",
+        "Animated.createAnimatedComponent"
+      ]
+    },
+    "react-native-redash": {
+      "imports": [
+        "ReText"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-safe-area-context": {
+      "imports": [
+        "SafeAreaProvider",
+        "useSafeAreaInsets"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-worklets": {
+      "imports": [
+        "scheduleOnRN",
+        "scheduleOnUI"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedProps",
+    "useAnimatedReaction",
+    "useAnimatedRef",
+    "useAnimatedStyle",
+    "useCallback",
+    "useDerivedValue",
+    "useEffect",
+    "useLayoutEffect",
+    "useMemo",
+    "useRef",
+    "useSafeAreaInsets",
+    "useSharedValue",
+    "useState"
+  ],
+  "functions": [
+    "cancelAnimation",
+    "clamp",
+    "interpolate",
+    "makeMutable",
+    "measure",
+    "onClose",
+    "onTabChange",
+    "scheduleOnRN",
+    "scheduleOnUI",
+    "setShowCustomizer",
+    "setTabWidth",
+    "startAnimation",
+    "withDelay",
+    "withSequence",
+    "withSpring"
+  ],
+  "components": [
+    "Animated.View",
+    "Animated.createAnimatedComponent",
+    "AnimatedBlurView",
+    "AppItem",
+    "AppsList",
+    "BouncyView",
+    "GestureDetector",
+    "LayoutAnimationConfig",
+    "Modal",
+    "ModalContent",
+    "Pressable",
+    "PullToDismissGesture",
+    "ReText",
+    "SafeAreaProvider",
+    "ScrollView",
+    "SpringConfigSlider",
+    "SpringCustomizer",
+    "SpringSliderContainer",
+    "TabSelector",
+    "Text",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "animated-reaction",
+    "spring-animation",
+    "delayed-animation",
+    "sequence-animation",
+    "value-interpolation",
+    "reactive-styling-pattern",
+    "staggered-derived-values"
+  ],
+  "techniques": [
+    "reactive-side-effects",
+    "spring-physics",
+    "staggered-timing",
+    "sequential-animations",
+    "value-mapping",
+    "character-level-staggering",
+    "blur-effects",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 14,
+    "total_packages": 8,
+    "total_hooks": 13,
+    "total_functions": 15,
+    "total_components": 21,
+    "total_patterns": 10,
+    "total_techniques": 8
+  }
+}

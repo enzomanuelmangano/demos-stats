@@ -1,0 +1,176 @@
+{
+  "animation_slug": "airbnb-slider",
+  "content_hash": "8f43b0dc04f5eba00e28c2e66743232584006cec199e8c1db609e07180b86ec5",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.545Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "components/animated-count.tsx",
+      "components/animated-digit.tsx",
+      "components/animated-slider/index.liquid.tsx",
+      "constants.ts"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@expo/ui/swift-ui",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-worklets"
+  ],
+  "packages_with_versions": {
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-worklets": "0.5.1"
+  },
+  "packages_detail": {
+    "@expo/ui/swift-ui": {
+      "imports": [
+        "Host",
+        "Slider"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "memo",
+        "useCallback",
+        "useMemo"
+      ],
+      "hooks": [
+        "useCallback",
+        "useMemo"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "Text",
+        "View",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "Gesture",
+        "GestureDetector"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Extrapolation",
+        "interpolate",
+        "useAnimatedProps",
+        "useAnimatedReaction",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withSpring",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedProps",
+        "useAnimatedReaction",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate",
+        "withSpring",
+        "withTiming"
+      ],
+      "components": [
+        "Animated.View",
+        "Animated.createAnimatedComponent"
+      ]
+    },
+    "react-native-worklets": {
+      "imports": [
+        "scheduleOnRN"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedProps",
+    "useAnimatedReaction",
+    "useAnimatedStyle",
+    "useCallback",
+    "useDerivedValue",
+    "useMemo",
+    "useSharedValue",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "clamp",
+    "getDigitByIndex",
+    "interpolate",
+    "memo",
+    "onUpdate",
+    "parseInt",
+    "scheduleOnRN",
+    "withSpring",
+    "withTiming"
+  ],
+  "components": [
+    "Animated.View",
+    "Animated.createAnimatedComponent",
+    "AnimatedCount",
+    "AnimatedDigit",
+    "AnimatedSlider",
+    "GestureDetector",
+    "Host",
+    "ReanimatedSlider",
+    "Text",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "animated-reaction",
+    "timing-animation",
+    "spring-animation",
+    "value-interpolation",
+    "reactive-styling-pattern"
+  ],
+  "techniques": [
+    "reactive-side-effects",
+    "timing-based-transitions",
+    "spring-physics",
+    "value-mapping",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 6,
+    "total_packages": 6,
+    "total_hooks": 8,
+    "total_functions": 9,
+    "total_components": 10,
+    "total_patterns": 8,
+    "total_techniques": 5
+  }
+}

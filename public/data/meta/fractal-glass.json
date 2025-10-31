@@ -1,0 +1,175 @@
+{
+  "animation_slug": "fractal-glass",
+  "content_hash": "c5c1741d294ba095f1459929dc8cbce236ad761dfc3eae1ee651a61a1f9eb975",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.778Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "components/fractal-glass-mask.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@expo/vector-icons",
+    "@shopify/react-native-skia",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated"
+  ],
+  "packages_with_versions": {
+    "@expo/vector-icons": "^15.0.3",
+    "@shopify/react-native-skia": "2.2.12",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1"
+  },
+  "packages_detail": {
+    "@expo/vector-icons": {
+      "imports": [
+        "Octicons"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "@shopify/react-native-skia": {
+      "imports": [
+        "Blur",
+        "Canvas",
+        "Circle",
+        "Group",
+        "LinearGradient",
+        "Mask",
+        "Rect",
+        "rect",
+        "vec"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": [
+        "Blur",
+        "Canvas",
+        "Circle",
+        "Group",
+        "LinearGradient",
+        "Mask",
+        "Rect"
+      ]
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "useState"
+      ],
+      "hooks": [
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "useWindowDimensions"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "Gesture",
+        "GestureDetector"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue",
+        "withTiming"
+      ],
+      "hooks": [
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "withTiming"
+      ],
+      "components": [
+        "Animated.View"
+      ]
+    }
+  },
+  "hooks": [
+    "useAnimatedStyle",
+    "useDerivedValue",
+    "useSharedValue",
+    "useState",
+    "useWindowDimensions"
+  ],
+  "functions": [
+    "rect",
+    "setTheme",
+    "vec",
+    "withTiming"
+  ],
+  "components": [
+    "Animated.View",
+    "Blur",
+    "Canvas",
+    "Circle",
+    "FractalGlassMask",
+    "GestureDetector",
+    "Group",
+    "LinearGradient",
+    "Mask",
+    "Octicons",
+    "PressableScale",
+    "Rect"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "animated-styling",
+    "derived-computation",
+    "timing-animation",
+    "reactive-styling-pattern",
+    "skia-graphics"
+  ],
+  "techniques": [
+    "timing-based-transitions",
+    "canvas-rendering",
+    "blur-effects",
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 2,
+    "total_packages": 7,
+    "total_hooks": 5,
+    "total_functions": 4,
+    "total_components": 12,
+    "total_patterns": 6,
+    "total_techniques": 4
+  }
+}

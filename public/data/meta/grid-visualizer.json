@@ -1,0 +1,182 @@
+{
+  "animation_slug": "grid-visualizer",
+  "content_hash": "ca10e9a8a8efe86474cc37387cf95345c726dbf456ecef8757215458d99a36fe",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.803Z",
+  "file_structure": {
+    "entry": "index.tsx",
+    "components": [
+      "grid-visualizer.tsx"
+    ],
+    "hooks": [],
+    "utils": [],
+    "types": [],
+    "constants": [],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@shopify/react-native-skia",
+    "react",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-worklets"
+  ],
+  "packages_with_versions": {
+    "@shopify/react-native-skia": "2.2.12",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-worklets": "0.5.1"
+  },
+  "packages_detail": {
+    "@shopify/react-native-skia": {
+      "imports": [
+        "Atlas",
+        "BlurMask",
+        "Canvas",
+        "Fill",
+        "RadialGradient",
+        "Skia",
+        "useFont",
+        "useRSXformBuffer",
+        "useRectBuffer",
+        "useTexture",
+        "vec"
+      ],
+      "hooks": [
+        "useFont",
+        "useRSXformBuffer",
+        "useRectBuffer",
+        "useTexture"
+      ],
+      "functions": [],
+      "components": [
+        "Atlas",
+        "BlurMask",
+        "Canvas",
+        "Fill",
+        "RadialGradient"
+      ]
+    },
+    "react": {
+      "imports": [
+        "useCallback",
+        "useMemo"
+      ],
+      "hooks": [
+        "useCallback",
+        "useMemo"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "Dimensions",
+        "StyleSheet",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-gesture-handler": {
+      "imports": [
+        "Gesture",
+        "GestureDetector"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Extrapolation",
+        "interpolate",
+        "makeMutable",
+        "useAnimatedReaction",
+        "useDerivedValue",
+        "useSharedValue",
+        "withSpring"
+      ],
+      "hooks": [
+        "useAnimatedReaction",
+        "useDerivedValue",
+        "useSharedValue"
+      ],
+      "functions": [
+        "interpolate",
+        "withSpring"
+      ],
+      "components": [
+        "Animated.View"
+      ]
+    },
+    "react-native-worklets": {
+      "imports": [
+        "scheduleOnRN"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedReaction",
+    "useCallback",
+    "useDerivedValue",
+    "useFont",
+    "useMemo",
+    "useRSXformBuffer",
+    "useRectBuffer",
+    "useSharedValue",
+    "useTexture"
+  ],
+  "functions": [
+    "interpolate",
+    "makeMutable",
+    "require",
+    "scheduleOnRN",
+    "setTimeout",
+    "vec",
+    "withSpring"
+  ],
+  "components": [
+    "Animated.View",
+    "Atlas",
+    "BlurMask",
+    "Canvas",
+    "Fill",
+    "GestureDetector",
+    "GridVisualizerComponent",
+    "RadialGradient",
+    "View"
+  ],
+  "patterns": [
+    "shared-value-state",
+    "derived-computation",
+    "animated-reaction",
+    "spring-animation",
+    "value-interpolation",
+    "skia-graphics"
+  ],
+  "techniques": [
+    "reactive-side-effects",
+    "spring-physics",
+    "value-mapping",
+    "canvas-rendering",
+    "blur-effects"
+  ],
+  "stats": {
+    "total_files": 2,
+    "total_packages": 6,
+    "total_hooks": 9,
+    "total_functions": 7,
+    "total_components": 9,
+    "total_patterns": 6,
+    "total_techniques": 5
+  }
+}

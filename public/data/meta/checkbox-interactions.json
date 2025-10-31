@@ -1,0 +1,148 @@
+{
+  "animation_slug": "checkbox-interactions",
+  "content_hash": "c5a5839e89dc244160f38c7b96c72b4b30730bf997f179130c59874184631115",
+  "hash_algorithm": "sha256",
+  "extracted_at": "2025-10-31T20:06:00.631Z",
+  "file_structure": {
+    "entry": "src/index.tsx",
+    "components": [
+      "src/components/checkbox.tsx"
+    ],
+    "hooks": [
+      "src/hooks/use-cuisines.ts"
+    ],
+    "utils": [],
+    "types": [],
+    "constants": [
+      "src/constants.ts"
+    ],
+    "assets": [],
+    "other": []
+  },
+  "packages": [
+    "@expo/vector-icons",
+    "color",
+    "pressto",
+    "react",
+    "react-native",
+    "react-native-reanimated",
+    "react-native-safe-area-context"
+  ],
+  "packages_with_versions": {
+    "@expo/vector-icons": "^15.0.3",
+    "color": "^4.2.3",
+    "pressto": "0.6.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-safe-area-context": "~5.6.0"
+  },
+  "packages_detail": {
+    "@expo/vector-icons": {
+      "imports": [
+        "Ionicons"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "color": {
+      "imports": [],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "pressto": {
+      "imports": [
+        "PressableScale"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react": {
+      "imports": [
+        "useCallback",
+        "useState"
+      ],
+      "hooks": [
+        "useCallback",
+        "useState"
+      ],
+      "functions": [],
+      "components": []
+    },
+    "react-native": {
+      "imports": [
+        "StyleSheet",
+        "Text",
+        "View"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    },
+    "react-native-reanimated": {
+      "imports": [
+        "Easing",
+        "FadeIn",
+        "FadeOut",
+        "LinearTransition",
+        "useAnimatedStyle"
+      ],
+      "hooks": [
+        "useAnimatedStyle"
+      ],
+      "functions": [],
+      "components": [
+        "Animated.Text",
+        "Animated.View"
+      ]
+    },
+    "react-native-safe-area-context": {
+      "imports": [
+        "useSafeAreaInsets"
+      ],
+      "hooks": [],
+      "functions": [],
+      "components": []
+    }
+  },
+  "hooks": [
+    "useAnimatedStyle",
+    "useCallback",
+    "useCuisines",
+    "useSafeAreaInsets",
+    "useState"
+  ],
+  "functions": [
+    "Color",
+    "setCuisines",
+    "toggleCuisine"
+  ],
+  "components": [
+    "Animated.Text",
+    "Animated.View",
+    "App",
+    "Checkbox",
+    "Ionicons",
+    "PressableScale",
+    "Text",
+    "View"
+  ],
+  "patterns": [
+    "animated-styling"
+  ],
+  "techniques": [
+    "transform-animations"
+  ],
+  "stats": {
+    "total_files": 5,
+    "total_packages": 7,
+    "total_hooks": 5,
+    "total_functions": 3,
+    "total_components": 8,
+    "total_patterns": 1,
+    "total_techniques": 1
+  }
+}
