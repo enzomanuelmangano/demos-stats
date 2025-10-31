@@ -8,9 +8,7 @@ import {
   ActivityIndicator,
   TouchableOpacity,
 } from 'react-native';
-import { useAggregateStats, useAnimationMetadata } from '../hooks/useAnalytics';
-import { StatCard } from '../components/StatCard';
-import { FilterSection } from '../components/FilterSection';
+import { useAggregateStats } from '../hooks/useAnalytics';
 import { ProgressBarChart } from '../components/ProgressBarChart';
 import { AnimationCard } from '../components/AnimationCard';
 
@@ -135,146 +133,151 @@ export function Dashboard() {
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>React Native Demos Analytics</Text>
-        <Text style={styles.headerSubtitle}>
-          Last updated: {new Date(stats.generated_at).toLocaleString()}
-        </Text>
+        <Text style={styles.headerTitle}>Demos Analytics</Text>
+        <View style={styles.statsOverview}>
+          <View style={styles.statPill}>
+            <Text style={styles.statValue}>{filteredAnimations.length}</Text>
+            <Text style={styles.statLabel}>animations</Text>
+          </View>
+          <View style={styles.statPill}>
+            <Text style={styles.statValue}>{Object.keys(insights.patterns).length}</Text>
+            <Text style={styles.statLabel}>patterns</Text>
+          </View>
+          <View style={styles.statPill}>
+            <Text style={styles.statValue}>{Object.keys(insights.components).length}</Text>
+            <Text style={styles.statLabel}>components</Text>
+          </View>
+        </View>
       </View>
 
-      {/* Stats Overview */}
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        style={styles.statsRow}
-        contentContainerStyle={styles.statsContent}
-      >
-        <StatCard
-          title="Total Animations"
-          value={stats.total_animations}
-          subtitle="Analyzed demos"
-        />
-        <StatCard
-          title="Unique Packages"
-          value={Object.keys(stats.packages).length}
-          subtitle="Dependencies used"
-        />
-        <StatCard
-          title="Unique Hooks"
-          value={Object.keys(stats.hooks).length}
-          subtitle="React hooks"
-        />
-        <StatCard
-          title="Patterns"
-          value={Object.keys(stats.patterns).length}
-          subtitle="Animation patterns"
-        />
-      </ScrollView>
-
-      {/* Search */}
-      <View style={styles.searchContainer}>
+      {/* Search and Filters */}
+      <View style={styles.controlsSection}>
         <TextInput
           style={styles.searchInput}
           placeholder="Search animations..."
-          placeholderTextColor="#666"
+          placeholderTextColor="#555"
           value={searchQuery}
           onChangeText={setSearchQuery}
         />
-      </View>
 
-      {/* Filters */}
-      <View style={styles.filtersSection}>
-        <View style={styles.filterHeader}>
-          <Text style={styles.sectionTitle}>Filter by</Text>
-          {totalActiveFilters > 0 && (
-            <TouchableOpacity onPress={clearAllFilters} style={styles.clearButton}>
-              <Text style={styles.clearButtonText}>
-                Clear all ({totalActiveFilters})
-              </Text>
-            </TouchableOpacity>
-          )}
-        </View>
-
-        <FilterSection
-          title="Packages"
-          items={stats.packages}
-          selectedItems={selectedPackages}
-          onToggle={(item) => toggleFilter(selectedPackages, item, setSelectedPackages)}
-          limit={20}
-        />
-
-        <FilterSection
-          title="Hooks"
-          items={stats.hooks}
-          selectedItems={selectedHooks}
-          onToggle={(item) => toggleFilter(selectedHooks, item, setSelectedHooks)}
-          limit={20}
-        />
-      </View>
-
-      {/* Insights from filtered animations */}
-      <View style={styles.insightsSection}>
-        <Text style={styles.insightsHeader}>
-          📊 Insights from {filteredAnimations.length} animation{filteredAnimations.length !== 1 ? 's' : ''}
-        </Text>
         {totalActiveFilters > 0 && (
-          <Text style={styles.filterContext}>
-            Filtered by: {[...selectedPackages, ...selectedHooks].join(', ')}
-          </Text>
+          <TouchableOpacity onPress={clearAllFilters} style={styles.clearAllButton}>
+            <Text style={styles.clearAllText}>✕ Clear filters</Text>
+          </TouchableOpacity>
         )}
 
-        <ProgressBarChart
-          title="🎨 Most Used Patterns"
-          items={insights.patterns}
-          total={filteredAnimations.length}
-          color="#00D9FF"
-        />
+        <View style={styles.filterGroup}>
+          <Text style={styles.filterLabel}>Packages</Text>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.filterChips}
+          >
+            {Object.entries(stats.packages)
+              .slice(0, 12)
+              .map(([pkg, count]) => {
+                const isSelected = selectedPackages.includes(pkg);
+                return (
+                  <TouchableOpacity
+                    key={pkg}
+                    style={[styles.chip, isSelected && styles.chipSelected]}
+                    onPress={() => toggleFilter(selectedPackages, pkg, setSelectedPackages)}
+                  >
+                    <Text style={[styles.chipText, isSelected && styles.chipTextSelected]}>
+                      {pkg}
+                    </Text>
+                    <Text style={[styles.chipCount, isSelected && styles.chipCountSelected]}>
+                      {count}
+                    </Text>
+                  </TouchableOpacity>
+                );
+              })}
+          </ScrollView>
+        </View>
 
-        <ProgressBarChart
-          title="⚡ Animation Techniques"
-          items={insights.techniques}
-          total={filteredAnimations.length}
-          color="#FFD60A"
-        />
+        <View style={styles.filterGroup}>
+          <Text style={styles.filterLabel}>Hooks</Text>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.filterChips}
+          >
+            {Object.entries(stats.hooks)
+              .slice(0, 12)
+              .map(([hook, count]) => {
+                const isSelected = selectedHooks.includes(hook);
+                return (
+                  <TouchableOpacity
+                    key={hook}
+                    style={[styles.chip, isSelected && styles.chipSelected]}
+                    onPress={() => toggleFilter(selectedHooks, hook, setSelectedHooks)}
+                  >
+                    <Text style={[styles.chipText, isSelected && styles.chipTextSelected]}>
+                      {hook}
+                    </Text>
+                    <Text style={[styles.chipCount, isSelected && styles.chipCountSelected]}>
+                      {count}
+                    </Text>
+                  </TouchableOpacity>
+                );
+              })}
+          </ScrollView>
+        </View>
+      </View>
 
-        <ProgressBarChart
-          title="🎣 Most Used Hooks"
-          subtitle={selectedHooks.length > 0 ? '(filtered)' : undefined}
-          items={insights.hooks}
-          total={filteredAnimations.length}
-          color="#FF375F"
-        />
+      {/* Insights */}
+      <View style={styles.insightsSection}>
+        <Text style={styles.insightsTitle}>Insights</Text>
 
-        <ProgressBarChart
-          title="📦 Most Used Packages"
-          subtitle={selectedPackages.length > 0 ? '(filtered)' : undefined}
-          items={insights.packages}
-          total={filteredAnimations.length}
-          color="#34C759"
-        />
+        <View style={styles.insightsGrid}>
+          <View style={styles.insightColumn}>
+            <ProgressBarChart
+              title="🎨 Patterns"
+              items={insights.patterns}
+              total={filteredAnimations.length}
+              color="#00D9FF"
+              limit={8}
+            />
 
-        <ProgressBarChart
-          title="🧩 Components Used"
-          items={insights.components}
-          total={filteredAnimations.length}
-          color="#AF52DE"
-        />
+            <ProgressBarChart
+              title="🧩 Components"
+              items={insights.components}
+              total={filteredAnimations.length}
+              color="#AF52DE"
+              limit={8}
+            />
+          </View>
 
-        <ProgressBarChart
-          title="🔧 Animation Functions"
-          items={insights.functions}
-          total={filteredAnimations.length}
-          color="#FF9500"
-        />
+          <View style={styles.insightColumn}>
+            <ProgressBarChart
+              title="⚡ Techniques"
+              items={insights.techniques}
+              total={filteredAnimations.length}
+              color="#FFD60A"
+              limit={8}
+            />
+
+            <ProgressBarChart
+              title="🔧 Functions"
+              items={insights.functions}
+              total={filteredAnimations.length}
+              color="#FF9500"
+              limit={8}
+            />
+          </View>
+        </View>
       </View>
 
       {/* Animation List */}
       <View style={styles.animationsSection}>
         <Text style={styles.sectionTitle}>
-          Animations ({filteredAnimations.length})
+          {filteredAnimations.length} Animation{filteredAnimations.length !== 1 ? 's' : ''}
         </Text>
-        {filteredAnimations.map((animation) => (
-          <AnimationCard key={animation.slug} animation={animation} />
-        ))}
+        <View style={styles.animationGrid}>
+          {filteredAnimations.map((animation) => (
+            <AnimationCard key={animation.slug} animation={animation} />
+          ))}
+        </View>
       </View>
     </ScrollView>
   );
@@ -283,17 +286,19 @@ export function Dashboard() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0a0a0a',
+    backgroundColor: '#000',
   },
   content: {
-    padding: 20,
-    paddingBottom: 40,
+    padding: 24,
+    maxWidth: 1400,
+    alignSelf: 'center',
+    width: '100%',
   },
   center: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#0a0a0a',
+    backgroundColor: '#000',
     padding: 20,
   },
   loadingText: {
@@ -313,83 +318,132 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   header: {
-    marginBottom: 32,
+    marginBottom: 40,
   },
   headerTitle: {
-    fontSize: 32,
-    fontWeight: 'bold',
+    fontSize: 36,
+    fontWeight: '700',
     color: '#fff',
-    marginBottom: 8,
+    marginBottom: 16,
+    letterSpacing: -1,
   },
-  headerSubtitle: {
-    fontSize: 14,
-    color: '#666',
-  },
-  statsRow: {
-    marginBottom: 32,
-  },
-  statsContent: {
-    gap: 16,
-    paddingRight: 16,
-  },
-  searchContainer: {
-    marginBottom: 32,
-  },
-  searchInput: {
-    backgroundColor: '#1e1e1e',
-    borderRadius: 12,
-    padding: 16,
-    fontSize: 16,
-    color: '#fff',
-    borderWidth: 1,
-    borderColor: '#333',
-  },
-  filtersSection: {
-    marginBottom: 32,
-  },
-  filterHeader: {
+  statsOverview: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    gap: 12,
+  },
+  statPill: {
+    flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 20,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#fff',
-  },
-  clearButton: {
-    backgroundColor: '#333',
-    paddingHorizontal: 16,
+    gap: 6,
+    backgroundColor: '#111',
+    paddingHorizontal: 14,
     paddingVertical: 8,
     borderRadius: 20,
   },
-  clearButtonText: {
+  statValue: {
+    fontSize: 16,
+    fontWeight: '600',
     color: '#fff',
+  },
+  statLabel: {
     fontSize: 14,
+    color: '#666',
+  },
+  controlsSection: {
+    marginBottom: 40,
+  },
+  searchInput: {
+    backgroundColor: '#111',
+    borderRadius: 12,
+    padding: 14,
+    fontSize: 15,
+    color: '#fff',
+    borderWidth: 1,
+    borderColor: '#222',
+    marginBottom: 16,
+  },
+  clearAllButton: {
+    alignSelf: 'flex-start',
+    backgroundColor: '#1a1a1a',
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderRadius: 8,
+    marginBottom: 20,
+  },
+  clearAllText: {
+    color: '#888',
+    fontSize: 13,
+  },
+  filterGroup: {
+    marginBottom: 20,
+  },
+  filterLabel: {
+    fontSize: 13,
+    fontWeight: '600',
+    color: '#888',
+    marginBottom: 10,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  filterChips: {
+    gap: 8,
+    paddingRight: 16,
+  },
+  chip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    backgroundColor: '#111',
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#222',
+  },
+  chipSelected: {
+    backgroundColor: '#007AFF',
+    borderColor: '#007AFF',
+  },
+  chipText: {
+    fontSize: 13,
+    color: '#fff',
+  },
+  chipTextSelected: {
+    fontWeight: '600',
+  },
+  chipCount: {
+    fontSize: 12,
+    color: '#666',
+  },
+  chipCountSelected: {
+    color: '#ccc',
   },
   insightsSection: {
-    marginBottom: 32,
-    backgroundColor: '#0d0d0d',
-    borderRadius: 16,
-    padding: 24,
-    borderWidth: 1,
-    borderColor: '#1a1a1a',
+    marginBottom: 40,
   },
-  insightsHeader: {
+  insightsTitle: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: '600',
     color: '#fff',
-    marginBottom: 8,
-    fontFamily: 'monospace',
-  },
-  filterContext: {
-    fontSize: 14,
-    color: '#007AFF',
     marginBottom: 24,
-    fontFamily: 'monospace',
+  },
+  insightsGrid: {
+    flexDirection: 'row',
+    gap: 24,
+  },
+  insightColumn: {
+    flex: 1,
   },
   animationsSection: {
-    marginBottom: 32,
+    marginBottom: 40,
+  },
+  sectionTitle: {
+    fontSize: 20,
+    fontWeight: '600',
+    color: '#fff',
+    marginBottom: 20,
+  },
+  animationGrid: {
+    gap: 12,
   },
 });
