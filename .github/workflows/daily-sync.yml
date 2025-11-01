@@ -1,5 +1,6 @@
 name: Daily Analytics Sync
 
+# Automated workflow to sync and update analytics data
 on:
   # Run daily at 2 AM UTC
   schedule:
