@@ -513,7 +513,7 @@ export function Dashboard() {
 
         <View style={[styles.chartsGrid, isMobile && styles.chartsGridMobile]}>
           <ProgressBarChart
-            title="🧩 Components"
+            title="Components"
             items={insights.components}
             total={filteredAnimations.length}
             color="#6366f1"
@@ -524,7 +524,7 @@ export function Dashboard() {
           />
 
           <ProgressBarChart
-            title="🔧 Functions"
+            title="Functions"
             items={insights.functions}
             total={filteredAnimations.length}
             color="#f59e0b"
@@ -535,7 +535,7 @@ export function Dashboard() {
           />
 
           <ProgressBarChart
-            title="📦 Packages"
+            title="Packages"
             items={insights.packages}
             total={filteredAnimations.length}
             color="#059669"
@@ -546,7 +546,7 @@ export function Dashboard() {
           />
 
           <ProgressBarChart
-            title="🎣 Hooks"
+            title="Hooks"
             items={insights.hooks}
             total={filteredAnimations.length}
             color="#dc2626"
@@ -557,7 +557,7 @@ export function Dashboard() {
           />
 
           <ProgressBarChart
-            title="🎨 Patterns"
+            title="Patterns"
             items={insights.patterns}
             total={filteredAnimations.length}
             color="#0891b2"
@@ -568,7 +568,7 @@ export function Dashboard() {
           />
 
           <ProgressBarChart
-            title="⚡ Techniques"
+            title="Techniques"
             items={insights.techniques}
             total={filteredAnimations.length}
             color="#ea580c"
