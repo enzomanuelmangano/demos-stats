@@ -11,6 +11,7 @@ interface ProgressBarChartProps {
   color?: string;
   isMobile?: boolean;
   onItemPress?: (item: string) => void;
+  onShowAllPress?: () => void;
 }
 
 export function ProgressBarChart({
@@ -22,6 +23,7 @@ export function ProgressBarChart({
   color = '#2563eb',
   isMobile = false,
   onItemPress,
+  onShowAllPress,
 }: ProgressBarChartProps) {
   const entries = Object.entries(items)
     .sort((a, b) => b[1] - a[1])
@@ -95,7 +97,12 @@ export function ProgressBarChart({
         })}
       </View>
 
-      {remaining > 0 && (
+      {remaining > 0 && onShowAllPress && (
+        <PressableOpacity onPress={onShowAllPress} style={styles.showAllButton}>
+          <Text style={styles.remaining}>+{remaining} more →</Text>
+        </PressableOpacity>
+      )}
+      {remaining > 0 && !onShowAllPress && (
         <Text style={styles.remaining}>+{remaining} more</Text>
       )}
     </View>
@@ -207,10 +214,13 @@ const styles = StyleSheet.create({
     height: '100%',
     borderRadius: 3,
   },
+  showAllButton: {
+    marginTop: SPACING.sm,
+    alignItems: 'center',
+  },
   remaining: {
     fontSize: 13,
     color: '#64748b',
-    marginTop: SPACING.sm,
     fontWeight: '600',
     textAlign: 'center',
   },

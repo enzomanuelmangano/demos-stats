@@ -11,6 +11,7 @@ import { PressableOpacity } from 'pressto';
 import { useAggregateStats } from '../hooks/useAnalytics';
 import { ProgressBarChart } from '../components/ProgressBarChart';
 import { AnimationListModal } from '../components/AnimationListModal';
+import { AllItemsModal } from '../components/AllItemsModal';
 
 /**
  * Normalize component names by stripping common prefixes
@@ -53,6 +54,11 @@ export function Dashboard() {
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState<string>('');
   const [selectedCategory, setSelectedCategory] =
+    useState<CategoryType>('components');
+
+  // All Items Modal state
+  const [allItemsModalVisible, setAllItemsModalVisible] = useState(false);
+  const [allItemsCategory, setAllItemsCategory] =
     useState<CategoryType>('components');
 
   const filteredAnimations = useMemo(() => {
@@ -309,6 +315,11 @@ export function Dashboard() {
     setModalVisible(true);
   };
 
+  const handleShowAllPress = (category: CategoryType) => {
+    setAllItemsCategory(category);
+    setAllItemsModalVisible(true);
+  };
+
   const getCategoryDisplayName = (category: CategoryType): string => {
     const names: Record<CategoryType, string> = {
       components: 'Component',
@@ -509,6 +520,7 @@ export function Dashboard() {
             limit={isMobile ? 5 : 8}
             isMobile={isMobile}
             onItemPress={(item) => handleItemPress(item, 'components')}
+            onShowAllPress={() => handleShowAllPress('components')}
           />
 
           <ProgressBarChart
@@ -519,6 +531,7 @@ export function Dashboard() {
             limit={isMobile ? 5 : 8}
             isMobile={isMobile}
             onItemPress={(item) => handleItemPress(item, 'functions')}
+            onShowAllPress={() => handleShowAllPress('functions')}
           />
 
           <ProgressBarChart
@@ -529,6 +542,7 @@ export function Dashboard() {
             limit={isMobile ? 5 : 8}
             isMobile={isMobile}
             onItemPress={(item) => handleItemPress(item, 'packages')}
+            onShowAllPress={() => handleShowAllPress('packages')}
           />
 
           <ProgressBarChart
@@ -539,6 +553,7 @@ export function Dashboard() {
             limit={isMobile ? 5 : 8}
             isMobile={isMobile}
             onItemPress={(item) => handleItemPress(item, 'hooks')}
+            onShowAllPress={() => handleShowAllPress('hooks')}
           />
 
           <ProgressBarChart
@@ -549,6 +564,7 @@ export function Dashboard() {
             limit={isMobile ? 5 : 8}
             isMobile={isMobile}
             onItemPress={(item) => handleItemPress(item, 'patterns')}
+            onShowAllPress={() => handleShowAllPress('patterns')}
           />
 
           <ProgressBarChart
@@ -559,11 +575,12 @@ export function Dashboard() {
             limit={isMobile ? 5 : 8}
             isMobile={isMobile}
             onItemPress={(item) => handleItemPress(item, 'techniques')}
+            onShowAllPress={() => handleShowAllPress('techniques')}
           />
         </View>
       </View>
 
-      {/* Modal */}
+      {/* Modals */}
       <AnimationListModal
         visible={modalVisible}
         onClose={() => setModalVisible(false)}
@@ -571,6 +588,19 @@ export function Dashboard() {
         itemName={selectedItem}
         categoryName={getCategoryDisplayName(selectedCategory)}
         color={getCategoryColor(selectedCategory)}
+      />
+
+      <AllItemsModal
+        visible={allItemsModalVisible}
+        onClose={() => setAllItemsModalVisible(false)}
+        items={insights[allItemsCategory]}
+        title={getCategoryDisplayName(allItemsCategory) + 's'}
+        color={getCategoryColor(allItemsCategory)}
+        total={filteredAnimations.length}
+        onItemPress={(item) => {
+          setAllItemsModalVisible(false);
+          handleItemPress(item, allItemsCategory);
+        }}
       />
     </ScrollView>
   );
