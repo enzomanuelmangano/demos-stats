@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import { useAggregateStats } from '../hooks/useAnalytics';
 import { ProgressBarChart } from '../components/ProgressBarChart';
+import { AnimationListModal } from '../components/AnimationListModal';
 
 /**
  * Normalize component names by stripping common prefixes
@@ -35,11 +36,18 @@ function normalizeComponentName(component: string): string {
   return component;
 }
 
+type CategoryType = 'components' | 'functions' | 'packages' | 'hooks' | 'patterns' | 'techniques';
+
 export function Dashboard() {
   const { stats, loading, error } = useAggregateStats();
   const [selectedPackages, setSelectedPackages] = useState<string[]>([]);
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
+
+  // Modal state
+  const [modalVisible, setModalVisible] = useState(false);
+  const [selectedItem, setSelectedItem] = useState<string>('');
+  const [selectedCategory, setSelectedCategory] = useState<CategoryType>('components');
 
   const filteredAnimations = useMemo(() => {
     if (!stats) return [];
@@ -231,6 +239,60 @@ export function Dashboard() {
 
   const totalActiveFilters = selectedPackages.length;
 
+  // Get animations for selected item in modal
+  const modalAnimations = useMemo(() => {
+    if (!stats || !selectedItem) return [];
+
+    return filteredAnimations.filter((anim) => {
+      switch (selectedCategory) {
+        case 'components':
+          return anim.components.includes(selectedItem);
+        case 'functions':
+          return anim.functions.includes(selectedItem);
+        case 'packages':
+          return anim.packages.includes(selectedItem);
+        case 'hooks':
+          return anim.hooks.includes(selectedItem);
+        case 'patterns':
+          return anim.patterns.includes(selectedItem);
+        case 'techniques':
+          return anim.techniques.includes(selectedItem);
+        default:
+          return false;
+      }
+    });
+  }, [stats, filteredAnimations, selectedItem, selectedCategory]);
+
+  const handleItemPress = (item: string, category: CategoryType) => {
+    setSelectedItem(item);
+    setSelectedCategory(category);
+    setModalVisible(true);
+  };
+
+  const getCategoryDisplayName = (category: CategoryType): string => {
+    const names: Record<CategoryType, string> = {
+      components: 'Component',
+      functions: 'Function',
+      packages: 'Package',
+      hooks: 'Hook',
+      patterns: 'Pattern',
+      techniques: 'Technique',
+    };
+    return names[category];
+  };
+
+  const getCategoryColor = (category: CategoryType): string => {
+    const colors: Record<CategoryType, string> = {
+      components: '#6366f1',
+      functions: '#f59e0b',
+      packages: '#059669',
+      hooks: '#dc2626',
+      patterns: '#0891b2',
+      techniques: '#ea580c',
+    };
+    return colors[category];
+  };
+
   if (loading) {
     return (
       <View style={styles.center}>
@@ -343,57 +405,73 @@ export function Dashboard() {
             title="🧩 Components"
             items={insights.components}
             total={filteredAnimations.length}
-            color="#8b5cf6"
+            color="#6366f1"
             limit={isMobile ? 5 : 8}
             isMobile={isMobile}
+            onItemPress={(item) => handleItemPress(item, 'components')}
           />
 
           <ProgressBarChart
             title="🔧 Functions"
             items={insights.functions}
             total={filteredAnimations.length}
-            color="#f97316"
+            color="#f59e0b"
             limit={isMobile ? 5 : 8}
             isMobile={isMobile}
+            onItemPress={(item) => handleItemPress(item, 'functions')}
           />
 
           <ProgressBarChart
             title="📦 Packages"
             items={insights.packages}
             total={filteredAnimations.length}
-            color="#10b981"
+            color="#059669"
             limit={isMobile ? 5 : 8}
             isMobile={isMobile}
+            onItemPress={(item) => handleItemPress(item, 'packages')}
           />
 
           <ProgressBarChart
             title="🎣 Hooks"
             items={insights.hooks}
             total={filteredAnimations.length}
-            color="#ec4899"
+            color="#dc2626"
             limit={isMobile ? 5 : 8}
             isMobile={isMobile}
+            onItemPress={(item) => handleItemPress(item, 'hooks')}
           />
 
           <ProgressBarChart
             title="🎨 Patterns"
             items={insights.patterns}
             total={filteredAnimations.length}
-            color="#06b6d4"
+            color="#0891b2"
             limit={isMobile ? 5 : 8}
             isMobile={isMobile}
+            onItemPress={(item) => handleItemPress(item, 'patterns')}
           />
 
           <ProgressBarChart
             title="⚡ Techniques"
             items={insights.techniques}
             total={filteredAnimations.length}
-            color="#f59e0b"
+            color="#ea580c"
             limit={isMobile ? 5 : 8}
             isMobile={isMobile}
+            onItemPress={(item) => handleItemPress(item, 'techniques')}
           />
         </View>
       </View>
+
+      {/* Modal */}
+      <AnimationListModal
+        visible={modalVisible}
+        onClose={() => setModalVisible(false)}
+        animations={modalAnimations}
+        itemName={selectedItem}
+        categoryName={getCategoryDisplayName(selectedCategory)}
+        color={getCategoryColor(selectedCategory)}
+      />
     </ScrollView>
   );
 }

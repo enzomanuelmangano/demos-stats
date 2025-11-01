@@ -163,6 +163,23 @@ function extractCalls(sourceFile) {
     namespaceCalls: new Map(), // Maps namespace identifier to called functions
   };
 
+  // Blocklist of boring utility functions to exclude
+  const EXCLUDED_FUNCTIONS = new Set([
+    'create', // StyleSheet.create
+    'map', 'filter', 'reduce', 'forEach', 'find', 'some', 'every', 'includes',
+    'push', 'pop', 'shift', 'unshift', 'splice', 'slice', 'concat',
+    'floor', 'ceil', 'round', 'abs', 'min', 'max', 'sqrt', 'pow', 'random',
+    'get', 'set', 'has', 'delete', 'clear',
+    'log', 'warn', 'error', 'info', 'debug',
+    'setTimeout', 'setInterval', 'clearTimeout', 'clearInterval',
+    'require', 'import', 'export',
+    'toString', 'valueOf', 'toJSON',
+    'length', 'size', 'count',
+    'memo', 'forwardRef', 'lazy', 'render',
+    'flatten', 'entries', 'keys', 'values',
+    'onPress', 'onChange', 'onLayout', 'onSubmit', 'renderItem',
+  ]);
+
   function visit(node) {
     // Hook calls (useXxx)
     if (ts.isCallExpression(node)) {
@@ -175,12 +192,12 @@ function extractCalls(sourceFile) {
           calls.hooks.add(name);
         } else if (name.startsWith('with')) {
           calls.functions.add(name);
-        } else {
+        } else if (!EXCLUDED_FUNCTIONS.has(name)) {
           calls.functions.add(name);
         }
       }
 
-      // Property access like Haptics.selectionAsync() or Animated.View
+      // Property access like Gesture.Pan() or StyleSheet.create()
       if (ts.isPropertyAccessExpression(expr)) {
         const left = expr.expression;
         const right = expr.name.text;
@@ -198,9 +215,9 @@ function extractCalls(sourceFile) {
           // Detect Animated.View, Animated.Text, etc.
           if (namespace === 'Animated') {
             calls.components.add(fullName);
-          } else {
-            // Track as function call
-            calls.functions.add(right);
+          } else if (!EXCLUDED_FUNCTIONS.has(right)) {
+            // Track as function call with full name (e.g., Gesture.Pan)
+            calls.functions.add(fullName);
           }
         }
       }

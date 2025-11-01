@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 interface ProgressBarChartProps {
   title: string;
@@ -9,6 +9,7 @@ interface ProgressBarChartProps {
   limit?: number;
   color?: string;
   isMobile?: boolean;
+  onItemPress?: (item: string) => void;
 }
 
 export function ProgressBarChart({
@@ -19,6 +20,7 @@ export function ProgressBarChart({
   limit = 10,
   color = '#2563eb',
   isMobile = false,
+  onItemPress,
 }: ProgressBarChartProps) {
   const entries = Object.entries(items)
     .sort((a, b) => b[1] - a[1])
@@ -50,8 +52,8 @@ export function ProgressBarChart({
           const percentage = ((count / total) * 100).toFixed(0);
           const barWidth = `${(count / maxCount) * 100}%`;
 
-          return (
-            <View key={item} style={styles.row}>
+          const content = (
+            <>
               <View style={styles.rowTop}>
                 <View style={styles.labelContainer}>
                   <View style={[styles.rankBadge, { backgroundColor: `${color}15` }]}>
@@ -69,6 +71,25 @@ export function ProgressBarChart({
               <View style={styles.barContainer}>
                 <View style={[styles.barFilled, { width: barWidth, backgroundColor: color }]} />
               </View>
+            </>
+          );
+
+          if (onItemPress) {
+            return (
+              <TouchableOpacity
+                key={item}
+                style={styles.row}
+                onPress={() => onItemPress(item)}
+                activeOpacity={0.7}
+              >
+                {content}
+              </TouchableOpacity>
+            );
+          }
+
+          return (
+            <View key={item} style={styles.row}>
+              {content}
             </View>
           );
         })}
