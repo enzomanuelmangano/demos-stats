@@ -10,45 +10,156 @@ import {
 } from 'react-native';
 import { useAggregateStats } from '../hooks/useAnalytics';
 import { ProgressBarChart } from '../components/ProgressBarChart';
-import { AnimationCard } from '../components/AnimationCard';
+
+/**
+ * Normalize component names by stripping common prefixes
+ * - Touchable.Canvas -> Canvas
+ * - Animated.View -> View
+ * - Other.Namespaced.Component -> Component (last part)
+ */
+function normalizeComponentName(component: string): string {
+  // Strip Touchable. prefix
+  if (component.startsWith('Touchable.')) {
+    return component.substring('Touchable.'.length);
+  }
+  // Strip Animated. prefix
+  if (component.startsWith('Animated.')) {
+    return component.substring('Animated.'.length);
+  }
+  // For other cases with dots, take the last part
+  if (component.includes('.')) {
+    const parts = component.split('.');
+    return parts[parts.length - 1];
+  }
+  return component;
+}
 
 export function Dashboard() {
   const { stats, loading, error } = useAggregateStats();
-  const [searchQuery, setSearchQuery] = useState('');
   const [selectedPackages, setSelectedPackages] = useState<string[]>([]);
-  const [selectedHooks, setSelectedHooks] = useState<string[]>([]);
 
   const filteredAnimations = useMemo(() => {
     if (!stats) return [];
 
     let filtered = stats.animations;
 
-    // Search filter
-    if (searchQuery) {
-      filtered = filtered.filter((anim) =>
-        anim.slug.toLowerCase().includes(searchQuery.toLowerCase())
-      );
-    }
-
-    // Package filter - animation must have ALL selected packages
+    // Package filter - animation must have ANY selected package (OR logic)
     if (selectedPackages.length > 0) {
       filtered = filtered.filter((anim) =>
-        selectedPackages.every((pkg) => anim.packages.includes(pkg))
-      );
-    }
-
-    // Hook filter - animation must have ALL selected hooks
-    if (selectedHooks.length > 0) {
-      filtered = filtered.filter((anim) =>
-        selectedHooks.every((hook) => anim.hooks.includes(hook))
+        selectedPackages.some((pkg) => anim.packages.includes(pkg))
       );
     }
 
     return filtered;
-  }, [stats, searchQuery, selectedPackages, selectedHooks]);
+  }, [stats, selectedPackages]);
 
   // Calculate insights from filtered animations
   const insights = useMemo(() => {
+    if (!stats) {
+      return { patterns: {}, techniques: {}, components: {}, hooks: {}, packages: {}, functions: {} };
+    }
+
+    // If exactly one package is selected, show package-specific data IF available
+    const singlePackageFilter = selectedPackages.length === 1 ? selectedPackages[0] : null;
+
+    // Check if this package has detailed tracking data
+    const hasPackageDetail = singlePackageFilter &&
+                             stats.components_by_package?.[singlePackageFilter] &&
+                             Object.keys(stats.components_by_package[singlePackageFilter]).length > 0;
+
+    if (hasPackageDetail && singlePackageFilter) {
+      // Get the package-specific items from the global stats
+      const packageComponents = stats.components_by_package[singlePackageFilter] || {};
+      const packageHooks = stats.hooks_by_package[singlePackageFilter] || {};
+      const packageFunctions = stats.functions_by_package[singlePackageFilter] || {};
+
+      // Now count only these items in the filtered animations
+      const components: Record<string, number> = {};
+      const hooks: Record<string, number> = {};
+      const functions: Record<string, number> = {};
+
+      // Count occurrences in filtered animations only
+      filteredAnimations.forEach((anim) => {
+        // Use packages_detail from this specific animation to know which components are from which package
+        const animPackageDetail = (anim as any).packages_detail?.[singlePackageFilter];
+
+        if (animPackageDetail) {
+          // Count components FROM this package in this specific animation
+          const uniqueComponents = new Set<string>();
+          if (animPackageDetail.components) {
+            animPackageDetail.components.forEach((component: string) => {
+              const baseComponent = normalizeComponentName(component);
+              uniqueComponents.add(baseComponent);
+            });
+          }
+
+          // Also check for Touchable.* and Animated.* wrapped versions in global components
+          // For Skia specifically, check if global components has Touchable.Canvas, Touchable.Circle, etc.
+          if (singlePackageFilter === '@shopify/react-native-skia') {
+            const skiaComponents = ['Canvas', 'Circle', 'Group', 'Path', 'Rect', 'Image', 'Text', 'Blur'];
+            anim.components.forEach((comp: string) => {
+              if (comp.startsWith('Touchable.') || comp.startsWith('Animated.')) {
+                const normalized = normalizeComponentName(comp);
+                // Only add if it's a known Skia component and not already counted
+                if (skiaComponents.includes(normalized) && !uniqueComponents.has(normalized)) {
+                  uniqueComponents.add(normalized);
+                }
+              }
+            });
+
+            // Handle third-party packages built on Skia (e.g., react-native-qrcode-skia)
+            if (anim.packages.includes('react-native-qrcode-skia')) {
+              // react-native-qrcode-skia is built on Canvas and Path
+              if (!uniqueComponents.has('Canvas')) {
+                uniqueComponents.add('Canvas');
+              }
+              if (!uniqueComponents.has('Path')) {
+                uniqueComponents.add('Path');
+              }
+            }
+          }
+
+          uniqueComponents.forEach((comp) => {
+            components[comp] = (components[comp] || 0) + 1;
+          });
+
+          // Count hooks FROM this package in this specific animation
+          if (animPackageDetail.hooks) {
+            animPackageDetail.hooks.forEach((hook: string) => {
+              hooks[hook] = (hooks[hook] || 0) + 1;
+            });
+          }
+
+          // Count functions FROM this package in this specific animation
+          if (animPackageDetail.functions) {
+            animPackageDetail.functions.forEach((fn: string) => {
+              functions[fn] = (functions[fn] || 0) + 1;
+            });
+          }
+        }
+      });
+
+      // Still compute patterns and techniques normally (not package-specific)
+      const patterns: Record<string, number> = {};
+      const techniques: Record<string, number> = {};
+      const packages: Record<string, number> = {};
+
+      filteredAnimations.forEach((anim) => {
+        anim.patterns.forEach((pattern) => {
+          patterns[pattern] = (patterns[pattern] || 0) + 1;
+        });
+        anim.techniques.forEach((technique) => {
+          techniques[technique] = (techniques[technique] || 0) + 1;
+        });
+        anim.packages.forEach((pkg) => {
+          packages[pkg] = (packages[pkg] || 0) + 1;
+        });
+      });
+
+      return { patterns, techniques, components, hooks, packages, functions };
+    }
+
+    // Default: calculate from all filtered animations
     const patterns: Record<string, number> = {};
     const techniques: Record<string, number> = {};
     const components: Record<string, number> = {};
@@ -67,9 +178,16 @@ export function Dashboard() {
         techniques[technique] = (techniques[technique] || 0) + 1;
       });
 
-      // Count components
+      // Count components with normalization (unique per animation)
+      const uniqueComponents = new Set<string>();
       anim.components.forEach((component) => {
-        components[component] = (components[component] || 0) + 1;
+        const baseComponent = normalizeComponentName(component);
+        uniqueComponents.add(baseComponent);
+      });
+
+      // Increment count for each unique component
+      uniqueComponents.forEach((comp) => {
+        components[comp] = (components[comp] || 0) + 1;
       });
 
       // Count hooks (for insight, not filtering)
@@ -89,7 +207,7 @@ export function Dashboard() {
     });
 
     return { patterns, techniques, components, hooks, packages, functions };
-  }, [filteredAnimations]);
+  }, [filteredAnimations, selectedPackages, stats]);
 
   const toggleFilter = (list: string[], item: string, setter: (items: string[]) => void) => {
     if (list.includes(item)) {
@@ -101,11 +219,9 @@ export function Dashboard() {
 
   const clearAllFilters = () => {
     setSelectedPackages([]);
-    setSelectedHooks([]);
-    setSearchQuery('');
   };
 
-  const totalActiveFilters = selectedPackages.length + selectedHooks.length;
+  const totalActiveFilters = selectedPackages.length;
 
   if (loading) {
     return (
@@ -150,31 +266,25 @@ export function Dashboard() {
         </View>
       </View>
 
-      {/* Search and Filters */}
+      {/* Filters */}
       <View style={styles.controlsSection}>
-        <TextInput
-          style={styles.searchInput}
-          placeholder="Search animations..."
-          placeholderTextColor="#555"
-          value={searchQuery}
-          onChangeText={setSearchQuery}
-        />
-
-        {totalActiveFilters > 0 && (
-          <TouchableOpacity onPress={clearAllFilters} style={styles.clearAllButton}>
-            <Text style={styles.clearAllText}>✕ Clear filters</Text>
-          </TouchableOpacity>
-        )}
+        <View style={styles.filterHeader}>
+          <Text style={styles.filterHeaderTitle}>Filters</Text>
+          {totalActiveFilters > 0 && (
+            <TouchableOpacity onPress={clearAllFilters} style={styles.clearAllButton}>
+              <Text style={styles.clearAllText}>✕ Clear all ({totalActiveFilters})</Text>
+            </TouchableOpacity>
+          )}
+        </View>
 
         <View style={styles.filterGroup}>
-          <Text style={styles.filterLabel}>Packages</Text>
+          <Text style={styles.filterLabel}>📦 Packages</Text>
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={styles.filterChips}
           >
             {Object.entries(stats.packages)
-              .slice(0, 12)
               .map(([pkg, count]) => {
                 const isSelected = selectedPackages.includes(pkg);
                 return (
@@ -194,40 +304,17 @@ export function Dashboard() {
               })}
           </ScrollView>
         </View>
-
-        <View style={styles.filterGroup}>
-          <Text style={styles.filterLabel}>Hooks</Text>
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.filterChips}
-          >
-            {Object.entries(stats.hooks)
-              .slice(0, 12)
-              .map(([hook, count]) => {
-                const isSelected = selectedHooks.includes(hook);
-                return (
-                  <TouchableOpacity
-                    key={hook}
-                    style={[styles.chip, isSelected && styles.chipSelected]}
-                    onPress={() => toggleFilter(selectedHooks, hook, setSelectedHooks)}
-                  >
-                    <Text style={[styles.chipText, isSelected && styles.chipTextSelected]}>
-                      {hook}
-                    </Text>
-                    <Text style={[styles.chipCount, isSelected && styles.chipCountSelected]}>
-                      {count}
-                    </Text>
-                  </TouchableOpacity>
-                );
-              })}
-          </ScrollView>
-        </View>
       </View>
 
       {/* Insights */}
       <View style={styles.insightsSection}>
-        <Text style={styles.insightsTitle}>Insights</Text>
+        <View style={styles.insightsHeader}>
+          <Text style={styles.insightsTitle}>Analysis</Text>
+          <View style={styles.matchedBadge}>
+            <Text style={styles.matchedCount}>{filteredAnimations.length}</Text>
+            <Text style={styles.matchedLabel}>matched</Text>
+          </View>
+        </View>
 
         <View style={styles.insightsGrid}>
           <View style={styles.insightColumn}>
@@ -236,25 +323,15 @@ export function Dashboard() {
               items={insights.patterns}
               total={filteredAnimations.length}
               color="#00D9FF"
-              limit={8}
+              limit={10}
             />
 
-            <ProgressBarChart
-              title="🧩 Components"
-              items={insights.components}
-              total={filteredAnimations.length}
-              color="#AF52DE"
-              limit={8}
-            />
-          </View>
-
-          <View style={styles.insightColumn}>
             <ProgressBarChart
               title="⚡ Techniques"
               items={insights.techniques}
               total={filteredAnimations.length}
               color="#FFD60A"
-              limit={8}
+              limit={10}
             />
 
             <ProgressBarChart
@@ -262,21 +339,35 @@ export function Dashboard() {
               items={insights.functions}
               total={filteredAnimations.length}
               color="#FF9500"
-              limit={8}
+              limit={10}
             />
           </View>
-        </View>
-      </View>
 
-      {/* Animation List */}
-      <View style={styles.animationsSection}>
-        <Text style={styles.sectionTitle}>
-          {filteredAnimations.length} Animation{filteredAnimations.length !== 1 ? 's' : ''}
-        </Text>
-        <View style={styles.animationGrid}>
-          {filteredAnimations.map((animation) => (
-            <AnimationCard key={animation.slug} animation={animation} />
-          ))}
+          <View style={styles.insightColumn}>
+            <ProgressBarChart
+              title="🧩 Components"
+              items={insights.components}
+              total={filteredAnimations.length}
+              color="#AF52DE"
+              limit={10}
+            />
+
+            <ProgressBarChart
+              title="🎣 Hooks"
+              items={insights.hooks}
+              total={filteredAnimations.length}
+              color="#FF375F"
+              limit={10}
+            />
+
+            <ProgressBarChart
+              title="📦 Packages"
+              items={insights.packages}
+              total={filteredAnimations.length}
+              color="#34C759"
+              limit={10}
+            />
+          </View>
         </View>
       </View>
     </ScrollView>
@@ -350,40 +441,42 @@ const styles = StyleSheet.create({
     color: '#666',
   },
   controlsSection: {
-    marginBottom: 40,
-  },
-  searchInput: {
-    backgroundColor: '#111',
+    marginBottom: 48,
+    backgroundColor: '#0a0a0a',
     borderRadius: 12,
-    padding: 14,
-    fontSize: 15,
-    color: '#fff',
+    padding: 20,
     borderWidth: 1,
-    borderColor: '#222',
-    marginBottom: 16,
+    borderColor: '#1a1a1a',
+  },
+  filterHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  filterHeaderTitle: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#fff',
   },
   clearAllButton: {
-    alignSelf: 'flex-start',
     backgroundColor: '#1a1a1a',
-    paddingHorizontal: 14,
-    paddingVertical: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
     borderRadius: 8,
-    marginBottom: 20,
   },
   clearAllText: {
     color: '#888',
-    fontSize: 13,
+    fontSize: 12,
   },
   filterGroup: {
     marginBottom: 20,
   },
   filterLabel: {
-    fontSize: 13,
+    fontSize: 12,
     fontWeight: '600',
-    color: '#888',
+    color: '#666',
     marginBottom: 10,
-    textTransform: 'uppercase',
-    letterSpacing: 0.5,
   },
   filterChips: {
     gap: 8,
@@ -419,31 +512,44 @@ const styles = StyleSheet.create({
     color: '#ccc',
   },
   insightsSection: {
-    marginBottom: 40,
+    marginBottom: 60,
+  },
+  insightsHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 32,
   },
   insightsTitle: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: '600',
     color: '#fff',
-    marginBottom: 24,
+  },
+  matchedBadge: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    gap: 6,
+    backgroundColor: '#0a0a0a',
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: '#1a1a1a',
+  },
+  matchedCount: {
+    fontSize: 24,
+    fontWeight: '700',
+    color: '#007AFF',
+  },
+  matchedLabel: {
+    fontSize: 13,
+    color: '#666',
   },
   insightsGrid: {
     flexDirection: 'row',
-    gap: 24,
+    gap: 32,
   },
   insightColumn: {
     flex: 1,
-  },
-  animationsSection: {
-    marginBottom: 40,
-  },
-  sectionTitle: {
-    fontSize: 20,
-    fontWeight: '600',
-    color: '#fff',
-    marginBottom: 20,
-  },
-  animationGrid: {
-    gap: 12,
   },
 });

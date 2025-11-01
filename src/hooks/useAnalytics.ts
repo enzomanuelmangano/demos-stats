@@ -7,7 +7,8 @@ export function useAggregateStats() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch('/data/stats.json')
+    // Add cache busting to ensure fresh data
+    fetch(`/data/stats.json?t=${Date.now()}`)
       .then((res) => {
         if (!res.ok) throw new Error('Failed to fetch stats');
         return res.json();
