@@ -1,5 +1,5 @@
 {
-  "name": "demos-analytics",
+  "name": "demos-stats",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {

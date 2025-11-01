@@ -1,6 +1,6 @@
-# React Native Demos Analytics
+# React Native Demos Stats
 
-An automated analytics system that extracts metadata from React Native animation demos and provides an interactive dashboard to explore the data.
+An automated statistics system that extracts metadata from React Native animation demos and provides an interactive dashboard to explore the data.
 
 ## Overview
 
@@ -32,7 +32,7 @@ This project automatically:
 ## Project Structure
 
 ```
-demos-analytics/
+demos-stats/
 ├── .github/workflows/
 │   └── daily-sync.yml          # GitHub Actions scheduler
 ├── scripts/

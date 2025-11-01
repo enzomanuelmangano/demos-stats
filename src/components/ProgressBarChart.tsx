@@ -102,38 +102,38 @@ export function ProgressBarChart({
   );
 }
 
-// Consistent spacing scale matching Dashboard
+// Consistent spacing scale matching Dashboard (scaled down)
 const SPACING = {
-  xs: 8,
-  sm: 12,
-  md: 16,
-  lg: 20,
-  xl: 24,
+  xs: 6,
+  sm: 10,
+  md: 14,
+  lg: 18,
+  xl: 22,
 };
 
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#ffffff',
-    borderRadius: SPACING.md,
-    padding: SPACING.xl,
+    borderRadius: SPACING.sm,
+    padding: SPACING.lg,
     borderWidth: 1,
     borderColor: '#e2e8f0',
   },
   containerMobile: {
-    padding: SPACING.md,
-    borderRadius: SPACING.sm,
+    padding: SPACING.sm,
+    borderRadius: SPACING.xs,
   },
   header: {
-    marginBottom: SPACING.lg,
+    marginBottom: SPACING.md,
   },
   title: {
-    fontSize: 17,
+    fontSize: 15,
     fontWeight: '700',
     color: '#0f172a',
     marginBottom: SPACING.xs / 2,
   },
   titleMobile: {
-    fontSize: 16,
+    fontSize: 14,
   },
   subtitle: {
     fontSize: 13,
@@ -141,10 +141,10 @@ const styles = StyleSheet.create({
     marginTop: SPACING.xs / 2,
   },
   list: {
-    gap: SPACING.md,
+    gap: SPACING.sm,
   },
   row: {
-    gap: SPACING.xs,
+    gap: SPACING.xs - 2,
   },
   rowTop: {
     flexDirection: 'row',
@@ -159,24 +159,24 @@ const styles = StyleSheet.create({
     marginRight: SPACING.sm,
   },
   rankBadge: {
-    width: 28,
-    height: 28,
-    borderRadius: SPACING.xs,
+    width: 24,
+    height: 24,
+    borderRadius: SPACING.xs - 2,
     alignItems: 'center',
     justifyContent: 'center',
   },
   rank: {
-    fontSize: 13,
+    fontSize: 12,
     fontWeight: '800',
   },
   label: {
-    fontSize: 14,
+    fontSize: 13,
     color: '#1e293b',
     fontWeight: '600',
     flex: 1,
   },
   labelMobile: {
-    fontSize: 13,
+    fontSize: 12,
   },
   stats: {
     flexDirection: 'row',
@@ -184,16 +184,16 @@ const styles = StyleSheet.create({
     gap: SPACING.xs / 2,
   },
   count: {
-    fontSize: 16,
+    fontSize: 15,
     color: '#0f172a',
     fontWeight: '800',
     fontFamily: 'monospace',
   },
   countMobile: {
-    fontSize: 15,
+    fontSize: 14,
   },
   percentage: {
-    fontSize: 12,
+    fontSize: 11,
     color: '#64748b',
     fontWeight: '600',
   },

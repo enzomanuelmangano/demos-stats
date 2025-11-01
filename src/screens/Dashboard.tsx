@@ -36,7 +36,13 @@ function normalizeComponentName(component: string): string {
   return component;
 }
 
-type CategoryType = 'components' | 'functions' | 'packages' | 'hooks' | 'patterns' | 'techniques';
+type CategoryType =
+  | 'components'
+  | 'functions'
+  | 'packages'
+  | 'hooks'
+  | 'patterns'
+  | 'techniques';
 
 export function Dashboard() {
   const { stats, loading, error } = useAggregateStats();
@@ -47,7 +53,8 @@ export function Dashboard() {
   // Modal state
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState<string>('');
-  const [selectedCategory, setSelectedCategory] = useState<CategoryType>('components');
+  const [selectedCategory, setSelectedCategory] =
+    useState<CategoryType>('components');
 
   const filteredAnimations = useMemo(() => {
     if (!stats) return [];
@@ -67,22 +74,33 @@ export function Dashboard() {
   // Calculate insights from filtered animations
   const insights = useMemo(() => {
     if (!stats) {
-      return { patterns: {}, techniques: {}, components: {}, hooks: {}, packages: {}, functions: {} };
+      return {
+        patterns: {},
+        techniques: {},
+        components: {},
+        hooks: {},
+        packages: {},
+        functions: {},
+      };
     }
 
     // If exactly one package is selected, show package-specific data IF available
-    const singlePackageFilter = selectedPackages.length === 1 ? selectedPackages[0] : null;
+    const singlePackageFilter =
+      selectedPackages.length === 1 ? selectedPackages[0] : null;
 
     // Check if this package has detailed tracking data
-    const hasPackageDetail = singlePackageFilter &&
-                             stats.components_by_package?.[singlePackageFilter] &&
-                             Object.keys(stats.components_by_package[singlePackageFilter]).length > 0;
+    const hasPackageDetail =
+      singlePackageFilter &&
+      stats.components_by_package?.[singlePackageFilter] &&
+      Object.keys(stats.components_by_package[singlePackageFilter]).length > 0;
 
     if (hasPackageDetail && singlePackageFilter) {
       // Get the package-specific items from the global stats
-      const packageComponents = stats.components_by_package[singlePackageFilter] || {};
+      const packageComponents =
+        stats.components_by_package[singlePackageFilter] || {};
       const packageHooks = stats.hooks_by_package[singlePackageFilter] || {};
-      const packageFunctions = stats.functions_by_package[singlePackageFilter] || {};
+      const packageFunctions =
+        stats.functions_by_package[singlePackageFilter] || {};
 
       // Now count only these items in the filtered animations
       const components: Record<string, number> = {};
@@ -92,15 +110,19 @@ export function Dashboard() {
       // Count occurrences in filtered animations only
       filteredAnimations.forEach((anim) => {
         // Use packages_detail from this specific animation to know which components are from which package
-        const animPackageDetail = (anim as any).packages_detail?.[singlePackageFilter];
+        const animPackageDetail = (anim as any).packages_detail?.[
+          singlePackageFilter
+        ];
 
         if (animPackageDetail) {
           // Count components FROM this package in this specific animation
           // If components array is empty, use imports
           const uniqueComponents = new Set<string>();
-          const componentsList = (animPackageDetail.components && animPackageDetail.components.length > 0)
-            ? animPackageDetail.components
-            : (animPackageDetail.imports || []);
+          const componentsList =
+            animPackageDetail.components &&
+            animPackageDetail.components.length > 0
+              ? animPackageDetail.components
+              : animPackageDetail.imports || [];
 
           if (componentsList.length > 0) {
             componentsList.forEach((component: string) => {
@@ -112,12 +134,27 @@ export function Dashboard() {
           // Also check for Touchable.* and Animated.* wrapped versions in global components
           // For Skia specifically, check if global components has Touchable.Canvas, Touchable.Circle, etc.
           if (singlePackageFilter === '@shopify/react-native-skia') {
-            const skiaComponents = ['Canvas', 'Circle', 'Group', 'Path', 'Rect', 'Image', 'Text', 'Blur'];
+            const skiaComponents = [
+              'Canvas',
+              'Circle',
+              'Group',
+              'Path',
+              'Rect',
+              'Image',
+              'Text',
+              'Blur',
+            ];
             anim.components.forEach((comp: string) => {
-              if (comp.startsWith('Touchable.') || comp.startsWith('Animated.')) {
+              if (
+                comp.startsWith('Touchable.') ||
+                comp.startsWith('Animated.')
+              ) {
                 const normalized = normalizeComponentName(comp);
                 // Only add if it's a known Skia component and not already counted
-                if (skiaComponents.includes(normalized) && !uniqueComponents.has(normalized)) {
+                if (
+                  skiaComponents.includes(normalized) &&
+                  !uniqueComponents.has(normalized)
+                ) {
                   uniqueComponents.add(normalized);
                 }
               }
@@ -225,7 +262,11 @@ export function Dashboard() {
     return { patterns, techniques, components, hooks, packages, functions };
   }, [filteredAnimations, selectedPackages, stats]);
 
-  const toggleFilter = (list: string[], item: string, setter: (items: string[]) => void) => {
+  const toggleFilter = (
+    list: string[],
+    item: string,
+    setter: (items: string[]) => void
+  ) => {
     if (list.includes(item)) {
       setter(list.filter((i) => i !== item));
     } else {
@@ -316,72 +357,85 @@ export function Dashboard() {
   }
 
   return (
-    <ScrollView style={styles.container} contentContainerStyle={[styles.content, isMobile && styles.contentMobile]}>
+    <ScrollView
+      style={styles.container}
+      contentContainerStyle={[styles.content, isMobile && styles.contentMobile]}
+    >
       {/* Header */}
       <View style={[styles.header, isMobile && styles.headerMobile]}>
-        <Text style={[styles.headerTitle, isMobile && styles.headerTitleMobile]}>
-          Demos Analytics
+        <Text
+          style={[styles.headerTitle, isMobile && styles.headerTitleMobile]}
+        >
+          Demos Stats
         </Text>
         <View style={styles.headerSubtitleContainer}>
-          <Text style={styles.headerSubtitle}>
-            Automated analytics for{' '}
-          </Text>
+          <Text style={styles.headerSubtitle}>Automated stats for </Text>
           <TouchableOpacity
             onPress={() => {
               if (typeof window !== 'undefined') {
-                window.open('https://github.com/enzomanuelmangano/demos', '_blank');
+                window.open(
+                  'https://github.com/enzomanuelmangano/demos',
+                  '_blank'
+                );
               }
             }}
             style={styles.demoLink}
           >
-            <Text style={styles.demoLinkText}>React Native Demos</Text>
-          </TouchableOpacity>
-          <Text style={styles.headerSubtitle}> by </Text>
-          <TouchableOpacity
-            onPress={() => {
-              if (typeof window !== 'undefined') {
-                window.open('https://github.com/enzomanuelmangano', '_blank');
-              }
-            }}
-            style={styles.authorLink}
-          >
-            <Text style={styles.authorLinkText}>@enzomanuelmangano</Text>
+            <Text style={styles.demoLinkText}>Demos</Text>
           </TouchableOpacity>
         </View>
 
-        <View style={[styles.statsOverview, isMobile && styles.statsOverviewMobile]}>
+        <View
+          style={[styles.statsOverview, isMobile && styles.statsOverviewMobile]}
+        >
           <View style={[styles.statCard, isMobile && styles.statCardMobile]}>
             <Text style={styles.statValue}>{filteredAnimations.length}</Text>
             <Text style={styles.statLabel}>Animations</Text>
           </View>
           <View style={[styles.statCard, isMobile && styles.statCardMobile]}>
-            <Text style={styles.statValue}>{Object.keys(insights.patterns).length}</Text>
+            <Text style={styles.statValue}>
+              {Object.keys(insights.patterns).length}
+            </Text>
             <Text style={styles.statLabel}>Patterns</Text>
           </View>
           <View style={[styles.statCard, isMobile && styles.statCardMobile]}>
-            <Text style={styles.statValue}>{Object.keys(insights.components).length}</Text>
+            <Text style={styles.statValue}>
+              {Object.keys(insights.components).length}
+            </Text>
             <Text style={styles.statLabel}>Components</Text>
           </View>
         </View>
       </View>
 
       {/* Filters */}
-      <View style={[styles.filterSection, isMobile && styles.filterSectionMobile]}>
+      <View
+        style={[styles.filterSection, isMobile && styles.filterSectionMobile]}
+      >
         <View style={styles.filterHeader}>
           <View>
             <Text style={styles.filterHeaderTitle}>Filter by Package</Text>
             <Text style={styles.filterHeaderSubtitle}>
-              {totalActiveFilters === 0 ? 'Select packages to filter' : `${totalActiveFilters} selected`}
+              {totalActiveFilters === 0
+                ? 'Select packages to filter'
+                : `${totalActiveFilters} selected`}
             </Text>
           </View>
           {totalActiveFilters > 0 && (
-            <TouchableOpacity onPress={clearAllFilters} style={styles.clearButton}>
+            <TouchableOpacity
+              onPress={clearAllFilters}
+              style={styles.clearButton}
+            >
               <Text style={styles.clearButtonText}>Clear all</Text>
             </TouchableOpacity>
           )}
         </View>
 
-        <View style={[styles.filterChipsWrapper, isMobile && styles.filterChipsWrapperMobile]}>
+        <View
+          style={[
+            styles.filterChipsWrapper,
+            isMobile && styles.filterChipsWrapperMobile,
+          ]}
+        >
           {Object.entries(stats.packages)
             .sort((a, b) => b[1] - a[1])
             .map(([pkg, count]) => {
@@ -390,13 +444,30 @@ export function Dashboard() {
                 <TouchableOpacity
                   key={pkg}
                   style={[styles.chip, isSelected && styles.chipSelected]}
-                  onPress={() => toggleFilter(selectedPackages, pkg, setSelectedPackages)}
+                  onPress={() =>
+                    toggleFilter(selectedPackages, pkg, setSelectedPackages)
+                  }
                 >
-                  <Text style={[styles.chipText, isSelected && styles.chipTextSelected]}>
+                  <Text
+                    style={[
+                      styles.chipText,
+                      isSelected && styles.chipTextSelected,
+                    ]}
+                  >
                     {pkg}
                   </Text>
-                  <View style={[styles.chipBadge, isSelected && styles.chipBadgeSelected]}>
-                    <Text style={[styles.chipCount, isSelected && styles.chipCountSelected]}>
+                  <View
+                    style={[
+                      styles.chipBadge,
+                      isSelected && styles.chipBadgeSelected,
+                    ]}
+                  >
+                    <Text
+                      style={[
+                        styles.chipCount,
+                        isSelected && styles.chipCountSelected,
+                      ]}
+                    >
                       {count}
                     </Text>
                   </View>
@@ -408,9 +479,16 @@ export function Dashboard() {
 
       {/* Insights */}
       <View style={styles.insightsSection}>
-        <View style={[styles.sectionHeader, isMobile && styles.sectionHeaderMobile]}>
+        <View
+          style={[styles.sectionHeader, isMobile && styles.sectionHeaderMobile]}
+        >
           <View>
-            <Text style={[styles.sectionTitle, isMobile && styles.sectionTitleMobile]}>
+            <Text
+              style={[
+                styles.sectionTitle,
+                isMobile && styles.sectionTitleMobile,
+              ]}
+            >
               Analysis Results
             </Text>
             <Text style={styles.sectionSubtitle}>
@@ -499,16 +577,16 @@ export function Dashboard() {
   );
 }
 
-// Consistent spacing scale: 8, 12, 16, 20, 24, 32, 40, 48
+// Consistent spacing scale (scaled down for compact UI)
 const SPACING = {
-  xs: 8,
-  sm: 12,
-  md: 16,
-  lg: 20,
-  xl: 24,
-  xxl: 32,
-  xxxl: 40,
-  huge: 48,
+  xs: 6,
+  sm: 10,
+  md: 14,
+  lg: 18,
+  xl: 22,
+  xxl: 28,
+  xxxl: 36,
+  huge: 44,
 };
 
 const styles = StyleSheet.create({
@@ -518,12 +596,13 @@ const styles = StyleSheet.create({
   },
   content: {
     padding: SPACING.xxl,
-    maxWidth: 1200,
+    maxWidth: 960,
     alignSelf: 'center',
     width: '100%',
   },
   contentMobile: {
     padding: SPACING.md,
+    maxWidth: '100%',
   },
   center: {
     flex: 1,
@@ -558,47 +637,47 @@ const styles = StyleSheet.create({
     marginBottom: SPACING.xxl,
   },
   headerTitle: {
-    fontSize: 42,
+    fontSize: 32,
     fontWeight: '800',
     color: '#0f172a',
     marginBottom: SPACING.xs,
-    letterSpacing: -1.5,
-    lineHeight: 48,
+    letterSpacing: -1,
+    lineHeight: 38,
   },
   headerTitleMobile: {
-    fontSize: 28,
-    lineHeight: 34,
+    fontSize: 24,
+    lineHeight: 30,
     letterSpacing: -0.5,
   },
   headerSubtitleContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'center',
-    marginBottom: SPACING.xl,
+    marginBottom: SPACING.lg,
     gap: SPACING.xs / 2,
   },
   headerSubtitle: {
-    fontSize: 16,
+    fontSize: 15,
     color: '#64748b',
-    lineHeight: 24,
+    lineHeight: 22,
   },
   demoLink: {
     paddingVertical: 2,
   },
   demoLinkText: {
-    fontSize: 16,
+    fontSize: 15,
     color: '#2563eb',
     fontWeight: '600',
-    lineHeight: 24,
+    lineHeight: 22,
   },
   authorLink: {
     paddingVertical: 2,
   },
   authorLinkText: {
-    fontSize: 16,
+    fontSize: 15,
     color: '#64748b',
     fontWeight: '600',
-    lineHeight: 24,
+    lineHeight: 22,
   },
   statsOverview: {
     flexDirection: 'row',
@@ -610,26 +689,26 @@ const styles = StyleSheet.create({
   statCard: {
     flex: 1,
     backgroundColor: '#ffffff',
-    paddingVertical: SPACING.lg,
-    paddingHorizontal: SPACING.md,
-    borderRadius: SPACING.md,
+    paddingVertical: SPACING.md,
+    paddingHorizontal: SPACING.sm,
+    borderRadius: SPACING.sm,
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#e2e8f0',
   },
   statCardMobile: {
-    paddingVertical: SPACING.md,
-    paddingHorizontal: SPACING.sm,
+    paddingVertical: SPACING.sm,
+    paddingHorizontal: SPACING.xs,
   },
   statValue: {
-    fontSize: 32,
+    fontSize: 26,
     fontWeight: '800',
     color: '#2563eb',
     marginBottom: SPACING.xs / 2,
-    lineHeight: 38,
+    lineHeight: 32,
   },
   statLabel: {
-    fontSize: 13,
+    fontSize: 12,
     color: '#64748b',
     fontWeight: '600',
     textTransform: 'uppercase',
@@ -638,31 +717,31 @@ const styles = StyleSheet.create({
 
   // Filters
   filterSection: {
-    marginBottom: SPACING.xxxl,
+    marginBottom: SPACING.xxl,
     backgroundColor: '#ffffff',
-    borderRadius: SPACING.lg,
-    padding: SPACING.xl,
+    borderRadius: SPACING.md,
+    padding: SPACING.lg,
     borderWidth: 1,
     borderColor: '#e2e8f0',
   },
   filterSectionMobile: {
-    padding: SPACING.lg,
-    borderRadius: SPACING.md,
+    padding: SPACING.md,
+    borderRadius: SPACING.sm,
   },
   filterHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
-    marginBottom: SPACING.xl,
+    marginBottom: SPACING.lg,
   },
   filterHeaderTitle: {
-    fontSize: 20,
+    fontSize: 17,
     fontWeight: '700',
     color: '#0f172a',
     marginBottom: SPACING.xs / 2,
   },
   filterHeaderSubtitle: {
-    fontSize: 14,
+    fontSize: 13,
     color: '#64748b',
   },
   clearButton: {
@@ -689,10 +768,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: SPACING.xs,
     backgroundColor: '#f8fafc',
-    paddingLeft: SPACING.md,
-    paddingRight: SPACING.sm,
-    paddingVertical: 10,
-    borderRadius: SPACING.sm,
+    paddingLeft: SPACING.sm,
+    paddingRight: SPACING.xs,
+    paddingVertical: 8,
+    borderRadius: SPACING.xs,
     borderWidth: 1.5,
     borderColor: '#e2e8f0',
   },
@@ -744,16 +823,16 @@ const styles = StyleSheet.create({
     marginBottom: SPACING.xl,
   },
   sectionTitle: {
-    fontSize: 28,
+    fontSize: 22,
     fontWeight: '800',
     color: '#0f172a',
     marginBottom: SPACING.xs / 2,
   },
   sectionTitleMobile: {
-    fontSize: 22,
+    fontSize: 19,
   },
   sectionSubtitle: {
-    fontSize: 15,
+    fontSize: 14,
     color: '#64748b',
   },
   matchedBadge: {
@@ -761,19 +840,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: SPACING.xs,
     backgroundColor: '#eff6ff',
-    paddingHorizontal: SPACING.lg,
-    paddingVertical: SPACING.sm,
-    borderRadius: 14,
+    paddingHorizontal: SPACING.md,
+    paddingVertical: SPACING.xs,
+    borderRadius: SPACING.xs,
     borderWidth: 1,
     borderColor: '#bfdbfe',
   },
   matchedCount: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: '800',
     color: '#2563eb',
   },
   matchedLabel: {
-    fontSize: 13,
+    fontSize: 12,
     color: '#3b82f6',
     fontWeight: '600',
     textTransform: 'uppercase',
