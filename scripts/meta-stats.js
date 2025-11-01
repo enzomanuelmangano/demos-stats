@@ -87,7 +87,6 @@ function generateStats() {
       total_packages: metadata.stats.total_packages,
       total_hooks: metadata.stats.total_hooks,
       total_patterns: metadata.stats.total_patterns,
-      extracted_at: metadata.extracted_at,
       packages: metadata.packages,
       hooks: metadata.hooks,
       patterns: metadata.patterns,
