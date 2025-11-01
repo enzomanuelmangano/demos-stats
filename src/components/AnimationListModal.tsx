@@ -50,7 +50,11 @@ export function AnimationListModal({
 
   const openAnimation = (slug: string) => {
     const url = `https://github.com/enzomanuelmangano/demos/tree/main/src/animations/${slug}`;
-    Linking.openURL(url);
+    if (typeof window !== 'undefined') {
+      window.open(url, '_blank');
+    } else {
+      Linking.openURL(url);
+    }
   };
 
   return (

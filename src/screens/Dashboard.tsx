@@ -320,11 +320,34 @@ export function Dashboard() {
       {/* Header */}
       <View style={[styles.header, isMobile && styles.headerMobile]}>
         <Text style={[styles.headerTitle, isMobile && styles.headerTitleMobile]}>
-          React Native Demos Analytics
+          Demos Analytics
         </Text>
-        <Text style={styles.headerSubtitle}>
-          Explore 110+ animation examples with detailed insights
-        </Text>
+        <View style={styles.headerSubtitleContainer}>
+          <Text style={styles.headerSubtitle}>
+            Automated analytics for{' '}
+          </Text>
+          <TouchableOpacity
+            onPress={() => {
+              if (typeof window !== 'undefined') {
+                window.open('https://github.com/enzomanuelmangano/demos', '_blank');
+              }
+            }}
+            style={styles.demoLink}
+          >
+            <Text style={styles.demoLinkText}>React Native Demos</Text>
+          </TouchableOpacity>
+          <Text style={styles.headerSubtitle}> by </Text>
+          <TouchableOpacity
+            onPress={() => {
+              if (typeof window !== 'undefined') {
+                window.open('https://github.com/enzomanuelmangano', '_blank');
+              }
+            }}
+            style={styles.authorLink}
+          >
+            <Text style={styles.authorLinkText}>@enzomanuelmangano</Text>
+          </TouchableOpacity>
+        </View>
 
         <View style={[styles.statsOverview, isMobile && styles.statsOverviewMobile]}>
           <View style={[styles.statCard, isMobile && styles.statCardMobile]}>
@@ -547,10 +570,34 @@ const styles = StyleSheet.create({
     lineHeight: 34,
     letterSpacing: -0.5,
   },
+  headerSubtitleContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    marginBottom: SPACING.xl,
+    gap: SPACING.xs / 2,
+  },
   headerSubtitle: {
     fontSize: 16,
     color: '#64748b',
-    marginBottom: SPACING.xl,
+    lineHeight: 24,
+  },
+  demoLink: {
+    paddingVertical: 2,
+  },
+  demoLinkText: {
+    fontSize: 16,
+    color: '#2563eb',
+    fontWeight: '600',
+    lineHeight: 24,
+  },
+  authorLink: {
+    paddingVertical: 2,
+  },
+  authorLinkText: {
+    fontSize: 16,
+    color: '#64748b',
+    fontWeight: '600',
     lineHeight: 24,
   },
   statsOverview: {
