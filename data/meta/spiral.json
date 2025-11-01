@@ -2,7 +2,7 @@
   "animation_slug": "spiral",
   "content_hash": "9295170e0f90e0bfde6ca64a327ca3d66bfab0bb4f9d9631a51cd4aca55a6cff",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.999Z",
+  "extracted_at": "2025-11-01T11:08:09.303Z",
   "file_structure": {
     "entry": "index.tsx",
     "components": [
@@ -42,8 +42,13 @@
         "usePathValue",
         "vec"
       ],
-      "hooks": [],
-      "functions": [],
+      "hooks": [
+        "usePathValue"
+      ],
+      "functions": [
+        "interpolate",
+        "vec"
+      ],
       "components": [
         "BlurMask",
         "Canvas",
@@ -58,7 +63,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "PressableWithoutFeedback"
+      ]
     },
     "react": {
       "imports": [
@@ -78,7 +85,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "View"
+      ]
     },
     "react-native-reanimated": {
       "imports": [
@@ -92,7 +101,7 @@
         "useSharedValue"
       ],
       "functions": [
-        "interpolate",
+        "makeMutable",
         "withTiming"
       ],
       "components": []

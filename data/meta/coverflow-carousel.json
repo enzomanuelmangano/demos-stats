@@ -2,7 +2,7 @@
   "animation_slug": "coverflow-carousel",
   "content_hash": "8385859411a9d4fe47efd96850a57501e2458d6000c5093f1f7cce9962b82225",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.651Z",
+  "extracted_at": "2025-11-01T11:08:09.123Z",
   "file_structure": {
     "entry": "index.tsx",
     "components": [
@@ -35,7 +35,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "Image"
+      ]
     },
     "react": {
       "imports": [
@@ -53,9 +55,13 @@
         "View",
         "useWindowDimensions"
       ],
-      "hooks": [],
+      "hooks": [
+        "useWindowDimensions"
+      ],
       "functions": [],
-      "components": []
+      "components": [
+        "View"
+      ]
     },
     "react-native-reanimated": {
       "imports": [

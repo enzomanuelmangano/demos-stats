@@ -2,7 +2,7 @@
   "animation_slug": "shared-transition",
   "content_hash": "b783bd4bafeedde9cec6de395ff0a6f6bfaee74cdda10ab407351aa2127f8733",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.975Z",
+  "extracted_at": "2025-11-01T11:08:09.291Z",
   "file_structure": {
     "entry": "typings/index.ts",
     "components": [
@@ -49,7 +49,9 @@
       "imports": [
         "useNavigation"
       ],
-      "hooks": [],
+      "hooks": [
+        "useNavigation"
+      ],
       "functions": [],
       "components": []
     },
@@ -58,7 +60,9 @@
         "createNativeStackNavigator"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "createNativeStackNavigator"
+      ],
       "components": []
     },
     "expo-image": {
@@ -75,14 +79,18 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "PressableOpacity"
+      ]
     },
     "react": {
       "imports": [
         "memo"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "memo"
+      ],
       "components": []
     },
     "react-native": {
@@ -93,7 +101,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "View"
+      ]
     },
     "react-native-reanimated": {
       "imports": [

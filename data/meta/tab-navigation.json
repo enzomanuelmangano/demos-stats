@@ -2,7 +2,7 @@
   "animation_slug": "tab-navigation",
   "content_hash": "7bd609219c2b67a72716b5c0170aa0f5c2cb7feeeccc02b32212c963901dfdd2",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:01.058Z",
+  "extracted_at": "2025-11-01T11:08:09.331Z",
   "file_structure": {
     "entry": "src/index.tsx",
     "components": [
@@ -38,7 +38,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "AntDesign"
+      ]
     },
     "pressto": {
       "imports": [
@@ -46,7 +48,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "PressableScale"
+      ]
     },
     "react": {
       "imports": [
@@ -64,9 +68,13 @@
         "View",
         "useWindowDimensions"
       ],
-      "hooks": [],
+      "hooks": [
+        "useWindowDimensions"
+      ],
       "functions": [],
-      "components": []
+      "components": [
+        "View"
+      ]
     },
     "react-native-reanimated": {
       "imports": [

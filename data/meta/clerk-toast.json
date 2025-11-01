@@ -2,7 +2,7 @@
   "animation_slug": "clerk-toast",
   "content_hash": "746370d66757bc90378597547f84dbc8929be000272c89635863b2792eefecc2",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.641Z",
+  "extracted_at": "2025-11-01T11:08:09.115Z",
   "file_structure": {
     "entry": "src/stacked-toast-manager/index.ts",
     "components": [],
@@ -59,7 +59,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "Octicons"
+      ]
     },
     "@expo/vector-icons/build/createIconSet": {
       "imports": [],
@@ -79,7 +81,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "BlurView"
+      ]
     },
     "expo-linear-gradient": {
       "imports": [
@@ -87,7 +91,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "LinearGradient"
+      ]
     },
     "pressto": {
       "imports": [
@@ -95,7 +101,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "PressableScale"
+      ]
     },
     "react": {
       "imports": [
@@ -116,7 +124,9 @@
         "useRef",
         "useState"
       ],
-      "functions": [],
+      "functions": [
+        "createContext"
+      ],
       "components": []
     },
     "react-native": {
@@ -127,9 +137,15 @@
         "View",
         "useWindowDimensions"
       ],
-      "hooks": [],
+      "hooks": [
+        "useWindowDimensions"
+      ],
       "functions": [],
-      "components": []
+      "components": [
+        "ScrollView",
+        "Text",
+        "View"
+      ]
     },
     "react-native-gesture-handler": {
       "imports": [
@@ -139,7 +155,10 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "GestureDetector",
+        "GestureHandlerRootView"
+      ]
     },
     "react-native-reanimated": {
       "imports": [
@@ -167,14 +186,18 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "SafeAreaProvider"
+      ]
     },
     "react-native-worklets": {
       "imports": [
         "scheduleOnRN"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "scheduleOnRN"
+      ],
       "components": []
     }
   },

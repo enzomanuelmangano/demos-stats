@@ -2,7 +2,7 @@
   "animation_slug": "animated-clip-box",
   "content_hash": "565157d599d733a3e50bb22d0d9b8e2c29023756f676285ba3c197de9f21c99f",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.556Z",
+  "extracted_at": "2025-11-01T11:08:09.062Z",
   "file_structure": {
     "entry": "index.tsx",
     "components": [
@@ -36,7 +36,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "AntDesign"
+      ]
     },
     "pressto": {
       "imports": [
@@ -44,7 +46,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "PressableOpacity"
+      ]
     },
     "react": {
       "imports": [],
@@ -60,7 +64,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "View"
+      ]
     },
     "react-native-reanimated": {
       "imports": [

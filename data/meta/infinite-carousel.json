@@ -2,7 +2,7 @@
   "animation_slug": "infinite-carousel",
   "content_hash": "121dd4a6b8467e9992c31c93eda3c40a32483992a278d7a41e14ce74326316e8",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.819Z",
+  "extracted_at": "2025-11-01T11:08:09.218Z",
   "file_structure": {
     "entry": "index.tsx",
     "components": [
@@ -45,11 +45,12 @@
         "vec"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "vec"
+      ],
       "components": [
         "Blur",
         "Canvas",
-        "LinearGradient",
         "Rect",
         "SweepGradient"
       ]
@@ -60,7 +61,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "LinearGradient"
+      ]
     },
     "react": {
       "imports": [
@@ -77,7 +80,10 @@
         "useMemo",
         "useRef"
       ],
-      "functions": [],
+      "functions": [
+        "forwardRef",
+        "memo"
+      ],
       "components": []
     },
     "react-native": {
@@ -88,7 +94,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "View"
+      ]
     },
     "react-native-gesture-handler": {
       "imports": [
@@ -97,7 +105,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "GestureDetector"
+      ]
     },
     "react-native-reanimated": {
       "imports": [

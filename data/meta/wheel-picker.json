@@ -2,7 +2,7 @@
   "animation_slug": "wheel-picker",
   "content_hash": "633d669d8ff5bc78057de415bc4789a73a750c19615bb28ca01537edd584024e",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:01.115Z",
+  "extracted_at": "2025-11-01T11:08:09.365Z",
   "file_structure": {
     "entry": "index.tsx",
     "components": [
@@ -55,7 +55,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "MaterialCommunityIcons"
+      ]
     },
     "@shopify/react-native-skia": {
       "imports": [
@@ -68,13 +70,14 @@
         "rrect"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "rect",
+        "rrect"
+      ],
       "components": [
         "Canvas",
-        "LinearGradient",
         "Path",
-        "Rect",
-        "Text"
+        "Rect"
       ]
     },
     "color": {
@@ -103,7 +106,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "LinearGradient"
+      ]
     },
     "pressto": {
       "imports": [
@@ -111,7 +116,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "PressableScale"
+      ]
     },
     "react": {
       "imports": [
@@ -125,7 +132,9 @@
         "useMemo",
         "useState"
       ],
-      "functions": [],
+      "functions": [
+        "memo"
+      ],
       "components": []
     },
     "react-native": {
@@ -138,7 +147,10 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "Text",
+        "View"
+      ]
     },
     "react-native-gesture-handler": {
       "imports": [
@@ -147,7 +159,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "GestureDetector"
+      ]
     },
     "react-native-reanimated": {
       "imports": [
@@ -171,7 +185,9 @@
       ],
       "functions": [
         "cancelAnimation",
+        "clamp",
         "interpolate",
+        "isSharedValue",
         "withSpring",
         "withTiming"
       ],
@@ -185,7 +201,9 @@
         "scheduleOnRN"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "scheduleOnRN"
+      ],
       "components": []
     }
   },

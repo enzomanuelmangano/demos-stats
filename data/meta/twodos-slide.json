@@ -2,7 +2,7 @@
   "animation_slug": "twodos-slide",
   "content_hash": "159cae01dd0cc844ec837f46b32b504f5d0a48366ae5ab651a566e7062405a1c",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:01.094Z",
+  "extracted_at": "2025-11-01T11:08:09.356Z",
   "file_structure": {
     "entry": "index.tsx",
     "components": [],
@@ -47,7 +47,10 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "AntDesign",
+        "Entypo"
+      ]
     },
     "@shopify/react-native-skia": {
       "imports": [
@@ -61,8 +64,7 @@
       "components": [
         "Canvas",
         "Group",
-        "Path",
-        "Text"
+        "Path"
       ]
     },
     "expo-haptics": {
@@ -98,7 +100,10 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "Text",
+        "View"
+      ]
     },
     "react-native-gesture-handler": {
       "imports": [
@@ -107,7 +112,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "GestureDetector"
+      ]
     },
     "react-native-reanimated": {
       "imports": [
@@ -129,6 +136,7 @@
       ],
       "functions": [
         "cancelAnimation",
+        "clamp",
         "interpolate",
         "withSpring"
       ],
@@ -141,7 +149,9 @@
         "scheduleOnRN"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "scheduleOnRN"
+      ],
       "components": []
     }
   },

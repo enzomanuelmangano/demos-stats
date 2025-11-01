@@ -2,7 +2,7 @@
   "animation_slug": "color-carousel",
   "content_hash": "a894749272323af038e6d8fd9d4c6cf217d5b165dd661b4baba8c68747194655",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.648Z",
+  "extracted_at": "2025-11-01T11:08:09.121Z",
   "file_structure": {
     "entry": "index.tsx",
     "components": [
@@ -39,7 +39,9 @@
         "vec"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "vec"
+      ],
       "components": [
         "Canvas",
         "RadialGradient",
@@ -57,7 +59,9 @@
         "memo"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "memo"
+      ],
       "components": []
     },
     "react-native": {
@@ -68,7 +72,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "View"
+      ]
     },
     "react-native-reanimated": {
       "imports": [

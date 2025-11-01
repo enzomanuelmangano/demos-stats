@@ -2,7 +2,7 @@
   "animation_slug": "miles-bar-chart",
   "content_hash": "c6a98b84dc16f57cd12d91328cac9123fb7b6600c30945fb952513e9d22cd802",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.859Z",
+  "extracted_at": "2025-11-01T11:08:09.240Z",
   "file_structure": {
     "entry": "src/index.tsx",
     "components": [
@@ -40,7 +40,10 @@
         "startOfWeek"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "format",
+        "startOfWeek"
+      ],
       "components": []
     },
     "expo-haptics": {
@@ -68,9 +71,14 @@
         "View",
         "useWindowDimensions"
       ],
-      "hooks": [],
+      "hooks": [
+        "useWindowDimensions"
+      ],
       "functions": [],
-      "components": []
+      "components": [
+        "Text",
+        "View"
+      ]
     },
     "react-native-reanimated": {
       "imports": [
@@ -105,7 +113,9 @@
         "scheduleOnRN"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "scheduleOnRN"
+      ],
       "components": []
     }
   },

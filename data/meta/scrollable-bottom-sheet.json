@@ -2,7 +2,7 @@
   "animation_slug": "scrollable-bottom-sheet",
   "content_hash": "45c25c701d7cb7c8ee31a09159e265f725118b6b50d84fc40193e01792622070",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.956Z",
+  "extracted_at": "2025-11-01T11:08:09.282Z",
   "file_structure": {
     "entry": "index.tsx",
     "components": [
@@ -41,7 +41,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "LinearGradient"
+      ]
     },
     "pressto": {
       "imports": [
@@ -49,7 +51,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "PressableScale"
+      ]
     },
     "react": {
       "imports": [
@@ -66,7 +70,10 @@
         "useMemo",
         "useRef"
       ],
-      "functions": [],
+      "functions": [
+        "forwardRef",
+        "memo"
+      ],
       "components": []
     },
     "react-native": {
@@ -78,9 +85,14 @@
         "View",
         "useWindowDimensions"
       ],
-      "hooks": [],
+      "hooks": [
+        "useWindowDimensions"
+      ],
       "functions": [],
-      "components": []
+      "components": [
+        "Text",
+        "View"
+      ]
     },
     "react-native-gesture-handler": {
       "imports": [
@@ -89,7 +101,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "GestureDetector"
+      ]
     },
     "react-native-reanimated": {
       "imports": [
@@ -124,7 +138,9 @@
         "scheduleOnRN"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "scheduleOnRN"
+      ],
       "components": []
     }
   },

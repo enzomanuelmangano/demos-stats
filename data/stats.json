@@ -3893,72 +3893,192 @@
     "@shopify/react-native-skia": {
       "Canvas": 52,
       "Group": 30,
-      "Text": 25,
       "Path": 25,
       "Circle": 17,
       "Blur": 16,
       "Rect": 16,
-      "LinearGradient": 13,
       "BlurMask": 12,
       "RoundedRect": 10,
       "SweepGradient": 9,
+      "Text": 9,
       "Fill": 8,
-      "Image": 7,
+      "LinearGradient": 8,
+      "Shader": 7,
       "Mask": 6,
       "Paint": 6,
       "ColorMatrix": 6,
       "RadialGradient": 5,
+      "Image": 5,
       "Shadow": 4,
       "Atlas": 3,
       "ImageSVG": 3,
       "FitBox": 3,
+      "BackdropBlur": 2,
       "Line": 2,
+      "ImageShader": 2,
+      "SkiaCircle": 1,
       "DiscretePathEffect": 1,
       "Points": 1,
       "CornerPathEffect": 1,
       "DashPathEffect": 1
     },
-    "react": {},
-    "react-native": {},
+    "react": {
+      "useCallback": 70,
+      "useMemo": 67,
+      "memo": 47,
+      "useState": 40,
+      "useRef": 30,
+      "useEffect": 22,
+      "useImperativeHandle": 18,
+      "forwardRef": 17,
+      "createContext": 10,
+      "useContext": 10,
+      "PropsWithChildren": 3,
+      "FC": 2,
+      "createRef": 2,
+      "ReactNode": 2,
+      "Fragment": 1,
+      "useLayoutEffect": 1,
+      "useId": 1,
+      "ComponentProps": 1
+    },
+    "react-native": {
+      "View": 103,
+      "Text": 52,
+      "ScrollView": 5,
+      "useWindowDimensions": 5,
+      "StyleSheet": 4,
+      "TextInput": 4,
+      "Image": 3,
+      "FlatList": 2,
+      "Modal": 2,
+      "TouchableWithoutFeedback": 2,
+      "Dimensions": 1,
+      "Switch": 1,
+      "ActivityIndicator": 1,
+      "Pressable": 1
+    },
     "react-native-reanimated": {
       "View": 93,
       "Text": 21,
       "createAnimatedComponent": 19,
       "FlatList": 15,
-      "ScrollView": 8
+      "useDerivedValue": 13,
+      "useSharedValue": 12,
+      "ScrollView": 8,
+      "withSpring": 8,
+      "withTiming": 7,
+      "useAnimatedReaction": 4,
+      "LayoutAnimationConfig": 3,
+      "withRepeat": 1,
+      "interpolateColor": 1,
+      "cancelAnimation": 1,
+      "Extrapolation": 1,
+      "interpolate": 1,
+      "makeMutable": 1
     },
-    "@expo/vector-icons": {},
-    "pressto": {},
-    "react-native-gesture-handler": {},
-    "react-native-worklets": {},
-    "expo-image": {},
-    "react-native-safe-area-context": {},
-    "expo-blur": {},
-    "expo-linear-gradient": {},
-    "@expo/ui/swift-ui": {},
-    "react-native-redash": {},
-    "react-native-skia-gesture": {},
-    "simplex-noise": {},
-    "@react-navigation/bottom-tabs": {},
-    "@react-navigation/native": {},
+    "@expo/vector-icons": {
+      "AntDesign": 13,
+      "Ionicons": 10,
+      "MaterialIcons": 9,
+      "MaterialCommunityIcons": 4,
+      "Octicons": 4,
+      "Feather": 3,
+      "Entypo": 3,
+      "FontAwesome": 2,
+      "FontAwesome5": 2,
+      "FontAwesome6": 1
+    },
+    "pressto": {
+      "PressableScale": 47,
+      "PressableOpacity": 10,
+      "PressableWithoutFeedback": 3,
+      "createAnimatedPressable": 3,
+      "PressablesGroup": 1
+    },
+    "react-native-gesture-handler": {
+      "GestureDetector": 43,
+      "GestureHandlerRootView": 22
+    },
+    "react-native-worklets": {
+      "scheduleOnRN": 47,
+      "scheduleOnUI": 1
+    },
+    "expo-image": {
+      "Image": 13
+    },
+    "react-native-safe-area-context": {
+      "useSafeAreaInsets": 22,
+      "SafeAreaProvider": 8
+    },
+    "expo-blur": {
+      "BlurView": 16
+    },
+    "expo-linear-gradient": {
+      "LinearGradient": 17
+    },
+    "@expo/ui/swift-ui": {
+      "Host": 2,
+      "Slider": 1
+    },
+    "react-native-redash": {
+      "ReText": 6,
+      "withPause": 1
+    },
+    "react-native-skia-gesture": {
+      "useGestureHandler": 7
+    },
+    "simplex-noise": {
+      "createNoise2D": 1
+    },
+    "@react-navigation/bottom-tabs": {
+      "createBottomTabNavigator": 5
+    },
+    "@react-navigation/native": {
+      "useNavigation": 4,
+      "StackActions": 2
+    },
     "expo-haptics": {},
     "color": {},
     "@expo/vector-icons/build/createIconSet": {},
     "@react-native-masked-view/masked-view": {},
-    "date-fns": {},
+    "date-fns": {
+      "format": 3,
+      "startOfWeek": 2,
+      "addDays": 1,
+      "eachDayOfInterval": 1,
+      "endOfWeek": 1,
+      "subDays": 1
+    },
     "react-native-qrcode-skia": {},
     "fft.js": {},
     "@react-native-seoul/masonry-list": {},
-    "@react-navigation/native-stack": {},
-    "jotai": {},
+    "@react-navigation/native-stack": {
+      "createNativeStackNavigator": 3
+    },
+    "jotai": {
+      "atom": 2,
+      "useAtom": 2,
+      "useAtomValue": 1,
+      "useSetAtom": 1
+    },
     "@shopify/react-native-skia/lib/typescript/src/skia/types": {},
-    "expo-router": {},
+    "expo-router": {
+      "useFocusEffect": 2,
+      "useRouter": 1
+    },
     "lodash.debounce": {},
     "react-native-reanimated/lib/typescript/commonTypes": {},
-    "expo-glass-effect": {},
-    "react-native-fast-confetti": {},
+    "expo-glass-effect": {
+      "GlassView": 1
+    },
+    "react-native-fast-confetti": {
+      "PIConfetti": 1
+    },
     "lottie-react-native": {},
-    "react-native-keyboard-controller": {}
+    "react-native-keyboard-controller": {
+      "useReanimatedKeyboardAnimation": 2
+    }
   },
   "hooks_by_package": {
     "@shopify/react-native-skia": {
@@ -3967,7 +4087,9 @@
       "useRSXformBuffer": 3,
       "useTexture": 3,
       "useRectBuffer": 2,
-      "useSVG": 1
+      "useSVG": 1,
+      "usePathValue": 1,
+      "usePathInterpolation": 1
     },
     "react": {
       "useCallback": 70,
@@ -3977,9 +4099,12 @@
       "useEffect": 22,
       "useImperativeHandle": 18,
       "useContext": 10,
-      "useLayoutEffect": 1
+      "useLayoutEffect": 1,
+      "useId": 1
     },
-    "react-native": {},
+    "react-native": {
+      "useWindowDimensions": 57
+    },
     "react-native-reanimated": {
       "useSharedValue": 94,
       "useAnimatedStyle": 89,
@@ -3996,15 +4121,21 @@
     "react-native-gesture-handler": {},
     "react-native-worklets": {},
     "expo-image": {},
-    "react-native-safe-area-context": {},
+    "react-native-safe-area-context": {
+      "useSafeAreaInsets": 28
+    },
     "expo-blur": {},
     "expo-linear-gradient": {},
     "@expo/ui/swift-ui": {},
     "react-native-redash": {},
-    "react-native-skia-gesture": {},
+    "react-native-skia-gesture": {
+      "useGestureHandler": 7
+    },
     "simplex-noise": {},
     "@react-navigation/bottom-tabs": {},
-    "@react-navigation/native": {},
+    "@react-navigation/native": {
+      "useNavigation": 4
+    },
     "expo-haptics": {},
     "color": {},
     "@expo/vector-icons/build/createIconSet": {},
@@ -4014,55 +4145,108 @@
     "fft.js": {},
     "@react-native-seoul/masonry-list": {},
     "@react-navigation/native-stack": {},
-    "jotai": {},
+    "jotai": {
+      "useAtom": 2,
+      "useAtomValue": 1,
+      "useSetAtom": 1
+    },
     "@shopify/react-native-skia/lib/typescript/src/skia/types": {},
-    "expo-router": {},
+    "expo-router": {
+      "useFocusEffect": 2,
+      "useRouter": 1
+    },
     "lodash.debounce": {},
     "react-native-reanimated/lib/typescript/commonTypes": {},
     "expo-glass-effect": {},
     "react-native-fast-confetti": {},
     "lottie-react-native": {},
-    "react-native-keyboard-controller": {}
+    "react-native-keyboard-controller": {
+      "useReanimatedKeyboardAnimation": 2
+    }
   },
   "functions_by_package": {
-    "@shopify/react-native-skia": {},
-    "react": {},
+    "@shopify/react-native-skia": {
+      "vec": 18,
+      "rect": 16,
+      "rrect": 9,
+      "interpolate": 6,
+      "fitbox": 3,
+      "matchFont": 2,
+      "makeImageFromView": 2,
+      "processTransform2d": 1,
+      "clamp": 1,
+      "skRect": 1
+    },
+    "react": {
+      "memo": 47,
+      "forwardRef": 17,
+      "createContext": 10,
+      "createRef": 2
+    },
     "react-native": {},
     "react-native-reanimated": {
-      "interpolate": 68,
       "withTiming": 68,
       "withSpring": 65,
+      "interpolate": 62,
       "cancelAnimation": 24,
       "interpolateColor": 12,
+      "makeMutable": 11,
       "withRepeat": 10,
+      "measure": 6,
       "withDelay": 5,
       "withDecay": 4,
-      "withSequence": 4
+      "clamp": 4,
+      "withSequence": 4,
+      "scrollTo": 3,
+      "convertToRGBA": 1,
+      "isSharedValue": 1
     },
     "@expo/vector-icons": {},
-    "pressto": {},
+    "pressto": {
+      "createAnimatedPressable": 5
+    },
     "react-native-gesture-handler": {},
-    "react-native-worklets": {},
+    "react-native-worklets": {
+      "scheduleOnRN": 47,
+      "scheduleOnUI": 1
+    },
     "expo-image": {},
     "react-native-safe-area-context": {},
     "expo-blur": {},
     "expo-linear-gradient": {},
     "@expo/ui/swift-ui": {},
-    "react-native-redash": {},
+    "react-native-redash": {
+      "withPause": 1
+    },
     "react-native-skia-gesture": {},
-    "simplex-noise": {},
-    "@react-navigation/bottom-tabs": {},
+    "simplex-noise": {
+      "createNoise2D": 1
+    },
+    "@react-navigation/bottom-tabs": {
+      "createBottomTabNavigator": 5
+    },
     "@react-navigation/native": {},
     "expo-haptics": {},
     "color": {},
     "@expo/vector-icons/build/createIconSet": {},
     "@react-native-masked-view/masked-view": {},
-    "date-fns": {},
+    "date-fns": {
+      "format": 3,
+      "startOfWeek": 2,
+      "addDays": 1,
+      "eachDayOfInterval": 1,
+      "endOfWeek": 1,
+      "subDays": 1
+    },
     "react-native-qrcode-skia": {},
     "fft.js": {},
     "@react-native-seoul/masonry-list": {},
-    "@react-navigation/native-stack": {},
-    "jotai": {},
+    "@react-navigation/native-stack": {
+      "createNativeStackNavigator": 3
+    },
+    "jotai": {
+      "atom": 2
+    },
     "@shopify/react-native-skia/lib/typescript/src/skia/types": {},
     "expo-router": {},
     "lodash.debounce": {},
@@ -4079,7 +4263,7 @@
       "total_packages": 4,
       "total_hooks": 8,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.404Z",
+      "extracted_at": "2025-11-01T11:08:09.023Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -4151,7 +4335,9 @@
           "hooks": [
             "useFont"
           ],
-          "functions": [],
+          "functions": [
+            "vec"
+          ],
           "components": [
             "Blur",
             "BlurMask",
@@ -4175,7 +4361,9 @@
             "useCallback",
             "useMemo"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -4184,9 +4372,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -4219,7 +4411,7 @@
       "total_packages": 7,
       "total_hooks": 10,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:00.464Z",
+      "extracted_at": "2025-11-01T11:08:09.033Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -4287,7 +4479,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "MaterialCommunityIcons"
+          ]
         },
         "pressto": {
           "imports": [
@@ -4295,7 +4489,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -4314,7 +4510,10 @@
             "useRef",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef",
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -4325,9 +4524,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -4336,7 +4540,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -4374,7 +4580,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -4385,7 +4593,7 @@
       "total_packages": 9,
       "total_hooks": 10,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.523Z",
+      "extracted_at": "2025-11-01T11:08:09.039Z",
       "packages": [
         "@expo/vector-icons",
         "expo-image",
@@ -4459,7 +4667,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Feather"
+          ]
         },
         "expo-image": {
           "imports": [
@@ -4467,7 +4677,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Image"
+          ]
         },
         "pressto": {
           "imports": [
@@ -4475,7 +4687,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -4490,7 +4704,9 @@
             "useMemo",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -4503,9 +4719,15 @@
             "ViewStyle",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "FlatList",
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -4514,7 +4736,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -4540,6 +4764,7 @@
           "functions": [
             "cancelAnimation",
             "interpolate",
+            "measure",
             "withSpring",
             "withTiming"
           ],
@@ -4552,7 +4777,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         },
@@ -4561,7 +4788,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -4572,7 +4801,7 @@
       "total_packages": 7,
       "total_hooks": 7,
       "total_patterns": 4,
-      "extracted_at": "2025-10-31T20:06:00.539Z",
+      "extracted_at": "2025-11-01T11:08:09.051Z",
       "packages": [
         "expo-blur",
         "expo-linear-gradient",
@@ -4640,7 +4869,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "pressto": {
           "imports": [
@@ -4648,7 +4879,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableOpacity"
+          ]
         },
         "react": {
           "imports": [
@@ -4660,7 +4893,9 @@
             "useMemo",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -4671,9 +4906,15 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "ScrollView",
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -4702,7 +4943,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         }
@@ -4714,7 +4957,7 @@
       "total_packages": 6,
       "total_hooks": 8,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:00.545Z",
+      "extracted_at": "2025-11-01T11:08:09.055Z",
       "packages": [
         "@expo/ui/swift-ui",
         "react",
@@ -4781,7 +5024,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Host"
+          ]
         },
         "react": {
           "imports": [
@@ -4793,7 +5038,9 @@
             "useCallback",
             "useMemo"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -4803,9 +5050,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -4814,7 +5066,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -4850,7 +5104,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -4861,7 +5117,7 @@
       "total_packages": 6,
       "total_hooks": 4,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.548Z",
+      "extracted_at": "2025-11-01T11:08:09.059Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -4916,7 +5172,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "FontAwesome",
+            "Ionicons"
+          ]
         },
         "pressto": {
           "imports": [
@@ -4924,7 +5183,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -4945,7 +5206,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -4975,7 +5239,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -4986,7 +5252,7 @@
       "total_packages": 4,
       "total_hooks": 4,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.551Z",
+      "extracted_at": "2025-11-01T11:08:09.060Z",
       "packages": [
         "expo-image",
         "react-native",
@@ -5030,7 +5296,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Image"
+          ]
         },
         "react-native": {
           "imports": [
@@ -5039,7 +5307,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -5048,7 +5318,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -5079,7 +5351,7 @@
       "total_packages": 5,
       "total_hooks": 3,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.556Z",
+      "extracted_at": "2025-11-01T11:08:09.062Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -5126,7 +5398,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "AntDesign"
+          ]
         },
         "pressto": {
           "imports": [
@@ -5134,7 +5408,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableOpacity"
+          ]
         },
         "react": {
           "imports": [],
@@ -5150,7 +5426,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -5182,7 +5460,7 @@
       "total_packages": 5,
       "total_hooks": 3,
       "total_patterns": 2,
-      "extracted_at": "2025-10-31T20:06:00.562Z",
+      "extracted_at": "2025-11-01T11:08:09.064Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -5226,7 +5504,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Entypo"
+          ]
         },
         "pressto": {
           "imports": [
@@ -5234,7 +5514,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -5246,7 +5528,9 @@
             "useMemo",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -5257,7 +5541,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -5285,7 +5572,7 @@
       "total_packages": 5,
       "total_hooks": 7,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.566Z",
+      "extracted_at": "2025-11-01T11:08:09.067Z",
       "packages": [
         "pressto",
         "react",
@@ -5340,7 +5627,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -5363,7 +5652,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -5395,7 +5687,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         }
@@ -5407,7 +5701,7 @@
       "total_packages": 4,
       "total_hooks": 15,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.571Z",
+      "extracted_at": "2025-11-01T11:08:09.073Z",
       "packages": [
         "react",
         "react-native",
@@ -5484,7 +5778,10 @@
             "useMemo",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "createRef",
+            "forwardRef"
+          ],
           "components": []
         },
         "react-native": {
@@ -5495,7 +5792,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -5517,7 +5817,8 @@
             "useSharedValue"
           ],
           "functions": [
-            "interpolate"
+            "interpolate",
+            "measure"
           ],
           "components": [
             "Animated.FlatList",
@@ -5528,7 +5829,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         }
@@ -5540,7 +5843,7 @@
       "total_packages": 6,
       "total_hooks": 8,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.575Z",
+      "extracted_at": "2025-11-01T11:08:09.076Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -5617,7 +5920,10 @@
             "useSVG",
             "useTexture"
           ],
-          "functions": [],
+          "functions": [
+            "fitbox",
+            "rect"
+          ],
           "components": [
             "Atlas",
             "Canvas",
@@ -5634,7 +5940,9 @@
           "hooks": [
             "useMemo"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -5644,7 +5952,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -5653,7 +5963,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -5684,7 +5996,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -5695,7 +6009,7 @@
       "total_packages": 5,
       "total_hooks": 7,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.588Z",
+      "extracted_at": "2025-11-01T11:08:09.080Z",
       "packages": [
         "react",
         "react-native",
@@ -5757,7 +6071,9 @@
           "hooks": [
             "useEffect"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -5767,9 +6083,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -5779,7 +6100,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector",
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -5811,7 +6135,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "ReText"
+          ]
         }
       }
     },
@@ -5821,7 +6147,7 @@
       "total_packages": 6,
       "total_hooks": 6,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.596Z",
+      "extracted_at": "2025-11-01T11:08:09.084Z",
       "packages": [
         "react",
         "react-native",
@@ -5886,9 +6212,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -5898,7 +6229,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector",
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -5925,14 +6259,18 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "ReText"
+          ]
         },
         "react-native-worklets": {
           "imports": [
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -5943,7 +6281,7 @@
       "total_packages": 9,
       "total_hooks": 7,
       "total_patterns": 10,
-      "extracted_at": "2025-10-31T20:06:00.608Z",
+      "extracted_at": "2025-11-01T11:08:09.090Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-blur",
@@ -6032,7 +6370,6 @@
           "components": [
             "Circle",
             "Group",
-            "Image",
             "Path"
           ]
         },
@@ -6050,7 +6387,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Image"
+          ]
         },
         "pressto": {
           "imports": [
@@ -6058,7 +6397,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -6078,7 +6419,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -6104,6 +6447,7 @@
             "cancelAnimation",
             "interpolate",
             "interpolateColor",
+            "makeMutable",
             "withSpring",
             "withTiming"
           ],
@@ -6124,7 +6468,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -6135,7 +6481,7 @@
       "total_packages": 5,
       "total_hooks": 4,
       "total_patterns": 4,
-      "extracted_at": "2025-10-31T20:06:00.609Z",
+      "extracted_at": "2025-11-01T11:08:09.091Z",
       "packages": [
         "@shopify/react-native-skia",
         "pressto",
@@ -6194,8 +6540,13 @@
             "vec"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "rect",
+            "rrect",
+            "vec"
+          ],
           "components": [
+            "BackdropBlur",
             "Blur",
             "Canvas",
             "Group",
@@ -6210,7 +6561,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableOpacity"
+          ]
         },
         "react": {
           "imports": [
@@ -6228,9 +6581,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -6255,7 +6612,7 @@
       "total_packages": 6,
       "total_hooks": 7,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.611Z",
+      "extracted_at": "2025-11-01T11:08:09.092Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -6320,7 +6677,11 @@
             "vec"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "rect",
+            "rrect",
+            "vec"
+          ],
           "components": [
             "Blur",
             "BlurMask",
@@ -6376,7 +6737,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         },
         "simplex-noise": {
@@ -6384,7 +6747,9 @@
             "createNoise2D"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "createNoise2D"
+          ],
           "components": []
         }
       }
@@ -6395,7 +6760,7 @@
       "total_packages": 10,
       "total_hooks": 5,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.614Z",
+      "extracted_at": "2025-11-01T11:08:09.095Z",
       "packages": [
         "@expo/vector-icons",
         "@react-navigation/bottom-tabs",
@@ -6457,14 +6822,18 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "MaterialIcons"
+          ]
         },
         "@react-navigation/bottom-tabs": {
           "imports": [
             "createBottomTabNavigator"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "createBottomTabNavigator"
+          ],
           "components": []
         },
         "@react-navigation/native": {
@@ -6481,7 +6850,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "BlurView"
+          ]
         },
         "expo-linear-gradient": {
           "imports": [
@@ -6489,7 +6860,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "pressto": {
           "imports": [
@@ -6497,7 +6870,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -6507,7 +6882,9 @@
           "hooks": [
             "useCallback"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -6520,7 +6897,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Image",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -6545,7 +6925,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         }
@@ -6557,7 +6939,7 @@
       "total_packages": 3,
       "total_hooks": 5,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.616Z",
+      "extracted_at": "2025-11-01T11:08:09.096Z",
       "packages": [
         "@shopify/react-native-skia",
         "react-native",
@@ -6612,7 +6994,9 @@
             "interpolate"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "interpolate"
+          ],
           "components": [
             "BlurMask",
             "Canvas",
@@ -6627,9 +7011,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -6647,9 +7035,7 @@
             "useDerivedValue",
             "useSharedValue"
           ],
-          "functions": [
-            "interpolate"
-          ],
+          "functions": [],
           "components": [
             "Animated.FlatList",
             "Animated.View"
@@ -6663,7 +7049,7 @@
       "total_packages": 9,
       "total_hooks": 5,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.620Z",
+      "extracted_at": "2025-11-01T11:08:09.099Z",
       "packages": [
         "@react-navigation/bottom-tabs",
         "@shopify/react-native-skia",
@@ -6727,7 +7113,9 @@
             "createBottomTabNavigator"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "createBottomTabNavigator"
+          ],
           "components": []
         },
         "@shopify/react-native-skia": {
@@ -6743,7 +7131,9 @@
             "rect"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "rect"
+          ],
           "components": [
             "Blur",
             "Circle",
@@ -6770,7 +7160,9 @@
             "useCallback",
             "useMemo"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -6779,9 +7171,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -6804,7 +7200,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         },
@@ -6819,7 +7217,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -6830,7 +7230,7 @@
       "total_packages": 5,
       "total_hooks": 4,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.628Z",
+      "extracted_at": "2025-11-01T11:08:09.106Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -6890,7 +7290,7 @@
           "components": [
             "Canvas",
             "Fill",
-            "Text"
+            "Shader"
           ]
         },
         "react": {
@@ -6909,7 +7309,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -6917,7 +7320,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -6949,7 +7354,7 @@
       "total_packages": 7,
       "total_hooks": 5,
       "total_patterns": 1,
-      "extracted_at": "2025-10-31T20:06:00.631Z",
+      "extracted_at": "2025-11-01T11:08:09.108Z",
       "packages": [
         "@expo/vector-icons",
         "color",
@@ -6994,7 +7399,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Ionicons"
+          ]
         },
         "color": {
           "imports": [],
@@ -7008,7 +7415,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -7030,7 +7439,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -7053,7 +7465,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         }
@@ -7065,7 +7479,7 @@
       "total_packages": 4,
       "total_hooks": 6,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.633Z",
+      "extracted_at": "2025-11-01T11:08:09.110Z",
       "packages": [
         "expo-image",
         "react",
@@ -7117,7 +7531,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Image"
+          ]
         },
         "react": {
           "imports": [
@@ -7141,7 +7557,11 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Switch",
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -7177,7 +7597,7 @@
       "total_packages": 12,
       "total_hooks": 14,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.641Z",
+      "extracted_at": "2025-11-01T11:08:09.115Z",
       "packages": [
         "@expo/vector-icons",
         "@expo/vector-icons/build/createIconSet",
@@ -7260,7 +7680,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Octicons"
+          ]
         },
         "@expo/vector-icons/build/createIconSet": {
           "imports": [],
@@ -7280,7 +7702,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "BlurView"
+          ]
         },
         "expo-linear-gradient": {
           "imports": [
@@ -7288,7 +7712,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "pressto": {
           "imports": [
@@ -7296,7 +7722,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -7317,7 +7745,9 @@
             "useRef",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "createContext"
+          ],
           "components": []
         },
         "react-native": {
@@ -7328,9 +7758,15 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "ScrollView",
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -7340,7 +7776,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector",
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -7368,14 +7807,18 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "SafeAreaProvider"
+          ]
         },
         "react-native-worklets": {
           "imports": [
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -7386,7 +7829,7 @@
       "total_packages": 6,
       "total_hooks": 5,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.646Z",
+      "extracted_at": "2025-11-01T11:08:09.118Z",
       "packages": [
         "@shopify/react-native-skia",
         "date-fns",
@@ -7450,9 +7893,7 @@
             "Circle",
             "Group",
             "Line",
-            "LinearGradient",
-            "Shadow",
-            "Text"
+            "Shadow"
           ]
         },
         "date-fns": {
@@ -7460,7 +7901,9 @@
             "format"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "format"
+          ],
           "components": []
         },
         "expo-linear-gradient": {
@@ -7469,7 +7912,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "react": {
           "imports": [
@@ -7491,7 +7936,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -7520,7 +7968,7 @@
       "total_packages": 5,
       "total_hooks": 4,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:00.648Z",
+      "extracted_at": "2025-11-01T11:08:09.121Z",
       "packages": [
         "@shopify/react-native-skia",
         "color",
@@ -7577,7 +8025,9 @@
             "vec"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "vec"
+          ],
           "components": [
             "Canvas",
             "RadialGradient",
@@ -7595,7 +8045,9 @@
             "memo"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -7606,7 +8058,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -7641,7 +8095,7 @@
       "total_packages": 4,
       "total_hooks": 3,
       "total_patterns": 2,
-      "extracted_at": "2025-10-31T20:06:00.649Z",
+      "extracted_at": "2025-11-01T11:08:09.121Z",
       "packages": [
         "pressto",
         "react",
@@ -7681,7 +8135,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -7693,7 +8149,9 @@
             "useMemo",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -7703,7 +8161,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -7722,7 +8182,8 @@
           ],
           "components": [
             "Animated.Text",
-            "Animated.View"
+            "Animated.View",
+            "LayoutAnimationConfig"
           ]
         }
       }
@@ -7733,7 +8194,7 @@
       "total_packages": 4,
       "total_hooks": 5,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.651Z",
+      "extracted_at": "2025-11-01T11:08:09.123Z",
       "packages": [
         "expo-image",
         "react",
@@ -7777,7 +8238,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Image"
+          ]
         },
         "react": {
           "imports": [
@@ -7795,9 +8258,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -7828,7 +8295,7 @@
       "total_packages": 6,
       "total_hooks": 3,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:00.652Z",
+      "extracted_at": "2025-11-01T11:08:09.125Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -7889,7 +8356,9 @@
             "rect"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "rect"
+          ],
           "components": [
             "Canvas",
             "FitBox",
@@ -7901,7 +8370,9 @@
             "memo"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -7911,7 +8382,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -7921,7 +8394,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector",
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -7953,7 +8429,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "ReText"
+          ]
         }
       }
     },
@@ -7963,7 +8441,7 @@
       "total_packages": 7,
       "total_hooks": 9,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.655Z",
+      "extracted_at": "2025-11-01T11:08:09.128Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -8032,7 +8510,9 @@
             "matchFont"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "matchFont"
+          ],
           "components": [
             "Blur",
             "ColorMatrix",
@@ -8066,7 +8546,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -8091,7 +8573,9 @@
           "imports": [
             "useGestureHandler"
           ],
-          "hooks": [],
+          "hooks": [
+            "useGestureHandler"
+          ],
           "functions": [],
           "components": []
         },
@@ -8100,7 +8584,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -8111,7 +8597,7 @@
       "total_packages": 8,
       "total_hooks": 6,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.660Z",
+      "extracted_at": "2025-11-01T11:08:09.130Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -8177,7 +8663,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Ionicons"
+          ]
         },
         "@shopify/react-native-skia": {
           "imports": [
@@ -8192,8 +8680,7 @@
             "Blur",
             "Canvas",
             "Fill",
-            "SweepGradient",
-            "Text"
+            "SweepGradient"
           ]
         },
         "pressto": {
@@ -8202,7 +8689,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -8214,7 +8703,9 @@
             "useImperativeHandle",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef"
+          ],
           "components": []
         },
         "react-native": {
@@ -8226,9 +8717,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -8236,7 +8732,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -8263,9 +8761,13 @@
             "SafeAreaProvider",
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "SafeAreaProvider"
+          ]
         }
       }
     },
@@ -8275,7 +8777,7 @@
       "total_packages": 8,
       "total_hooks": 9,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.671Z",
+      "extracted_at": "2025-11-01T11:08:09.134Z",
       "packages": [
         "expo-haptics",
         "expo-linear-gradient",
@@ -8347,7 +8849,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "react": {
           "imports": [
@@ -8366,9 +8870,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -8377,7 +8886,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -8400,6 +8911,7 @@
             "useSharedValue"
           ],
           "functions": [
+            "scrollTo",
             "withTiming"
           ],
           "components": [
@@ -8411,7 +8923,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         },
@@ -8420,7 +8934,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -8431,7 +8947,7 @@
       "total_packages": 6,
       "total_hooks": 8,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:00.679Z",
+      "extracted_at": "2025-11-01T11:08:09.139Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -8505,7 +9021,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Ionicons"
+          ]
         },
         "pressto": {
           "imports": [
@@ -8513,7 +9031,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -8537,9 +9057,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -8549,7 +9074,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector",
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -8589,7 +9117,7 @@
       "total_packages": 7,
       "total_hooks": 7,
       "total_patterns": 4,
-      "extracted_at": "2025-10-31T20:06:00.685Z",
+      "extracted_at": "2025-11-01T11:08:09.143Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -8657,7 +9185,9 @@
           "hooks": [
             "useFont"
           ],
-          "functions": [],
+          "functions": [
+            "vec"
+          ],
           "components": [
             "BlurMask",
             "Circle",
@@ -8690,9 +9220,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -8712,7 +9246,9 @@
           "imports": [
             "useGestureHandler"
           ],
-          "hooks": [],
+          "hooks": [
+            "useGestureHandler"
+          ],
           "functions": [],
           "components": []
         },
@@ -8721,7 +9257,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -8732,7 +9270,7 @@
       "total_packages": 11,
       "total_hooks": 8,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:00.696Z",
+      "extracted_at": "2025-11-01T11:08:09.147Z",
       "packages": [
         "@expo/vector-icons",
         "@react-navigation/bottom-tabs",
@@ -8812,14 +9350,18 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "MaterialIcons"
+          ]
         },
         "@react-navigation/bottom-tabs": {
           "imports": [
             "createBottomTabNavigator"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "createBottomTabNavigator"
+          ],
           "components": []
         },
         "@react-navigation/native": {
@@ -8844,7 +9386,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "react": {
           "imports": [
@@ -8854,7 +9398,9 @@
           "hooks": [
             "useCallback"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -8866,9 +9412,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -8877,7 +9427,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -8898,6 +9450,7 @@
           ],
           "functions": [
             "interpolate",
+            "makeMutable",
             "withSpring",
             "withTiming"
           ],
@@ -8911,7 +9464,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         },
@@ -8920,7 +9475,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -8931,7 +9488,7 @@
       "total_packages": 5,
       "total_hooks": 9,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.699Z",
+      "extracted_at": "2025-11-01T11:08:09.150Z",
       "packages": [
         "pressto",
         "react",
@@ -8989,7 +9546,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableOpacity"
+          ]
         },
         "react": {
           "imports": [
@@ -9005,7 +9564,9 @@
             "useRef",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -9016,9 +9577,15 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Image",
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -9045,7 +9612,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         }
@@ -9057,7 +9626,7 @@
       "total_packages": 8,
       "total_hooks": 5,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.702Z",
+      "extracted_at": "2025-11-01T11:08:09.152Z",
       "packages": [
         "@expo/vector-icons",
         "expo-image",
@@ -9117,7 +9686,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "MaterialIcons"
+          ]
         },
         "expo-image": {
           "imports": [
@@ -9125,7 +9696,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Image"
+          ]
         },
         "expo-linear-gradient": {
           "imports": [
@@ -9133,7 +9706,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "pressto": {
           "imports": [
@@ -9141,7 +9716,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -9162,7 +9739,11 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "FlatList",
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -9192,7 +9773,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         }
@@ -9204,7 +9787,7 @@
       "total_packages": 6,
       "total_hooks": 10,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:00.712Z",
+      "extracted_at": "2025-11-01T11:08:09.154Z",
       "packages": [
         "@shopify/react-native-skia",
         "pressto",
@@ -9276,7 +9859,9 @@
           "hooks": [
             "useFont"
           ],
-          "functions": [],
+          "functions": [
+            "vec"
+          ],
           "components": [
             "Canvas",
             "RadialGradient",
@@ -9290,7 +9875,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -9307,7 +9894,10 @@
             "useImperativeHandle",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef",
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -9317,7 +9907,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-qrcode-skia": {
           "imports": [],
@@ -9354,7 +9946,7 @@
       "total_packages": 4,
       "total_hooks": 5,
       "total_patterns": 9,
-      "extracted_at": "2025-10-31T20:06:00.723Z",
+      "extracted_at": "2025-11-01T11:08:09.156Z",
       "packages": [
         "pressto",
         "react",
@@ -9409,7 +10001,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableWithoutFeedback"
+          ]
         },
         "react": {
           "imports": [
@@ -9421,7 +10015,9 @@
             "useImperativeHandle",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef"
+          ],
           "components": []
         },
         "react-native": {
@@ -9431,7 +10027,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -9465,7 +10063,7 @@
       "total_packages": 7,
       "total_hooks": 7,
       "total_patterns": 3,
-      "extracted_at": "2025-10-31T20:06:00.743Z",
+      "extracted_at": "2025-11-01T11:08:09.160Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -9532,7 +10130,11 @@
             "rrect"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "matchFont",
+            "rect",
+            "rrect"
+          ],
           "components": [
             "Blur",
             "ColorMatrix",
@@ -9568,9 +10170,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -9596,7 +10202,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -9607,7 +10215,7 @@
       "total_packages": 10,
       "total_hooks": 5,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.753Z",
+      "extracted_at": "2025-11-01T11:08:09.165Z",
       "packages": [
         "@expo/vector-icons",
         "@react-navigation/bottom-tabs",
@@ -9678,14 +10286,18 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Ionicons"
+          ]
         },
         "@react-navigation/bottom-tabs": {
           "imports": [
             "createBottomTabNavigator"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "createBottomTabNavigator"
+          ],
           "components": []
         },
         "expo-haptics": {
@@ -9700,8 +10312,12 @@
             "createAnimatedPressable"
           ],
           "hooks": [],
-          "functions": [],
-          "components": []
+          "functions": [
+            "createAnimatedPressable"
+          ],
+          "components": [
+            "PressablesGroup"
+          ]
         },
         "react": {
           "imports": [
@@ -9721,9 +10337,15 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Image",
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -9732,7 +10354,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -9751,6 +10375,7 @@
           "functions": [
             "interpolate",
             "interpolateColor",
+            "makeMutable",
             "withTiming"
           ],
           "components": [
@@ -9762,7 +10387,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         },
@@ -9771,7 +10398,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -9782,7 +10411,7 @@
       "total_packages": 7,
       "total_hooks": 8,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.756Z",
+      "extracted_at": "2025-11-01T11:08:09.169Z",
       "packages": [
         "@expo/vector-icons",
         "expo-linear-gradient",
@@ -9848,7 +10477,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "FontAwesome5"
+          ]
         },
         "expo-linear-gradient": {
           "imports": [
@@ -9856,14 +10487,18 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "pressto": {
           "imports": [
             "createAnimatedPressable"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "createAnimatedPressable"
+          ],
           "components": []
         },
         "react": {
@@ -9880,7 +10515,9 @@
             "useMemo",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -9891,7 +10528,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -9923,7 +10563,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         }
@@ -9935,7 +10577,7 @@
       "total_packages": 6,
       "total_hooks": 7,
       "total_patterns": 10,
-      "extracted_at": "2025-10-31T20:06:00.762Z",
+      "extracted_at": "2025-11-01T11:08:09.174Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -10018,7 +10660,8 @@
             "Canvas",
             "Circle",
             "Mask",
-            "Rect"
+            "Rect",
+            "Shader"
           ]
         },
         "react": {
@@ -10043,7 +10686,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -10052,7 +10697,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -10089,7 +10736,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -10100,7 +10749,7 @@
       "total_packages": 6,
       "total_hooks": 6,
       "total_patterns": 9,
-      "extracted_at": "2025-10-31T20:06:00.758Z",
+      "extracted_at": "2025-11-01T11:08:09.171Z",
       "packages": [
         "@shopify/react-native-skia",
         "pressto",
@@ -10177,7 +10826,7 @@
             "Circle",
             "Mask",
             "Rect",
-            "Text"
+            "Shader"
           ]
         },
         "pressto": {
@@ -10186,7 +10835,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -10209,7 +10860,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -10218,7 +10872,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -10255,7 +10911,7 @@
       "total_packages": 8,
       "total_hooks": 6,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.764Z",
+      "extracted_at": "2025-11-01T11:08:09.177Z",
       "packages": [
         "@expo/vector-icons",
         "@react-navigation/bottom-tabs",
@@ -10318,14 +10974,20 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Feather",
+            "Ionicons",
+            "Octicons"
+          ]
         },
         "@react-navigation/bottom-tabs": {
           "imports": [
             "createBottomTabNavigator"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "createBottomTabNavigator"
+          ],
           "components": []
         },
         "@shopify/react-native-skia": {
@@ -10351,7 +11013,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -10372,7 +11036,9 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
           "components": []
         },
@@ -10399,7 +11065,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         }
@@ -10411,7 +11079,7 @@
       "total_packages": 6,
       "total_hooks": 5,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.767Z",
+      "extracted_at": "2025-11-01T11:08:09.180Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -10467,7 +11135,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "AntDesign"
+          ]
         },
         "pressto": {
           "imports": [
@@ -10475,14 +11145,18 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
             "memo"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -10492,9 +11166,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -10503,7 +11182,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -10539,7 +11220,7 @@
       "total_packages": 5,
       "total_hooks": 7,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.769Z",
+      "extracted_at": "2025-11-01T11:08:09.181Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -10602,7 +11283,9 @@
           "hooks": [
             "useFont"
           ],
-          "functions": [],
+          "functions": [
+            "interpolate"
+          ],
           "components": [
             "Blur",
             "Circle",
@@ -10628,9 +11311,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -10643,7 +11330,6 @@
             "useSharedValue"
           ],
           "functions": [
-            "interpolate",
             "withSpring"
           ],
           "components": []
@@ -10652,7 +11338,9 @@
           "imports": [
             "useGestureHandler"
           ],
-          "hooks": [],
+          "hooks": [
+            "useGestureHandler"
+          ],
           "functions": [],
           "components": []
         }
@@ -10664,7 +11352,7 @@
       "total_packages": 6,
       "total_hooks": 6,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.771Z",
+      "extracted_at": "2025-11-01T11:08:09.183Z",
       "packages": [
         "@expo/vector-icons",
         "expo-blur",
@@ -10734,7 +11422,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -10754,9 +11444,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -10792,7 +11486,7 @@
       "total_packages": 9,
       "total_hooks": 7,
       "total_patterns": 9,
-      "extracted_at": "2025-10-31T20:06:00.776Z",
+      "extracted_at": "2025-11-01T11:08:09.188Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -10865,7 +11559,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "MaterialIcons"
+          ]
         },
         "@shopify/react-native-skia": {
           "imports": [
@@ -10877,7 +11573,11 @@
             "vec"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "fitbox",
+            "processTransform2d",
+            "vec"
+          ],
           "components": [
             "Canvas",
             "Path"
@@ -10895,7 +11595,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -10909,7 +11611,9 @@
             "useImperativeHandle",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef"
+          ],
           "components": []
         },
         "react-native": {
@@ -10927,7 +11631,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -10960,7 +11666,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -10971,7 +11679,7 @@
       "total_packages": 7,
       "total_hooks": 5,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.778Z",
+      "extracted_at": "2025-11-01T11:08:09.189Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -11029,7 +11737,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Octicons"
+          ]
         },
         "@shopify/react-native-skia": {
           "imports": [
@@ -11044,7 +11754,10 @@
             "vec"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "rect",
+            "vec"
+          ],
           "components": [
             "Blur",
             "Canvas",
@@ -11061,7 +11774,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -11078,7 +11793,9 @@
             "StyleSheet",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
           "components": []
         },
@@ -11089,7 +11806,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -11118,7 +11837,7 @@
       "total_packages": 7,
       "total_hooks": 4,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.779Z",
+      "extracted_at": "2025-11-01T11:08:09.191Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -11177,7 +11896,10 @@
             "rrect"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "rect",
+            "rrect"
+          ],
           "components": [
             "Canvas",
             "Group",
@@ -11198,7 +11920,9 @@
           "hooks": [
             "useMemo"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -11208,7 +11932,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -11217,7 +11943,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -11245,7 +11973,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -11256,7 +11986,7 @@
       "total_packages": 5,
       "total_hooks": 7,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:00.783Z",
+      "extracted_at": "2025-11-01T11:08:09.194Z",
       "packages": [
         "date-fns",
         "pressto",
@@ -11331,7 +12061,14 @@
             "subDays"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "addDays",
+            "eachDayOfInterval",
+            "endOfWeek",
+            "format",
+            "startOfWeek",
+            "subDays"
+          ],
           "components": []
         },
         "pressto": {
@@ -11340,7 +12077,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -11356,7 +12095,9 @@
             "useMemo",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef"
+          ],
           "components": []
         },
         "react-native": {
@@ -11366,9 +12107,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -11403,7 +12149,7 @@
       "total_packages": 8,
       "total_hooks": 7,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:00.790Z",
+      "extracted_at": "2025-11-01T11:08:09.198Z",
       "packages": [
         "@shopify/react-native-skia",
         "color",
@@ -11477,10 +12223,11 @@
             "vec"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "vec"
+          ],
           "components": [
             "Canvas",
-            "Image",
             "LinearGradient",
             "Rect"
           ]
@@ -11497,7 +12244,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Image"
+          ]
         },
         "pressto": {
           "imports": [
@@ -11505,7 +12254,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -11516,7 +12267,9 @@
             "useMemo"
           ],
           "functions": [],
-          "components": []
+          "components": [
+            "Fragment"
+          ]
         },
         "react-native": {
           "imports": [
@@ -11524,9 +12277,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -11534,7 +12291,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -11557,6 +12316,7 @@
             "useSharedValue"
           ],
           "functions": [
+            "convertToRGBA",
             "interpolate",
             "interpolateColor"
           ],
@@ -11574,7 +12334,7 @@
       "total_packages": 14,
       "total_hooks": 13,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.799Z",
+      "extracted_at": "2025-11-01T11:08:09.205Z",
       "packages": [
         "@expo/vector-icons",
         "@react-native-seoul/masonry-list",
@@ -11662,7 +12422,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "AntDesign"
+          ]
         },
         "@react-native-seoul/masonry-list": {
           "imports": [],
@@ -11674,7 +12436,9 @@
           "imports": [
             "useNavigation"
           ],
-          "hooks": [],
+          "hooks": [
+            "useNavigation"
+          ],
           "functions": [],
           "components": []
         },
@@ -11683,7 +12447,9 @@
             "createNativeStackNavigator"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "createNativeStackNavigator"
+          ],
           "components": []
         },
         "@shopify/react-native-skia": {
@@ -11696,12 +12462,14 @@
             "makeImageFromView"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "makeImageFromView"
+          ],
           "components": [
             "Canvas",
             "Fill",
-            "LinearGradient",
-            "Text"
+            "ImageShader",
+            "Shader"
           ]
         },
         "expo-linear-gradient": {
@@ -11710,15 +12478,21 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "jotai": {
           "imports": [
             "atom",
             "useAtom"
           ],
-          "hooks": [],
-          "functions": [],
+          "hooks": [
+            "useAtom"
+          ],
+          "functions": [
+            "atom"
+          ],
           "components": []
         },
         "pressto": {
@@ -11727,7 +12501,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -11743,7 +12519,9 @@
             "useMemo",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "createContext"
+          ],
           "components": []
         },
         "react-native": {
@@ -11755,9 +12533,15 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "TextInput",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -11765,7 +12549,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -11795,16 +12581,22 @@
             "SafeAreaProvider",
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "SafeAreaProvider"
+          ]
         },
         "react-native-worklets": {
           "imports": [
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -11815,7 +12607,7 @@
       "total_packages": 6,
       "total_hooks": 9,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.803Z",
+      "extracted_at": "2025-11-01T11:08:09.207Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -11891,7 +12683,9 @@
             "useRectBuffer",
             "useTexture"
           ],
-          "functions": [],
+          "functions": [
+            "vec"
+          ],
           "components": [
             "Atlas",
             "BlurMask",
@@ -11920,7 +12714,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -11929,7 +12725,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -11948,6 +12746,7 @@
           ],
           "functions": [
             "interpolate",
+            "makeMutable",
             "withSpring"
           ],
           "components": [
@@ -11959,7 +12758,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -11970,7 +12771,7 @@
       "total_packages": 9,
       "total_hooks": 12,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.808Z",
+      "extracted_at": "2025-11-01T11:08:09.211Z",
       "packages": [
         "@react-navigation/native",
         "@react-navigation/native-stack",
@@ -12046,7 +12847,9 @@
           "imports": [
             "useNavigation"
           ],
-          "hooks": [],
+          "hooks": [
+            "useNavigation"
+          ],
           "functions": [],
           "components": []
         },
@@ -12073,15 +12876,18 @@
           "hooks": [
             "useImage"
           ],
-          "functions": [],
+          "functions": [
+            "clamp",
+            "rect",
+            "skRect"
+          ],
           "components": [
             "Canvas",
             "FitBox",
             "Group",
             "Image",
             "Path",
-            "Rect",
-            "Text"
+            "Rect"
           ]
         },
         "@shopify/react-native-skia/lib/typescript/src/skia/types": {
@@ -12096,7 +12902,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -12114,7 +12922,9 @@
             "useRef",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef"
+          ],
           "components": []
         },
         "react-native": {
@@ -12126,9 +12936,16 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "ActivityIndicator",
+            "Modal",
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -12149,7 +12966,9 @@
           "imports": [
             "useGestureHandler"
           ],
-          "hooks": [],
+          "hooks": [
+            "useGestureHandler"
+          ],
           "functions": [],
           "components": []
         }
@@ -12161,7 +12980,7 @@
       "total_packages": 2,
       "total_hooks": 3,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.810Z",
+      "extracted_at": "2025-11-01T11:08:09.213Z",
       "packages": [
         "react-native",
         "react-native-reanimated"
@@ -12201,7 +13020,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -12232,7 +13053,7 @@
       "total_packages": 6,
       "total_hooks": 9,
       "total_patterns": 10,
-      "extracted_at": "2025-10-31T20:06:00.819Z",
+      "extracted_at": "2025-11-01T11:08:09.218Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-linear-gradient",
@@ -12314,11 +13135,12 @@
             "vec"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "vec"
+          ],
           "components": [
             "Blur",
             "Canvas",
-            "LinearGradient",
             "Rect",
             "SweepGradient"
           ]
@@ -12329,7 +13151,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "react": {
           "imports": [
@@ -12346,7 +13170,10 @@
             "useMemo",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef",
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -12357,7 +13184,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -12366,7 +13195,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -12406,7 +13237,7 @@
       "total_packages": 0,
       "total_hooks": 0,
       "total_patterns": 0,
-      "extracted_at": "2025-10-31T20:06:00.819Z",
+      "extracted_at": "2025-11-01T11:08:09.219Z",
       "packages": [],
       "hooks": [],
       "patterns": [],
@@ -12421,7 +13252,7 @@
       "total_packages": 10,
       "total_hooks": 9,
       "total_patterns": 4,
-      "extracted_at": "2025-10-31T20:06:00.825Z",
+      "extracted_at": "2025-11-01T11:08:09.223Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -12501,7 +13332,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "MaterialIcons"
+          ]
         },
         "@shopify/react-native-skia": {
           "imports": [
@@ -12518,15 +13351,17 @@
           "hooks": [
             "useImage"
           ],
-          "functions": [],
+          "functions": [
+            "rect",
+            "rrect"
+          ],
           "components": [
             "Blur",
             "Canvas",
             "Fill",
             "Group",
             "Image",
-            "LinearGradient",
-            "Text"
+            "LinearGradient"
           ]
         },
         "color": {
@@ -12549,7 +13384,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -12566,7 +13403,10 @@
             "useMemo",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "createContext",
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -12578,7 +13418,11 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "ScrollView",
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -12586,7 +13430,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -12600,6 +13446,7 @@
             "useDerivedValue"
           ],
           "functions": [
+            "makeMutable",
             "withTiming"
           ],
           "components": [
@@ -12612,9 +13459,13 @@
             "SafeAreaProvider",
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "SafeAreaProvider"
+          ]
         }
       }
     },
@@ -12624,7 +13475,7 @@
       "total_packages": 8,
       "total_hooks": 13,
       "total_patterns": 10,
-      "extracted_at": "2025-10-31T20:06:00.832Z",
+      "extracted_at": "2025-11-01T11:08:09.229Z",
       "packages": [
         "expo-blur",
         "react",
@@ -12753,7 +13604,13 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Modal",
+            "Pressable",
+            "ScrollView",
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -12762,7 +13619,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -12795,14 +13654,18 @@
           ],
           "functions": [
             "cancelAnimation",
+            "clamp",
             "interpolate",
+            "makeMutable",
+            "measure",
             "withDelay",
             "withSequence",
             "withSpring"
           ],
           "components": [
             "Animated.View",
-            "Animated.createAnimatedComponent"
+            "Animated.createAnimatedComponent",
+            "LayoutAnimationConfig"
           ]
         },
         "react-native-redash": {
@@ -12811,16 +13674,22 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "ReText"
+          ]
         },
         "react-native-safe-area-context": {
           "imports": [
             "SafeAreaProvider",
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "SafeAreaProvider"
+          ]
         },
         "react-native-worklets": {
           "imports": [
@@ -12828,7 +13697,10 @@
             "scheduleOnUI"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN",
+            "scheduleOnUI"
+          ],
           "components": []
         }
       }
@@ -12839,7 +13711,7 @@
       "total_packages": 16,
       "total_hooks": 14,
       "total_patterns": 9,
-      "extracted_at": "2025-10-31T20:06:00.844Z",
+      "extracted_at": "2025-11-01T11:08:09.233Z",
       "packages": [
         "@expo/vector-icons",
         "@react-navigation/native",
@@ -12940,13 +13812,17 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Ionicons"
+          ]
         },
         "@react-navigation/native": {
           "imports": [
             "useNavigation"
           ],
-          "hooks": [],
+          "hooks": [
+            "useNavigation"
+          ],
           "functions": [],
           "components": []
         },
@@ -12955,7 +13831,9 @@
             "createNativeStackNavigator"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "createNativeStackNavigator"
+          ],
           "components": []
         },
         "expo-blur": {
@@ -12978,13 +13856,17 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "expo-router": {
           "imports": [
             "useRouter"
           ],
-          "hooks": [],
+          "hooks": [
+            "useRouter"
+          ],
           "functions": [],
           "components": []
         },
@@ -13000,7 +13882,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableOpacity"
+          ]
         },
         "react": {
           "imports": [
@@ -13013,9 +13897,12 @@
           "hooks": [
             "useCallback",
             "useContext",
+            "useId",
             "useMemo"
           ],
-          "functions": [],
+          "functions": [
+            "createContext"
+          ],
           "components": []
         },
         "react-native": {
@@ -13024,9 +13911,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -13035,7 +13926,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -13065,6 +13958,8 @@
           "functions": [
             "cancelAnimation",
             "interpolate",
+            "makeMutable",
+            "measure",
             "withSequence",
             "withSpring",
             "withTiming"
@@ -13084,7 +13979,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         },
@@ -13093,7 +13990,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -13104,7 +14003,7 @@
       "total_packages": 9,
       "total_hooks": 1,
       "total_patterns": 2,
-      "extracted_at": "2025-10-31T20:06:00.847Z",
+      "extracted_at": "2025-11-01T11:08:09.235Z",
       "packages": [
         "expo-blur",
         "expo-glass-effect",
@@ -13148,7 +14047,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "BlurView"
+          ]
         },
         "expo-glass-effect": {
           "imports": [
@@ -13156,7 +14057,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GlassView"
+          ]
         },
         "expo-haptics": {
           "imports": [],
@@ -13170,7 +14073,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Image"
+          ]
         },
         "react": {
           "imports": [
@@ -13190,7 +14095,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -13199,7 +14106,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -13223,7 +14132,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -13234,7 +14145,7 @@
       "total_packages": 7,
       "total_hooks": 9,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.854Z",
+      "extracted_at": "2025-11-01T11:08:09.237Z",
       "packages": [
         "@shopify/react-native-skia",
         "color",
@@ -13314,7 +14225,10 @@
             "rect"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "fitbox",
+            "rect"
+          ],
           "components": [
             "Canvas",
             "Circle",
@@ -13335,7 +14249,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -13362,7 +14278,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -13370,7 +14288,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -13408,7 +14328,7 @@
       "total_packages": 5,
       "total_hooks": 5,
       "total_patterns": 4,
-      "extracted_at": "2025-10-31T20:06:00.855Z",
+      "extracted_at": "2025-11-01T11:08:09.238Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -13462,7 +14382,9 @@
             "vec"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "vec"
+          ],
           "components": [
             "Blur",
             "ColorMatrix",
@@ -13488,9 +14410,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -13511,7 +14437,9 @@
           "imports": [
             "useGestureHandler"
           ],
-          "hooks": [],
+          "hooks": [
+            "useGestureHandler"
+          ],
           "functions": [],
           "components": []
         }
@@ -13523,7 +14451,7 @@
       "total_packages": 6,
       "total_hooks": 8,
       "total_patterns": 9,
-      "extracted_at": "2025-10-31T20:06:00.859Z",
+      "extracted_at": "2025-11-01T11:08:09.240Z",
       "packages": [
         "date-fns",
         "expo-haptics",
@@ -13586,7 +14514,10 @@
             "startOfWeek"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "format",
+            "startOfWeek"
+          ],
           "components": []
         },
         "expo-haptics": {
@@ -13614,9 +14545,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -13651,7 +14587,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -13662,7 +14600,7 @@
       "total_packages": 8,
       "total_hooks": 11,
       "total_patterns": 12,
-      "extracted_at": "2025-10-31T20:06:00.874Z",
+      "extracted_at": "2025-11-01T11:08:09.244Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -13758,7 +14696,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "FontAwesome5"
+          ]
         },
         "@shopify/react-native-skia": {
           "imports": [
@@ -13773,14 +14713,17 @@
             "vec"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "interpolate",
+            "vec"
+          ],
           "components": [
             "BlurMask",
             "Canvas",
             "Group",
             "Path",
-            "SweepGradient",
-            "Text"
+            "SkiaCircle",
+            "SweepGradient"
           ]
         },
         "pressto": {
@@ -13788,7 +14731,9 @@
             "createAnimatedPressable"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "createAnimatedPressable"
+          ],
           "components": []
         },
         "react": {
@@ -13806,7 +14751,10 @@
             "useImperativeHandle",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef",
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -13816,9 +14764,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -13842,7 +14795,6 @@
           ],
           "functions": [
             "cancelAnimation",
-            "interpolate",
             "withRepeat",
             "withSequence",
             "withSpring",
@@ -13856,7 +14808,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         },
@@ -13865,7 +14819,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -13876,7 +14832,7 @@
       "total_packages": 6,
       "total_hooks": 6,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.877Z",
+      "extracted_at": "2025-11-01T11:08:09.247Z",
       "packages": [
         "@expo/vector-icons",
         "expo-blur",
@@ -13942,7 +14898,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Entypo"
+          ]
         },
         "expo-blur": {
           "imports": [
@@ -13958,7 +14916,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -13972,7 +14932,9 @@
             "useEffect",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -13983,7 +14945,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -14020,7 +14985,7 @@
       "total_packages": 5,
       "total_hooks": 7,
       "total_patterns": 4,
-      "extracted_at": "2025-10-31T20:06:00.881Z",
+      "extracted_at": "2025-11-01T11:08:09.250Z",
       "packages": [
         "@shopify/react-native-skia",
         "pressto",
@@ -14097,7 +15062,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -14111,7 +15078,9 @@
             "useMemo",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -14121,7 +15090,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -14142,7 +15113,8 @@
             "withTiming"
           ],
           "components": [
-            "Animated.View"
+            "Animated.View",
+            "LayoutAnimationConfig"
           ]
         }
       }
@@ -14153,7 +15125,7 @@
       "total_packages": 5,
       "total_hooks": 4,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:00.883Z",
+      "extracted_at": "2025-11-01T11:08:09.252Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -14216,7 +15188,9 @@
             "vec"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "vec"
+          ],
           "components": [
             "Blur",
             "Canvas",
@@ -14237,7 +15211,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableWithoutFeedback"
+          ]
         },
         "react-native": {
           "imports": [
@@ -14246,9 +15222,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -14281,7 +15261,7 @@
       "total_packages": 6,
       "total_hooks": 9,
       "total_patterns": 10,
-      "extracted_at": "2025-10-31T20:06:00.886Z",
+      "extracted_at": "2025-11-01T11:08:09.254Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -14353,7 +15333,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "AntDesign",
+            "FontAwesome6"
+          ]
         },
         "@shopify/react-native-skia": {
           "imports": [
@@ -14369,7 +15352,9 @@
             "useRSXformBuffer",
             "useTexture"
           ],
-          "functions": [],
+          "functions": [
+            "rect"
+          ],
           "components": [
             "Atlas",
             "Canvas",
@@ -14383,7 +15368,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -14399,7 +15386,9 @@
             "useMemo",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef"
+          ],
           "components": []
         },
         "react-native": {
@@ -14409,7 +15398,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -14445,7 +15436,7 @@
       "total_packages": 10,
       "total_hooks": 12,
       "total_patterns": 9,
-      "extracted_at": "2025-10-31T20:06:00.891Z",
+      "extracted_at": "2025-11-01T11:08:09.259Z",
       "packages": [
         "@expo/vector-icons",
         "expo-blur",
@@ -14536,7 +15527,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "MaterialCommunityIcons"
+          ]
         },
         "expo-blur": {
           "imports": [
@@ -14558,7 +15551,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "pressto": {
           "imports": [
@@ -14566,7 +15561,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -14587,7 +15584,10 @@
             "useRef",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef",
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -14601,7 +15601,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -14611,7 +15614,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector",
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -14648,7 +15654,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -14659,7 +15667,7 @@
       "total_packages": 10,
       "total_hooks": 11,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.896Z",
+      "extracted_at": "2025-11-01T11:08:09.262Z",
       "packages": [
         "@expo/vector-icons",
         "expo-blur",
@@ -14738,7 +15746,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "FontAwesome"
+          ]
         },
         "expo-blur": {
           "imports": [
@@ -14746,7 +15756,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "BlurView"
+          ]
         },
         "expo-haptics": {
           "imports": [],
@@ -14760,7 +15772,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Image"
+          ]
         },
         "pressto": {
           "imports": [
@@ -14768,7 +15782,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableOpacity"
+          ]
         },
         "react": {
           "imports": [
@@ -14784,7 +15800,9 @@
             "useMemo",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "createContext"
+          ],
           "components": []
         },
         "react-native": {
@@ -14794,9 +15812,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -14806,7 +15829,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector",
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -14829,6 +15855,7 @@
             "useSharedValue"
           ],
           "functions": [
+            "measure",
             "withSpring",
             "withTiming"
           ],
@@ -14841,7 +15868,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -14852,7 +15881,7 @@
       "total_packages": 8,
       "total_hooks": 8,
       "total_patterns": 9,
-      "extracted_at": "2025-10-31T20:06:00.911Z",
+      "extracted_at": "2025-11-01T11:08:09.267Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -14948,14 +15977,19 @@
           "hooks": [
             "useImage"
           ],
-          "functions": [],
+          "functions": [
+            "rect",
+            "rrect"
+          ],
           "components": [
             "Canvas",
             "Fill",
             "Group",
+            "ImageShader",
             "LinearGradient",
             "Path",
-            "Rect"
+            "Rect",
+            "Shader"
           ]
         },
         "expo-haptics": {
@@ -14972,7 +16006,9 @@
           "hooks": [
             "useMemo"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -14982,9 +16018,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -14994,7 +16034,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector",
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -15016,6 +16059,7 @@
           ],
           "functions": [
             "cancelAnimation",
+            "clamp",
             "interpolate",
             "interpolateColor",
             "withSpring"
@@ -15029,16 +16073,22 @@
             "SafeAreaProvider",
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "SafeAreaProvider"
+          ]
         },
         "react-native-worklets": {
           "imports": [
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -15049,7 +16099,7 @@
       "total_packages": 9,
       "total_hooks": 10,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:00.916Z",
+      "extracted_at": "2025-11-01T11:08:09.270Z",
       "packages": [
         "@expo/ui/swift-ui",
         "@shopify/react-native-skia",
@@ -15121,7 +16171,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Host",
+            "Slider"
+          ]
         },
         "@shopify/react-native-skia": {
           "imports": [
@@ -15130,11 +16183,12 @@
             "vec"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "vec"
+          ],
           "components": [
             "DiscretePathEffect",
-            "LinearGradient",
-            "Text"
+            "LinearGradient"
           ]
         },
         "react": {
@@ -15162,9 +16216,17 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "ScrollView",
+            "Text",
+            "TextInput",
+            "TouchableWithoutFeedback",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -15173,7 +16235,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-qrcode-skia": {
           "imports": [],
@@ -15212,7 +16276,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         },
@@ -15221,7 +16287,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -15232,7 +16300,7 @@
       "total_packages": 6,
       "total_hooks": 11,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.930Z",
+      "extracted_at": "2025-11-01T11:08:09.274Z",
       "packages": [
         "@shopify/react-native-skia",
         "color",
@@ -15303,13 +16371,14 @@
           "hooks": [
             "useFont"
           ],
-          "functions": [],
+          "functions": [
+            "interpolate"
+          ],
           "components": [
             "Canvas",
             "Group",
             "Path",
-            "Points",
-            "Text"
+            "Points"
           ]
         },
         "color": {
@@ -15324,7 +16393,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -15349,9 +16420,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -15366,7 +16442,6 @@
           ],
           "functions": [
             "cancelAnimation",
-            "interpolate",
             "withSpring"
           ],
           "components": []
@@ -15379,7 +16454,7 @@
       "total_packages": 7,
       "total_hooks": 8,
       "total_patterns": 10,
-      "extracted_at": "2025-10-31T20:06:00.938Z",
+      "extracted_at": "2025-11-01T11:08:09.276Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -15452,8 +16527,7 @@
           "components": [
             "Canvas",
             "Path",
-            "RoundedRect",
-            "Text"
+            "RoundedRect"
           ]
         },
         "expo-haptics": {
@@ -15468,7 +16542,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -15491,7 +16567,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -15530,7 +16609,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -15541,7 +16622,7 @@
       "total_packages": 7,
       "total_hooks": 9,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:00.951Z",
+      "extracted_at": "2025-11-01T11:08:09.279Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -15607,7 +16688,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "AntDesign"
+          ]
         },
         "pressto": {
           "imports": [
@@ -15615,7 +16698,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableOpacity"
+          ]
         },
         "react": {
           "imports": [
@@ -15629,7 +16714,9 @@
             "useMemo",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -15640,7 +16727,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -15675,13 +16765,17 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "ReText"
+          ]
         },
         "react-native-safe-area-context": {
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         }
@@ -15693,7 +16787,7 @@
       "total_packages": 7,
       "total_hooks": 9,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:00.956Z",
+      "extracted_at": "2025-11-01T11:08:09.282Z",
       "packages": [
         "expo-linear-gradient",
         "pressto",
@@ -15763,7 +16857,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "pressto": {
           "imports": [
@@ -15771,7 +16867,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -15788,7 +16886,10 @@
             "useMemo",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef",
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -15800,9 +16901,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -15811,7 +16917,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -15846,7 +16954,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -15857,7 +16967,7 @@
       "total_packages": 10,
       "total_hooks": 12,
       "total_patterns": 9,
-      "extracted_at": "2025-10-31T20:06:00.961Z",
+      "extracted_at": "2025-11-01T11:08:09.285Z",
       "packages": [
         "@expo/vector-icons",
         "expo-image",
@@ -15937,7 +17047,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "AntDesign",
+            "MaterialIcons"
+          ]
         },
         "expo-image": {
           "imports": [
@@ -15945,7 +17058,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Image"
+          ]
         },
         "pressto": {
           "imports": [
@@ -15953,7 +17068,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -15969,7 +17086,9 @@
             "useMemo",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -15978,9 +17097,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -15989,7 +17112,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -16013,6 +17138,7 @@
             "useSharedValue"
           ],
           "functions": [
+            "scrollTo",
             "withSpring",
             "withTiming"
           ],
@@ -16027,13 +17153,17 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "ReText"
+          ]
         },
         "react-native-safe-area-context": {
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         },
@@ -16042,7 +17172,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -16053,7 +17185,7 @@
       "total_packages": 7,
       "total_hooks": 9,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.968Z",
+      "extracted_at": "2025-11-01T11:08:09.287Z",
       "packages": [
         "@expo/vector-icons",
         "expo-linear-gradient",
@@ -16118,7 +17250,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Ionicons"
+          ]
         },
         "expo-linear-gradient": {
           "imports": [
@@ -16126,7 +17260,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "pressto": {
           "imports": [
@@ -16134,7 +17270,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableOpacity"
+          ]
         },
         "react": {
           "imports": [
@@ -16155,7 +17293,9 @@
             "StyleSheet",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
           "components": []
         },
@@ -16179,6 +17319,7 @@
           "functions": [
             "cancelAnimation",
             "interpolate",
+            "makeMutable",
             "withRepeat",
             "withSequence",
             "withTiming"
@@ -16191,7 +17332,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         }
@@ -16203,7 +17346,7 @@
       "total_packages": 8,
       "total_hooks": 1,
       "total_patterns": 0,
-      "extracted_at": "2025-10-31T20:06:00.975Z",
+      "extracted_at": "2025-11-01T11:08:09.291Z",
       "packages": [
         "@react-native-seoul/masonry-list",
         "@react-navigation/native",
@@ -16245,7 +17388,9 @@
           "imports": [
             "useNavigation"
           ],
-          "hooks": [],
+          "hooks": [
+            "useNavigation"
+          ],
           "functions": [],
           "components": []
         },
@@ -16254,7 +17399,9 @@
             "createNativeStackNavigator"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "createNativeStackNavigator"
+          ],
           "components": []
         },
         "expo-image": {
@@ -16271,14 +17418,18 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableOpacity"
+          ]
         },
         "react": {
           "imports": [
             "memo"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -16289,7 +17440,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -16311,7 +17464,7 @@
       "total_packages": 5,
       "total_hooks": 5,
       "total_patterns": 4,
-      "extracted_at": "2025-10-31T20:06:00.978Z",
+      "extracted_at": "2025-11-01T11:08:09.292Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -16367,8 +17520,12 @@
           "hooks": [
             "useImage"
           ],
-          "functions": [],
+          "functions": [
+            "rect",
+            "rrect"
+          ],
           "components": [
+            "BackdropBlur",
             "BlurMask",
             "Image",
             "RoundedRect"
@@ -16379,14 +17536,18 @@
             "memo"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
           "imports": [
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
           "components": []
         },
@@ -16409,7 +17570,9 @@
           "imports": [
             "useGestureHandler"
           ],
-          "hooks": [],
+          "hooks": [
+            "useGestureHandler"
+          ],
           "functions": [],
           "components": []
         }
@@ -16421,7 +17584,7 @@
       "total_packages": 6,
       "total_hooks": 4,
       "total_patterns": 4,
-      "extracted_at": "2025-10-31T20:06:00.983Z",
+      "extracted_at": "2025-11-01T11:08:09.295Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -16491,6 +17654,7 @@
             "Circle",
             "Group",
             "Path",
+            "Shader",
             "Shadow",
             "SweepGradient"
           ]
@@ -16507,9 +17671,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -16519,7 +17687,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector",
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -16542,7 +17713,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -16553,7 +17726,7 @@
       "total_packages": 5,
       "total_hooks": 5,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.988Z",
+      "extracted_at": "2025-11-01T11:08:09.297Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -16636,7 +17809,9 @@
           "hooks": [
             "useMemo"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -16645,9 +17820,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -16657,7 +17836,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector",
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -16685,7 +17867,7 @@
       "total_packages": 6,
       "total_hooks": 4,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:00.992Z",
+      "extracted_at": "2025-11-01T11:08:09.298Z",
       "packages": [
         "@expo/vector-icons",
         "color",
@@ -16739,7 +17921,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "AntDesign",
+            "MaterialIcons"
+          ]
         },
         "color": {
           "imports": [],
@@ -16753,7 +17938,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -16764,7 +17951,9 @@
           "hooks": [
             "useCallback"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -16775,7 +17964,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -16808,7 +18000,7 @@
       "total_packages": 10,
       "total_hooks": 11,
       "total_patterns": 9,
-      "extracted_at": "2025-10-31T20:06:00.997Z",
+      "extracted_at": "2025-11-01T11:08:09.302Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-blur",
@@ -16900,14 +18092,15 @@
             "rrect"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "rect",
+            "rrect"
+          ],
           "components": [
             "BlurMask",
             "Canvas",
-            "LinearGradient",
             "Path",
-            "RoundedRect",
-            "Text"
+            "RoundedRect"
           ]
         },
         "expo-blur": {
@@ -16930,7 +18123,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "pressto": {
           "imports": [
@@ -16938,7 +18133,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -16955,7 +18152,10 @@
             "useMemo",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef",
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -16966,9 +18166,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -16978,7 +18183,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -17011,7 +18218,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -17022,7 +18231,7 @@
       "total_packages": 5,
       "total_hooks": 4,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:00.999Z",
+      "extracted_at": "2025-11-01T11:08:09.303Z",
       "packages": [
         "@shopify/react-native-skia",
         "pressto",
@@ -17079,8 +18288,13 @@
             "usePathValue",
             "vec"
           ],
-          "hooks": [],
-          "functions": [],
+          "hooks": [
+            "usePathValue"
+          ],
+          "functions": [
+            "interpolate",
+            "vec"
+          ],
           "components": [
             "BlurMask",
             "Canvas",
@@ -17095,7 +18309,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableWithoutFeedback"
+          ]
         },
         "react": {
           "imports": [
@@ -17115,7 +18331,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -17129,7 +18347,7 @@
             "useSharedValue"
           ],
           "functions": [
-            "interpolate",
+            "makeMutable",
             "withTiming"
           ],
           "components": []
@@ -17142,7 +18360,7 @@
       "total_packages": 6,
       "total_hooks": 2,
       "total_patterns": 3,
-      "extracted_at": "2025-10-31T20:06:01.000Z",
+      "extracted_at": "2025-11-01T11:08:09.304Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -17189,7 +18407,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "AntDesign"
+          ]
         },
         "pressto": {
           "imports": [
@@ -17197,7 +18417,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -17207,7 +18429,9 @@
           "hooks": [
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -17218,7 +18442,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -17226,7 +18453,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -17256,7 +18485,7 @@
       "total_packages": 7,
       "total_hooks": 12,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:01.008Z",
+      "extracted_at": "2025-11-01T11:08:09.308Z",
       "packages": [
         "pressto",
         "react",
@@ -17327,7 +18556,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -17348,7 +18579,10 @@
             "useRef",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "createContext",
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -17358,9 +18592,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -17370,7 +18609,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector",
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -17397,14 +18639,18 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "SafeAreaProvider"
+          ]
         },
         "react-native-worklets": {
           "imports": [
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -17415,7 +18661,7 @@
       "total_packages": 5,
       "total_hooks": 8,
       "total_patterns": 9,
-      "extracted_at": "2025-10-31T20:06:01.013Z",
+      "extracted_at": "2025-11-01T11:08:09.310Z",
       "packages": [
         "expo-haptics",
         "react",
@@ -17486,7 +18732,9 @@
             "useCallback",
             "useMemo"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -17495,9 +18743,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -17535,7 +18787,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -17546,7 +18800,7 @@
       "total_packages": 2,
       "total_hooks": 4,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:01.015Z",
+      "extracted_at": "2025-11-01T11:08:09.311Z",
       "packages": [
         "react-native",
         "react-native-reanimated"
@@ -17588,7 +18842,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -17621,7 +18877,7 @@
       "total_packages": 6,
       "total_hooks": 14,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:01.019Z",
+      "extracted_at": "2025-11-01T11:08:09.314Z",
       "packages": [
         "@expo/vector-icons",
         "@expo/vector-icons/build/createIconSet",
@@ -17698,7 +18954,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Ionicons"
+          ]
         },
         "@expo/vector-icons/build/createIconSet": {
           "imports": [],
@@ -17712,8 +18970,12 @@
             "createAnimatedPressable"
           ],
           "hooks": [],
-          "functions": [],
-          "components": []
+          "functions": [
+            "createAnimatedPressable"
+          ],
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -17734,7 +18996,9 @@
             "useRef",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "createContext"
+          ],
           "components": []
         },
         "react-native": {
@@ -17744,9 +19008,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -17780,7 +19049,7 @@
       "total_packages": 6,
       "total_hooks": 5,
       "total_patterns": 6,
-      "extracted_at": "2025-10-31T20:06:01.022Z",
+      "extracted_at": "2025-11-01T11:08:09.316Z",
       "packages": [
         "@expo/vector-icons",
         "expo-blur",
@@ -17840,7 +19109,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Feather",
+            "Octicons"
+          ]
         },
         "expo-blur": {
           "imports": [
@@ -17855,7 +19127,9 @@
             "createAnimatedPressable"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "createAnimatedPressable"
+          ],
           "components": []
         },
         "react": {
@@ -17868,7 +19142,9 @@
             "useCallback",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -17880,7 +19156,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -17914,7 +19193,7 @@
       "total_packages": 6,
       "total_hooks": 6,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:01.024Z",
+      "extracted_at": "2025-11-01T11:08:09.318Z",
       "packages": [
         "@shopify/react-native-skia",
         "pressto",
@@ -17984,7 +19263,9 @@
           "hooks": [
             "useFont"
           ],
-          "functions": [],
+          "functions": [
+            "vec"
+          ],
           "components": [
             "Canvas",
             "CornerPathEffect",
@@ -18000,7 +19281,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -18012,7 +19295,9 @@
             "useMemo",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -18022,9 +19307,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -18032,7 +19321,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -18061,7 +19352,7 @@
       "total_packages": 7,
       "total_hooks": 7,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:01.031Z",
+      "extracted_at": "2025-11-01T11:08:09.320Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -18123,7 +19414,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "AntDesign"
+          ]
         },
         "pressto": {
           "imports": [
@@ -18131,7 +19424,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -18143,7 +19438,9 @@
             "useCallback",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -18152,9 +19449,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -18162,7 +19463,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -18195,7 +19498,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -18206,7 +19511,7 @@
       "total_packages": 5,
       "total_hooks": 5,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:01.037Z",
+      "extracted_at": "2025-11-01T11:08:09.322Z",
       "packages": [
         "expo-image",
         "react",
@@ -18259,7 +19564,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Image"
+          ]
         },
         "react": {
           "imports": [
@@ -18269,7 +19576,9 @@
           "hooks": [
             "useMemo"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -18278,9 +19587,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -18290,7 +19603,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector",
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -18323,7 +19639,7 @@
       "total_packages": 8,
       "total_hooks": 9,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:01.050Z",
+      "extracted_at": "2025-11-01T11:08:09.327Z",
       "packages": [
         "@expo/vector-icons",
         "expo-haptics",
@@ -18416,7 +19732,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Ionicons"
+          ]
         },
         "expo-haptics": {
           "imports": [],
@@ -18430,7 +19748,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "pressto": {
           "imports": [
@@ -18438,7 +19758,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -18459,7 +19781,10 @@
             "useRef",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef",
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -18474,7 +19799,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-fast-confetti": {
           "imports": [
@@ -18482,7 +19810,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PIConfetti"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -18519,7 +19849,7 @@
       "total_packages": 8,
       "total_hooks": 10,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:01.053Z",
+      "extracted_at": "2025-11-01T11:08:09.329Z",
       "packages": [
         "@expo/vector-icons",
         "expo-image",
@@ -18590,7 +19920,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "AntDesign"
+          ]
         },
         "expo-image": {
           "imports": [
@@ -18598,7 +19930,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Image"
+          ]
         },
         "pressto": {
           "imports": [
@@ -18606,7 +19940,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -18625,7 +19961,10 @@
             "useMemo",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "createRef",
+            "forwardRef"
+          ],
           "components": []
         },
         "react-native": {
@@ -18634,9 +19973,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -18645,7 +19988,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -18680,7 +20025,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -18691,7 +20038,7 @@
       "total_packages": 5,
       "total_hooks": 4,
       "total_patterns": 4,
-      "extracted_at": "2025-10-31T20:06:01.058Z",
+      "extracted_at": "2025-11-01T11:08:09.331Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -18737,7 +20084,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "AntDesign"
+          ]
         },
         "pressto": {
           "imports": [
@@ -18745,7 +20094,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -18763,9 +20114,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -18795,7 +20150,7 @@
       "total_packages": 11,
       "total_hooks": 15,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:01.069Z",
+      "extracted_at": "2025-11-01T11:08:09.336Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -18890,7 +20245,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "MaterialIcons"
+          ]
         },
         "@shopify/react-native-skia": {
           "imports": [
@@ -18901,7 +20258,9 @@
             "makeImageFromView"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "makeImageFromView"
+          ],
           "components": [
             "Canvas",
             "Group",
@@ -18926,7 +20285,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableOpacity"
+          ]
         },
         "react": {
           "imports": [
@@ -18947,7 +20308,10 @@
             "useRef",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "createContext",
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -18957,9 +20321,13 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -18968,7 +20336,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -18993,6 +20363,8 @@
           ],
           "functions": [
             "interpolate",
+            "makeMutable",
+            "measure",
             "withSpring",
             "withTiming"
           ],
@@ -19006,16 +20378,22 @@
             "SafeAreaProvider",
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "SafeAreaProvider"
+          ]
         },
         "react-native-worklets": {
           "imports": [
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -19026,7 +20404,7 @@
       "total_packages": 7,
       "total_hooks": 6,
       "total_patterns": 4,
-      "extracted_at": "2025-10-31T20:06:01.071Z",
+      "extracted_at": "2025-11-01T11:08:09.338Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -19113,7 +20491,9 @@
           "imports": [
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
           "components": []
         },
@@ -19136,7 +20516,9 @@
           "imports": [
             "useGestureHandler"
           ],
-          "hooks": [],
+          "hooks": [
+            "useGestureHandler"
+          ],
           "functions": [],
           "components": []
         },
@@ -19145,7 +20527,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -19156,7 +20540,7 @@
       "total_packages": 8,
       "total_hooks": 6,
       "total_patterns": 7,
-      "extracted_at": "2025-10-31T20:06:01.074Z",
+      "extracted_at": "2025-11-01T11:08:09.341Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -19235,7 +20619,9 @@
             "interpolate"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "interpolate"
+          ],
           "components": [
             "BlurMask",
             "Canvas",
@@ -19245,8 +20631,7 @@
             "Mask",
             "Path",
             "Rect",
-            "RoundedRect",
-            "Text"
+            "RoundedRect"
           ]
         },
         "expo-haptics": {
@@ -19263,7 +20648,9 @@
           "hooks": [
             "useMemo"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -19275,7 +20662,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -19284,7 +20674,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-qrcode-skia": {
           "imports": [],
@@ -19312,7 +20704,6 @@
           ],
           "functions": [
             "cancelAnimation",
-            "interpolate",
             "withDecay",
             "withSpring"
           ],
@@ -19325,7 +20716,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -19336,7 +20729,7 @@
       "total_packages": 10,
       "total_hooks": 17,
       "total_patterns": 11,
-      "extracted_at": "2025-10-31T20:06:01.082Z",
+      "extracted_at": "2025-11-01T11:08:09.347Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -19447,12 +20840,14 @@
             "vec"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "vec"
+          ],
           "components": [
             "Blur",
             "Canvas",
             "Rect",
-            "Text"
+            "Shader"
           ]
         },
         "expo-haptics": {
@@ -19468,8 +20863,14 @@
             "useAtomValue",
             "useSetAtom"
           ],
-          "hooks": [],
-          "functions": [],
+          "hooks": [
+            "useAtom",
+            "useAtomValue",
+            "useSetAtom"
+          ],
+          "functions": [
+            "atom"
+          ],
           "components": []
         },
         "react": {
@@ -19486,7 +20887,9 @@
             "useMemo",
             "useRef"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -19497,9 +20900,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -19508,7 +20916,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -19537,6 +20947,7 @@
           ],
           "functions": [
             "interpolate",
+            "scrollTo",
             "withRepeat",
             "withSpring",
             "withTiming"
@@ -19551,14 +20962,18 @@
             "withPause"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "withPause"
+          ],
           "components": []
         },
         "react-native-safe-area-context": {
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         },
@@ -19567,7 +20982,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -19578,7 +20995,7 @@
       "total_packages": 7,
       "total_hooks": 11,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:01.085Z",
+      "extracted_at": "2025-11-01T11:08:09.350Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -19647,7 +21064,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "AntDesign"
+          ]
         },
         "pressto": {
           "imports": [
@@ -19655,7 +21074,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -19675,7 +21096,9 @@
             "useRef",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "createContext"
+          ],
           "components": []
         },
         "react-native": {
@@ -19685,9 +21108,14 @@
             "View",
             "useWindowDimensions"
           ],
-          "hooks": [],
+          "hooks": [
+            "useWindowDimensions"
+          ],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -19697,7 +21125,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector",
+            "GestureHandlerRootView"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -19723,7 +21154,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -19734,7 +21167,7 @@
       "total_packages": 9,
       "total_hooks": 12,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:01.090Z",
+      "extracted_at": "2025-11-01T11:08:09.353Z",
       "packages": [
         "@expo/vector-icons",
         "color",
@@ -19814,7 +21247,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "MaterialIcons"
+          ]
         },
         "color": {
           "imports": [],
@@ -19828,7 +21263,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -19847,7 +21284,10 @@
             "useMemo",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "createContext",
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -19858,7 +21298,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -19867,7 +21309,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -19889,6 +21333,7 @@
           ],
           "functions": [
             "interpolate",
+            "makeMutable",
             "withSpring",
             "withTiming"
           ],
@@ -19901,7 +21346,9 @@
           "imports": [
             "useSafeAreaInsets"
           ],
-          "hooks": [],
+          "hooks": [
+            "useSafeAreaInsets"
+          ],
           "functions": [],
           "components": []
         },
@@ -19910,7 +21357,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -19921,7 +21370,7 @@
       "total_packages": 9,
       "total_hooks": 6,
       "total_patterns": 8,
-      "extracted_at": "2025-10-31T20:06:01.094Z",
+      "extracted_at": "2025-11-01T11:08:09.356Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -19996,7 +21445,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "AntDesign",
+            "Entypo"
+          ]
         },
         "@shopify/react-native-skia": {
           "imports": [
@@ -20010,8 +21462,7 @@
           "components": [
             "Canvas",
             "Group",
-            "Path",
-            "Text"
+            "Path"
           ]
         },
         "expo-haptics": {
@@ -20047,7 +21498,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -20056,7 +21510,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -20078,6 +21534,7 @@
           ],
           "functions": [
             "cancelAnimation",
+            "clamp",
             "interpolate",
             "withSpring"
           ],
@@ -20090,7 +21547,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }
@@ -20101,7 +21560,7 @@
       "total_packages": 6,
       "total_hooks": 12,
       "total_patterns": 9,
-      "extracted_at": "2025-10-31T20:06:01.105Z",
+      "extracted_at": "2025-11-01T11:08:09.362Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-router",
@@ -20184,7 +21643,9 @@
             "Skia",
             "usePathInterpolation"
           ],
-          "hooks": [],
+          "hooks": [
+            "usePathInterpolation"
+          ],
           "functions": [],
           "components": [
             "Canvas",
@@ -20195,7 +21656,9 @@
           "imports": [
             "useFocusEffect"
           ],
-          "hooks": [],
+          "hooks": [
+            "useFocusEffect"
+          ],
           "functions": [],
           "components": []
         },
@@ -20213,7 +21676,9 @@
             "useRef",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "forwardRef"
+          ],
           "components": []
         },
         "react-native": {
@@ -20225,13 +21690,19 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "TextInput",
+            "TouchableWithoutFeedback",
+            "View"
+          ]
         },
         "react-native-keyboard-controller": {
           "imports": [
             "useReanimatedKeyboardAnimation"
           ],
-          "hooks": [],
+          "hooks": [
+            "useReanimatedKeyboardAnimation"
+          ],
           "functions": [],
           "components": []
         },
@@ -20274,7 +21745,7 @@
       "total_packages": 5,
       "total_hooks": 8,
       "total_patterns": 5,
-      "extracted_at": "2025-10-31T20:06:01.100Z",
+      "extracted_at": "2025-11-01T11:08:09.358Z",
       "packages": [
         "expo-router",
         "react",
@@ -20333,7 +21804,9 @@
           "imports": [
             "useFocusEffect"
           ],
-          "hooks": [],
+          "hooks": [
+            "useFocusEffect"
+          ],
           "functions": [],
           "components": []
         },
@@ -20360,13 +21833,19 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "TextInput",
+            "View"
+          ]
         },
         "react-native-keyboard-controller": {
           "imports": [
             "useReanimatedKeyboardAnimation"
           ],
-          "hooks": [],
+          "hooks": [
+            "useReanimatedKeyboardAnimation"
+          ],
           "functions": [],
           "components": []
         },
@@ -20405,7 +21884,7 @@
       "total_packages": 12,
       "total_hooks": 7,
       "total_patterns": 9,
-      "extracted_at": "2025-10-31T20:06:01.115Z",
+      "extracted_at": "2025-11-01T11:08:09.365Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -20496,7 +21975,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "MaterialCommunityIcons"
+          ]
         },
         "@shopify/react-native-skia": {
           "imports": [
@@ -20509,13 +21990,14 @@
             "rrect"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "rect",
+            "rrect"
+          ],
           "components": [
             "Canvas",
-            "LinearGradient",
             "Path",
-            "Rect",
-            "Text"
+            "Rect"
           ]
         },
         "color": {
@@ -20544,7 +22026,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "LinearGradient"
+          ]
         },
         "pressto": {
           "imports": [
@@ -20552,7 +22036,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "PressableScale"
+          ]
         },
         "react": {
           "imports": [
@@ -20566,7 +22052,9 @@
             "useMemo",
             "useState"
           ],
-          "functions": [],
+          "functions": [
+            "memo"
+          ],
           "components": []
         },
         "react-native": {
@@ -20579,7 +22067,10 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "Text",
+            "View"
+          ]
         },
         "react-native-gesture-handler": {
           "imports": [
@@ -20588,7 +22079,9 @@
           ],
           "hooks": [],
           "functions": [],
-          "components": []
+          "components": [
+            "GestureDetector"
+          ]
         },
         "react-native-reanimated": {
           "imports": [
@@ -20612,7 +22105,9 @@
           ],
           "functions": [
             "cancelAnimation",
+            "clamp",
             "interpolate",
+            "isSharedValue",
             "withSpring",
             "withTiming"
           ],
@@ -20626,7 +22121,9 @@
             "scheduleOnRN"
           ],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
           "components": []
         }
       }

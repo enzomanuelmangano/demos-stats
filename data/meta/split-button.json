@@ -2,7 +2,7 @@
   "animation_slug": "split-button",
   "content_hash": "35a6c2f544fcdff0ab0d9c6a5cdfad3aed0d672ce2b16f22ccb3e4e11fc3ec1e",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:01.000Z",
+  "extracted_at": "2025-11-01T11:08:09.304Z",
   "file_structure": {
     "entry": "index.tsx",
     "components": [
@@ -38,7 +38,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "AntDesign"
+      ]
     },
     "pressto": {
       "imports": [
@@ -46,7 +48,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "PressableScale"
+      ]
     },
     "react": {
       "imports": [
@@ -56,7 +60,9 @@
       "hooks": [
         "useState"
       ],
-      "functions": [],
+      "functions": [
+        "memo"
+      ],
       "components": []
     },
     "react-native": {
@@ -67,7 +73,10 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "Text",
+        "View"
+      ]
     },
     "react-native-gesture-handler": {
       "imports": [
@@ -75,7 +84,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "GestureHandlerRootView"
+      ]
     },
     "react-native-reanimated": {
       "imports": [

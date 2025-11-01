@@ -2,7 +2,7 @@
   "animation_slug": "interaction-appearance",
   "content_hash": "fff3f1918377edddf981c021037b661ab78bc83d96cc129151674a9d5458a97e",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.825Z",
+  "extracted_at": "2025-11-01T11:08:09.223Z",
   "file_structure": {
     "entry": "src/theme/index.ts",
     "components": [
@@ -57,7 +57,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "MaterialIcons"
+      ]
     },
     "@shopify/react-native-skia": {
       "imports": [
@@ -74,15 +76,17 @@
       "hooks": [
         "useImage"
       ],
-      "functions": [],
+      "functions": [
+        "rect",
+        "rrect"
+      ],
       "components": [
         "Blur",
         "Canvas",
         "Fill",
         "Group",
         "Image",
-        "LinearGradient",
-        "Text"
+        "LinearGradient"
       ]
     },
     "color": {
@@ -105,7 +109,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "PressableScale"
+      ]
     },
     "react": {
       "imports": [
@@ -122,7 +128,10 @@
         "useMemo",
         "useState"
       ],
-      "functions": [],
+      "functions": [
+        "createContext",
+        "memo"
+      ],
       "components": []
     },
     "react-native": {
@@ -134,7 +143,11 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "ScrollView",
+        "Text",
+        "View"
+      ]
     },
     "react-native-gesture-handler": {
       "imports": [
@@ -142,7 +155,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "GestureHandlerRootView"
+      ]
     },
     "react-native-reanimated": {
       "imports": [
@@ -156,6 +171,7 @@
         "useDerivedValue"
       ],
       "functions": [
+        "makeMutable",
         "withTiming"
       ],
       "components": [
@@ -168,9 +184,13 @@
         "SafeAreaProvider",
         "useSafeAreaInsets"
       ],
-      "hooks": [],
+      "hooks": [
+        "useSafeAreaInsets"
+      ],
       "functions": [],
-      "components": []
+      "components": [
+        "SafeAreaProvider"
+      ]
     }
   },
   "hooks": [

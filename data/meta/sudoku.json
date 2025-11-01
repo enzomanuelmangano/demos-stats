@@ -2,7 +2,7 @@
   "animation_slug": "sudoku",
   "content_hash": "92ea844183f59659e795bc71789bae3f8386423823627ee3b62b75e618a7c074",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:01.050Z",
+  "extracted_at": "2025-11-01T11:08:09.327Z",
   "file_structure": {
     "entry": "logic/index.ts",
     "components": [
@@ -50,7 +50,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "Ionicons"
+      ]
     },
     "expo-haptics": {
       "imports": [],
@@ -64,7 +66,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "LinearGradient"
+      ]
     },
     "pressto": {
       "imports": [
@@ -72,7 +76,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "PressableScale"
+      ]
     },
     "react": {
       "imports": [
@@ -93,7 +99,10 @@
         "useRef",
         "useState"
       ],
-      "functions": [],
+      "functions": [
+        "forwardRef",
+        "memo"
+      ],
       "components": []
     },
     "react-native": {
@@ -108,7 +117,10 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "Text",
+        "View"
+      ]
     },
     "react-native-fast-confetti": {
       "imports": [
@@ -116,7 +128,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "PIConfetti"
+      ]
     },
     "react-native-reanimated": {
       "imports": [

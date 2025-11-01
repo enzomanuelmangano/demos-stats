@@ -2,7 +2,7 @@
   "animation_slug": "empty-qrcode",
   "content_hash": "4b7115f8e0575313a825a28a6493869ae98302447ba8073c73714707dc444deb",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.712Z",
+  "extracted_at": "2025-11-01T11:08:09.154Z",
   "file_structure": {
     "entry": "index.tsx",
     "components": [
@@ -45,7 +45,9 @@
       "hooks": [
         "useFont"
       ],
-      "functions": [],
+      "functions": [
+        "vec"
+      ],
       "components": [
         "Canvas",
         "RadialGradient",
@@ -59,7 +61,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "PressableScale"
+      ]
     },
     "react": {
       "imports": [
@@ -76,7 +80,10 @@
         "useImperativeHandle",
         "useRef"
       ],
-      "functions": [],
+      "functions": [
+        "forwardRef",
+        "memo"
+      ],
       "components": []
     },
     "react-native": {
@@ -86,7 +93,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "View"
+      ]
     },
     "react-native-qrcode-skia": {
       "imports": [],

@@ -2,7 +2,7 @@
   "animation_slug": "verification-code",
   "content_hash": "2390b15d15a31befa52e7862466c6928cd13971f7d9b716196e20258e9b71ddf",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:01.100Z",
+  "extracted_at": "2025-11-01T11:08:09.358Z",
   "file_structure": {
     "entry": "screens/verification-code/index.tsx",
     "components": [
@@ -35,7 +35,9 @@
       "imports": [
         "useFocusEffect"
       ],
-      "hooks": [],
+      "hooks": [
+        "useFocusEffect"
+      ],
       "functions": [],
       "components": []
     },
@@ -62,13 +64,19 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "Text",
+        "TextInput",
+        "View"
+      ]
     },
     "react-native-keyboard-controller": {
       "imports": [
         "useReanimatedKeyboardAnimation"
       ],
-      "hooks": [],
+      "hooks": [
+        "useReanimatedKeyboardAnimation"
+      ],
       "functions": [],
       "components": []
     },

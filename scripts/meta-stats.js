@@ -165,8 +165,13 @@ function generateStats() {
         }
 
         // Track components FROM this package
-        if (detail.components) {
-          detail.components.forEach(comp => {
+        // If components array is empty but imports exist, use imports as components
+        const componentsList = (detail.components && detail.components.length > 0)
+          ? detail.components
+          : (detail.imports || []);
+
+        if (componentsList.length > 0) {
+          componentsList.forEach(comp => {
             const baseComponent = normalizeComponentName(comp);
             stats.components_by_package[pkg][baseComponent] =
               (stats.components_by_package[pkg][baseComponent] || 0) + 1;

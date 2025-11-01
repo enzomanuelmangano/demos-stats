@@ -2,7 +2,7 @@
   "animation_slug": "exclusion-tabs",
   "content_hash": "3729aad06dd8d1fe4a218b9cc012da6c4370f3380b61556a4945b06cbb0b6eb4",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.743Z",
+  "extracted_at": "2025-11-01T11:08:09.160Z",
   "file_structure": {
     "entry": "src/index.tsx",
     "components": [
@@ -52,7 +52,11 @@
         "rrect"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "matchFont",
+        "rect",
+        "rrect"
+      ],
       "components": [
         "Blur",
         "ColorMatrix",
@@ -88,9 +92,13 @@
         "View",
         "useWindowDimensions"
       ],
-      "hooks": [],
+      "hooks": [
+        "useWindowDimensions"
+      ],
       "functions": [],
-      "components": []
+      "components": [
+        "View"
+      ]
     },
     "react-native-reanimated": {
       "imports": [
@@ -116,7 +124,9 @@
         "scheduleOnRN"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "scheduleOnRN"
+      ],
       "components": []
     }
   },

@@ -85,9 +85,14 @@ export function Dashboard() {
 
         if (animPackageDetail) {
           // Count components FROM this package in this specific animation
+          // If components array is empty, use imports
           const uniqueComponents = new Set<string>();
-          if (animPackageDetail.components) {
-            animPackageDetail.components.forEach((component: string) => {
+          const componentsList = (animPackageDetail.components && animPackageDetail.components.length > 0)
+            ? animPackageDetail.components
+            : (animPackageDetail.imports || []);
+
+          if (componentsList.length > 0) {
+            componentsList.forEach((component: string) => {
               const baseComponent = normalizeComponentName(component);
               uniqueComponents.add(baseComponent);
             });

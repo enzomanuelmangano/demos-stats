@@ -2,7 +2,7 @@
   "animation_slug": "mobile-input",
   "content_hash": "cc5725074a91da354ae070030228af82c2efa251a4d6b5817a0b295170fcc753",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.874Z",
+  "extracted_at": "2025-11-01T11:08:09.244Z",
   "file_structure": {
     "entry": "index.tsx",
     "components": [
@@ -46,7 +46,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "FontAwesome5"
+      ]
     },
     "@shopify/react-native-skia": {
       "imports": [
@@ -61,14 +63,17 @@
         "vec"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "interpolate",
+        "vec"
+      ],
       "components": [
         "BlurMask",
         "Canvas",
         "Group",
         "Path",
-        "SweepGradient",
-        "Text"
+        "SkiaCircle",
+        "SweepGradient"
       ]
     },
     "pressto": {
@@ -76,7 +81,9 @@
         "createAnimatedPressable"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "createAnimatedPressable"
+      ],
       "components": []
     },
     "react": {
@@ -94,7 +101,10 @@
         "useImperativeHandle",
         "useRef"
       ],
-      "functions": [],
+      "functions": [
+        "forwardRef",
+        "memo"
+      ],
       "components": []
     },
     "react-native": {
@@ -104,9 +114,14 @@
         "View",
         "useWindowDimensions"
       ],
-      "hooks": [],
+      "hooks": [
+        "useWindowDimensions"
+      ],
       "functions": [],
-      "components": []
+      "components": [
+        "Text",
+        "View"
+      ]
     },
     "react-native-reanimated": {
       "imports": [
@@ -130,7 +145,6 @@
       ],
       "functions": [
         "cancelAnimation",
-        "interpolate",
         "withRepeat",
         "withSequence",
         "withSpring",
@@ -144,7 +158,9 @@
       "imports": [
         "useSafeAreaInsets"
       ],
-      "hooks": [],
+      "hooks": [
+        "useSafeAreaInsets"
+      ],
       "functions": [],
       "components": []
     },
@@ -153,7 +169,9 @@
         "scheduleOnRN"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "scheduleOnRN"
+      ],
       "components": []
     }
   },

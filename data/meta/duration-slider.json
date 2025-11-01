@@ -2,7 +2,7 @@
   "animation_slug": "duration-slider",
   "content_hash": "853bd2af675fb70d1d6de18ef6cf1fa4b53d1538325211cbe47ae7ec36038a1f",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.685Z",
+  "extracted_at": "2025-11-01T11:08:09.143Z",
   "file_structure": {
     "entry": "src/index.tsx",
     "components": [
@@ -53,7 +53,9 @@
       "hooks": [
         "useFont"
       ],
-      "functions": [],
+      "functions": [
+        "vec"
+      ],
       "components": [
         "BlurMask",
         "Circle",
@@ -86,9 +88,13 @@
         "View",
         "useWindowDimensions"
       ],
-      "hooks": [],
+      "hooks": [
+        "useWindowDimensions"
+      ],
       "functions": [],
-      "components": []
+      "components": [
+        "View"
+      ]
     },
     "react-native-reanimated": {
       "imports": [
@@ -108,7 +114,9 @@
       "imports": [
         "useGestureHandler"
       ],
-      "hooks": [],
+      "hooks": [
+        "useGestureHandler"
+      ],
       "functions": [],
       "components": []
     },
@@ -117,7 +125,9 @@
         "scheduleOnRN"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "scheduleOnRN"
+      ],
       "components": []
     }
   },

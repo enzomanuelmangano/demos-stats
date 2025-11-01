@@ -2,7 +2,7 @@
   "animation_slug": "gl-transitions",
   "content_hash": "9c619e1d9ff1bc8ed0423ff596258e023cbf75971beedb6ff83ae0a7229374fb",
   "hash_algorithm": "sha256",
-  "extracted_at": "2025-10-31T20:06:00.799Z",
+  "extracted_at": "2025-11-01T11:08:09.205Z",
   "file_structure": {
     "entry": "src/the-magic/index.tsx",
     "components": [],
@@ -67,7 +67,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "AntDesign"
+      ]
     },
     "@react-native-seoul/masonry-list": {
       "imports": [],
@@ -79,7 +81,9 @@
       "imports": [
         "useNavigation"
       ],
-      "hooks": [],
+      "hooks": [
+        "useNavigation"
+      ],
       "functions": [],
       "components": []
     },
@@ -88,7 +92,9 @@
         "createNativeStackNavigator"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "createNativeStackNavigator"
+      ],
       "components": []
     },
     "@shopify/react-native-skia": {
@@ -101,12 +107,14 @@
         "makeImageFromView"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "makeImageFromView"
+      ],
       "components": [
         "Canvas",
         "Fill",
-        "LinearGradient",
-        "Text"
+        "ImageShader",
+        "Shader"
       ]
     },
     "expo-linear-gradient": {
@@ -115,15 +123,21 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "LinearGradient"
+      ]
     },
     "jotai": {
       "imports": [
         "atom",
         "useAtom"
       ],
-      "hooks": [],
-      "functions": [],
+      "hooks": [
+        "useAtom"
+      ],
+      "functions": [
+        "atom"
+      ],
       "components": []
     },
     "pressto": {
@@ -132,7 +146,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "PressableScale"
+      ]
     },
     "react": {
       "imports": [
@@ -148,7 +164,9 @@
         "useMemo",
         "useRef"
       ],
-      "functions": [],
+      "functions": [
+        "createContext"
+      ],
       "components": []
     },
     "react-native": {
@@ -160,9 +178,15 @@
         "View",
         "useWindowDimensions"
       ],
-      "hooks": [],
+      "hooks": [
+        "useWindowDimensions"
+      ],
       "functions": [],
-      "components": []
+      "components": [
+        "Text",
+        "TextInput",
+        "View"
+      ]
     },
     "react-native-gesture-handler": {
       "imports": [
@@ -170,7 +194,9 @@
       ],
       "hooks": [],
       "functions": [],
-      "components": []
+      "components": [
+        "GestureHandlerRootView"
+      ]
     },
     "react-native-reanimated": {
       "imports": [
@@ -200,16 +226,22 @@
         "SafeAreaProvider",
         "useSafeAreaInsets"
       ],
-      "hooks": [],
+      "hooks": [
+        "useSafeAreaInsets"
+      ],
       "functions": [],
-      "components": []
+      "components": [
+        "SafeAreaProvider"
+      ]
     },
     "react-native-worklets": {
       "imports": [
         "scheduleOnRN"
       ],
       "hooks": [],
-      "functions": [],
+      "functions": [
+        "scheduleOnRN"
+      ],
       "components": []
     }
   },

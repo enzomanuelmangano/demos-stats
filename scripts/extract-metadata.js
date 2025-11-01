@@ -386,6 +386,8 @@ function analyzeAnimation(animationPath, slug) {
 
 /**
  * Categorize imports by package
+ * Automatically detects which package each hook/function/component came from
+ * by building a reverse lookup from the actual imports
  */
 function categorizeByPackage(packages, namedImports, hooks, functions, components) {
   const packageData = {};
@@ -403,79 +405,44 @@ function categorizeByPackage(packages, namedImports, hooks, functions, component
     };
   });
 
-  // Categorize hooks by package
-  const reanimatedHooks = [
-    'useSharedValue', 'useAnimatedStyle', 'useDerivedValue',
-    'useAnimatedProps', 'useAnimatedReaction', 'useAnimatedRef',
-    'useAnimatedScrollHandler', 'useAnimatedGestureHandler',
-    'useFrameCallback', 'useAnimatedKeyboard', 'useAnimatedSensor',
-  ];
+  // Build a reverse lookup: item name -> package
+  // This tells us which package each imported item came from
+  const itemToPackage = {};
+  Object.entries(namedImports).forEach(([pkg, imports]) => {
+    imports.forEach(item => {
+      if (!itemToPackage[item]) {
+        itemToPackage[item] = pkg;
+      }
+    });
+  });
 
-  const reactHooks = [
-    'useState', 'useEffect', 'useCallback', 'useMemo',
-    'useRef', 'useContext', 'useReducer', 'useImperativeHandle',
-    'useLayoutEffect', 'useDebugValue',
-  ];
-
-  const skiaHooks = [
-    'useFont', 'useImage', 'useTexture', 'useSVG', 'useData',
-    'useValue', 'useComputedValue', 'useTouchHandler', 'useClockValue',
-    'useLoop', 'useTiming', 'useSpring', 'useDecay', 'useDerivedValueOnJS',
-    'useRectBuffer', 'useRSXformBuffer', 'useDataCollection',
-  ];
-
+  // Categorize hooks based on their import source
   hooks.forEach(hook => {
-    if (reanimatedHooks.includes(hook)) {
-      if (packageData['react-native-reanimated']) {
-        packageData['react-native-reanimated'].hooks.push(hook);
-      }
-    } else if (reactHooks.includes(hook)) {
-      if (packageData['react']) {
-        packageData['react'].hooks.push(hook);
-      }
-    } else if (skiaHooks.includes(hook)) {
-      if (packageData['@shopify/react-native-skia']) {
-        packageData['@shopify/react-native-skia'].hooks.push(hook);
-      }
+    const pkg = itemToPackage[hook];
+    if (pkg && packageData[pkg]) {
+      packageData[pkg].hooks.push(hook);
     }
   });
 
-  // Categorize functions
-  const reanimatedFunctions = [
-    'withTiming', 'withSpring', 'withDecay', 'withDelay',
-    'withRepeat', 'withSequence', 'cancelAnimation',
-    'runOnJS', 'runOnUI', 'interpolate', 'interpolateColor',
-    'Extrapolation', 'Easing',
-  ];
-
+  // Categorize functions based on their import source
   functions.forEach(fn => {
-    if (reanimatedFunctions.includes(fn)) {
-      if (packageData['react-native-reanimated']) {
-        packageData['react-native-reanimated'].functions.push(fn);
-      }
+    const pkg = itemToPackage[fn];
+    if (pkg && packageData[pkg]) {
+      packageData[pkg].functions.push(fn);
     }
   });
 
-  // Categorize components
-  const skiaComponents = [
-    'Canvas', 'Group', 'Paint', 'Image', 'Text', 'Path', 'Circle', 'Rect',
-    'RoundedRect', 'Line', 'Oval', 'Points', 'Vertices', 'DiffRect',
-    'LinearGradient', 'RadialGradient', 'SweepGradient', 'TwoPointConicalGradient',
-    'Turbulence', 'FractalNoise', 'Blur', 'CornerPathEffect', 'DiscretePathEffect',
-    'DashPathEffect', 'Path1DPathEffect', 'Path2DPathEffect', 'Line2DPathEffect',
-    'BlurMask', 'Shadow', 'ShadowLayer', 'Fill', 'Stroke', 'Atlas',
-    'Paragraph', 'Glyphs', 'TextPath', 'TextBlob', 'Box', 'BoxShadow',
-    'BackdropFilter', 'ImageSVG', 'FitBox', 'ColorMatrix', 'Mask',
-  ];
-
+  // Categorize components based on their import source
   components.forEach(comp => {
+    // Handle special cases like Animated.View (property access components)
     if (comp.startsWith('Animated.')) {
       if (packageData['react-native-reanimated']) {
         packageData['react-native-reanimated'].components.push(comp);
       }
-    } else if (skiaComponents.includes(comp)) {
-      if (packageData['@shopify/react-native-skia']) {
-        packageData['@shopify/react-native-skia'].components.push(comp);
+    } else {
+      const pkg = itemToPackage[comp];
+      if (pkg && packageData[pkg]) {
+        packageData[pkg].components.push(comp);
       }
     }
   });
