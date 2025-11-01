@@ -5,10 +5,10 @@ import {
   StyleSheet,
   Modal,
   ScrollView,
-  TouchableOpacity,
   useWindowDimensions,
   Linking,
 } from 'react-native';
+import { PressableOpacity, PressableWithoutFeedback } from 'pressto';
 
 interface Animation {
   slug: string;
@@ -64,13 +64,8 @@ export function AnimationListModal({
       animationType="fade"
       onRequestClose={onClose}
     >
-      <TouchableOpacity
-        style={styles.overlay}
-        activeOpacity={1}
-        onPress={onClose}
-      >
-        <TouchableOpacity
-          activeOpacity={1}
+      <PressableWithoutFeedback style={styles.overlay} onPress={onClose}>
+        <PressableWithoutFeedback
           style={[
             styles.modalContainer,
             isMobile && styles.modalContainerMobile,
@@ -86,36 +81,47 @@ export function AnimationListModal({
               </View>
               <View style={styles.headerText}>
                 <Text style={styles.categoryLabel}>{categoryName}</Text>
-                <Text style={[styles.itemName, isMobile && styles.itemNameMobile]}>
+                <Text
+                  style={[styles.itemName, isMobile && styles.itemNameMobile]}
+                >
                   {itemName}
                 </Text>
               </View>
             </View>
-            <TouchableOpacity style={styles.closeButton} onPress={onClose}>
+            <PressableOpacity style={styles.closeButton} onPress={onClose}>
               <Text style={styles.closeButtonText}>✕</Text>
-            </TouchableOpacity>
+            </PressableOpacity>
           </View>
 
           {/* Stats */}
           <View style={styles.stats}>
             <Text style={styles.statsText}>
-              <Text style={styles.statsCount}>{animations.length}</Text> animation
-              {animations.length !== 1 ? 's' : ''} using this {categoryName.toLowerCase()}
+              <Text style={styles.statsCount}>{animations.length}</Text>{' '}
+              animation
+              {animations.length !== 1 ? 's' : ''} using this{' '}
+              {categoryName.toLowerCase()}
             </Text>
           </View>
 
           {/* Animation List */}
-          <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
+          <ScrollView
+            style={styles.scrollView}
+            showsVerticalScrollIndicator={false}
+          >
             <View style={styles.list}>
               {animations.map((anim) => (
-                <TouchableOpacity
+                <PressableOpacity
                   key={anim.slug}
                   style={styles.animationCard}
                   onPress={() => openAnimation(anim.slug)}
-                  activeOpacity={0.7}
                 >
                   <View style={styles.cardHeader}>
-                    <Text style={[styles.animationName, isMobile && styles.animationNameMobile]}>
+                    <Text
+                      style={[
+                        styles.animationName,
+                        isMobile && styles.animationNameMobile,
+                      ]}
+                    >
                       {anim.slug.split('-').join(' ')}
                     </Text>
                     <Text style={styles.linkIcon}>→</Text>
@@ -137,12 +143,12 @@ export function AnimationListModal({
                       </Text>
                     </View>
                   </View>
-                </TouchableOpacity>
+                </PressableOpacity>
               ))}
             </View>
           </ScrollView>
-        </TouchableOpacity>
-      </TouchableOpacity>
+        </PressableWithoutFeedback>
+      </PressableWithoutFeedback>
     </Modal>
   );
 }

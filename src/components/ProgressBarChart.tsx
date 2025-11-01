@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+import { PressableOpacity } from 'pressto';
 
 interface ProgressBarChartProps {
   title: string;
@@ -76,14 +77,13 @@ export function ProgressBarChart({
 
           if (onItemPress) {
             return (
-              <TouchableOpacity
+              <PressableOpacity
                 key={item}
                 style={styles.row}
                 onPress={() => onItemPress(item)}
-                activeOpacity={0.7}
               >
                 {content}
-              </TouchableOpacity>
+              </PressableOpacity>
             );
           }
 

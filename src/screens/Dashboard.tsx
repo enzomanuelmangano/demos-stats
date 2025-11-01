@@ -4,11 +4,10 @@ import {
   Text,
   StyleSheet,
   ScrollView,
-  TextInput,
   ActivityIndicator,
-  TouchableOpacity,
   useWindowDimensions,
 } from 'react-native';
+import { PressableOpacity } from 'pressto';
 import { useAggregateStats } from '../hooks/useAnalytics';
 import { ProgressBarChart } from '../components/ProgressBarChart';
 import { AnimationListModal } from '../components/AnimationListModal';
@@ -370,7 +369,7 @@ export function Dashboard() {
         </Text>
         <View style={styles.headerSubtitleContainer}>
           <Text style={styles.headerSubtitle}>Automated stats for </Text>
-          <TouchableOpacity
+          <PressableOpacity
             onPress={() => {
               if (typeof window !== 'undefined') {
                 window.open(
@@ -382,7 +381,7 @@ export function Dashboard() {
             style={styles.demoLink}
           >
             <Text style={styles.demoLinkText}>Demos</Text>
-          </TouchableOpacity>
+          </PressableOpacity>
         </View>
 
         <View
@@ -421,12 +420,12 @@ export function Dashboard() {
             </Text>
           </View>
           {totalActiveFilters > 0 && (
-            <TouchableOpacity
+            <PressableOpacity
               onPress={clearAllFilters}
               style={styles.clearButton}
             >
               <Text style={styles.clearButtonText}>Clear all</Text>
-            </TouchableOpacity>
+            </PressableOpacity>
           )}
         </View>
 
@@ -441,7 +440,7 @@ export function Dashboard() {
             .map(([pkg, count]) => {
               const isSelected = selectedPackages.includes(pkg);
               return (
-                <TouchableOpacity
+                <PressableOpacity
                   key={pkg}
                   style={[styles.chip, isSelected && styles.chipSelected]}
                   onPress={() =>
@@ -471,7 +470,7 @@ export function Dashboard() {
                       {count}
                     </Text>
                   </View>
-                </TouchableOpacity>
+                </PressableOpacity>
               );
             })}
         </View>
