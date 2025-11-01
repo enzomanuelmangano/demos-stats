@@ -136,57 +136,128 @@
     "usePathInterpolation": 1
   },
   "functions": {
+    "create": 105,
     "interpolate": 68,
     "withTiming": 68,
     "withSpring": 65,
+    "map": 49,
     "memo": 47,
     "scheduleOnRN": 47,
+    "Pan": 35,
+    "get": 34,
+    "max": 32,
+    "floor": 29,
+    "min": 26,
     "cancelAnimation": 24,
+    "random": 21,
     "require": 18,
     "vec": 18,
-    "setTimeout": 18,
+    "round": 18,
     "forwardRef": 17,
-    "rect": 16,
     "clamp": 14,
+    "Tap": 13,
+    "flatten": 13,
     "interpolateColor": 12,
+    "log": 12,
+    "duration": 12,
     "onPress": 11,
-    "makeMutable": 11,
-    "withRepeat": 10,
+    "set": 11,
+    "measureText": 10,
     "Color": 10,
-    "createContext": 10,
-    "rrect": 9,
+    "renderItem": 8,
     "parseInt": 7,
     "Boolean": 6,
     "measure": 6,
-    "renderItem": 6,
-    "Array": 6,
+    "springify": 6,
+    "close": 5,
     "scrollTo": 5,
+    "getDigitByIndex": 4,
+    "getSize": 3,
+    "toString": "function toString() { [native code] }11111111111111111",
+    "setTimeout": 18,
+    "rect": 16,
+    "reduce": 13,
+    "sqrt": 12,
+    "abs": 12,
+    "sin": 12,
+    "bezier": 11,
+    "cos": 11,
+    "push": 11,
+    "makeMutable": 11,
+    "withRepeat": 10,
+    "createContext": 10,
+    "filter": 9,
+    "moveTo": 9,
+    "rrect": 9,
+    "keys": 8,
+    "lineTo": 8,
+    "navigate": 8,
+    "addCircle": 8,
+    "addRRect": 7,
+    "Array": 6,
+    "join": 6,
+    "select": 6,
+    "sort": 6,
+    "split": 6,
+    "impactAsync": 6,
+    "selectionAsync": 6,
+    "slice": 6,
     "onUpdate": 5,
     "clearTimeout": 5,
     "createBottomTabNavigator": 5,
+    "values": 5,
+    "delay": 5,
+    "atan2": 5,
+    "forEach": 5,
     "withDelay": 5,
     "createAnimatedPressable": 5,
-    "getDigitByIndex": 4,
+    "pow": 4,
+    "findIndex": 4,
+    "from": 4,
     "onTapIcon": 4,
+    "toLowerCase": 4,
+    "find": 4,
     "withDecay": 4,
     "withSequence": 4,
     "onProgressChange": 4,
+    "charAt": 3,
     "fitbox": 3,
+    "height": 3,
+    "width": 3,
     "startAnimation": 3,
     "getIconByScreenName": 3,
+    "getState": 3,
+    "entries": 3,
+    "children": 3,
     "dismissItem": 3,
     "format": 3,
+    "getTime": 3,
+    "indexOf": 3,
     "onTabPress": 3,
     "onReset": 3,
+    "transform": 3,
     "setTheme": 3,
+    "alert": 3,
     "createNativeStackNavigator": 3,
     "snapPoint": 3,
     "shake": 3,
     "setItems": 3,
-    "close": 2,
+    "onDismiss": 2,
+    "setNumber": 2,
     "createRef": 2,
+    "setXYWH": 2,
+    "ContourMeasureIter": 2,
+    "cubicTo": 2,
+    "getPointAtLength": 2,
+    "getTotalLength": 2,
+    "length": 2,
+    "next": 2,
+    "dispatch": 2,
+    "pop": 2,
+    "addRect": 2,
     "showToast": 2,
     "matchFont": 2,
+    "assign": 2,
     "getPosition": 2,
     "getZIndex": 2,
     "renderItemProp": 2,
@@ -194,11 +265,16 @@
     "isSharedValue": 2,
     "clearInterval": 2,
     "setInterval": 2,
+    "warn": 2,
     "onTabChange": 2,
     "setActiveTabIndex": 2,
+    "Simultaneous": 2,
     "onBackspace": 2,
+    "Matrix": 2,
+    "addPath": 2,
     "startOfWeek": 2,
     "atom": 2,
+    "flatMap": 2,
     "glsl": 2,
     "makeImageFromView": 2,
     "transition": 2,
@@ -207,6 +283,9 @@
     "reset": 2,
     "getLinesPath": 2,
     "isBigLine": 2,
+    "rArcTo": 2,
+    "ceil": 2,
+    "sign": 2,
     "setActiveTab": 2,
     "getColorByStatus": 2,
     "onCorrectCode": 2,
@@ -215,13 +294,14 @@
     "onWrongCodeWrapper": 2,
     "resetCode": 2,
     "setCode": 2,
+    "easing": 1,
     "setStep": 1,
-    "onDismiss": 1,
+    "maxDuration": 1,
     "setListItems": 1,
+    "shouldCancelWhenOutside": 1,
     "setIsFlipped": 1,
     "toggleExpansion": 1,
     "getRandomNumber": 1,
-    "setNumber": 1,
     "getRandomQuote": 1,
     "onScrollEnd": 1,
     "setLayout": 1,
@@ -240,6 +320,7 @@
     "getPathPoints": 1,
     "onPathUpdate": 1,
     "reverseAnimation": 1,
+    "toSVGString": 1,
     "withCustomTiming": 1,
     "createNoise2D": 1,
     "noise": 1,
@@ -254,9 +335,11 @@
     "convertMsToMinutes": 1,
     "onDateChange": 1,
     "setText": 1,
+    "Paint": 1,
     "onConfirmDeletion": 1,
     "collapsedChildren": 1,
     "expandedChildren": 1,
+    "inOut": 1,
     "onSelectSpringType": 1,
     "setIsCollapsed": 1,
     "setSpringType": 1,
@@ -279,6 +362,7 @@
     "buildIndividualNumber": 1,
     "getCommasArray": 1,
     "onMaxReached": 1,
+    "reverse": 1,
     "updateInput": 1,
     "mapXvalue": 1,
     "mapYvalue": 1,
@@ -288,6 +372,7 @@
     "computeFFT": 1,
     "extractEpicycles": 1,
     "fillToPowerOfTwo": 1,
+    "getLastPt": 1,
     "getPoints": 1,
     "isPowerOfTwo": 1,
     "nextPowerOfTwo": 1,
@@ -309,29 +394,34 @@
     "setNotes": 1,
     "calculateNewDimensions": 1,
     "createCornerHandler": 1,
-    "navigate": 1,
     "renderDetailModal": 1,
     "setCroppedRect": 1,
     "setShowDetail": 1,
     "skRect": 1,
     "colorByIndex": 1,
     "findClosestIndexPosition": 1,
+    "inputRange": 1,
     "onActiveIndexChanged": 1,
+    "outputRange": 1,
     "onClose": 1,
     "scheduleOnUI": 1,
     "setShowCustomizer": 1,
     "setTabWidth": 1,
     "backTransition": 1,
     "handleItemPress": 1,
+    "in": 1,
     "startTransition": 1,
     "withDetailScreenWrapper": 1,
     "withMainScreenWrapper": 1,
+    "ease": 1,
     "handleProgressiveHaptics": 1,
+    "addArc": 1,
     "mutateAsync": 1,
     "mutationFn": 1,
     "setIsLoading": 1,
     "setStatus": 1,
     "wait": 1,
+    "simplify": 1,
     "closeEyes": 1,
     "onClear": 1,
     "onCompleted": 1,
@@ -351,6 +441,7 @@
     "toggleTimer": 1,
     "dismissBlurredPopup": 1,
     "getRotationByAngle": 1,
+    "includes": 1,
     "setParams": 1,
     "showPopup": 1,
     "setQRCode": 1,
@@ -361,26 +452,35 @@
     "getRightLinePath": 1,
     "getReadingTime": 1,
     "scrollToY": 1,
+    "Exclusive": 1,
+    "add": 1,
     "calculateGridItemIndex": 1,
     "calculateGridItemPosition": 1,
+    "delete": 1,
     "generateNumbersInRange": 1,
+    "has": 1,
     "sameElements": 1,
     "toggleIndex": 1,
     "calculateAnimationParams": 1,
     "generateRandom": 1,
-    "random": 1,
     "stopShaking": 1,
     "clampToCircle": 1,
+    "getBounds": 1,
     "getHueFromPosition": 1,
     "getSaturationFromPosition": 1,
     "hsvToRgb": 1,
     "onMove": 1,
     "onPick": 1,
+    "Fling": 1,
+    "changeDirection": 1,
+    "clear": 1,
     "createFlingGesture": 1,
     "initializer": 1,
+    "move": 1,
     "onDirectionChange": 1,
     "onGameOver": 1,
     "onScoreChange": 1,
+    "exp": 1,
     "logarithmicSpiral": 1,
     "onLeft": 1,
     "onRight": 1,
@@ -391,6 +491,7 @@
     "renderCard": 1,
     "clearAllStackedModals": 1,
     "clearModal": 1,
+    "onConfirm": 1,
     "renderStackedModal": 1,
     "setStackedModals": 1,
     "showModal": 1,
@@ -400,29 +501,39 @@
     "setToggled": 1,
     "setSelectedScoringDifficulty": 1,
     "findClosestSnapPoint": 1,
+    "clearCell": 1,
     "countSolutions": 1,
     "fillBox": 1,
     "findEmpty": 1,
     "forceSolveWithConfetti": 1,
     "generateSudoku": 1,
+    "getBoard": 1,
+    "getHighlightedNumber": 1,
+    "getInitialBoard": 1,
+    "getSelectedCell": 1,
     "isCellValid": 1,
+    "isComplete": 1,
     "isPuzzleComplete": 1,
     "isValidMove": 1,
+    "notificationAsync": 1,
     "onCellPress": 1,
     "onNumberPress": 1,
     "onSolved": 1,
     "playCelebrationHaptics": 1,
+    "selectCell": 1,
     "setBoard": 1,
     "setHasStarted": 1,
     "setIsNumberPadReady": 1,
     "setIsReady": 1,
     "shuffle": 1,
+    "solve": 1,
     "solveBoard": 1,
     "solveSudoku": 1,
     "onSwipeLeft": 1,
     "onSwipeRight": 1,
     "BackgroundComponent": 1,
     "onSelectSquare": 1,
+    "Race": 1,
     "generateKey": 1,
     "onScroll": 1,
     "setActiveItemKey": 1,
@@ -430,6 +541,8 @@
     "setTarget": 1,
     "setTimeMachineActive": 1,
     "withPause": 1,
+    "leading": 1,
+    "now": 1,
     "renderToast": 1,
     "setToasts": 1,
     "convertTranslationToProgress": 1,
@@ -440,6 +553,7 @@
     "drawTopLeftBorderPath": 1,
     "drawTopRightBorderPath": 1,
     "getPathParamsForBorder": 1,
+    "tan": 1,
     "createPath": 1,
     "setIsExpanded": 1,
     "unwrapReanimatedValue": 1
@@ -4173,6 +4287,7 @@
       "fitbox": 3,
       "matchFont": 2,
       "makeImageFromView": 2,
+      "Paint": 1,
       "processTransform2d": 1,
       "clamp": 1,
       "skRect": 1
@@ -4226,7 +4341,11 @@
       "createBottomTabNavigator": 5
     },
     "@react-navigation/native": {},
-    "expo-haptics": {},
+    "expo-haptics": {
+      "impactAsync": 6,
+      "selectionAsync": 6,
+      "notificationAsync": 1
+    },
     "color": {},
     "@expo/vector-icons/build/createIconSet": {},
     "@react-native-masked-view/masked-view": {},
@@ -4263,7 +4382,7 @@
       "total_packages": 4,
       "total_hooks": 8,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.023Z",
+      "extracted_at": "2025-11-01T11:18:11.236Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -4312,9 +4431,13 @@
         "View"
       ],
       "functions": [
+        "create",
+        "getSize",
         "interpolate",
+        "measureText",
         "memo",
         "require",
+        "toString",
         "vec"
       ],
       "packages_detail": {
@@ -4411,7 +4534,7 @@
       "total_packages": 7,
       "total_hooks": 10,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.033Z",
+      "extracted_at": "2025-11-01T11:18:11.245Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -4462,8 +4585,12 @@
         "View"
       ],
       "functions": [
+        "Pan",
         "close",
+        "create",
+        "easing",
         "forwardRef",
+        "get",
         "interpolate",
         "memo",
         "scheduleOnRN",
@@ -4593,7 +4720,7 @@
       "total_packages": 9,
       "total_hooks": 10,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.039Z",
+      "extracted_at": "2025-11-01T11:18:11.252Z",
       "packages": [
         "@expo/vector-icons",
         "expo-image",
@@ -4649,14 +4776,19 @@
       ],
       "functions": [
         "Boolean",
+        "Tap",
         "cancelAnimation",
+        "create",
         "interpolate",
+        "map",
+        "maxDuration",
         "measure",
         "memo",
         "onDismiss",
         "onPress",
         "scheduleOnRN",
         "setListItems",
+        "shouldCancelWhenOutside",
         "withSpring",
         "withTiming"
       ],
@@ -4801,7 +4933,7 @@
       "total_packages": 7,
       "total_hooks": 7,
       "total_patterns": 4,
-      "extracted_at": "2025-11-01T11:08:09.051Z",
+      "extracted_at": "2025-11-01T11:18:11.263Z",
       "packages": [
         "expo-blur",
         "expo-linear-gradient",
@@ -4849,6 +4981,8 @@
         "View"
       ],
       "functions": [
+        "charAt",
+        "create",
         "interpolate",
         "memo",
         "setIsFlipped",
@@ -4957,7 +5091,7 @@
       "total_packages": 6,
       "total_hooks": 8,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.055Z",
+      "extracted_at": "2025-11-01T11:18:11.267Z",
       "packages": [
         "@expo/ui/swift-ui",
         "react",
@@ -5006,13 +5140,21 @@
         "View"
       ],
       "functions": [
+        "Pan",
         "clamp",
+        "create",
+        "flatten",
         "getDigitByIndex",
         "interpolate",
+        "max",
         "memo",
+        "min",
         "onUpdate",
         "parseInt",
+        "round",
         "scheduleOnRN",
+        "set",
+        "toString",
         "withSpring",
         "withTiming"
       ],
@@ -5117,7 +5259,7 @@
       "total_packages": 6,
       "total_hooks": 4,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.059Z",
+      "extracted_at": "2025-11-01T11:18:11.270Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -5158,8 +5300,11 @@
         "View"
       ],
       "functions": [
+        "create",
+        "get",
         "interpolate",
         "interpolateColor",
+        "log",
         "scheduleOnRN",
         "toggleExpansion",
         "withTiming"
@@ -5252,7 +5397,7 @@
       "total_packages": 4,
       "total_hooks": 4,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.060Z",
+      "extracted_at": "2025-11-01T11:18:11.272Z",
       "packages": [
         "expo-image",
         "react-native",
@@ -5285,6 +5430,8 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "create",
         "interpolate",
         "require",
         "withSpring"
@@ -5351,7 +5498,7 @@
       "total_packages": 5,
       "total_hooks": 3,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.062Z",
+      "extracted_at": "2025-11-01T11:18:11.273Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -5388,7 +5535,12 @@
       ],
       "functions": [
         "clamp",
+        "create",
+        "flatten",
+        "get",
         "interpolateColor",
+        "max",
+        "min",
         "withSpring"
       ],
       "packages_detail": {
@@ -5460,7 +5612,7 @@
       "total_packages": 5,
       "total_hooks": 3,
       "total_patterns": 2,
-      "extracted_at": "2025-11-01T11:08:09.064Z",
+      "extracted_at": "2025-11-01T11:18:11.275Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -5491,10 +5643,19 @@
         "View"
       ],
       "functions": [
+        "create",
+        "duration",
+        "flatten",
+        "floor",
         "getRandomNumber",
+        "map",
         "memo",
         "parseInt",
+        "pow",
+        "random",
         "setNumber",
+        "springify",
+        "toString",
         "withSpring"
       ],
       "packages_detail": {
@@ -5572,7 +5733,7 @@
       "total_packages": 5,
       "total_hooks": 7,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.067Z",
+      "extracted_at": "2025-11-01T11:18:11.278Z",
       "packages": [
         "pressto",
         "react",
@@ -5614,8 +5775,13 @@
         "View"
       ],
       "functions": [
+        "create",
+        "duration",
+        "floor",
         "getRandomQuote",
+        "map",
         "onScrollEnd",
+        "random",
         "renderItem",
         "setLayout",
         "withTiming"
@@ -5701,7 +5867,7 @@
       "total_packages": 4,
       "total_hooks": 15,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.073Z",
+      "extracted_at": "2025-11-01T11:18:11.283Z",
       "packages": [
         "react",
         "react-native",
@@ -5751,12 +5917,18 @@
       "functions": [
         "Boolean",
         "clearTimeout",
+        "create",
         "createRef",
+        "filter",
+        "findIndex",
         "forwardRef",
         "interpolate",
         "isHeader",
+        "keys",
+        "map",
         "measure",
         "onSelectHeaderItem",
+        "reduce",
         "runTimeout",
         "setTimeout"
       ],
@@ -5843,7 +6015,7 @@
       "total_packages": 6,
       "total_hooks": 8,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.076Z",
+      "extracted_at": "2025-11-01T11:18:11.285Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -5891,12 +6063,25 @@
         "View"
       ],
       "functions": [
+        "Tap",
+        "bezier",
+        "create",
         "fitbox",
+        "floor",
+        "from",
+        "height",
         "interpolate",
+        "log",
+        "max",
         "memo",
+        "random",
         "rect",
         "require",
         "scheduleOnRN",
+        "set",
+        "setXYWH",
+        "sqrt",
+        "width",
         "withTiming"
       ],
       "packages_detail": {
@@ -6009,7 +6194,7 @@
       "total_packages": 5,
       "total_hooks": 7,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.080Z",
+      "extracted_at": "2025-11-01T11:18:11.290Z",
       "packages": [
         "react",
         "react-native",
@@ -6050,15 +6235,30 @@
         "WaveformScrubberSample"
       ],
       "functions": [
+        "Pan",
         "String",
+        "abs",
         "cancelAnimation",
+        "cos",
+        "create",
+        "floor",
         "generateWaveform",
         "getNextScaleY",
         "isFinite",
         "isNaN",
+        "log",
+        "map",
+        "max",
         "memo",
+        "min",
         "normalizeArray",
         "pickNValuesFromArray",
+        "pow",
+        "push",
+        "random",
+        "reduce",
+        "sin",
+        "sqrt",
         "withTiming",
         "zeroPad"
       ],
@@ -6147,7 +6347,7 @@
       "total_packages": 6,
       "total_hooks": 6,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.084Z",
+      "extracted_at": "2025-11-01T11:18:11.292Z",
       "packages": [
         "react",
         "react-native",
@@ -6187,8 +6387,14 @@
         "View"
       ],
       "functions": [
+        "Pan",
         "clamp",
+        "create",
+        "log",
+        "max",
+        "min",
         "onChange",
+        "round",
         "scheduleOnRN",
         "withSpring"
       ],
@@ -6281,7 +6487,7 @@
       "total_packages": 9,
       "total_hooks": 7,
       "total_patterns": 10,
-      "extracted_at": "2025-11-01T11:08:09.090Z",
+      "extracted_at": "2025-11-01T11:18:11.299Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-blur",
@@ -6343,16 +6549,30 @@
       ],
       "functions": [
         "Array",
+        "ContourMeasureIter",
+        "bezier",
         "cancelAnimation",
+        "create",
+        "cubicTo",
+        "get",
         "getPathPoints",
+        "getPointAtLength",
+        "getTotalLength",
         "interpolate",
         "interpolateColor",
+        "length",
+        "lineTo",
         "makeMutable",
+        "map",
+        "moveTo",
+        "next",
         "onPathUpdate",
+        "push",
         "require",
         "reverseAnimation",
         "scheduleOnRN",
         "startAnimation",
+        "toSVGString",
         "withCustomTiming",
         "withSpring",
         "withTiming"
@@ -6481,7 +6701,7 @@
       "total_packages": 5,
       "total_hooks": 4,
       "total_patterns": 4,
-      "extracted_at": "2025-11-01T11:08:09.091Z",
+      "extracted_at": "2025-11-01T11:18:11.300Z",
       "packages": [
         "@shopify/react-native-skia",
         "pressto",
@@ -6519,6 +6739,10 @@
         "View"
       ],
       "functions": [
+        "addRRect",
+        "create",
+        "max",
+        "min",
         "rect",
         "rrect",
         "vec",
@@ -6612,7 +6836,7 @@
       "total_packages": 6,
       "total_hooks": 7,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.092Z",
+      "extracted_at": "2025-11-01T11:18:11.301Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -6655,6 +6879,7 @@
       ],
       "functions": [
         "createNoise2D",
+        "get",
         "noise",
         "rect",
         "rrect",
@@ -6760,7 +6985,7 @@
       "total_packages": 10,
       "total_hooks": 5,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.095Z",
+      "extracted_at": "2025-11-01T11:18:11.303Z",
       "packages": [
         "@expo/vector-icons",
         "@react-navigation/bottom-tabs",
@@ -6808,11 +7033,21 @@
       ],
       "functions": [
         "Boolean",
+        "create",
         "createBottomTabNavigator",
+        "dispatch",
+        "get",
         "getIconByScreenName",
+        "getState",
+        "keys",
+        "map",
         "memo",
+        "navigate",
         "onTapIcon",
+        "pop",
+        "reduce",
         "require",
+        "toLowerCase",
         "withTiming"
       ],
       "packages_detail": {
@@ -6939,7 +7174,7 @@
       "total_packages": 3,
       "total_hooks": 5,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.096Z",
+      "extracted_at": "2025-11-01T11:18:11.304Z",
       "packages": [
         "@shopify/react-native-skia",
         "react-native",
@@ -6980,6 +7215,7 @@
         "View"
       ],
       "functions": [
+        "create",
         "interpolate"
       ],
       "packages_detail": {
@@ -7049,7 +7285,7 @@
       "total_packages": 9,
       "total_hooks": 5,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.099Z",
+      "extracted_at": "2025-11-01T11:18:11.308Z",
       "packages": [
         "@react-navigation/bottom-tabs",
         "@shopify/react-native-skia",
@@ -7099,11 +7335,17 @@
         "View"
       ],
       "functions": [
+        "addCircle",
+        "addRect",
+        "create",
         "createBottomTabNavigator",
         "interpolateColor",
+        "keys",
         "memo",
+        "navigate",
         "rect",
         "scheduleOnRN",
+        "values",
         "withSpring",
         "withTiming"
       ],
@@ -7230,7 +7472,7 @@
       "total_packages": 5,
       "total_hooks": 4,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.106Z",
+      "extracted_at": "2025-11-01T11:18:11.314Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -7274,8 +7516,15 @@
         "View"
       ],
       "functions": [
+        "create",
+        "entries",
         "generateMaterialConstants",
-        "interpolate"
+        "get",
+        "interpolate",
+        "join",
+        "push",
+        "round",
+        "select"
       ],
       "packages_detail": {
         "@shopify/react-native-skia": {
@@ -7354,7 +7603,7 @@
       "total_packages": 7,
       "total_hooks": 5,
       "total_patterns": 1,
-      "extracted_at": "2025-11-01T11:08:09.108Z",
+      "extracted_at": "2025-11-01T11:18:11.316Z",
       "packages": [
         "@expo/vector-icons",
         "color",
@@ -7389,7 +7638,12 @@
       ],
       "functions": [
         "Color",
+        "bezier",
+        "create",
+        "duration",
+        "map",
         "setCuisines",
+        "springify",
         "toggleCuisine"
       ],
       "packages_detail": {
@@ -7479,7 +7733,7 @@
       "total_packages": 4,
       "total_hooks": 6,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.110Z",
+      "extracted_at": "2025-11-01T11:18:11.318Z",
       "packages": [
         "expo-image",
         "react",
@@ -7520,8 +7774,11 @@
         "View"
       ],
       "functions": [
+        "create",
+        "get",
         "interpolate",
         "setScaleEnabled",
+        "toString",
         "withSpring"
       ],
       "packages_detail": {
@@ -7597,7 +7854,7 @@
       "total_packages": 12,
       "total_hooks": 14,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.115Z",
+      "extracted_at": "2025-11-01T11:18:11.323Z",
       "packages": [
         "@expo/vector-icons",
         "@expo/vector-icons/build/createIconSet",
@@ -7663,13 +7920,23 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "children",
+        "create",
         "createContext",
+        "delay",
         "dismissItem",
+        "find",
+        "map",
+        "max",
+        "min",
+        "random",
         "renderStackedToast",
         "scheduleOnRN",
         "setStackedToasts",
         "showStackedToast",
         "showToast",
+        "sort",
         "withSpring",
         "withTiming"
       ],
@@ -7829,7 +8096,7 @@
       "total_packages": 6,
       "total_hooks": 5,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.118Z",
+      "extracted_at": "2025-11-01T11:18:11.326Z",
       "packages": [
         "@shopify/react-native-skia",
         "date-fns",
@@ -7873,9 +8140,15 @@
       "functions": [
         "convertMsToHours",
         "convertMsToMinutes",
+        "cos",
+        "create",
+        "floor",
         "format",
+        "getTime",
         "interpolate",
-        "onDateChange"
+        "map",
+        "onDateChange",
+        "sin"
       ],
       "packages_detail": {
         "@shopify/react-native-skia": {
@@ -7968,7 +8241,7 @@
       "total_packages": 5,
       "total_hooks": 4,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.121Z",
+      "extracted_at": "2025-11-01T11:18:11.328Z",
       "packages": [
         "@shopify/react-native-skia",
         "color",
@@ -8011,7 +8284,12 @@
       ],
       "functions": [
         "Color",
+        "abs",
+        "create",
+        "floor",
+        "get",
         "interpolate",
+        "map",
         "memo",
         "vec",
         "withTiming"
@@ -8095,7 +8373,7 @@
       "total_packages": 4,
       "total_hooks": 3,
       "total_patterns": 2,
-      "extracted_at": "2025-11-01T11:08:09.121Z",
+      "extracted_at": "2025-11-01T11:18:11.329Z",
       "packages": [
         "pressto",
         "react",
@@ -8124,8 +8402,12 @@
         "View"
       ],
       "functions": [
+        "create",
+        "duration",
         "memo",
         "setText",
+        "split",
+        "springify",
         "withTiming"
       ],
       "packages_detail": {
@@ -8194,7 +8476,7 @@
       "total_packages": 4,
       "total_hooks": 5,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.123Z",
+      "extracted_at": "2025-11-01T11:18:11.331Z",
       "packages": [
         "expo-image",
         "react",
@@ -8229,7 +8511,9 @@
         "View"
       ],
       "functions": [
-        "interpolate"
+        "create",
+        "interpolate",
+        "round"
       ],
       "packages_detail": {
         "expo-image": {
@@ -8295,7 +8579,7 @@
       "total_packages": 6,
       "total_hooks": 3,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.125Z",
+      "extracted_at": "2025-11-01T11:18:11.332Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -8339,9 +8623,15 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "atan2",
         "clamp",
+        "create",
+        "floor",
         "interpolate",
+        "max",
         "memo",
+        "min",
         "rect",
         "withSpring",
         "withTiming"
@@ -8441,7 +8731,7 @@
       "total_packages": 7,
       "total_hooks": 9,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.128Z",
+      "extracted_at": "2025-11-01T11:18:11.335Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -8491,9 +8781,15 @@
         "View"
       ],
       "functions": [
+        "Paint",
+        "create",
+        "height",
         "matchFont",
+        "measureText",
         "onConfirmDeletion",
         "scheduleOnRN",
+        "select",
+        "width",
         "withSpring",
         "withTiming"
       ],
@@ -8511,6 +8807,7 @@
           ],
           "hooks": [],
           "functions": [
+            "Paint",
             "matchFont"
           ],
           "components": [
@@ -8597,7 +8894,7 @@
       "total_packages": 8,
       "total_hooks": 6,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.130Z",
+      "extracted_at": "2025-11-01T11:18:11.337Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -8652,6 +8949,7 @@
         "View"
       ],
       "functions": [
+        "create",
         "forwardRef",
         "interpolate",
         "withTiming"
@@ -8777,7 +9075,7 @@
       "total_packages": 8,
       "total_hooks": 9,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.134Z",
+      "extracted_at": "2025-11-01T11:18:11.341Z",
       "packages": [
         "expo-haptics",
         "expo-linear-gradient",
@@ -8826,21 +9124,33 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "assign",
+        "create",
+        "entries",
         "getPosition",
         "getZIndex",
+        "impactAsync",
+        "log",
+        "map",
+        "max",
         "parseInt",
         "renderItem",
         "renderItemProp",
         "scheduleOnRN",
         "scrollLogic",
         "scrollTo",
+        "sort",
+        "values",
         "withTiming"
       ],
       "packages_detail": {
         "expo-haptics": {
           "imports": [],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "impactAsync"
+          ],
           "components": []
         },
         "expo-linear-gradient": {
@@ -8947,7 +9257,7 @@
       "total_packages": 6,
       "total_hooks": 8,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.139Z",
+      "extracted_at": "2025-11-01T11:18:11.346Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -9000,16 +9310,27 @@
         "View"
       ],
       "functions": [
+        "Pan",
         "collapsedChildren",
+        "create",
+        "duration",
         "expandedChildren",
+        "forEach",
+        "get",
+        "inOut",
         "interpolate",
         "interpolateColor",
         "isSharedValue",
+        "map",
         "onSelectSpringType",
+        "pow",
+        "set",
         "setIsCollapsed",
         "setSpringType",
         "snapToCorner",
         "snapWithDimensions",
+        "springify",
+        "sqrt",
         "unwrapAnimatedValue",
         "withSpring",
         "withTiming"
@@ -9117,7 +9438,7 @@
       "total_packages": 7,
       "total_hooks": 7,
       "total_patterns": 4,
-      "extracted_at": "2025-11-01T11:08:09.143Z",
+      "extracted_at": "2025-11-01T11:18:11.350Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -9164,8 +9485,20 @@
         "View"
       ],
       "functions": [
+        "addCircle",
+        "atan2",
+        "cos",
+        "create",
+        "forEach",
+        "getSize",
+        "log",
+        "measureText",
+        "min",
         "normalizeAngle",
+        "round",
         "scheduleOnRN",
+        "selectionAsync",
+        "sin",
         "vec"
       ],
       "packages_detail": {
@@ -9201,7 +9534,9 @@
         "expo-haptics": {
           "imports": [],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "selectionAsync"
+          ],
           "components": []
         },
         "react": {
@@ -9270,7 +9605,7 @@
       "total_packages": 11,
       "total_hooks": 8,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.147Z",
+      "extracted_at": "2025-11-01T11:18:11.354Z",
       "packages": [
         "@expo/vector-icons",
         "@react-navigation/bottom-tabs",
@@ -9330,16 +9665,31 @@
       "functions": [
         "Array",
         "Boolean",
+        "Tap",
+        "create",
         "createBottomTabNavigator",
         "createScreensMap",
+        "dispatch",
+        "floor",
         "generateHarmonicColors",
+        "get",
         "getIconByScreenName",
         "getRandomGradientStartEnd",
+        "getState",
         "interpolate",
+        "keys",
         "makeMutable",
+        "map",
         "memo",
+        "navigate",
         "onTapIcon",
+        "pop",
+        "random",
+        "reduce",
         "scheduleOnRN",
+        "select",
+        "toLowerCase",
+        "toString",
         "withSpring",
         "withTiming"
       ],
@@ -9488,7 +9838,7 @@
       "total_packages": 5,
       "total_hooks": 9,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.150Z",
+      "extracted_at": "2025-11-01T11:18:11.357Z",
       "packages": [
         "pressto",
         "react",
@@ -9530,8 +9880,10 @@
         "View"
       ],
       "functions": [
+        "create",
         "handleLayout",
         "interpolate",
+        "map",
         "memo",
         "onInitialLayout",
         "onLayoutChange",
@@ -9626,7 +9978,7 @@
       "total_packages": 8,
       "total_hooks": 5,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.152Z",
+      "extracted_at": "2025-11-01T11:18:11.359Z",
       "packages": [
         "@expo/vector-icons",
         "expo-image",
@@ -9672,7 +10024,10 @@
         "View"
       ],
       "functions": [
+        "bezier",
         "cancelAnimation",
+        "create",
+        "renderItem",
         "shakeDelete",
         "shakeRestore",
         "withRepeat",
@@ -9787,7 +10142,7 @@
       "total_packages": 6,
       "total_hooks": 10,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.154Z",
+      "extracted_at": "2025-11-01T11:18:11.361Z",
       "packages": [
         "@shopify/react-native-skia",
         "pressto",
@@ -9838,8 +10193,11 @@
       ],
       "functions": [
         "clearInterval",
+        "create",
         "forwardRef",
+        "measureText",
         "memo",
+        "min",
         "require",
         "setInterval",
         "vec",
@@ -9946,7 +10304,7 @@
       "total_packages": 4,
       "total_hooks": 5,
       "total_patterns": 9,
-      "extracted_at": "2025-11-01T11:08:09.156Z",
+      "extracted_at": "2025-11-01T11:18:11.363Z",
       "packages": [
         "pressto",
         "react",
@@ -9988,9 +10346,12 @@
         "View"
       ],
       "functions": [
+        "create",
         "forwardRef",
         "interpolate",
         "setTimeout",
+        "split",
+        "warn",
         "withDelay",
         "withSpring"
       ],
@@ -10063,7 +10424,7 @@
       "total_packages": 7,
       "total_hooks": 7,
       "total_patterns": 3,
-      "extracted_at": "2025-11-01T11:08:09.160Z",
+      "extracted_at": "2025-11-01T11:18:11.366Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -10106,13 +10467,23 @@
         "View"
       ],
       "functions": [
+        "addRRect",
+        "create",
         "getPreviousBoxWidth",
+        "getSize",
+        "indexOf",
+        "map",
         "matchFont",
+        "max",
+        "measureText",
         "onPress",
         "onTabChange",
         "rect",
+        "reduce",
         "rrect",
         "scheduleOnRN",
+        "select",
+        "selectionAsync",
         "setActiveTabIndex",
         "withTiming"
       ],
@@ -10146,7 +10517,9 @@
         "expo-haptics": {
           "imports": [],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "selectionAsync"
+          ],
           "components": []
         },
         "react": {
@@ -10215,7 +10588,7 @@
       "total_packages": 10,
       "total_hooks": 5,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.165Z",
+      "extracted_at": "2025-11-01T11:18:11.372Z",
       "packages": [
         "@expo/vector-icons",
         "@react-navigation/bottom-tabs",
@@ -10269,14 +10642,22 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "Simultaneous",
+        "Tap",
+        "bezier",
         "capitalize",
+        "charAt",
+        "create",
         "createAnimatedPressable",
         "createBottomTabNavigator",
         "interpolate",
         "interpolateColor",
         "makeMutable",
+        "map",
         "onTabPress",
         "scheduleOnRN",
+        "slice",
         "withTiming"
       ],
       "packages_detail": {
@@ -10411,7 +10792,7 @@
       "total_packages": 7,
       "total_hooks": 8,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.169Z",
+      "extracted_at": "2025-11-01T11:18:11.375Z",
       "packages": [
         "@expo/vector-icons",
         "expo-linear-gradient",
@@ -10459,14 +10840,23 @@
       ],
       "functions": [
         "buildIndividualNumber",
+        "create",
         "createAnimatedPressable",
+        "duration",
+        "filter",
+        "floor",
         "getCommasArray",
         "interpolate",
+        "map",
         "memo",
         "onBackspace",
         "onMaxReached",
         "onReset",
         "onUpdate",
+        "push",
+        "reverse",
+        "slice",
+        "toString",
         "updateInput",
         "withTiming"
       ],
@@ -10577,7 +10967,7 @@
       "total_packages": 6,
       "total_hooks": 7,
       "total_patterns": 10,
-      "extracted_at": "2025-11-01T11:08:09.174Z",
+      "extracted_at": "2025-11-01T11:18:11.380Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -10630,13 +11020,21 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "Tap",
         "clamp",
+        "create",
+        "flatten",
+        "get",
         "interpolate",
         "mapXvalue",
         "mapYvalue",
+        "max",
+        "min",
         "onUpdate",
         "remapXcoord",
         "remapYcoord",
+        "round",
         "scheduleOnRN",
         "withRepeat",
         "withSpring",
@@ -10749,7 +11147,7 @@
       "total_packages": 6,
       "total_hooks": 6,
       "total_patterns": 9,
-      "extracted_at": "2025-11-01T11:08:09.171Z",
+      "extracted_at": "2025-11-01T11:18:11.377Z",
       "packages": [
         "@shopify/react-native-skia",
         "pressto",
@@ -10801,9 +11199,16 @@
         "View"
       ],
       "functions": [
+        "Pan",
         "clamp",
+        "create",
+        "flatten",
+        "get",
         "interpolate",
+        "max",
+        "min",
         "onUpdate",
+        "random",
         "withRepeat",
         "withTiming"
       ],
@@ -10911,7 +11316,7 @@
       "total_packages": 8,
       "total_hooks": 6,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.177Z",
+      "extracted_at": "2025-11-01T11:18:11.382Z",
       "packages": [
         "@expo/vector-icons",
         "@react-navigation/bottom-tabs",
@@ -10960,8 +11365,14 @@
         "ShaderLight"
       ],
       "functions": [
+        "close",
+        "create",
         "createBottomTabNavigator",
         "getIconByScreenName",
+        "lineTo",
+        "moveTo",
+        "navigate",
+        "values",
         "withSpring",
         "withTiming"
       ],
@@ -11079,7 +11490,7 @@
       "total_packages": 6,
       "total_hooks": 5,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.180Z",
+      "extracted_at": "2025-11-01T11:18:11.385Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -11123,8 +11534,11 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "create",
         "interpolate",
         "memo",
+        "sqrt",
         "withSpring",
         "withTiming"
       ],
@@ -11220,7 +11634,7 @@
       "total_packages": 5,
       "total_hooks": 7,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.181Z",
+      "extracted_at": "2025-11-01T11:18:11.386Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -11263,8 +11677,13 @@
         "View"
       ],
       "functions": [
+        "create",
         "interpolate",
+        "max",
+        "measureText",
+        "min",
         "require",
+        "round",
         "withSpring"
       ],
       "packages_detail": {
@@ -11352,7 +11771,7 @@
       "total_packages": 6,
       "total_hooks": 6,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.183Z",
+      "extracted_at": "2025-11-01T11:18:11.388Z",
       "packages": [
         "@expo/vector-icons",
         "expo-blur",
@@ -11393,8 +11812,12 @@
         "View"
       ],
       "functions": [
+        "bezier",
         "cancelAnimation",
+        "create",
+        "findIndex",
         "interpolate",
+        "map",
         "onPress",
         "setSelected",
         "withTiming"
@@ -11486,7 +11909,7 @@
       "total_packages": 9,
       "total_hooks": 7,
       "total_patterns": 9,
-      "extracted_at": "2025-11-01T11:08:09.188Z",
+      "extracted_at": "2025-11-01T11:18:11.393Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -11537,17 +11960,34 @@
       ],
       "functions": [
         "Array",
+        "ContourMeasureIter",
+        "Pan",
+        "atan2",
         "cancelAnimation",
         "computeFFT",
+        "cos",
+        "create",
         "extractEpicycles",
         "fillToPowerOfTwo",
         "fitbox",
         "forwardRef",
+        "getLastPt",
+        "getPointAtLength",
         "getPoints",
+        "getTotalLength",
         "isPowerOfTwo",
+        "length",
+        "lineTo",
+        "moveTo",
+        "next",
         "nextPowerOfTwo",
         "processTransform2d",
+        "push",
+        "round",
         "scheduleOnRN",
+        "sin",
+        "sqrt",
+        "transform",
         "vec",
         "withSpring",
         "withTiming"
@@ -11679,7 +12119,7 @@
       "total_packages": 7,
       "total_hooks": 5,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.189Z",
+      "extracted_at": "2025-11-01T11:18:11.395Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -11725,6 +12165,8 @@
         "Rect"
       ],
       "functions": [
+        "Pan",
+        "create",
         "rect",
         "setTheme",
         "vec",
@@ -11837,7 +12279,7 @@
       "total_packages": 7,
       "total_hooks": 4,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.191Z",
+      "extracted_at": "2025-11-01T11:18:11.396Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -11878,11 +12320,20 @@
         "View"
       ],
       "functions": [
+        "Matrix",
+        "Tap",
+        "addPath",
+        "addRRect",
+        "cos",
+        "create",
         "interpolate",
+        "log",
         "memo",
         "rect",
         "rrect",
         "scheduleOnRN",
+        "sin",
+        "transform",
         "withTiming"
       ],
       "packages_detail": {
@@ -11986,7 +12437,7 @@
       "total_packages": 5,
       "total_hooks": 7,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.194Z",
+      "extracted_at": "2025-11-01T11:18:11.400Z",
       "packages": [
         "date-fns",
         "pressto",
@@ -12032,18 +12483,28 @@
       "functions": [
         "addDays",
         "cancelAnimation",
+        "create",
         "eachDayOfInterval",
         "endOfWeek",
+        "floor",
+        "forEach",
         "format",
         "forwardRef",
         "generateContributionData",
         "generateDayLabels",
+        "get",
         "getColorForLevel",
         "getDateRange",
+        "getTime",
         "groupDaysIntoWeeks",
         "interpolate",
         "interpolateColor",
+        "keys",
+        "map",
+        "random",
+        "reduce",
         "resetAnimation",
+        "set",
         "startAnimation",
         "startOfWeek",
         "subDays",
@@ -12149,7 +12610,7 @@
       "total_packages": 8,
       "total_hooks": 7,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.198Z",
+      "extracted_at": "2025-11-01T11:18:11.403Z",
       "packages": [
         "@shopify/react-native-skia",
         "color",
@@ -12208,10 +12669,13 @@
         "Array",
         "Color",
         "convertToRGBA",
+        "create",
         "interpolate",
         "interpolateColor",
+        "map",
         "onPress",
         "require",
+        "toString",
         "vec"
       ],
       "packages_detail": {
@@ -12334,7 +12798,7 @@
       "total_packages": 14,
       "total_hooks": 13,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.205Z",
+      "extracted_at": "2025-11-01T11:18:11.409Z",
       "packages": [
         "@expo/vector-icons",
         "@react-native-seoul/masonry-list",
@@ -12401,17 +12865,24 @@
         "View"
       ],
       "functions": [
+        "alert",
         "atom",
+        "create",
         "createContext",
         "createNativeStackNavigator",
+        "delay",
+        "flatMap",
         "glsl",
         "goBack",
+        "join",
         "makeImageFromView",
+        "navigate",
         "prepareTransition",
         "runTransition",
         "scheduleOnRN",
         "setNotes",
         "setTimeout",
+        "toString",
         "transition",
         "withTiming"
       ],
@@ -12607,7 +13078,7 @@
       "total_packages": 6,
       "total_hooks": 9,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.207Z",
+      "extracted_at": "2025-11-01T11:18:11.411Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -12654,11 +13125,21 @@
         "View"
       ],
       "functions": [
+        "Tap",
+        "create",
+        "floor",
+        "get",
         "interpolate",
         "makeMutable",
+        "map",
+        "measureText",
+        "push",
+        "random",
         "require",
         "scheduleOnRN",
+        "set",
         "setTimeout",
+        "setXYWH",
         "vec",
         "withSpring"
       ],
@@ -12771,7 +13252,7 @@
       "total_packages": 9,
       "total_hooks": 12,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.211Z",
+      "extracted_at": "2025-11-01T11:18:11.416Z",
       "packages": [
         "@react-navigation/native",
         "@react-navigation/native-stack",
@@ -12830,16 +13311,22 @@
         "View"
       ],
       "functions": [
+        "addRect",
         "calculateNewDimensions",
         "clamp",
+        "create",
         "createCornerHandler",
         "forwardRef",
+        "height",
+        "lineTo",
+        "moveTo",
         "navigate",
         "rect",
         "renderDetailModal",
         "setCroppedRect",
         "setShowDetail",
         "skRect",
+        "width",
         "withTiming"
       ],
       "packages_detail": {
@@ -12980,7 +13467,7 @@
       "total_packages": 2,
       "total_hooks": 3,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.213Z",
+      "extracted_at": "2025-11-01T11:18:11.417Z",
       "packages": [
         "react-native",
         "react-native-reanimated"
@@ -13009,7 +13496,10 @@
         "View"
       ],
       "functions": [
-        "interpolate"
+        "create",
+        "get",
+        "interpolate",
+        "map"
       ],
       "packages_detail": {
         "react-native": {
@@ -13053,7 +13543,7 @@
       "total_packages": 6,
       "total_hooks": 9,
       "total_patterns": 10,
-      "extracted_at": "2025-11-01T11:08:09.218Z",
+      "extracted_at": "2025-11-01T11:18:11.421Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-linear-gradient",
@@ -13110,15 +13600,26 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "abs",
         "cancelAnimation",
         "colorByIndex",
+        "create",
+        "filter",
         "findClosestIndexPosition",
+        "floor",
         "forwardRef",
+        "get",
+        "inputRange",
         "interpolate",
+        "map",
         "memo",
         "onActiveIndexChanged",
         "onPress",
+        "outputRange",
+        "reduce",
         "renderItem",
+        "round",
         "snapPoint",
         "vec",
         "withDecay",
@@ -13237,7 +13738,7 @@
       "total_packages": 0,
       "total_hooks": 0,
       "total_patterns": 0,
-      "extracted_at": "2025-11-01T11:08:09.219Z",
+      "extracted_at": "2025-11-01T11:18:11.422Z",
       "packages": [],
       "hooks": [],
       "patterns": [],
@@ -13252,7 +13753,7 @@
       "total_packages": 10,
       "total_hooks": 9,
       "total_patterns": 4,
-      "extracted_at": "2025-11-01T11:08:09.223Z",
+      "extracted_at": "2025-11-01T11:18:11.426Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -13317,6 +13818,7 @@
       ],
       "functions": [
         "Color",
+        "create",
         "createContext",
         "makeMutable",
         "memo",
@@ -13475,7 +13977,7 @@
       "total_packages": 8,
       "total_hooks": 13,
       "total_patterns": 10,
-      "extracted_at": "2025-11-01T11:08:09.229Z",
+      "extracted_at": "2025-11-01T11:18:11.431Z",
       "packages": [
         "expo-blur",
         "react",
@@ -13547,17 +14049,31 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "abs",
+        "bezier",
         "cancelAnimation",
         "clamp",
+        "create",
+        "findIndex",
+        "floor",
+        "get",
         "interpolate",
         "makeMutable",
+        "map",
         "measure",
+        "min",
         "onClose",
         "onTabChange",
+        "push",
+        "round",
         "scheduleOnRN",
         "scheduleOnUI",
+        "set",
         "setShowCustomizer",
         "setTabWidth",
+        "slice",
+        "sqrt",
         "startAnimation",
         "withDelay",
         "withSequence",
@@ -13711,7 +14227,7 @@
       "total_packages": 16,
       "total_hooks": 14,
       "total_patterns": 9,
-      "extracted_at": "2025-11-01T11:08:09.233Z",
+      "extracted_at": "2025-11-01T11:18:11.435Z",
       "packages": [
         "@expo/vector-icons",
         "@react-navigation/native",
@@ -13786,18 +14302,33 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "Tap",
+        "abs",
         "backTransition",
+        "bezier",
         "cancelAnimation",
+        "create",
         "createContext",
         "createNativeStackNavigator",
         "debounce",
+        "duration",
+        "floor",
         "handleItemPress",
+        "in",
         "interpolate",
         "makeMutable",
+        "map",
+        "max",
         "measure",
+        "min",
+        "navigate",
         "onComplete",
         "onPress",
+        "pow",
+        "push",
         "scheduleOnRN",
+        "slice",
         "startTransition",
         "withDetailScreenWrapper",
         "withMainScreenWrapper",
@@ -14003,7 +14534,7 @@
       "total_packages": 9,
       "total_hooks": 1,
       "total_patterns": 2,
-      "extracted_at": "2025-11-01T11:08:09.235Z",
+      "extracted_at": "2025-11-01T11:18:11.437Z",
       "packages": [
         "expo-blur",
         "expo-glass-effect",
@@ -14036,8 +14567,16 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "abs",
+        "create",
+        "ease",
+        "get",
         "handleProgressiveHaptics",
+        "impactAsync",
+        "min",
         "scheduleOnRN",
+        "selectionAsync",
         "withSpring"
       ],
       "packages_detail": {
@@ -14064,7 +14603,10 @@
         "expo-haptics": {
           "imports": [],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "impactAsync",
+            "selectionAsync"
+          ],
           "components": []
         },
         "expo-image": {
@@ -14145,7 +14687,7 @@
       "total_packages": 7,
       "total_hooks": 9,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.237Z",
+      "extracted_at": "2025-11-01T11:18:11.439Z",
       "packages": [
         "@shopify/react-native-skia",
         "color",
@@ -14198,9 +14740,12 @@
       ],
       "functions": [
         "Color",
+        "addArc",
         "cancelAnimation",
         "clearTimeout",
+        "create",
         "fitbox",
+        "max",
         "mutateAsync",
         "mutationFn",
         "rect",
@@ -14208,6 +14753,7 @@
         "setIsLoading",
         "setStatus",
         "setTimeout",
+        "springify",
         "wait",
         "withRepeat",
         "withTiming"
@@ -14328,7 +14874,7 @@
       "total_packages": 5,
       "total_hooks": 5,
       "total_patterns": 4,
-      "extracted_at": "2025-11-01T11:08:09.238Z",
+      "extracted_at": "2025-11-01T11:18:11.440Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -14366,6 +14912,9 @@
         "View"
       ],
       "functions": [
+        "addCircle",
+        "create",
+        "simplify",
         "vec",
         "withSpring"
       ],
@@ -14451,7 +15000,7 @@
       "total_packages": 6,
       "total_hooks": 8,
       "total_patterns": 9,
-      "extracted_at": "2025-11-01T11:08:09.240Z",
+      "extracted_at": "2025-11-01T11:18:11.442Z",
       "packages": [
         "date-fns",
         "expo-haptics",
@@ -14500,9 +15049,14 @@
         "WeeklyChart"
       ],
       "functions": [
+        "create",
+        "floor",
         "format",
+        "getTime",
         "interpolate",
         "interpolateColor",
+        "map",
+        "random",
         "scheduleOnRN",
         "startOfWeek",
         "withSpring"
@@ -14600,7 +15154,7 @@
       "total_packages": 8,
       "total_hooks": 11,
       "total_patterns": 12,
-      "extracted_at": "2025-11-01T11:08:09.244Z",
+      "extracted_at": "2025-11-01T11:18:11.446Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -14671,11 +15225,16 @@
         "View"
       ],
       "functions": [
+        "bezier",
         "cancelAnimation",
         "closeEyes",
+        "create",
         "createAnimatedPressable",
         "forwardRef",
         "interpolate",
+        "join",
+        "log",
+        "map",
         "memo",
         "onClear",
         "onCompleted",
@@ -14832,7 +15391,7 @@
       "total_packages": 6,
       "total_hooks": 6,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.247Z",
+      "extracted_at": "2025-11-01T11:18:11.449Z",
       "packages": [
         "@expo/vector-icons",
         "expo-blur",
@@ -14882,9 +15441,15 @@
       ],
       "functions": [
         "calculateTop",
+        "create",
+        "duration",
+        "floor",
         "generateRandomItem",
         "interpolate",
+        "map",
+        "max",
         "memo",
+        "random",
         "renderItem",
         "renderItemWithBlur",
         "setItems",
@@ -14985,7 +15550,7 @@
       "total_packages": 5,
       "total_hooks": 7,
       "total_patterns": 4,
-      "extracted_at": "2025-11-01T11:08:09.250Z",
+      "extracted_at": "2025-11-01T11:18:11.452Z",
       "packages": [
         "@shopify/react-native-skia",
         "pressto",
@@ -15031,9 +15596,16 @@
         "calculateItemPosition",
         "calculateOverlap",
         "calculateSectionWidth",
+        "create",
+        "filter",
+        "floor",
         "interpolate",
+        "map",
         "memo",
+        "random",
         "setItems",
+        "slice",
+        "springify",
         "withTiming"
       ],
       "packages_detail": {
@@ -15125,7 +15697,7 @@
       "total_packages": 5,
       "total_hooks": 4,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.252Z",
+      "extracted_at": "2025-11-01T11:18:11.454Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -15170,9 +15742,11 @@
         "View"
       ],
       "functions": [
+        "create",
         "interpolate",
         "interpolateColor",
         "paperFoldingHaptics",
+        "selectionAsync",
         "setTimeout",
         "vec",
         "withSpring"
@@ -15202,7 +15776,9 @@
         "expo-haptics": {
           "imports": [],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "selectionAsync"
+          ],
           "components": []
         },
         "pressto": {
@@ -15261,7 +15837,7 @@
       "total_packages": 6,
       "total_hooks": 9,
       "total_patterns": 10,
-      "extracted_at": "2025-11-01T11:08:09.254Z",
+      "extracted_at": "2025-11-01T11:18:11.456Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -15317,11 +15893,20 @@
       ],
       "functions": [
         "cancelAnimation",
+        "cos",
+        "create",
+        "floor",
         "forwardRef",
+        "get",
         "interpolate",
+        "log",
         "onPress",
+        "random",
         "rect",
         "seededRandom",
+        "set",
+        "sin",
+        "sqrt",
         "withDelay",
         "withSpring"
       ],
@@ -15436,7 +16021,7 @@
       "total_packages": 10,
       "total_hooks": 12,
       "total_patterns": 9,
-      "extracted_at": "2025-11-01T11:08:09.259Z",
+      "extracted_at": "2025-11-01T11:18:11.462Z",
       "packages": [
         "@expo/vector-icons",
         "expo-blur",
@@ -15501,20 +16086,32 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "alert",
+        "atan2",
         "cancelAnimation",
         "clearCounter",
         "clearInterval",
+        "cos",
+        "create",
+        "flatten",
+        "floor",
         "forwardRef",
+        "get",
         "getDigitByIndex",
         "interpolate",
         "memo",
         "onCompletion",
         "onProgressChange",
         "parseInt",
+        "round",
         "scheduleOnRN",
+        "selectionAsync",
         "setInterval",
         "setTimeout",
         "setValue",
+        "sin",
+        "toString",
         "toggleTimer",
         "withDecay",
         "withSpring",
@@ -15542,7 +16139,9 @@
         "expo-haptics": {
           "imports": [],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "selectionAsync"
+          ],
           "components": []
         },
         "expo-linear-gradient": {
@@ -15667,7 +16266,7 @@
       "total_packages": 10,
       "total_hooks": 11,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.262Z",
+      "extracted_at": "2025-11-01T11:18:11.465Z",
       "packages": [
         "@expo/vector-icons",
         "expo-blur",
@@ -15726,16 +16325,24 @@
       ],
       "functions": [
         "Boolean",
+        "Pan",
+        "Tap",
+        "charAt",
         "close",
+        "create",
         "createContext",
         "dismissBlurredPopup",
         "getRotationByAngle",
+        "includes",
+        "map",
         "measure",
         "onPress",
         "scheduleOnRN",
         "setParams",
         "setTimeout",
         "showPopup",
+        "slice",
+        "split",
         "withSpring",
         "withTiming"
       ],
@@ -15881,7 +16488,7 @@
       "total_packages": 8,
       "total_hooks": 8,
       "total_patterns": 9,
-      "extracted_at": "2025-11-01T11:08:09.267Z",
+      "extracted_at": "2025-11-01T11:18:11.470Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -15942,16 +16549,29 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "abs",
+        "addCircle",
+        "addRRect",
         "cancelAnimation",
         "clamp",
+        "create",
+        "filter",
+        "flatMap",
+        "floor",
+        "get",
         "getLinesPath",
         "glsl",
         "interpolate",
         "interpolateColor",
         "isBigLine",
+        "join",
+        "map",
         "memo",
+        "moveTo",
         "onProgressChange",
         "rect",
+        "round",
         "rrect",
         "scheduleOnRN",
         "snapPoint",
@@ -16099,7 +16719,7 @@
       "total_packages": 9,
       "total_hooks": 10,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.270Z",
+      "extracted_at": "2025-11-01T11:18:11.472Z",
       "packages": [
         "@expo/ui/swift-ui",
         "@shopify/react-native-skia",
@@ -16155,10 +16775,17 @@
         "View"
       ],
       "functions": [
+        "Pan",
         "clamp",
+        "create",
+        "flatten",
+        "floor",
         "interpolate",
+        "max",
+        "min",
         "onUpdate",
         "scheduleOnRN",
+        "set",
         "setQRCode",
         "vec",
         "withTiming"
@@ -16300,7 +16927,7 @@
       "total_packages": 6,
       "total_hooks": 11,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.274Z",
+      "extracted_at": "2025-11-01T11:18:11.475Z",
       "packages": [
         "@shopify/react-native-skia",
         "color",
@@ -16347,12 +16974,28 @@
       "functions": [
         "Color",
         "cancelAnimation",
+        "close",
+        "cos",
+        "create",
+        "flatten",
+        "forEach",
         "generateRandomDataChart",
         "getPolygonPath",
         "getScaledPolygonPath",
         "interpolate",
+        "keys",
+        "lineTo",
+        "map",
+        "max",
+        "measureText",
+        "min",
+        "moveTo",
+        "random",
+        "reduce",
         "require",
         "setData",
+        "sin",
+        "values",
         "withSpring"
       ],
       "packages_detail": {
@@ -16454,7 +17097,7 @@
       "total_packages": 7,
       "total_hooks": 8,
       "total_patterns": 10,
-      "extracted_at": "2025-11-01T11:08:09.276Z",
+      "extracted_at": "2025-11-01T11:18:11.478Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -16508,9 +17151,18 @@
         "View"
       ],
       "functions": [
+        "Matrix",
+        "addPath",
+        "create",
+        "get",
         "getRightLinePath",
+        "impactAsync",
         "interpolate",
+        "lineTo",
+        "moveTo",
+        "rArcTo",
         "scheduleOnRN",
+        "transform",
         "withSpring",
         "withTiming"
       ],
@@ -16533,7 +17185,9 @@
         "expo-haptics": {
           "imports": [],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "impactAsync"
+          ],
           "components": []
         },
         "pressto": {
@@ -16622,7 +17276,7 @@
       "total_packages": 7,
       "total_hooks": 9,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.279Z",
+      "extracted_at": "2025-11-01T11:18:11.481Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -16674,11 +17328,20 @@
         "View"
       ],
       "functions": [
+        "ceil",
         "clamp",
+        "create",
+        "flatten",
         "getReadingTime",
         "interpolate",
+        "map",
+        "max",
         "memo",
+        "min",
         "onReset",
+        "reduce",
+        "round",
+        "split",
         "withTiming"
       ],
       "packages_detail": {
@@ -16787,7 +17450,7 @@
       "total_packages": 7,
       "total_hooks": 9,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.282Z",
+      "extracted_at": "2025-11-01T11:18:11.483Z",
       "packages": [
         "expo-linear-gradient",
         "pressto",
@@ -16840,8 +17503,13 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "create",
         "forwardRef",
+        "get",
         "interpolate",
+        "map",
+        "max",
         "memo",
         "scheduleOnRN",
         "scrollTo",
@@ -16967,7 +17635,7 @@
       "total_packages": 10,
       "total_hooks": 12,
       "total_patterns": 9,
-      "extracted_at": "2025-11-01T11:08:09.285Z",
+      "extracted_at": "2025-11-01T11:18:11.486Z",
       "packages": [
         "@expo/vector-icons",
         "expo-image",
@@ -17028,13 +17696,27 @@
       ],
       "functions": [
         "Array",
+        "Exclusive",
+        "Pan",
+        "Tap",
+        "add",
         "calculateGridItemIndex",
         "calculateGridItemPosition",
+        "create",
+        "delete",
+        "floor",
+        "from",
         "generateNumbersInRange",
+        "has",
+        "max",
         "memo",
+        "min",
+        "push",
+        "renderItem",
         "sameElements",
         "scheduleOnRN",
         "scrollTo",
+        "toString",
         "toggleIndex",
         "withSpring",
         "withTiming"
@@ -17185,7 +17867,7 @@
       "total_packages": 7,
       "total_hooks": 9,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.287Z",
+      "extracted_at": "2025-11-01T11:18:11.489Z",
       "packages": [
         "@expo/vector-icons",
         "expo-linear-gradient",
@@ -17232,9 +17914,14 @@
       "functions": [
         "calculateAnimationParams",
         "cancelAnimation",
+        "create",
+        "duration",
+        "filter",
+        "floor",
         "generateRandom",
         "interpolate",
         "makeMutable",
+        "map",
         "random",
         "setItems",
         "setTimeout",
@@ -17346,7 +18033,7 @@
       "total_packages": 8,
       "total_hooks": 1,
       "total_patterns": 0,
-      "extracted_at": "2025-11-01T11:08:09.291Z",
+      "extracted_at": "2025-11-01T11:18:11.492Z",
       "packages": [
         "@react-native-seoul/masonry-list",
         "@react-navigation/native",
@@ -17373,8 +18060,12 @@
         "View"
       ],
       "functions": [
+        "create",
         "createNativeStackNavigator",
+        "delay",
+        "get",
         "memo",
+        "navigate",
         "require"
       ],
       "packages_detail": {
@@ -17464,7 +18155,7 @@
       "total_packages": 5,
       "total_hooks": 5,
       "total_patterns": 4,
-      "extracted_at": "2025-11-01T11:08:09.292Z",
+      "extracted_at": "2025-11-01T11:18:11.493Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -17500,6 +18191,9 @@
         "Touchable.Path"
       ],
       "functions": [
+        "abs",
+        "addRRect",
+        "max",
         "memo",
         "rect",
         "rrect",
@@ -17584,7 +18278,7 @@
       "total_packages": 6,
       "total_hooks": 4,
       "total_patterns": 4,
-      "extracted_at": "2025-11-01T11:08:09.295Z",
+      "extracted_at": "2025-11-01T11:18:11.496Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -17626,12 +18320,23 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "atan2",
         "clampToCircle",
+        "cos",
+        "create",
+        "floor",
+        "getBounds",
         "getHueFromPosition",
         "getSaturationFromPosition",
         "hsvToRgb",
+        "log",
+        "max",
         "onMove",
-        "scheduleOnRN"
+        "round",
+        "scheduleOnRN",
+        "sin",
+        "sqrt"
       ],
       "packages_detail": {
         "@shopify/react-native-skia": {
@@ -17726,7 +18431,7 @@
       "total_packages": 5,
       "total_hooks": 5,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.297Z",
+      "extracted_at": "2025-11-01T11:18:11.498Z",
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -17770,9 +18475,14 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "create",
         "interpolate",
+        "measureText",
         "memo",
         "require",
+        "sqrt",
+        "toString",
         "withTiming"
       ],
       "packages_detail": {
@@ -17867,7 +18577,7 @@
       "total_packages": 6,
       "total_hooks": 4,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.298Z",
+      "extracted_at": "2025-11-01T11:18:11.499Z",
       "packages": [
         "@expo/vector-icons",
         "color",
@@ -17907,7 +18617,10 @@
       ],
       "functions": [
         "Color",
+        "create",
         "interpolate",
+        "log",
+        "map",
         "memo",
         "onPick",
         "onPress",
@@ -18000,7 +18713,7 @@
       "total_packages": 10,
       "total_hooks": 11,
       "total_patterns": 9,
-      "extracted_at": "2025-11-01T11:08:09.302Z",
+      "extracted_at": "2025-11-01T11:18:11.503Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-blur",
@@ -18064,19 +18777,32 @@
         "View"
       ],
       "functions": [
+        "Fling",
+        "Simultaneous",
+        "addRRect",
+        "changeDirection",
+        "clear",
+        "create",
         "createFlingGesture",
+        "flatten",
+        "floor",
         "forwardRef",
         "getDigitByIndex",
+        "getState",
         "initializer",
         "memo",
+        "move",
         "onDirectionChange",
         "onGameOver",
         "onScoreChange",
         "parseInt",
+        "random",
         "rect",
         "rrect",
         "scheduleOnRN",
+        "selectionAsync",
         "setTimeout",
+        "toString",
         "withSpring",
         "withTiming"
       ],
@@ -18114,7 +18840,9 @@
         "expo-haptics": {
           "imports": [],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "selectionAsync"
+          ],
           "components": []
         },
         "expo-linear-gradient": {
@@ -18231,7 +18959,7 @@
       "total_packages": 5,
       "total_hooks": 4,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.303Z",
+      "extracted_at": "2025-11-01T11:18:11.504Z",
       "packages": [
         "@shopify/react-native-skia",
         "pressto",
@@ -18269,9 +18997,18 @@
         "View"
       ],
       "functions": [
+        "addCircle",
+        "cos",
+        "exp",
+        "get",
         "interpolate",
         "logarithmicSpiral",
         "makeMutable",
+        "push",
+        "random",
+        "set",
+        "sin",
+        "sqrt",
         "vec",
         "withTiming"
       ],
@@ -18360,7 +19097,7 @@
       "total_packages": 6,
       "total_hooks": 2,
       "total_patterns": 3,
-      "extracted_at": "2025-11-01T11:08:09.304Z",
+      "extracted_at": "2025-11-01T11:18:11.505Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -18393,6 +19130,7 @@
         "View"
       ],
       "functions": [
+        "create",
         "memo",
         "onLeft",
         "onRight",
@@ -18485,7 +19223,7 @@
       "total_packages": 7,
       "total_hooks": 12,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.308Z",
+      "extracted_at": "2025-11-01T11:18:11.508Z",
       "packages": [
         "pressto",
         "react",
@@ -18539,13 +19277,24 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "children",
+        "create",
         "createContext",
         "dismissItem",
+        "find",
+        "map",
+        "max",
         "memo",
+        "min",
+        "random",
+        "reduce",
         "renderStackedSheet",
         "scheduleOnRN",
         "setStackedSheets",
         "showStackedSheet",
+        "sign",
+        "sort",
         "withSpring",
         "withTiming"
       ],
@@ -18661,7 +19410,7 @@
       "total_packages": 5,
       "total_hooks": 8,
       "total_patterns": 9,
-      "extracted_at": "2025-11-01T11:08:09.310Z",
+      "extracted_at": "2025-11-01T11:18:11.510Z",
       "packages": [
         "expo-haptics",
         "react",
@@ -18708,9 +19457,16 @@
         "View"
       ],
       "functions": [
+        "create",
+        "floor",
+        "from",
         "interpolate",
+        "map",
+        "max",
         "memo",
+        "min",
         "renderCard",
+        "round",
         "scheduleOnRN",
         "withSpring",
         "withTiming"
@@ -18800,7 +19556,7 @@
       "total_packages": 2,
       "total_hooks": 4,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.311Z",
+      "extracted_at": "2025-11-01T11:18:11.511Z",
       "packages": [
         "react-native",
         "react-native-reanimated"
@@ -18831,7 +19587,10 @@
         "View"
       ],
       "functions": [
-        "interpolate"
+        "create",
+        "get",
+        "interpolate",
+        "toString"
       ],
       "packages_detail": {
         "react-native": {
@@ -18877,7 +19636,7 @@
       "total_packages": 6,
       "total_hooks": 14,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.314Z",
+      "extracted_at": "2025-11-01T11:18:11.515Z",
       "packages": [
         "@expo/vector-icons",
         "@expo/vector-icons/build/createIconSet",
@@ -18933,16 +19692,27 @@
         "View"
       ],
       "functions": [
+        "children",
         "clearAllStackedModals",
         "clearModal",
+        "create",
         "createAnimatedPressable",
         "createContext",
+        "delay",
+        "filter",
+        "find",
         "interpolateColor",
+        "map",
+        "max",
+        "min",
+        "onConfirm",
+        "onDismiss",
         "renderStackedModal",
         "setStackedModals",
         "showModal",
         "showNextModal",
         "showStackedModal",
+        "sort",
         "withCustomSpring",
         "withSpring",
         "withTiming"
@@ -19049,7 +19819,7 @@
       "total_packages": 6,
       "total_hooks": 5,
       "total_patterns": 6,
-      "extracted_at": "2025-11-01T11:08:09.316Z",
+      "extracted_at": "2025-11-01T11:18:11.516Z",
       "packages": [
         "@expo/vector-icons",
         "expo-blur",
@@ -19094,10 +19864,14 @@
         "View"
       ],
       "functions": [
+        "create",
         "createAnimatedPressable",
+        "from",
         "interpolate",
+        "map",
         "memo",
         "setToggled",
+        "toString",
         "withDelay",
         "withSpring"
       ],
@@ -19193,7 +19967,7 @@
       "total_packages": 6,
       "total_hooks": 6,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.318Z",
+      "extracted_at": "2025-11-01T11:18:11.518Z",
       "packages": [
         "@shopify/react-native-skia",
         "pressto",
@@ -19239,8 +20013,13 @@
         "View"
       ],
       "functions": [
+        "create",
+        "findIndex",
         "interpolate",
+        "lineTo",
+        "map",
         "memo",
+        "moveTo",
         "onPress",
         "require",
         "setSelectedScoringDifficulty",
@@ -19352,7 +20131,7 @@
       "total_packages": 7,
       "total_hooks": 7,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.320Z",
+      "extracted_at": "2025-11-01T11:18:11.520Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -19401,9 +20180,13 @@
         "View"
       ],
       "functions": [
+        "create",
+        "get",
         "interpolate",
+        "max",
         "memo",
         "scheduleOnRN",
+        "set",
         "withSpring",
         "withTiming"
       ],
@@ -19511,7 +20294,7 @@
       "total_packages": 5,
       "total_hooks": 5,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.322Z",
+      "extracted_at": "2025-11-01T11:18:11.522Z",
       "packages": [
         "expo-image",
         "react",
@@ -19548,10 +20331,18 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "abs",
         "cancelAnimation",
         "clamp",
+        "create",
         "findClosestSnapPoint",
+        "flatten",
+        "map",
+        "max",
         "memo",
+        "min",
+        "reduce",
         "renderItem",
         "require",
         "withDecay",
@@ -19639,7 +20430,7 @@
       "total_packages": 8,
       "total_hooks": 9,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.327Z",
+      "extracted_at": "2025-11-01T11:18:11.527Z",
       "packages": [
         "@expo/vector-icons",
         "expo-haptics",
@@ -19696,17 +20487,33 @@
       ],
       "functions": [
         "Array",
+        "alert",
+        "clearCell",
         "clearTimeout",
         "countSolutions",
+        "create",
+        "delay",
+        "duration",
         "fillBox",
         "findEmpty",
+        "floor",
         "forceSolveWithConfetti",
         "forwardRef",
         "generateSudoku",
+        "get",
+        "getBoard",
+        "getHighlightedNumber",
+        "getInitialBoard",
+        "getSelectedCell",
+        "impactAsync",
         "isCellValid",
+        "isComplete",
         "isPuzzleComplete",
         "isValidMove",
+        "map",
         "memo",
+        "min",
+        "notificationAsync",
         "onBackspace",
         "onCellPress",
         "onComplete",
@@ -19714,12 +20521,17 @@
         "onPress",
         "onSolved",
         "playCelebrationHaptics",
+        "random",
+        "select",
+        "selectCell",
         "setBoard",
         "setHasStarted",
         "setIsNumberPadReady",
         "setIsReady",
+        "setNumber",
         "setTimeout",
         "shuffle",
+        "solve",
         "solveBoard",
         "solveSudoku",
         "withSpring",
@@ -19739,7 +20551,10 @@
         "expo-haptics": {
           "imports": [],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "impactAsync",
+            "notificationAsync"
+          ],
           "components": []
         },
         "expo-linear-gradient": {
@@ -19849,7 +20664,7 @@
       "total_packages": 8,
       "total_hooks": 10,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.329Z",
+      "extracted_at": "2025-11-01T11:18:11.529Z",
       "packages": [
         "@expo/vector-icons",
         "expo-image",
@@ -19899,17 +20714,23 @@
         "View"
       ],
       "functions": [
+        "Pan",
         "cancelAnimation",
         "clearTimeout",
+        "create",
         "createRef",
+        "floor",
+        "forEach",
         "forwardRef",
         "interpolate",
         "onSwipeLeft",
         "onSwipeRight",
+        "push",
         "require",
         "reset",
         "scheduleOnRN",
         "setTimeout",
+        "sign",
         "withSpring",
         "withTiming"
       ],
@@ -20038,7 +20859,7 @@
       "total_packages": 5,
       "total_hooks": 4,
       "total_patterns": 4,
-      "extracted_at": "2025-11-01T11:08:09.331Z",
+      "extracted_at": "2025-11-01T11:18:11.531Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -20073,7 +20894,9 @@
         "View"
       ],
       "functions": [
+        "create",
         "interpolate",
+        "map",
         "setActiveTabIndex",
         "withSpring"
       ],
@@ -20150,7 +20973,7 @@
       "total_packages": 11,
       "total_hooks": 15,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.336Z",
+      "extracted_at": "2025-11-01T11:18:11.535Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -20223,18 +21046,29 @@
       ],
       "functions": [
         "Color",
+        "Tap",
+        "addCircle",
+        "create",
         "createContext",
+        "flatten",
+        "get",
+        "indexOf",
         "interpolate",
+        "keys",
         "makeImageFromView",
         "makeMutable",
+        "max",
         "measure",
         "memo",
         "onTabPress",
         "onTapIcon",
+        "reduce",
         "require",
         "scheduleOnRN",
         "setActiveTab",
         "setTheme",
+        "sqrt",
+        "toLowerCase",
         "withSpring",
         "withTiming"
       ],
@@ -20404,7 +21238,7 @@
       "total_packages": 7,
       "total_hooks": 6,
       "total_patterns": 4,
-      "extracted_at": "2025-11-01T11:08:09.338Z",
+      "extracted_at": "2025-11-01T11:18:11.537Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -20445,6 +21279,9 @@
       ],
       "functions": [
         "BackgroundComponent",
+        "addCircle",
+        "map",
+        "measureText",
         "onSelectSquare",
         "require",
         "scheduleOnRN",
@@ -20540,7 +21377,7 @@
       "total_packages": 8,
       "total_hooks": 6,
       "total_patterns": 7,
-      "extracted_at": "2025-11-01T11:08:09.341Z",
+      "extracted_at": "2025-11-01T11:18:11.540Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -20596,10 +21433,19 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "Race",
+        "Tap",
+        "abs",
+        "addCircle",
         "cancelAnimation",
+        "create",
         "interpolate",
         "memo",
+        "round",
         "scheduleOnRN",
+        "select",
+        "sin",
         "withDecay",
         "withSpring"
       ],
@@ -20729,7 +21575,7 @@
       "total_packages": 10,
       "total_hooks": 17,
       "total_patterns": 11,
-      "extracted_at": "2025-11-01T11:08:09.347Z",
+      "extracted_at": "2025-11-01T11:18:11.546Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-haptics",
@@ -20805,24 +21651,39 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "assign",
         "atom",
+        "create",
+        "entries",
+        "filter",
         "generateKey",
+        "get",
         "getPosition",
         "getZIndex",
+        "impactAsync",
         "interpolate",
+        "map",
+        "max",
         "memo",
+        "min",
         "onScroll",
         "parseInt",
+        "random",
         "renderItem",
         "renderItemProp",
+        "round",
         "scheduleOnRN",
         "scrollLogic",
         "scrollTo",
+        "set",
         "setActiveItemKey",
         "setHistory",
         "setTarget",
         "setTimeMachineActive",
         "setTimeout",
+        "sort",
+        "values",
         "vec",
         "withPause",
         "withRepeat",
@@ -20853,7 +21714,9 @@
         "expo-haptics": {
           "imports": [],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "impactAsync"
+          ],
           "components": []
         },
         "jotai": {
@@ -20995,7 +21858,7 @@
       "total_packages": 7,
       "total_hooks": 11,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.350Z",
+      "extracted_at": "2025-11-01T11:18:11.549Z",
       "packages": [
         "@expo/vector-icons",
         "pressto",
@@ -21046,14 +21909,23 @@
       ],
       "functions": [
         "Boolean",
+        "Pan",
         "clearTimeout",
+        "create",
         "createContext",
         "dismissItem",
+        "find",
+        "leading",
+        "map",
+        "now",
+        "random",
         "renderToast",
         "scheduleOnRN",
         "setTimeout",
         "setToasts",
         "showToast",
+        "sort",
+        "warn",
         "withSpring",
         "withTiming"
       ],
@@ -21167,7 +22039,7 @@
       "total_packages": 9,
       "total_hooks": 12,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.353Z",
+      "extracted_at": "2025-11-01T11:18:11.552Z",
       "packages": [
         "@expo/vector-icons",
         "color",
@@ -21229,14 +22101,23 @@
       ],
       "functions": [
         "Color",
+        "Tap",
+        "create",
         "createContext",
+        "get",
+        "indexOf",
         "interpolate",
+        "keys",
+        "log",
         "makeMutable",
+        "max",
         "memo",
         "onTabPress",
         "onTapIcon",
+        "reduce",
         "scheduleOnRN",
         "setActiveTab",
+        "toLowerCase",
         "withSpring",
         "withTiming"
       ],
@@ -21370,7 +22251,7 @@
       "total_packages": 9,
       "total_hooks": 6,
       "total_patterns": 8,
-      "extracted_at": "2025-11-01T11:08:09.356Z",
+      "extracted_at": "2025-11-01T11:18:11.555Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -21421,9 +22302,15 @@
         "View"
       ],
       "functions": [
+        "Pan",
+        "abs",
         "cancelAnimation",
         "clamp",
+        "close",
         "convertTranslationToProgress",
+        "cos",
+        "create",
+        "cubicTo",
         "debounce",
         "degreesToRadians",
         "drawBottomLeftBorderPath",
@@ -21431,10 +22318,20 @@
         "drawSquirclePath",
         "drawTopLeftBorderPath",
         "drawTopRightBorderPath",
+        "get",
         "getPathParamsForBorder",
+        "impactAsync",
         "interpolate",
+        "lineTo",
+        "max",
+        "min",
+        "moveTo",
         "onProgressChange",
+        "rArcTo",
         "scheduleOnRN",
+        "sin",
+        "sqrt",
+        "tan",
         "withSpring"
       ],
       "packages_detail": {
@@ -21468,7 +22365,9 @@
         "expo-haptics": {
           "imports": [],
           "hooks": [],
-          "functions": [],
+          "functions": [
+            "impactAsync"
+          ],
           "components": []
         },
         "lodash.debounce": {
@@ -21560,7 +22459,7 @@
       "total_packages": 6,
       "total_hooks": 12,
       "total_patterns": 9,
-      "extracted_at": "2025-11-01T11:08:09.362Z",
+      "extracted_at": "2025-11-01T11:18:11.560Z",
       "packages": [
         "@shopify/react-native-skia",
         "expo-router",
@@ -21619,11 +22518,15 @@
         "View"
       ],
       "functions": [
+        "bezier",
         "cancelAnimation",
+        "create",
         "createPath",
+        "duration",
         "forwardRef",
         "getColorByStatus",
         "interpolate",
+        "join",
         "onCorrectCode",
         "onCorrectCodeWrapper",
         "onWrongCode",
@@ -21632,6 +22535,8 @@
         "setCode",
         "setTimeout",
         "shake",
+        "split",
+        "toString",
         "withRepeat",
         "withTiming"
       ],
@@ -21745,7 +22650,7 @@
       "total_packages": 5,
       "total_hooks": 8,
       "total_patterns": 5,
-      "extracted_at": "2025-11-01T11:08:09.358Z",
+      "extracted_at": "2025-11-01T11:18:11.557Z",
       "packages": [
         "expo-router",
         "react",
@@ -21786,8 +22691,12 @@
         "View"
       ],
       "functions": [
+        "bezier",
         "cancelAnimation",
+        "create",
+        "duration",
         "getColorByStatus",
+        "join",
         "onCorrectCode",
         "onCorrectCodeWrapper",
         "onWrongCode",
@@ -21796,6 +22705,8 @@
         "setCode",
         "setTimeout",
         "shake",
+        "split",
+        "toString",
         "withRepeat",
         "withTiming"
       ],
@@ -21884,7 +22795,7 @@
       "total_packages": 12,
       "total_hooks": 7,
       "total_patterns": 9,
-      "extracted_at": "2025-11-01T11:08:09.365Z",
+      "extracted_at": "2025-11-01T11:18:11.563Z",
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -21948,22 +22859,34 @@
       ],
       "functions": [
         "Color",
+        "Pan",
+        "abs",
+        "addRRect",
         "cancelAnimation",
+        "ceil",
         "clamp",
+        "create",
+        "filter",
+        "flatten",
+        "floor",
+        "get",
         "getDigitByIndex",
         "getLinesPath",
         "interpolate",
         "isBigLine",
         "isSharedValue",
+        "map",
         "memo",
         "onProgressChange",
         "parseInt",
         "rect",
+        "round",
         "rrect",
         "scheduleOnRN",
         "setIsExpanded",
         "setTimeout",
         "snapPoint",
+        "toString",
         "unwrapReanimatedValue",
         "withSpring",
         "withTiming"

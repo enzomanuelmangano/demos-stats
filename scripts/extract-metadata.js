@@ -83,6 +83,7 @@ function extractImports(sourceFile) {
     packages: new Set(),
     namedImports: {},
     defaultImports: {},
+    namespaceImports: {},
     typeImports: {},
   };
 
@@ -105,9 +106,10 @@ function extractImports(sourceFile) {
           imports.defaultImports[moduleSpecifier].push(name.text);
         }
 
-        // Named imports
+        // Named imports or namespace imports
         if (namedBindings) {
           if (ts.isNamedImports(namedBindings)) {
+            // Named imports: import { foo, bar } from 'pkg'
             namedBindings.elements.forEach(element => {
               const importName = element.name.text;
               const isTypeOnly = element.isTypeOnly || node.importClause.isTypeOnly;
@@ -124,6 +126,13 @@ function extractImports(sourceFile) {
                 imports.namedImports[moduleSpecifier].push(importName);
               }
             });
+          } else if (ts.isNamespaceImport(namedBindings)) {
+            // Namespace import: import * as Foo from 'pkg'
+            const namespaceName = namedBindings.name.text;
+            if (!imports.namespaceImports[moduleSpecifier]) {
+              imports.namespaceImports[moduleSpecifier] = [];
+            }
+            imports.namespaceImports[moduleSpecifier].push(namespaceName);
           }
         }
       }
@@ -138,6 +147,7 @@ function extractImports(sourceFile) {
     packages: Array.from(imports.packages),
     namedImports: imports.namedImports,
     defaultImports: imports.defaultImports,
+    namespaceImports: imports.namespaceImports,
     typeImports: imports.typeImports,
   };
 }
@@ -150,6 +160,7 @@ function extractCalls(sourceFile) {
     hooks: new Set(),
     functions: new Set(),
     components: new Set(),
+    namespaceCalls: new Map(), // Maps namespace identifier to called functions
   };
 
   function visit(node) {
@@ -169,17 +180,27 @@ function extractCalls(sourceFile) {
         }
       }
 
-      // Property access like Animated.View or withTiming()
+      // Property access like Haptics.selectionAsync() or Animated.View
       if (ts.isPropertyAccessExpression(expr)) {
         const left = expr.expression;
         const right = expr.name.text;
 
         if (ts.isIdentifier(left)) {
-          const fullName = `${left.text}.${right}`;
+          const namespace = left.text;
+          const fullName = `${namespace}.${right}`;
+
+          // Track namespace calls for mapping later (e.g., Haptics.selectionAsync)
+          if (!calls.namespaceCalls.has(namespace)) {
+            calls.namespaceCalls.set(namespace, new Set());
+          }
+          calls.namespaceCalls.get(namespace).add(right);
 
           // Detect Animated.View, Animated.Text, etc.
-          if (left.text === 'Animated') {
+          if (namespace === 'Animated') {
             calls.components.add(fullName);
+          } else {
+            // Track as function call
+            calls.functions.add(right);
           }
         }
       }
@@ -205,10 +226,17 @@ function extractCalls(sourceFile) {
 
   visit(sourceFile);
 
+  // Convert namespaceCalls Map to object
+  const namespaceCalls = {};
+  calls.namespaceCalls.forEach((funcs, namespace) => {
+    namespaceCalls[namespace] = Array.from(funcs).sort();
+  });
+
   return {
     hooks: Array.from(calls.hooks).sort(),
     functions: Array.from(calls.functions).sort(),
     components: Array.from(calls.components).sort(),
+    namespaceCalls: namespaceCalls,
   };
 }
 
@@ -289,9 +317,11 @@ function analyzeAnimation(animationPath, slug) {
   const aggregatedData = {
     packages: new Set(),
     namedImports: {},
+    namespaceImports: {},
     hooks: new Set(),
     functions: new Set(),
     components: new Set(),
+    namespaceCalls: {},
   };
 
   console.log(`  ${colors.gray}Analyzing ${files.length} files...${colors.reset}`);
@@ -319,11 +349,31 @@ function analyzeAnimation(animationPath, slug) {
       });
     });
 
+    // Merge namespace imports
+    Object.keys(imports.namespaceImports).forEach(pkg => {
+      if (!aggregatedData.namespaceImports[pkg]) {
+        aggregatedData.namespaceImports[pkg] = new Set();
+      }
+      imports.namespaceImports[pkg].forEach(item => {
+        aggregatedData.namespaceImports[pkg].add(item);
+      });
+    });
+
     // Extract calls
     const calls = extractCalls(sourceFile);
     calls.hooks.forEach(hook => aggregatedData.hooks.add(hook));
     calls.functions.forEach(fn => aggregatedData.functions.add(fn));
     calls.components.forEach(comp => aggregatedData.components.add(comp));
+
+    // Merge namespace calls
+    Object.keys(calls.namespaceCalls).forEach(namespace => {
+      if (!aggregatedData.namespaceCalls[namespace]) {
+        aggregatedData.namespaceCalls[namespace] = new Set();
+      }
+      calls.namespaceCalls[namespace].forEach(fn => {
+        aggregatedData.namespaceCalls[namespace].add(fn);
+      });
+    });
   });
 
   // Convert Sets to sorted arrays, filter out relative imports
@@ -343,8 +393,32 @@ function analyzeAnimation(animationPath, slug) {
     namedImports[pkg] = Array.from(aggregatedData.namedImports[pkg]).sort();
   });
 
+  // Convert namespaceImports Sets to arrays, filter out relative imports
+  const namespaceImports = {};
+  Object.keys(aggregatedData.namespaceImports).forEach(pkg => {
+    // Skip relative imports
+    if (pkg.startsWith('.') || pkg.startsWith('/')) {
+      return;
+    }
+    namespaceImports[pkg] = Array.from(aggregatedData.namespaceImports[pkg]).sort();
+  });
+
+  // Convert namespaceCalls Sets to arrays
+  const namespaceCalls = {};
+  Object.keys(aggregatedData.namespaceCalls).forEach(namespace => {
+    namespaceCalls[namespace] = Array.from(aggregatedData.namespaceCalls[namespace]).sort();
+  });
+
   // Categorize by package
-  const packageData = categorizeByPackage(packages, namedImports, hooks, functions, components);
+  const packageData = categorizeByPackage(
+    packages,
+    namedImports,
+    namespaceImports,
+    namespaceCalls,
+    hooks,
+    functions,
+    components
+  );
 
   // Analyze file structure
   const fileStructure = analyzeFileStructure(animationPath);
@@ -387,9 +461,17 @@ function analyzeAnimation(animationPath, slug) {
 /**
  * Categorize imports by package
  * Automatically detects which package each hook/function/component came from
- * by building a reverse lookup from the actual imports
+ * by building a reverse lookup from the actual imports (both named and namespace)
  */
-function categorizeByPackage(packages, namedImports, hooks, functions, components) {
+function categorizeByPackage(
+  packages,
+  namedImports,
+  namespaceImports,
+  namespaceCalls,
+  hooks,
+  functions,
+  components
+) {
   const packageData = {};
 
   packages.forEach(pkg => {
@@ -405,13 +487,23 @@ function categorizeByPackage(packages, namedImports, hooks, functions, component
     };
   });
 
-  // Build a reverse lookup: item name -> package
-  // This tells us which package each imported item came from
+  // Build reverse lookups
+  // 1. item name -> package (for named imports)
   const itemToPackage = {};
   Object.entries(namedImports).forEach(([pkg, imports]) => {
     imports.forEach(item => {
       if (!itemToPackage[item]) {
         itemToPackage[item] = pkg;
+      }
+    });
+  });
+
+  // 2. namespace identifier -> package (for namespace imports like Haptics)
+  const namespaceToPackage = {};
+  Object.entries(namespaceImports).forEach(([pkg, namespaces]) => {
+    namespaces.forEach(namespace => {
+      if (!namespaceToPackage[namespace]) {
+        namespaceToPackage[namespace] = pkg;
       }
     });
   });
@@ -429,6 +521,18 @@ function categorizeByPackage(packages, namedImports, hooks, functions, component
     const pkg = itemToPackage[fn];
     if (pkg && packageData[pkg]) {
       packageData[pkg].functions.push(fn);
+    }
+  });
+
+  // Categorize namespace calls (e.g., Haptics.selectionAsync)
+  Object.entries(namespaceCalls).forEach(([namespace, calls]) => {
+    const pkg = namespaceToPackage[namespace];
+    if (pkg && packageData[pkg]) {
+      calls.forEach(fn => {
+        if (!packageData[pkg].functions.includes(fn)) {
+          packageData[pkg].functions.push(fn);
+        }
+      });
     }
   });
 

@@ -6,7 +6,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Dashboard />
-      <StatusBar style="light" />
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 }
@@ -14,6 +14,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#fafbfc',
   },
 });

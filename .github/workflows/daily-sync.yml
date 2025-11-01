@@ -45,17 +45,20 @@ jobs:
       - name: Generate aggregate statistics
         run: npm run stats
 
+      - name: Copy stats to public directory
+        run: cp data/stats.json public/data/stats.json
+
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet data/ || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet public/data/stats.json || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/
+          git add public/data/stats.json
           git commit -m "chore: update analytics data - $(date +'%Y-%m-%d')"
           git push
 

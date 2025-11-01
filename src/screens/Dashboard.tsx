@@ -7,6 +7,7 @@ import {
   TextInput,
   ActivityIndicator,
   TouchableOpacity,
+  useWindowDimensions,
 } from 'react-native';
 import { useAggregateStats } from '../hooks/useAnalytics';
 import { ProgressBarChart } from '../components/ProgressBarChart';
@@ -37,6 +38,8 @@ function normalizeComponentName(component: string): string {
 export function Dashboard() {
   const { stats, loading, error } = useAggregateStats();
   const [selectedPackages, setSelectedPackages] = useState<string[]>([]);
+  const { width } = useWindowDimensions();
+  const isMobile = width < 768;
 
   const filteredAnimations = useMemo(() => {
     if (!stats) return [];
@@ -231,7 +234,7 @@ export function Dashboard() {
   if (loading) {
     return (
       <View style={styles.center}>
-        <ActivityIndicator size="large" color="#007AFF" />
+        <ActivityIndicator size="large" color="#2563eb" />
         <Text style={styles.loadingText}>Loading analytics data...</Text>
       </View>
     );
@@ -251,310 +254,410 @@ export function Dashboard() {
   }
 
   return (
-    <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+    <ScrollView style={styles.container} contentContainerStyle={[styles.content, isMobile && styles.contentMobile]}>
       {/* Header */}
-      <View style={styles.header}>
-        <Text style={styles.headerTitle}>Demos Analytics</Text>
-        <View style={styles.statsOverview}>
-          <View style={styles.statPill}>
+      <View style={[styles.header, isMobile && styles.headerMobile]}>
+        <Text style={[styles.headerTitle, isMobile && styles.headerTitleMobile]}>
+          React Native Demos Analytics
+        </Text>
+        <Text style={styles.headerSubtitle}>
+          Explore 110+ animation examples with detailed insights
+        </Text>
+
+        <View style={[styles.statsOverview, isMobile && styles.statsOverviewMobile]}>
+          <View style={[styles.statCard, isMobile && styles.statCardMobile]}>
             <Text style={styles.statValue}>{filteredAnimations.length}</Text>
-            <Text style={styles.statLabel}>animations</Text>
+            <Text style={styles.statLabel}>Animations</Text>
           </View>
-          <View style={styles.statPill}>
+          <View style={[styles.statCard, isMobile && styles.statCardMobile]}>
             <Text style={styles.statValue}>{Object.keys(insights.patterns).length}</Text>
-            <Text style={styles.statLabel}>patterns</Text>
+            <Text style={styles.statLabel}>Patterns</Text>
           </View>
-          <View style={styles.statPill}>
+          <View style={[styles.statCard, isMobile && styles.statCardMobile]}>
             <Text style={styles.statValue}>{Object.keys(insights.components).length}</Text>
-            <Text style={styles.statLabel}>components</Text>
+            <Text style={styles.statLabel}>Components</Text>
           </View>
         </View>
       </View>
 
       {/* Filters */}
-      <View style={styles.controlsSection}>
+      <View style={[styles.filterSection, isMobile && styles.filterSectionMobile]}>
         <View style={styles.filterHeader}>
-          <Text style={styles.filterHeaderTitle}>Filters</Text>
+          <View>
+            <Text style={styles.filterHeaderTitle}>Filter by Package</Text>
+            <Text style={styles.filterHeaderSubtitle}>
+              {totalActiveFilters === 0 ? 'Select packages to filter' : `${totalActiveFilters} selected`}
+            </Text>
+          </View>
           {totalActiveFilters > 0 && (
-            <TouchableOpacity onPress={clearAllFilters} style={styles.clearAllButton}>
-              <Text style={styles.clearAllText}>✕ Clear all ({totalActiveFilters})</Text>
+            <TouchableOpacity onPress={clearAllFilters} style={styles.clearButton}>
+              <Text style={styles.clearButtonText}>Clear all</Text>
             </TouchableOpacity>
           )}
         </View>
 
-        <View style={styles.filterGroup}>
-          <Text style={styles.filterLabel}>📦 Packages</Text>
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.filterChips}
-          >
-            {Object.entries(stats.packages)
-              .map(([pkg, count]) => {
-                const isSelected = selectedPackages.includes(pkg);
-                return (
-                  <TouchableOpacity
-                    key={pkg}
-                    style={[styles.chip, isSelected && styles.chipSelected]}
-                    onPress={() => toggleFilter(selectedPackages, pkg, setSelectedPackages)}
-                  >
-                    <Text style={[styles.chipText, isSelected && styles.chipTextSelected]}>
-                      {pkg}
-                    </Text>
+        <View style={[styles.filterChipsWrapper, isMobile && styles.filterChipsWrapperMobile]}>
+          {Object.entries(stats.packages)
+            .sort((a, b) => b[1] - a[1])
+            .map(([pkg, count]) => {
+              const isSelected = selectedPackages.includes(pkg);
+              return (
+                <TouchableOpacity
+                  key={pkg}
+                  style={[styles.chip, isSelected && styles.chipSelected]}
+                  onPress={() => toggleFilter(selectedPackages, pkg, setSelectedPackages)}
+                >
+                  <Text style={[styles.chipText, isSelected && styles.chipTextSelected]}>
+                    {pkg}
+                  </Text>
+                  <View style={[styles.chipBadge, isSelected && styles.chipBadgeSelected]}>
                     <Text style={[styles.chipCount, isSelected && styles.chipCountSelected]}>
                       {count}
                     </Text>
-                  </TouchableOpacity>
-                );
-              })}
-          </ScrollView>
+                  </View>
+                </TouchableOpacity>
+              );
+            })}
         </View>
       </View>
 
       {/* Insights */}
       <View style={styles.insightsSection}>
-        <View style={styles.insightsHeader}>
-          <Text style={styles.insightsTitle}>Analysis</Text>
+        <View style={[styles.sectionHeader, isMobile && styles.sectionHeaderMobile]}>
+          <View>
+            <Text style={[styles.sectionTitle, isMobile && styles.sectionTitleMobile]}>
+              Analysis Results
+            </Text>
+            <Text style={styles.sectionSubtitle}>
+              Top patterns and usage statistics
+            </Text>
+          </View>
           <View style={styles.matchedBadge}>
             <Text style={styles.matchedCount}>{filteredAnimations.length}</Text>
-            <Text style={styles.matchedLabel}>matched</Text>
+            <Text style={styles.matchedLabel}>results</Text>
           </View>
         </View>
 
-        <View style={styles.insightsGrid}>
-          <View style={styles.insightColumn}>
-            <ProgressBarChart
-              title="🎨 Patterns"
-              items={insights.patterns}
-              total={filteredAnimations.length}
-              color="#00D9FF"
-              limit={10}
-            />
+        <View style={[styles.chartsGrid, isMobile && styles.chartsGridMobile]}>
+          <ProgressBarChart
+            title="🧩 Components"
+            items={insights.components}
+            total={filteredAnimations.length}
+            color="#8b5cf6"
+            limit={isMobile ? 5 : 8}
+            isMobile={isMobile}
+          />
 
-            <ProgressBarChart
-              title="⚡ Techniques"
-              items={insights.techniques}
-              total={filteredAnimations.length}
-              color="#FFD60A"
-              limit={10}
-            />
+          <ProgressBarChart
+            title="🔧 Functions"
+            items={insights.functions}
+            total={filteredAnimations.length}
+            color="#f97316"
+            limit={isMobile ? 5 : 8}
+            isMobile={isMobile}
+          />
 
-            <ProgressBarChart
-              title="🔧 Functions"
-              items={insights.functions}
-              total={filteredAnimations.length}
-              color="#FF9500"
-              limit={10}
-            />
-          </View>
+          <ProgressBarChart
+            title="📦 Packages"
+            items={insights.packages}
+            total={filteredAnimations.length}
+            color="#10b981"
+            limit={isMobile ? 5 : 8}
+            isMobile={isMobile}
+          />
 
-          <View style={styles.insightColumn}>
-            <ProgressBarChart
-              title="🧩 Components"
-              items={insights.components}
-              total={filteredAnimations.length}
-              color="#AF52DE"
-              limit={10}
-            />
+          <ProgressBarChart
+            title="🎣 Hooks"
+            items={insights.hooks}
+            total={filteredAnimations.length}
+            color="#ec4899"
+            limit={isMobile ? 5 : 8}
+            isMobile={isMobile}
+          />
 
-            <ProgressBarChart
-              title="🎣 Hooks"
-              items={insights.hooks}
-              total={filteredAnimations.length}
-              color="#FF375F"
-              limit={10}
-            />
+          <ProgressBarChart
+            title="🎨 Patterns"
+            items={insights.patterns}
+            total={filteredAnimations.length}
+            color="#06b6d4"
+            limit={isMobile ? 5 : 8}
+            isMobile={isMobile}
+          />
 
-            <ProgressBarChart
-              title="📦 Packages"
-              items={insights.packages}
-              total={filteredAnimations.length}
-              color="#34C759"
-              limit={10}
-            />
-          </View>
+          <ProgressBarChart
+            title="⚡ Techniques"
+            items={insights.techniques}
+            total={filteredAnimations.length}
+            color="#f59e0b"
+            limit={isMobile ? 5 : 8}
+            isMobile={isMobile}
+          />
         </View>
       </View>
     </ScrollView>
   );
 }
 
+// Consistent spacing scale: 8, 12, 16, 20, 24, 32, 40, 48
+const SPACING = {
+  xs: 8,
+  sm: 12,
+  md: 16,
+  lg: 20,
+  xl: 24,
+  xxl: 32,
+  xxxl: 40,
+  huge: 48,
+};
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#fafbfc',
   },
   content: {
-    padding: 24,
-    maxWidth: 1400,
+    padding: SPACING.xxl,
+    maxWidth: 1200,
     alignSelf: 'center',
     width: '100%',
+  },
+  contentMobile: {
+    padding: SPACING.md,
   },
   center: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#000',
-    padding: 20,
+    backgroundColor: '#fafbfc',
+    padding: SPACING.lg,
   },
   loadingText: {
-    marginTop: 16,
-    fontSize: 16,
-    color: '#666',
+    marginTop: SPACING.md,
+    fontSize: 15,
+    color: '#64748b',
   },
   errorText: {
     fontSize: 18,
-    color: '#ff4444',
+    color: '#dc2626',
     textAlign: 'center',
-    marginBottom: 8,
+    marginBottom: SPACING.xs,
+    fontWeight: '600',
   },
   errorHint: {
     fontSize: 14,
-    color: '#666',
+    color: '#64748b',
     textAlign: 'center',
   },
+
+  // Header
   header: {
-    marginBottom: 40,
+    marginBottom: SPACING.huge,
+  },
+  headerMobile: {
+    marginBottom: SPACING.xxl,
   },
   headerTitle: {
-    fontSize: 36,
-    fontWeight: '700',
-    color: '#fff',
-    marginBottom: 16,
-    letterSpacing: -1,
+    fontSize: 42,
+    fontWeight: '800',
+    color: '#0f172a',
+    marginBottom: SPACING.xs,
+    letterSpacing: -1.5,
+    lineHeight: 48,
+  },
+  headerTitleMobile: {
+    fontSize: 28,
+    lineHeight: 34,
+    letterSpacing: -0.5,
+  },
+  headerSubtitle: {
+    fontSize: 16,
+    color: '#64748b',
+    marginBottom: SPACING.xl,
+    lineHeight: 24,
   },
   statsOverview: {
     flexDirection: 'row',
-    gap: 12,
+    gap: SPACING.md,
   },
-  statPill: {
-    flexDirection: 'row',
+  statsOverviewMobile: {
+    gap: SPACING.sm,
+  },
+  statCard: {
+    flex: 1,
+    backgroundColor: '#ffffff',
+    paddingVertical: SPACING.lg,
+    paddingHorizontal: SPACING.md,
+    borderRadius: SPACING.md,
     alignItems: 'center',
-    gap: 6,
-    backgroundColor: '#111',
-    paddingHorizontal: 14,
-    paddingVertical: 8,
-    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: '#e2e8f0',
+  },
+  statCardMobile: {
+    paddingVertical: SPACING.md,
+    paddingHorizontal: SPACING.sm,
   },
   statValue: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#fff',
+    fontSize: 32,
+    fontWeight: '800',
+    color: '#2563eb',
+    marginBottom: SPACING.xs / 2,
+    lineHeight: 38,
   },
   statLabel: {
-    fontSize: 14,
-    color: '#666',
+    fontSize: 13,
+    color: '#64748b',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
   },
-  controlsSection: {
-    marginBottom: 48,
-    backgroundColor: '#0a0a0a',
-    borderRadius: 12,
-    padding: 20,
+
+  // Filters
+  filterSection: {
+    marginBottom: SPACING.xxxl,
+    backgroundColor: '#ffffff',
+    borderRadius: SPACING.lg,
+    padding: SPACING.xl,
     borderWidth: 1,
-    borderColor: '#1a1a1a',
+    borderColor: '#e2e8f0',
+  },
+  filterSectionMobile: {
+    padding: SPACING.lg,
+    borderRadius: SPACING.md,
   },
   filterHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 20,
+    alignItems: 'flex-start',
+    marginBottom: SPACING.xl,
   },
   filterHeaderTitle: {
-    fontSize: 18,
+    fontSize: 20,
+    fontWeight: '700',
+    color: '#0f172a',
+    marginBottom: SPACING.xs / 2,
+  },
+  filterHeaderSubtitle: {
+    fontSize: 14,
+    color: '#64748b',
+  },
+  clearButton: {
+    backgroundColor: '#f1f5f9',
+    paddingHorizontal: SPACING.md,
+    paddingVertical: SPACING.xs,
+    borderRadius: 10,
+  },
+  clearButtonText: {
+    color: '#475569',
+    fontSize: 14,
     fontWeight: '600',
-    color: '#fff',
   },
-  clearAllButton: {
-    backgroundColor: '#1a1a1a',
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 8,
+  filterChipsWrapper: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: SPACING.xs,
   },
-  clearAllText: {
-    color: '#888',
-    fontSize: 12,
-  },
-  filterGroup: {
-    marginBottom: 20,
-  },
-  filterLabel: {
-    fontSize: 12,
-    fontWeight: '600',
-    color: '#666',
-    marginBottom: 10,
-  },
-  filterChips: {
-    gap: 8,
-    paddingRight: 16,
+  filterChipsWrapperMobile: {
+    gap: SPACING.xs,
   },
   chip: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 6,
-    backgroundColor: '#111',
-    paddingHorizontal: 12,
-    paddingVertical: 8,
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: '#222',
+    gap: SPACING.xs,
+    backgroundColor: '#f8fafc',
+    paddingLeft: SPACING.md,
+    paddingRight: SPACING.sm,
+    paddingVertical: 10,
+    borderRadius: SPACING.sm,
+    borderWidth: 1.5,
+    borderColor: '#e2e8f0',
   },
   chipSelected: {
-    backgroundColor: '#007AFF',
-    borderColor: '#007AFF',
+    backgroundColor: '#2563eb',
+    borderColor: '#2563eb',
   },
   chipText: {
-    fontSize: 13,
-    color: '#fff',
+    fontSize: 14,
+    color: '#1e293b',
+    fontWeight: '600',
   },
   chipTextSelected: {
-    fontWeight: '600',
+    color: '#ffffff',
+  },
+  chipBadge: {
+    backgroundColor: '#e2e8f0',
+    paddingHorizontal: SPACING.xs,
+    paddingVertical: 3,
+    borderRadius: SPACING.xs,
+    minWidth: 28,
+    alignItems: 'center',
+  },
+  chipBadgeSelected: {
+    backgroundColor: 'rgba(255, 255, 255, 0.25)',
   },
   chipCount: {
-    fontSize: 12,
-    color: '#666',
+    fontSize: 13,
+    color: '#475569',
+    fontWeight: '700',
   },
   chipCountSelected: {
-    color: '#ccc',
+    color: '#ffffff',
   },
+
+  // Insights
   insightsSection: {
-    marginBottom: 60,
+    marginBottom: SPACING.huge,
   },
-  insightsHeader: {
+  sectionHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 32,
+    alignItems: 'flex-start',
+    marginBottom: SPACING.xxl,
   },
-  insightsTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: '#fff',
+  sectionHeaderMobile: {
+    flexDirection: 'column',
+    gap: SPACING.md,
+    marginBottom: SPACING.xl,
+  },
+  sectionTitle: {
+    fontSize: 28,
+    fontWeight: '800',
+    color: '#0f172a',
+    marginBottom: SPACING.xs / 2,
+  },
+  sectionTitleMobile: {
+    fontSize: 22,
+  },
+  sectionSubtitle: {
+    fontSize: 15,
+    color: '#64748b',
   },
   matchedBadge: {
     flexDirection: 'row',
-    alignItems: 'baseline',
-    gap: 6,
-    backgroundColor: '#0a0a0a',
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    borderRadius: 10,
+    alignItems: 'center',
+    gap: SPACING.xs,
+    backgroundColor: '#eff6ff',
+    paddingHorizontal: SPACING.lg,
+    paddingVertical: SPACING.sm,
+    borderRadius: 14,
     borderWidth: 1,
-    borderColor: '#1a1a1a',
+    borderColor: '#bfdbfe',
   },
   matchedCount: {
     fontSize: 24,
-    fontWeight: '700',
-    color: '#007AFF',
+    fontWeight: '800',
+    color: '#2563eb',
   },
   matchedLabel: {
     fontSize: 13,
-    color: '#666',
+    color: '#3b82f6',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
   },
-  insightsGrid: {
-    flexDirection: 'row',
-    gap: 32,
+  chartsGrid: {
+    gap: SPACING.lg,
   },
-  insightColumn: {
-    flex: 1,
+  chartsGridMobile: {
+    gap: SPACING.md,
   },
 });
