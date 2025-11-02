@@ -1,5 +1,5 @@
 {
-  "total_animations": 113,
+  "total_animations": 112,
   "packages": {
     "react-native": 112,
     "react-native-reanimated": 112,
@@ -607,7 +607,6 @@
     "Path": 26,
     "GestureHandlerRootView": 21,
     "Image": 20,
-    "createAnimatedComponent": 19,
     "Circle": 19,
     "FlatList": 18,
     "Blur": 16,
@@ -651,7 +650,6 @@
     "ImageSVG": 3,
     "FitBox": 3,
     "CarouselItem": 3,
-    "LayoutAnimationConfig": 3,
     "BackgroundGradient": 3,
     "QRCode": 3,
     "PressableWithoutFeedback": 3,
@@ -4157,37 +4155,17 @@
       "DashPathEffect": 1
     },
     "react": {
-      "useCallback": 71,
-      "useMemo": 70,
-      "memo": 47,
-      "useState": 40,
-      "useRef": 31,
-      "useEffect": 22,
-      "useImperativeHandle": 19,
-      "forwardRef": 18,
-      "createContext": 10,
-      "useContext": 10,
-      "PropsWithChildren": 3,
-      "FC": 2,
-      "createRef": 2,
-      "ReactNode": 2,
-      "Fragment": 1,
-      "useLayoutEffect": 1,
-      "useId": 1,
-      "ComponentProps": 1
+      "Fragment": 1
     },
     "react-native": {
-      "View": 106,
+      "View": 105,
       "Text": 53,
-      "useWindowDimensions": 5,
       "ScrollView": 4,
-      "StyleSheet": 4,
       "TextInput": 4,
       "Image": 3,
       "FlatList": 2,
       "Modal": 2,
       "TouchableWithoutFeedback": 2,
-      "Dimensions": 1,
       "Switch": 1,
       "ActivityIndicator": 1,
       "Pressable": 1
@@ -4195,27 +4173,14 @@
     "react-native-reanimated": {
       "View": 96,
       "Text": 21,
-      "createAnimatedComponent": 19,
       "FlatList": 16,
-      "useDerivedValue": 13,
-      "useSharedValue": 12,
-      "ScrollView": 9,
-      "withSpring": 9,
-      "withTiming": 6,
-      "useAnimatedReaction": 4,
-      "LayoutAnimationConfig": 3,
-      "withRepeat": 1,
-      "interpolateColor": 1,
-      "cancelAnimation": 1,
-      "Extrapolation": 1,
-      "interpolate": 1,
-      "makeMutable": 1
+      "ScrollView": 9
     },
     "@expo/vector-icons": {
       "AntDesign": 13,
       "Ionicons": 10,
       "MaterialIcons": 9,
-      "MaterialCommunityIcons": 5,
+      "MaterialCommunityIcons": 4,
       "Octicons": 4,
       "Feather": 3,
       "Entypo": 3,
@@ -4227,7 +4192,6 @@
       "PressableScale": 49,
       "PressableOpacity": 10,
       "PressableWithoutFeedback": 3,
-      "createAnimatedPressable": 3,
       "PressablesGroup": 1
     },
     "react-native-gesture-handler": {
@@ -4235,19 +4199,15 @@
       "GestureHandlerRootView": 21,
       "ScrollView": 1
     },
-    "react-native-worklets": {
-      "scheduleOnRN": 45,
-      "scheduleOnUI": 1
-    },
+    "react-native-worklets": {},
     "expo-image": {
-      "Image": 13
+      "Image": 12
     },
     "react-native-safe-area-context": {
-      "useSafeAreaInsets": 22,
       "SafeAreaProvider": 8
     },
     "expo-blur": {
-      "BlurView": 16
+      "BlurView": 4
     },
     "expo-linear-gradient": {
       "LinearGradient": 18
@@ -4257,50 +4217,23 @@
       "Slider": 1
     },
     "react-native-redash": {
-      "ReText": 6,
-      "withPause": 1
+      "ReText": 6
     },
-    "react-native-skia-gesture": {
-      "useGestureHandler": 7
-    },
-    "simplex-noise": {
-      "createNoise2D": 1
-    },
-    "@react-navigation/bottom-tabs": {
-      "createBottomTabNavigator": 5
-    },
-    "@react-navigation/native": {
-      "useNavigation": 4,
-      "StackActions": 2
-    },
+    "react-native-skia-gesture": {},
+    "simplex-noise": {},
+    "@react-navigation/bottom-tabs": {},
+    "@react-navigation/native": {},
     "expo-haptics": {},
     "color": {},
     "@expo/vector-icons/build/createIconSet": {},
     "@react-native-masked-view/masked-view": {},
-    "date-fns": {
-      "format": 3,
-      "startOfWeek": 2,
-      "addDays": 1,
-      "eachDayOfInterval": 1,
-      "endOfWeek": 1,
-      "subDays": 1
-    },
+    "date-fns": {},
     "react-native-qrcode-skia": {},
     "fft.js": {},
     "@react-native-seoul/masonry-list": {},
-    "@react-navigation/native-stack": {
-      "createNativeStackNavigator": 3
-    },
-    "jotai": {
-      "atom": 2,
-      "useAtom": 2,
-      "useAtomValue": 1,
-      "useSetAtom": 1
-    },
-    "expo-router": {
-      "useFocusEffect": 2,
-      "useRouter": 1
-    },
+    "@react-navigation/native-stack": {},
+    "jotai": {},
+    "expo-router": {},
     "lodash.debounce": {},
     "expo-glass-effect": {
       "GlassView": 1
@@ -4312,9 +4245,7 @@
       "PIConfetti": 1
     },
     "lottie-react-native": {},
-    "react-native-keyboard-controller": {
-      "useReanimatedKeyboardAnimation": 2
-    }
+    "react-native-keyboard-controller": {}
   },
   "hooks_by_package": {
     "@shopify/react-native-skia": {
@@ -13569,20 +13500,6 @@
           ]
         }
       }
-    },
-    {
-      "slug": "instagram-shared-transition",
-      "total_files": 0,
-      "total_packages": 0,
-      "total_hooks": 0,
-      "total_patterns": 0,
-      "packages": [],
-      "hooks": [],
-      "patterns": [],
-      "techniques": [],
-      "components": [],
-      "functions": [],
-      "packages_detail": {}
     },
     {
       "slug": "interaction-appearance",

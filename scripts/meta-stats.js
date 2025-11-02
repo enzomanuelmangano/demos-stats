@@ -44,6 +44,27 @@ function normalizeComponentName(component) {
   return component;
 }
 
+/**
+ * Check if a name is not actually a component (factory functions, configs, utilities, etc.)
+ */
+function isNotComponent(name) {
+  const nonComponents = [
+    // Factory functions
+    'createAnimatedComponent',
+    'createContext',
+    'createRef',
+    'createIconSet',
+    'createIconSetFromIcoMoon',
+    'createIconSetFromFontello',
+    // Config/utility objects
+    'LayoutAnimationConfig',
+    'Extrapolation',
+    'Easing',
+    'Keyframe',
+  ];
+  return nonComponents.includes(name);
+}
+
 function generateStats() {
   console.log(`${colors.bright}Generating Aggregate Statistics${colors.reset}\n`);
 
@@ -79,6 +100,11 @@ function generateStats() {
   metaFiles.forEach(file => {
     const filePath = path.join(META_DIR, file);
     const metadata = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+
+    // Skip empty animations (no files extracted)
+    if (metadata.stats.total_files === 0) {
+      return;
+    }
 
     // Track animation summary with full metadata for filtering
     stats.animations.push({
@@ -123,7 +149,10 @@ function generateStats() {
     const uniqueComponents = new Set();
     metadata.components.forEach(comp => {
       const baseComponent = normalizeComponentName(comp);
-      uniqueComponents.add(baseComponent);
+      // Filter out non-components (factory functions, configs, utilities)
+      if (!isNotComponent(baseComponent)) {
+        uniqueComponents.add(baseComponent);
+      }
     });
 
     // Increment count for each unique component in this animation
@@ -163,17 +192,15 @@ function generateStats() {
           stats.functions_by_package[pkg] = {};
         }
 
-        // Track components FROM this package
-        // If components array is empty but imports exist, use imports as components
-        const componentsList = (detail.components && detail.components.length > 0)
-          ? detail.components
-          : (detail.imports || []);
-
-        if (componentsList.length > 0) {
-          componentsList.forEach(comp => {
+        // Track components FROM this package (only actual components, not hooks/functions)
+        if (detail.components && detail.components.length > 0) {
+          detail.components.forEach(comp => {
             const baseComponent = normalizeComponentName(comp);
-            stats.components_by_package[pkg][baseComponent] =
-              (stats.components_by_package[pkg][baseComponent] || 0) + 1;
+            // Filter out non-components (factory functions, configs, utilities)
+            if (!isNotComponent(baseComponent)) {
+              stats.components_by_package[pkg][baseComponent] =
+                (stats.components_by_package[pkg][baseComponent] || 0) + 1;
+            }
           });
         }
 
@@ -230,6 +257,9 @@ function generateStats() {
       }
     }
   });
+
+  // Update total count to reflect non-empty animations only
+  stats.total_animations = stats.animations.length;
 
   // Sort by frequency
   stats.packages = Object.fromEntries(
