@@ -56,6 +56,9 @@ export interface AggregateStats {
   hooks_index: Record<string, string[]>;
   patterns_index: Record<string, string[]>;
   techniques_index: Record<string, string[]>;
+  components_by_package: Record<string, Record<string, number>>;
+  hooks_by_package: Record<string, Record<string, number>>;
+  functions_by_package: Record<string, Record<string, number>>;
   animations: AnimationSummary[];
 }
 
@@ -72,4 +75,5 @@ export interface AnimationSummary {
   techniques: string[];
   components: string[];
   functions: string[];
+  packages_detail: Record<string, PackageDetail>;
 }

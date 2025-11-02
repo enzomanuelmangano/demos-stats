@@ -289,16 +289,118 @@ export function Dashboard() {
   const modalAnimations = useMemo(() => {
     if (!stats || !selectedItem) return [];
 
+    const singlePackageFilter =
+      selectedPackages.length === 1 ? selectedPackages[0] : null;
+
     return filteredAnimations.filter((anim) => {
       switch (selectedCategory) {
-        case 'components':
-          return anim.components.includes(selectedItem);
-        case 'functions':
+        case 'components': {
+          // If filtering by a single package, use package-specific logic
+          if (
+            singlePackageFilter &&
+            singlePackageFilter === '@shopify/react-native-skia'
+          ) {
+            const animPackageDetail = (anim as any).packages_detail?.[
+              singlePackageFilter
+            ];
+
+            if (!animPackageDetail) return false;
+
+            // Check if component is in package's components or imports
+            const componentsList =
+              animPackageDetail.components &&
+              animPackageDetail.components.length > 0
+                ? animPackageDetail.components
+                : animPackageDetail.imports || [];
+
+            // Check direct match
+            if (componentsList.includes(selectedItem)) {
+              return true;
+            }
+
+            // Check normalized versions (Touchable.Path, Animated.Path → Path)
+            const hasNormalizedMatch = anim.components.some((comp: string) => {
+              if (
+                comp.startsWith('Touchable.') ||
+                comp.startsWith('Animated.')
+              ) {
+                const normalized = normalizeComponentName(comp);
+                const skiaComponents = [
+                  'Canvas',
+                  'Circle',
+                  'Group',
+                  'Path',
+                  'Rect',
+                  'Image',
+                  'Text',
+                  'Blur',
+                ];
+                return (
+                  normalized === selectedItem &&
+                  skiaComponents.includes(normalized)
+                );
+              }
+              return false;
+            });
+
+            if (hasNormalizedMatch) return true;
+
+            // Check third-party packages (e.g., react-native-qrcode-skia uses Canvas and Path)
+            if (anim.packages.includes('react-native-qrcode-skia')) {
+              if (selectedItem === 'Canvas' || selectedItem === 'Path') {
+                return true;
+              }
+            }
+
+            return false;
+          }
+
+          // For other packages with single filter, check packages_detail
+          if (singlePackageFilter) {
+            const animPackageDetail = (anim as any).packages_detail?.[
+              singlePackageFilter
+            ];
+            if (!animPackageDetail) return false;
+
+            const componentsList =
+              animPackageDetail.components &&
+              animPackageDetail.components.length > 0
+                ? animPackageDetail.components
+                : animPackageDetail.imports || [];
+
+            return componentsList.includes(selectedItem);
+          }
+
+          // Default: check normalized components
+          return anim.components.some((comp: string) => {
+            const normalized = normalizeComponentName(comp);
+            return normalized === selectedItem || comp === selectedItem;
+          });
+        }
+        case 'functions': {
+          // If filtering by a single package, check package-specific functions
+          if (singlePackageFilter) {
+            const animPackageDetail = (anim as any).packages_detail?.[
+              singlePackageFilter
+            ];
+            if (!animPackageDetail) return false;
+            return animPackageDetail.functions?.includes(selectedItem) || false;
+          }
           return anim.functions.includes(selectedItem);
+        }
         case 'packages':
           return anim.packages.includes(selectedItem);
-        case 'hooks':
+        case 'hooks': {
+          // If filtering by a single package, check package-specific hooks
+          if (singlePackageFilter) {
+            const animPackageDetail = (anim as any).packages_detail?.[
+              singlePackageFilter
+            ];
+            if (!animPackageDetail) return false;
+            return animPackageDetail.hooks?.includes(selectedItem) || false;
+          }
           return anim.hooks.includes(selectedItem);
+        }
         case 'patterns':
           return anim.patterns.includes(selectedItem);
         case 'techniques':
@@ -307,7 +409,13 @@ export function Dashboard() {
           return false;
       }
     });
-  }, [stats, filteredAnimations, selectedItem, selectedCategory]);
+  }, [
+    stats,
+    filteredAnimations,
+    selectedItem,
+    selectedCategory,
+    selectedPackages,
+  ]);
 
   const handleItemPress = (item: string, category: CategoryType) => {
     setSelectedItem(item);
