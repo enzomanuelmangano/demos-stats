@@ -49,9 +49,6 @@ jobs:
       - name: Generate aggregate statistics
         run: npm run stats
 
-      - name: Copy stats to public directory
-        run: cp data/stats.json public/data/stats.json
-
       - name: Check for changes
         id: changes
         run: |
@@ -72,9 +69,9 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Date:** $(date)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          if [ -f data/stats.json ]; then
-            echo "**Total Animations:** $(jq -r '.total_animations' data/stats.json)" >> $GITHUB_STEP_SUMMARY
+          if [ -f public/data/stats.json ]; then
+            echo "**Total Animations:** $(jq -r '.total_animations' public/data/stats.json)" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "### Top 5 Packages" >> $GITHUB_STEP_SUMMARY
-            jq -r '.packages | to_entries | .[0:5] | .[] | "- \(.key): \(.value)"' data/stats.json >> $GITHUB_STEP_SUMMARY
+            jq -r '.packages | to_entries | .[0:5] | .[] | "- \(.key): \(.value)"' public/data/stats.json >> $GITHUB_STEP_SUMMARY
           fi

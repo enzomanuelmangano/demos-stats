@@ -43,6 +43,6 @@ yarn-error.*
 # temporary cloned repos
 .tmp/
 
-# intermediate metadata files (only commit public/data/stats.json)
-data/meta/
-data/stats.json
+# generated data files
+public/data/meta/
+public/data/stats.json

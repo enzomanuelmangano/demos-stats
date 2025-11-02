@@ -17,7 +17,7 @@ const ts = require('typescript');
 const crypto = require('crypto');
 const { syncDemos, DEMOS_DIR } = require('./sync-demos');
 
-const META_DIR = path.join(__dirname, '..', 'data', 'meta');
+const META_DIR = path.join(__dirname, '..', 'public', 'data', 'meta');
 const HASH_ALGORITHM = 'sha256';
 
 // ANSI colors

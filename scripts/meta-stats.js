@@ -10,8 +10,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const META_DIR = path.join(__dirname, '..', 'data', 'meta');
-const STATS_FILE = path.join(__dirname, '..', 'data', 'stats.json');
+const META_DIR = path.join(__dirname, '..', 'public', 'data', 'meta');
+const STATS_FILE = path.join(__dirname, '..', 'public', 'data', 'stats.json');
 
 // ANSI colors
 const colors = {
