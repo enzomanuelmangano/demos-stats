@@ -1,10 +1,10 @@
 name: Daily Analytics Sync
 
-# Automated workflow to sync and update analytics data
+# Automated workflow to sync and update analytics data for daily analytics sync
 on:
   # Run daily at 2 AM UTC
   schedule:
-    - cron: '0 2 * * *'
+    - cron: "0 2 * * *"
 
   # Allow manual trigger
   workflow_dispatch:
@@ -14,8 +14,8 @@ on:
     branches:
       - main
     paths:
-      - 'scripts/**'
-      - '.github/workflows/daily-sync.yml'
+      - "scripts/**"
+      - ".github/workflows/daily-sync.yml"
 
 permissions:
   contents: write
@@ -33,7 +33,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
