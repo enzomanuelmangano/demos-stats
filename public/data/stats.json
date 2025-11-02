@@ -1,13 +1,13 @@
 {
-  "total_animations": 111,
+  "total_animations": 113,
   "packages": {
-    "react-native": 110,
-    "react-native-reanimated": 110,
-    "react": 106,
-    "pressto": 65,
-    "@shopify/react-native-skia": 53,
-    "react-native-gesture-handler": 52,
-    "react-native-worklets": 47,
+    "react-native": 112,
+    "react-native-reanimated": 112,
+    "react": 107,
+    "pressto": 66,
+    "@shopify/react-native-skia": 54,
+    "react-native-gesture-handler": 53,
+    "react-native-worklets": 45,
     "@expo/vector-icons": 44,
     "react-native-safe-area-context": 30,
     "expo-haptics": 23,
@@ -32,19 +32,17 @@
     "simplex-noise": 1,
     "@react-native-masked-view/masked-view": 1,
     "fft.js": 1,
-    "@shopify/react-native-skia/lib/typescript/src/skia/types": 1,
-    "react-native-reanimated/lib/typescript/commonTypes": 1,
     "expo-glass-effect": 1,
     "expo-status-bar": 1,
     "react-native-fast-confetti": 1,
     "lottie-react-native": 1
   },
   "hooks": {
-    "useSharedValue": 95,
-    "useAnimatedStyle": 89,
-    "useDerivedValue": 89,
+    "useSharedValue": 97,
+    "useAnimatedStyle": 90,
+    "useDerivedValue": 90,
     "useCallback": 71,
-    "useMemo": 70,
+    "useMemo": 71,
     "useWindowDimensions": 59,
     "useState": 40,
     "useAnimatedReaction": 32,
@@ -59,10 +57,10 @@
     "useFont": 9,
     "useGestureHandler": 7,
     "useImage": 5,
+    "useRSXformBuffer": 4,
+    "useTexture": 4,
     "useAnimatedShake": 4,
     "useNavigation": 4,
-    "useRSXformBuffer": 3,
-    "useTexture": 3,
     "useTheme": 3,
     "useRectBuffer": 2,
     "useToast": 2,
@@ -104,6 +102,7 @@
     "useId": 1,
     "useRouter": 1,
     "useMutation": 1,
+    "useMagnetDrag": 1,
     "useLayerCoordinates": 1,
     "useLayoutDimensions": 1,
     "useListItems": 1,
@@ -138,26 +137,26 @@
     "usePathInterpolation": 1
   },
   "functions": {
-    "interpolate": 69,
-    "withTiming": 68,
-    "withSpring": 65,
-    "scheduleOnRN": 47,
-    "Gesture.Pan": 35,
+    "withSpring": 79,
+    "interpolate": 72,
+    "withTiming": 58,
+    "scheduleOnRN": 45,
+    "Gesture.Pan": 37,
     "cancelAnimation": 23,
     "vec": 18,
-    "rect": 17,
-    "Gesture.Tap": 13,
+    "rect": 18,
     "clamp": 13,
-    "interpolateColor": 12,
-    "Math.sin": 12,
-    "Easing.bezier": 11,
-    "Math.cos": 11,
+    "interpolateColor": 13,
+    "Math.sin": 13,
+    "Math.cos": 12,
+    "Gesture.Tap": 11,
     "makeMutable": 11,
     "font.measureText": 10,
     "withRepeat": 10,
     "Color": 10,
     "createContext": 10,
     "rrect": 9,
+    "Easing.bezier": 9,
     "FadeOut.duration": 8,
     "parseInt": 7,
     "FadeIn.duration": 7,
@@ -211,6 +210,7 @@
     "val.setXYWH": 2,
     "Skia.ContourMeasureIter": 2,
     "it.next": 2,
+    "withCustomSpring": 2,
     "navigation.dispatch": 2,
     "navigation.getState": 2,
     "pageName.toLowerCase": 2,
@@ -291,7 +291,6 @@
     "path.toSVGString": 1,
     "reverseAnimation": 1,
     "skPath.cubicTo": 1,
-    "withCustomTiming": 1,
     "createNoise2D": 1,
     "noise": 1,
     "path.addRect": 1,
@@ -314,7 +313,6 @@
     "CloseSvgPath.width": 1,
     "Skia.Paint": 1,
     "onConfirmDeletion": 1,
-    "Easing.inOut": 1,
     "collapsedChildren": 1,
     "expandedChildren": 1,
     "onSelectSpringType": 1,
@@ -421,6 +419,9 @@
     "setIsLoading": 1,
     "setStatus": 1,
     "wait": 1,
+    "createFibonacciPositions": 1,
+    "getDistance": 1,
+    "getNearestMagnet": 1,
     "circles.addCircle": 1,
     "circles.simplify": 1,
     "mondayFromThreeWeeksAgo.getTime": 1,
@@ -526,7 +527,6 @@
     "showNextModal": 1,
     "showStackedModal": 1,
     "stackedModals.sort": 1,
-    "withCustomSpring": 1,
     "setToggled": 1,
     "setSelectedScoringDifficulty": 1,
     "FadeInDown.duration": 1,
@@ -597,19 +597,19 @@
     "unwrapReanimatedValue": 1
   },
   "components": {
-    "View": 107,
+    "View": 109,
     "Text": 74,
-    "Canvas": 52,
+    "Canvas": 53,
     "PressableScale": 49,
-    "GestureDetector": 43,
+    "GestureDetector": 44,
     "Group": 32,
     "LinearGradient": 26,
     "Path": 26,
     "GestureHandlerRootView": 21,
     "Image": 20,
     "createAnimatedComponent": 19,
+    "Circle": 19,
     "FlatList": 18,
-    "Circle": 18,
     "Blur": 16,
     "Rect": 16,
     "App": 15,
@@ -639,6 +639,7 @@
     "AnimatedDigit": 5,
     "RadialGradient": 5,
     "MaterialCommunityIcons": 4,
+    "Atlas": 4,
     "BlurView": 4,
     "TabBarItem": 4,
     "Octicons": 4,
@@ -647,7 +648,6 @@
     "BottomSheet": 3,
     "Feather": 3,
     "Entypo": 3,
-    "Atlas": 3,
     "ImageSVG": 3,
     "FitBox": 3,
     "CarouselItem": 3,
@@ -708,6 +708,7 @@
     "MeasureableAnimatedView": 1,
     "SectionListItem": 1,
     "AtlasButtonComponent": 1,
+    "AtlasSphereComponent": 1,
     "WaveformScrubber": 1,
     "WaveformScrubberSample": 1,
     "BalanceSliderComponent": 1,
@@ -813,6 +814,8 @@
     "GlassView": 1,
     "Overlay": 1,
     "LoadingButton": 1,
+    "Magnet": 1,
+    "Magnets": 1,
     "AnimatedWeeklyBar": 1,
     "Bar": 1,
     "WeeklyChart": 1,
@@ -928,34 +931,34 @@
     "InternalIcon": 1
   },
   "patterns": {
-    "shared-value-state": 95,
-    "animated-styling": 89,
-    "derived-computation": 89,
-    "reactive-styling-pattern": 78,
-    "value-interpolation": 69,
-    "timing-animation": 68,
-    "spring-animation": 65,
-    "skia-graphics": 52,
+    "shared-value-state": 97,
+    "animated-styling": 90,
+    "derived-computation": 90,
+    "reactive-styling-pattern": 79,
+    "spring-animation": 79,
+    "value-interpolation": 72,
+    "timing-animation": 58,
+    "skia-graphics": 53,
     "animated-reaction": 32,
     "scroll-animation": 25,
     "imperative-animation-api": 19,
-    "color-interpolation": 12,
+    "color-interpolation": 13,
     "repeating-animation": 10,
     "delayed-animation": 5,
     "staggered-derived-values": 4,
     "sequence-animation": 4
   },
   "techniques": {
-    "transform-animations": 89,
-    "value-mapping": 69,
-    "timing-based-transitions": 68,
-    "spring-physics": 65,
-    "canvas-rendering": 52,
+    "transform-animations": 90,
+    "spring-physics": 79,
+    "value-mapping": 72,
+    "timing-based-transitions": 58,
+    "canvas-rendering": 53,
     "blur-effects": 40,
     "reactive-side-effects": 32,
     "scroll-based-animation": 25,
     "ref-based-control": 19,
-    "color-transitions": 12,
+    "color-transitions": 13,
     "loop-animations": 10,
     "staggered-timing": 5,
     "character-level-staggering": 4,
@@ -966,6 +969,7 @@
     "@shopify/react-native-skia": [
       "3d-scroll-transition",
       "atlas-button",
+      "atlas-sphere",
       "bezier-curve-outline",
       "blur-cards",
       "blur-circles",
@@ -1030,6 +1034,7 @@
       "animated-grid-list",
       "animated-indicator-list",
       "atlas-button",
+      "atlas-sphere",
       "audio-player",
       "balance-slider",
       "bezier-curve-outline",
@@ -1139,6 +1144,7 @@
       "animated-grid-list",
       "animated-indicator-list",
       "atlas-button",
+      "atlas-sphere",
       "audio-player",
       "balance-slider",
       "bezier-curve-outline",
@@ -1190,6 +1196,7 @@
       "ios-home-grid",
       "liquid-glass-playground",
       "loading-button",
+      "magnet-spring",
       "metaball",
       "miles-bar-chart",
       "mnist",
@@ -1251,6 +1258,7 @@
       "animated-grid-list",
       "animated-indicator-list",
       "atlas-button",
+      "atlas-sphere",
       "audio-player",
       "balance-slider",
       "bezier-curve-outline",
@@ -1302,6 +1310,7 @@
       "ios-home-grid",
       "liquid-glass-playground",
       "loading-button",
+      "magnet-spring",
       "metaball",
       "miles-bar-chart",
       "mnist",
@@ -1412,6 +1421,7 @@
       "composable-text",
       "dot-sheet",
       "draggable-panel",
+      "dynamic-blur-tabs",
       "dynamic-tab-indicator",
       "email-demo",
       "empty-qrcode",
@@ -1469,6 +1479,7 @@
       "airbnb-slider",
       "animated-3d-parallax",
       "atlas-button",
+      "atlas-sphere",
       "audio-player",
       "balance-slider",
       "card-shader-reflections",
@@ -1477,7 +1488,6 @@
       "dot-sheet",
       "drag-to-sort",
       "draggable-panel",
-      "dynamic-blur-tabs",
       "expandable-mini-player",
       "fibonacci-shader-grid",
       "fibonacci-shader",
@@ -1494,6 +1504,7 @@
       "ios-home-grid",
       "liquid-glass-playground",
       "loading-button",
+      "magnet-spring",
       "mnist",
       "pomodoro-timer",
       "popup-handler",
@@ -1531,10 +1542,8 @@
       "delete-button",
       "drag-to-sort",
       "duration-slider",
-      "dynamic-blur-tabs",
       "exclusion-tabs",
       "expandable-mini-player",
-      "fibonacci-shader-grid",
       "fourier-visualizer",
       "geometry-button",
       "gl-transitions",
@@ -1765,9 +1774,6 @@
       "gl-transitions",
       "time-machine"
     ],
-    "@shopify/react-native-skia/lib/typescript/src/skia/types": [
-      "image-cropper"
-    ],
     "expo-router": [
       "ios-home-grid",
       "verification-code-face",
@@ -1776,9 +1782,6 @@
     "lodash.debounce": [
       "ios-home-grid",
       "twodos-slide"
-    ],
-    "react-native-reanimated/lib/typescript/commonTypes": [
-      "ios-home-grid"
     ],
     "expo-glass-effect": [
       "liquid-glass-playground"
@@ -1878,6 +1881,7 @@
       "ios-home-bouncy",
       "ios-home-grid",
       "loading-button",
+      "magnet-spring",
       "miles-bar-chart",
       "mobile-input",
       "motion-blur",
@@ -2040,6 +2044,7 @@
       "ios-home-bouncy",
       "ios-home-grid",
       "loading-button",
+      "magnet-spring",
       "metaball",
       "miles-bar-chart",
       "mnist",
@@ -2100,6 +2105,7 @@
       "animated-count-text",
       "animated-indicator-list",
       "atlas-button",
+      "atlas-sphere",
       "balance-slider",
       "blur-cards",
       "blur-circles",
@@ -2174,6 +2180,7 @@
       "animated-grid-list",
       "animated-indicator-list",
       "atlas-button",
+      "atlas-sphere",
       "audio-player",
       "balance-slider",
       "bezier-curve-outline",
@@ -2219,6 +2226,7 @@
       "ios-home-grid",
       "liquid-glass-playground",
       "loading-button",
+      "magnet-spring",
       "metaball",
       "miles-bar-chart",
       "mnist",
@@ -2549,6 +2557,7 @@
     ],
     "useRSXformBuffer": [
       "atlas-button",
+      "atlas-sphere",
       "grid-visualizer",
       "particles-button"
     ],
@@ -2561,6 +2570,7 @@
     ],
     "useTexture": [
       "atlas-button",
+      "atlas-sphere",
       "grid-visualizer",
       "particles-button"
     ],
@@ -2704,6 +2714,9 @@
     "useMutation": [
       "loading-button"
     ],
+    "useMagnetDrag": [
+      "magnet-spring"
+    ],
     "useLayerCoordinates": [
       "mnist"
     ],
@@ -2821,6 +2834,7 @@
       "animated-grid-list",
       "animated-indicator-list",
       "atlas-button",
+      "atlas-sphere",
       "audio-player",
       "balance-slider",
       "bezier-curve-outline",
@@ -2866,6 +2880,7 @@
       "ios-home-grid",
       "liquid-glass-playground",
       "loading-button",
+      "magnet-spring",
       "metaball",
       "miles-bar-chart",
       "mnist",
@@ -2960,6 +2975,7 @@
       "ios-home-bouncy",
       "ios-home-grid",
       "loading-button",
+      "magnet-spring",
       "miles-bar-chart",
       "mobile-input",
       "motion-blur",
@@ -3049,6 +3065,7 @@
       "ios-home-bouncy",
       "ios-home-grid",
       "loading-button",
+      "magnet-spring",
       "metaball",
       "miles-bar-chart",
       "mnist",
@@ -3126,6 +3143,7 @@
       "animated-3d-parallax",
       "animated-indicator-list",
       "atlas-button",
+      "atlas-sphere",
       "bezier-curve-outline",
       "blurred-scroll",
       "card-shader-reflections",
@@ -3154,6 +3172,8 @@
       "infinite-carousel",
       "ios-home-bouncy",
       "ios-home-grid",
+      "loading-button",
+      "magnet-spring",
       "miles-bar-chart",
       "mobile-input",
       "motion-blur",
@@ -3234,6 +3254,7 @@
       "ios-home-bouncy",
       "ios-home-grid",
       "loading-button",
+      "magnet-spring",
       "miles-bar-chart",
       "mobile-input",
       "motion-blur",
@@ -3270,6 +3291,7 @@
     "skia-graphics": [
       "3d-scroll-transition",
       "atlas-button",
+      "atlas-sphere",
       "bezier-curve-outline",
       "blur-cards",
       "blur-circles",
@@ -3323,11 +3345,7 @@
     ],
     "timing-animation": [
       "action-tray",
-      "add-to-cart",
       "airbnb-slider",
-      "alert-drawer",
-      "animated-grid-list",
-      "atlas-button",
       "audio-player",
       "bezier-curve-outline",
       "blur-circles",
@@ -3336,16 +3354,13 @@
       "clerk-toast",
       "color-carousel",
       "composable-text",
-      "cuberto-slider",
       "delete-button",
-      "dot-sheet",
       "drag-to-sort",
       "draggable-panel",
       "dynamic-blur-tabs",
       "email-demo",
       "empty-qrcode",
       "exclusion-tabs",
-      "expandable-mini-player",
       "family-number-input",
       "fibonacci-shader-grid",
       "fibonacci-shader",
@@ -3354,7 +3369,6 @@
       "fluid-tab-interaction",
       "fourier-visualizer",
       "fractal-glass",
-      "geometry-button",
       "gl-transitions",
       "image-cropper",
       "infinite-carousel",
@@ -3367,7 +3381,6 @@
       "online-offline",
       "pomodoro-timer",
       "popup-handler",
-      "qrcode",
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
@@ -3375,7 +3388,6 @@
       "shake-to-delete",
       "slide-to-reveal",
       "snake",
-      "spiral",
       "split-button",
       "stacked-bottom-sheet",
       "stacked-carousel",
@@ -3396,9 +3408,14 @@
       "add-to-cart",
       "airbnb-flip-interaction",
       "airbnb-slider",
+      "alert-drawer",
       "animated-3d-parallax",
       "animated-clip-box",
       "animated-count-text",
+      "animated-grid-list",
+      "atlas-button",
+      "atlas-sphere",
+      "audio-player",
       "balance-slider",
       "bezier-curve-outline",
       "blur-cards",
@@ -3407,22 +3424,29 @@
       "clerk-toast",
       "cuberto-slider",
       "delete-button",
+      "dot-sheet",
       "draggable-panel",
       "dynamic-blur-tabs",
       "email-demo",
       "empty-qrcode",
       "everybody-can-cook",
+      "expandable-mini-player",
+      "family-number-input",
       "fibonacci-shader-grid",
+      "fibonacci-shader",
       "floating-bottom-bar",
       "floating-modal",
       "fluid-slider",
       "fourier-visualizer",
+      "geometry-button",
       "github-contributions",
       "grid-visualizer",
       "infinite-carousel",
+      "interaction-appearance",
       "ios-home-bouncy",
       "ios-home-grid",
       "liquid-glass-playground",
+      "magnet-spring",
       "metaball",
       "miles-bar-chart",
       "mobile-input",
@@ -3432,6 +3456,7 @@
       "pomodoro-timer",
       "popup-handler",
       "prequel-slider",
+      "qrcode",
       "radar-chart",
       "record-button",
       "scrollable-bottom-sheet",
@@ -3439,6 +3464,7 @@
       "skia-bottom-sheet",
       "smooth-dropdown",
       "snake",
+      "spiral",
       "split-button",
       "stacked-bottom-sheet",
       "stacked-carousel",
@@ -3522,6 +3548,7 @@
       "expandable-mini-player",
       "github-contributions",
       "github-onboarding",
+      "magnet-spring",
       "miles-bar-chart",
       "paper-folding",
       "prequel-slider",
@@ -3597,6 +3624,7 @@
       "animated-3d-parallax",
       "animated-indicator-list",
       "atlas-button",
+      "atlas-sphere",
       "bezier-curve-outline",
       "blurred-scroll",
       "card-shader-reflections",
@@ -3625,6 +3653,8 @@
       "infinite-carousel",
       "ios-home-bouncy",
       "ios-home-grid",
+      "loading-button",
+      "magnet-spring",
       "miles-bar-chart",
       "mobile-input",
       "motion-blur",
@@ -3661,6 +3691,7 @@
     "canvas-rendering": [
       "3d-scroll-transition",
       "atlas-button",
+      "atlas-sphere",
       "bezier-curve-outline",
       "blur-cards",
       "blur-circles",
@@ -3807,6 +3838,7 @@
       "ios-home-bouncy",
       "ios-home-grid",
       "loading-button",
+      "magnet-spring",
       "miles-bar-chart",
       "mobile-input",
       "motion-blur",
@@ -3847,11 +3879,7 @@
     ],
     "timing-based-transitions": [
       "action-tray",
-      "add-to-cart",
       "airbnb-slider",
-      "alert-drawer",
-      "animated-grid-list",
-      "atlas-button",
       "audio-player",
       "bezier-curve-outline",
       "blur-circles",
@@ -3860,16 +3888,13 @@
       "clerk-toast",
       "color-carousel",
       "composable-text",
-      "cuberto-slider",
       "delete-button",
-      "dot-sheet",
       "drag-to-sort",
       "draggable-panel",
       "dynamic-blur-tabs",
       "email-demo",
       "empty-qrcode",
       "exclusion-tabs",
-      "expandable-mini-player",
       "family-number-input",
       "fibonacci-shader-grid",
       "fibonacci-shader",
@@ -3878,7 +3903,6 @@
       "fluid-tab-interaction",
       "fourier-visualizer",
       "fractal-glass",
-      "geometry-button",
       "gl-transitions",
       "image-cropper",
       "infinite-carousel",
@@ -3891,7 +3915,6 @@
       "online-offline",
       "pomodoro-timer",
       "popup-handler",
-      "qrcode",
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
@@ -3899,7 +3922,6 @@
       "shake-to-delete",
       "slide-to-reveal",
       "snake",
-      "spiral",
       "split-button",
       "stacked-bottom-sheet",
       "stacked-carousel",
@@ -3920,9 +3942,14 @@
       "add-to-cart",
       "airbnb-flip-interaction",
       "airbnb-slider",
+      "alert-drawer",
       "animated-3d-parallax",
       "animated-clip-box",
       "animated-count-text",
+      "animated-grid-list",
+      "atlas-button",
+      "atlas-sphere",
+      "audio-player",
       "balance-slider",
       "bezier-curve-outline",
       "blur-cards",
@@ -3931,22 +3958,29 @@
       "clerk-toast",
       "cuberto-slider",
       "delete-button",
+      "dot-sheet",
       "draggable-panel",
       "dynamic-blur-tabs",
       "email-demo",
       "empty-qrcode",
       "everybody-can-cook",
+      "expandable-mini-player",
+      "family-number-input",
       "fibonacci-shader-grid",
+      "fibonacci-shader",
       "floating-bottom-bar",
       "floating-modal",
       "fluid-slider",
       "fourier-visualizer",
+      "geometry-button",
       "github-contributions",
       "grid-visualizer",
       "infinite-carousel",
+      "interaction-appearance",
       "ios-home-bouncy",
       "ios-home-grid",
       "liquid-glass-playground",
+      "magnet-spring",
       "metaball",
       "miles-bar-chart",
       "mobile-input",
@@ -3956,6 +3990,7 @@
       "pomodoro-timer",
       "popup-handler",
       "prequel-slider",
+      "qrcode",
       "radar-chart",
       "record-button",
       "scrollable-bottom-sheet",
@@ -3963,6 +3998,7 @@
       "skia-bottom-sheet",
       "smooth-dropdown",
       "snake",
+      "spiral",
       "split-button",
       "stacked-bottom-sheet",
       "stacked-carousel",
@@ -4046,6 +4082,7 @@
       "expandable-mini-player",
       "github-contributions",
       "github-onboarding",
+      "magnet-spring",
       "miles-bar-chart",
       "paper-folding",
       "prequel-slider",
@@ -4088,10 +4125,10 @@
   },
   "components_by_package": {
     "@shopify/react-native-skia": {
-      "Canvas": 53,
+      "Canvas": 54,
       "Group": 31,
       "Path": 26,
-      "Circle": 18,
+      "Circle": 19,
       "Blur": 16,
       "Rect": 16,
       "BlurMask": 12,
@@ -4106,8 +4143,8 @@
       "ColorMatrix": 6,
       "RadialGradient": 5,
       "Image": 5,
+      "Atlas": 4,
       "Shadow": 4,
-      "Atlas": 3,
       "ImageSVG": 3,
       "FitBox": 3,
       "BackdropBlur": 2,
@@ -4121,7 +4158,7 @@
     },
     "react": {
       "useCallback": 71,
-      "useMemo": 69,
+      "useMemo": 70,
       "memo": 47,
       "useState": 40,
       "useRef": 31,
@@ -4140,7 +4177,7 @@
       "ComponentProps": 1
     },
     "react-native": {
-      "View": 104,
+      "View": 106,
       "Text": 53,
       "useWindowDimensions": 5,
       "ScrollView": 4,
@@ -4156,15 +4193,15 @@
       "Pressable": 1
     },
     "react-native-reanimated": {
-      "View": 94,
+      "View": 96,
       "Text": 21,
       "createAnimatedComponent": 19,
       "FlatList": 16,
       "useDerivedValue": 13,
       "useSharedValue": 12,
       "ScrollView": 9,
-      "withSpring": 8,
-      "withTiming": 7,
+      "withSpring": 9,
+      "withTiming": 6,
       "useAnimatedReaction": 4,
       "LayoutAnimationConfig": 3,
       "withRepeat": 1,
@@ -4187,19 +4224,19 @@
       "FontAwesome6": 1
     },
     "pressto": {
-      "PressableScale": 48,
+      "PressableScale": 49,
       "PressableOpacity": 10,
       "PressableWithoutFeedback": 3,
       "createAnimatedPressable": 3,
       "PressablesGroup": 1
     },
     "react-native-gesture-handler": {
-      "GestureDetector": 43,
+      "GestureDetector": 44,
       "GestureHandlerRootView": 21,
       "ScrollView": 1
     },
     "react-native-worklets": {
-      "scheduleOnRN": 47,
+      "scheduleOnRN": 45,
       "scheduleOnUI": 1
     },
     "expo-image": {
@@ -4260,13 +4297,11 @@
       "useAtomValue": 1,
       "useSetAtom": 1
     },
-    "@shopify/react-native-skia/lib/typescript/src/skia/types": {},
     "expo-router": {
       "useFocusEffect": 2,
       "useRouter": 1
     },
     "lodash.debounce": {},
-    "react-native-reanimated/lib/typescript/commonTypes": {},
     "expo-glass-effect": {
       "GlassView": 1
     },
@@ -4285,8 +4320,8 @@
     "@shopify/react-native-skia": {
       "useFont": 9,
       "useImage": 5,
-      "useRSXformBuffer": 3,
-      "useTexture": 3,
+      "useRSXformBuffer": 4,
+      "useTexture": 4,
       "useRectBuffer": 2,
       "useSVG": 1,
       "usePathValue": 1,
@@ -4294,7 +4329,7 @@
     },
     "react": {
       "useCallback": 71,
-      "useMemo": 70,
+      "useMemo": 71,
       "useState": 40,
       "useRef": 31,
       "useEffect": 22,
@@ -4307,9 +4342,9 @@
       "useWindowDimensions": 59
     },
     "react-native-reanimated": {
-      "useSharedValue": 95,
-      "useAnimatedStyle": 89,
-      "useDerivedValue": 89,
+      "useSharedValue": 97,
+      "useAnimatedStyle": 90,
+      "useDerivedValue": 90,
       "useAnimatedReaction": 32,
       "useAnimatedScrollHandler": 25,
       "useAnimatedProps": 12,
@@ -4351,13 +4386,11 @@
       "useAtomValue": 1,
       "useSetAtom": 1
     },
-    "@shopify/react-native-skia/lib/typescript/src/skia/types": {},
     "expo-router": {
       "useFocusEffect": 2,
       "useRouter": 1
     },
     "lodash.debounce": {},
-    "react-native-reanimated/lib/typescript/commonTypes": {},
     "expo-glass-effect": {},
     "expo-status-bar": {},
     "react-native-fast-confetti": {},
@@ -4369,7 +4402,7 @@
   "functions_by_package": {
     "@shopify/react-native-skia": {
       "vec": 18,
-      "rect": 17,
+      "rect": 18,
       "rrect": 9,
       "interpolate": 6,
       "fitbox": 3,
@@ -4385,16 +4418,16 @@
     },
     "react-native": {},
     "react-native-reanimated": {
-      "withTiming": 68,
-      "withSpring": 65,
-      "interpolate": 63,
+      "withSpring": 79,
+      "interpolate": 66,
+      "withTiming": 58,
       "cancelAnimation": 23,
-      "interpolateColor": 12,
+      "interpolateColor": 13,
       "makeMutable": 11,
       "withRepeat": 10,
       "measure": 6,
       "withDelay": 5,
-      "clamp": 4,
+      "clamp": 5,
       "withSequence": 4,
       "scrollTo": 3,
       "withDecay": 3,
@@ -4407,7 +4440,7 @@
     },
     "react-native-gesture-handler": {},
     "react-native-worklets": {
-      "scheduleOnRN": 47,
+      "scheduleOnRN": 45,
       "scheduleOnUI": 1
     },
     "expo-image": {},
@@ -4451,10 +4484,8 @@
     "jotai": {
       "atom": 2
     },
-    "@shopify/react-native-skia/lib/typescript/src/skia/types": {},
     "expo-router": {},
     "lodash.debounce": {},
-    "react-native-reanimated/lib/typescript/commonTypes": {},
     "expo-glass-effect": {},
     "expo-status-bar": {},
     "react-native-fast-confetti": {},
@@ -4790,7 +4821,7 @@
       "total_files": 6,
       "total_packages": 9,
       "total_hooks": 10,
-      "total_patterns": 7,
+      "total_patterns": 6,
       "packages": [
         "@expo/vector-icons",
         "expo-image",
@@ -4818,13 +4849,11 @@
         "shared-value-state",
         "animated-styling",
         "derived-computation",
-        "timing-animation",
         "spring-animation",
         "value-interpolation",
         "reactive-styling-pattern"
       ],
       "techniques": [
-        "timing-based-transitions",
         "spring-physics",
         "value-mapping",
         "transform-animations"
@@ -4855,8 +4884,7 @@
         "setListItems",
         "tapGesture.maxDuration",
         "tapGesture.shouldCancelWhenOutside",
-        "withSpring",
-        "withTiming"
+        "withSpring"
       ],
       "packages_detail": {
         "@expo/vector-icons": {
@@ -4947,8 +4975,7 @@
             "useAnimatedStyle",
             "useDerivedValue",
             "useSharedValue",
-            "withSpring",
-            "withTiming"
+            "withSpring"
           ],
           "hooks": [
             "useAnimatedProps",
@@ -4961,8 +4988,7 @@
             "cancelAnimation",
             "interpolate",
             "measure",
-            "withSpring",
-            "withTiming"
+            "withSpring"
           ],
           "components": [
             "Animated.Text",
@@ -5325,13 +5351,13 @@
         "shared-value-state",
         "animated-styling",
         "derived-computation",
-        "timing-animation",
+        "spring-animation",
         "value-interpolation",
         "color-interpolation",
         "reactive-styling-pattern"
       ],
       "techniques": [
-        "timing-based-transitions",
+        "spring-physics",
         "value-mapping",
         "color-transitions",
         "transform-animations"
@@ -5351,7 +5377,7 @@
         "interpolateColor",
         "scheduleOnRN",
         "toggleExpansion",
-        "withTiming"
+        "withSpring"
       ],
       "packages_detail": {
         "@expo/vector-icons": {
@@ -5407,7 +5433,7 @@
             "useAnimatedStyle",
             "useDerivedValue",
             "useSharedValue",
-            "withTiming"
+            "withSpring"
           ],
           "hooks": [
             "useAnimatedStyle",
@@ -5417,7 +5443,7 @@
           "functions": [
             "interpolate",
             "interpolateColor",
-            "withTiming"
+            "withSpring"
           ],
           "components": [
             "Animated.View"
@@ -5780,12 +5806,12 @@
         "animated-styling",
         "derived-computation",
         "scroll-animation",
-        "timing-animation",
+        "spring-animation",
         "reactive-styling-pattern"
       ],
       "techniques": [
         "scroll-based-animation",
-        "timing-based-transitions",
+        "spring-physics",
         "transform-animations"
       ],
       "components": [
@@ -5804,7 +5830,7 @@
         "getRandomQuote",
         "onScrollEnd",
         "setLayout",
-        "withTiming"
+        "withSpring"
       ],
       "packages_detail": {
         "pressto": {
@@ -5852,7 +5878,7 @@
             "useAnimatedStyle",
             "useDerivedValue",
             "useSharedValue",
-            "withTiming"
+            "withSpring"
           ],
           "hooks": [
             "useAnimatedScrollHandler",
@@ -5861,7 +5887,7 @@
             "useSharedValue"
           ],
           "functions": [
-            "withTiming"
+            "withSpring"
           ],
           "components": [
             "Animated.ScrollView",
@@ -6047,13 +6073,13 @@
         "shared-value-state",
         "animated-styling",
         "derived-computation",
-        "timing-animation",
+        "spring-animation",
         "value-interpolation",
         "reactive-styling-pattern",
         "skia-graphics"
       ],
       "techniques": [
-        "timing-based-transitions",
+        "spring-physics",
         "value-mapping",
         "canvas-rendering",
         "transform-animations"
@@ -6073,7 +6099,6 @@
       ],
       "functions": [
         "Array.from",
-        "Easing.bezier",
         "Gesture.Tap",
         "fitbox",
         "imageSvg.height",
@@ -6082,7 +6107,7 @@
         "rect",
         "scheduleOnRN",
         "val.setXYWH",
-        "withTiming"
+        "withSpring"
       ],
       "packages_detail": {
         "@shopify/react-native-skia": {
@@ -6152,13 +6177,12 @@
         },
         "react-native-reanimated": {
           "imports": [
-            "Easing",
             "Extrapolation",
             "interpolate",
             "useAnimatedStyle",
             "useDerivedValue",
             "useSharedValue",
-            "withTiming"
+            "withSpring"
           ],
           "hooks": [
             "useAnimatedStyle",
@@ -6167,7 +6191,7 @@
           ],
           "functions": [
             "interpolate",
-            "withTiming"
+            "withSpring"
           ],
           "components": [
             "Animated.Text",
@@ -6187,11 +6211,132 @@
       }
     },
     {
+      "slug": "atlas-sphere",
+      "total_files": 2,
+      "total_packages": 5,
+      "total_hooks": 4,
+      "total_patterns": 4,
+      "packages": [
+        "@shopify/react-native-skia",
+        "react",
+        "react-native",
+        "react-native-gesture-handler",
+        "react-native-reanimated"
+      ],
+      "hooks": [
+        "useMemo",
+        "useRSXformBuffer",
+        "useSharedValue",
+        "useTexture"
+      ],
+      "patterns": [
+        "shared-value-state",
+        "spring-animation",
+        "value-interpolation",
+        "skia-graphics"
+      ],
+      "techniques": [
+        "spring-physics",
+        "value-mapping",
+        "canvas-rendering"
+      ],
+      "components": [
+        "Animated.View",
+        "Atlas",
+        "AtlasSphereComponent",
+        "Canvas",
+        "Circle",
+        "GestureDetector",
+        "View"
+      ],
+      "functions": [
+        "Gesture.Pan",
+        "interpolate",
+        "rect",
+        "withSpring"
+      ],
+      "packages_detail": {
+        "@shopify/react-native-skia": {
+          "imports": [
+            "Atlas",
+            "Canvas",
+            "Circle",
+            "Extrapolate",
+            "rect",
+            "useRSXformBuffer",
+            "useTexture"
+          ],
+          "hooks": [
+            "useRSXformBuffer",
+            "useTexture"
+          ],
+          "functions": [
+            "rect"
+          ],
+          "components": [
+            "Atlas",
+            "Canvas",
+            "Circle"
+          ]
+        },
+        "react": {
+          "imports": [
+            "useMemo"
+          ],
+          "hooks": [
+            "useMemo"
+          ],
+          "functions": [],
+          "components": []
+        },
+        "react-native": {
+          "imports": [
+            "Dimensions",
+            "StyleSheet",
+            "View"
+          ],
+          "hooks": [],
+          "functions": [],
+          "components": [
+            "View"
+          ]
+        },
+        "react-native-gesture-handler": {
+          "imports": [
+            "Gesture",
+            "GestureDetector"
+          ],
+          "hooks": [],
+          "functions": [],
+          "components": [
+            "GestureDetector"
+          ]
+        },
+        "react-native-reanimated": {
+          "imports": [
+            "interpolate",
+            "useSharedValue",
+            "withSpring"
+          ],
+          "hooks": [
+            "useSharedValue"
+          ],
+          "functions": [
+            "interpolate",
+            "withSpring"
+          ],
+          "components": [
+            "Animated.View"
+          ]
+        }
+      }
+    },
+    {
       "slug": "audio-player",
       "total_files": 10,
       "total_packages": 5,
       "total_hooks": 7,
-      "total_patterns": 6,
+      "total_patterns": 7,
       "packages": [
         "react",
         "react-native",
@@ -6214,11 +6359,13 @@
         "derived-computation",
         "animated-reaction",
         "timing-animation",
+        "spring-animation",
         "reactive-styling-pattern"
       ],
       "techniques": [
         "reactive-side-effects",
         "timing-based-transitions",
+        "spring-physics",
         "transform-animations"
       ],
       "components": [
@@ -6243,6 +6390,7 @@
         "isNaN",
         "normalizeArray",
         "pickNValuesFromArray",
+        "withSpring",
         "withTiming",
         "zeroPad"
       ],
@@ -6295,6 +6443,7 @@
             "useAnimatedStyle",
             "useDerivedValue",
             "useSharedValue",
+            "withSpring",
             "withTiming"
           ],
           "hooks": [
@@ -6305,6 +6454,7 @@
           ],
           "functions": [
             "cancelAnimation",
+            "withSpring",
             "withTiming"
           ],
           "components": [
@@ -6523,7 +6673,6 @@
       ],
       "functions": [
         "Array",
-        "Easing.bezier",
         "Skia.ContourMeasureIter",
         "cancelAnimation",
         "geometry.getPointAtLength",
@@ -6541,7 +6690,7 @@
         "skPath.lineTo",
         "skPath.moveTo",
         "startAnimation",
-        "withCustomTiming",
+        "withCustomSpring",
         "withSpring",
         "withTiming"
       ],
@@ -8355,6 +8504,7 @@
         },
         "react-native-reanimated": {
           "imports": [
+            "Easing",
             "FadeIn",
             "FadeOut",
             "LayoutAnimationConfig",
@@ -8481,7 +8631,7 @@
       "total_files": 2,
       "total_packages": 6,
       "total_hooks": 3,
-      "total_patterns": 8,
+      "total_patterns": 7,
       "packages": [
         "@shopify/react-native-skia",
         "react",
@@ -8499,14 +8649,12 @@
         "shared-value-state",
         "animated-styling",
         "derived-computation",
-        "timing-animation",
         "spring-animation",
         "value-interpolation",
         "reactive-styling-pattern",
         "skia-graphics"
       ],
       "techniques": [
-        "timing-based-transitions",
         "spring-physics",
         "value-mapping",
         "canvas-rendering",
@@ -8530,8 +8678,7 @@
         "clamp",
         "interpolate",
         "rect",
-        "withSpring",
-        "withTiming"
+        "withSpring"
       ],
       "packages_detail": {
         "@shopify/react-native-skia": {
@@ -8591,8 +8738,7 @@
             "useAnimatedStyle",
             "useDerivedValue",
             "useSharedValue",
-            "withSpring",
-            "withTiming"
+            "withSpring"
           ],
           "hooks": [
             "useAnimatedStyle",
@@ -8601,8 +8747,7 @@
           ],
           "functions": [
             "interpolate",
-            "withSpring",
-            "withTiming"
+            "withSpring"
           ],
           "components": [
             "Animated.View"
@@ -8807,14 +8952,14 @@
       "patterns": [
         "shared-value-state",
         "animated-styling",
-        "timing-animation",
+        "spring-animation",
         "value-interpolation",
         "reactive-styling-pattern",
         "imperative-animation-api",
         "skia-graphics"
       ],
       "techniques": [
-        "timing-based-transitions",
+        "spring-physics",
         "value-mapping",
         "ref-based-control",
         "canvas-rendering",
@@ -8841,7 +8986,7 @@
       ],
       "functions": [
         "interpolate",
-        "withTiming"
+        "withSpring"
       ],
       "packages_detail": {
         "@expo/vector-icons": {
@@ -8926,7 +9071,7 @@
             "interpolate",
             "useAnimatedStyle",
             "useSharedValue",
-            "withTiming"
+            "withSpring"
           ],
           "hooks": [
             "useAnimatedStyle",
@@ -8934,7 +9079,7 @@
           ],
           "functions": [
             "interpolate",
-            "withTiming"
+            "withSpring"
           ],
           "components": [
             "Animated.View",
@@ -9188,7 +9333,6 @@
         "View"
       ],
       "functions": [
-        "Easing.inOut",
         "FadeIn.duration",
         "FadeOut.duration",
         "Gesture.Pan",
@@ -9467,8 +9611,8 @@
     },
     {
       "slug": "dynamic-blur-tabs",
-      "total_files": 9,
-      "total_packages": 11,
+      "total_files": 8,
+      "total_packages": 10,
       "total_hooks": 8,
       "total_patterns": 8,
       "packages": [
@@ -9477,12 +9621,11 @@
         "@react-navigation/native",
         "expo-blur",
         "expo-linear-gradient",
+        "pressto",
         "react",
         "react-native",
-        "react-native-gesture-handler",
         "react-native-reanimated",
-        "react-native-safe-area-context",
-        "react-native-worklets"
+        "react-native-safe-area-context"
       ],
       "hooks": [
         "useAnimatedScrollHandler",
@@ -9520,7 +9663,6 @@
         "BottomTab.Navigator",
         "BottomTab.Screen",
         "BottomTabBar",
-        "GestureDetector",
         "LinearGradient",
         "MaterialIcons",
         "PressableScale",
@@ -9530,7 +9672,6 @@
       "functions": [
         "Array",
         "Boolean",
-        "Gesture.Tap",
         "Platform.select",
         "createBottomTabNavigator",
         "createScreensMap",
@@ -9544,7 +9685,6 @@
         "navigation.navigate",
         "onTapIcon",
         "pageName.toLowerCase",
-        "scheduleOnRN",
         "withSpring",
         "withTiming"
       ],
@@ -9595,6 +9735,16 @@
             "LinearGradient"
           ]
         },
+        "pressto": {
+          "imports": [
+            "PressableScale"
+          ],
+          "hooks": [],
+          "functions": [],
+          "components": [
+            "PressableScale"
+          ]
+        },
         "react": {
           "imports": [
             "memo",
@@ -9621,17 +9771,6 @@
           "functions": [],
           "components": [
             "View"
-          ]
-        },
-        "react-native-gesture-handler": {
-          "imports": [
-            "Gesture",
-            "GestureDetector"
-          ],
-          "hooks": [],
-          "functions": [],
-          "components": [
-            "GestureDetector"
           ]
         },
         "react-native-reanimated": {
@@ -9671,16 +9810,6 @@
             "useSafeAreaInsets"
           ],
           "functions": [],
-          "components": []
-        },
-        "react-native-worklets": {
-          "imports": [
-            "scheduleOnRN"
-          ],
-          "hooks": [],
-          "functions": [
-            "scheduleOnRN"
-          ],
           "components": []
         }
       }
@@ -10429,13 +10558,13 @@
       "patterns": [
         "shared-value-state",
         "animated-styling",
-        "timing-animation",
+        "spring-animation",
         "value-interpolation",
         "color-interpolation",
         "reactive-styling-pattern"
       ],
       "techniques": [
-        "timing-based-transitions",
+        "spring-physics",
         "value-mapping",
         "color-transitions",
         "transform-animations"
@@ -10473,7 +10602,7 @@
         "onTabPress",
         "scheduleOnRN",
         "str.charAt",
-        "withTiming"
+        "withSpring"
       ],
       "packages_detail": {
         "@expo/vector-icons": {
@@ -10562,7 +10691,7 @@
             "makeMutable",
             "useAnimatedStyle",
             "useSharedValue",
-            "withTiming"
+            "withSpring"
           ],
           "hooks": [
             "useAnimatedStyle",
@@ -10572,7 +10701,7 @@
             "interpolate",
             "interpolateColor",
             "makeMutable",
-            "withTiming"
+            "withSpring"
           ],
           "components": [
             "Animated.Text",
@@ -10606,7 +10735,7 @@
       "total_files": 7,
       "total_packages": 7,
       "total_hooks": 8,
-      "total_patterns": 6,
+      "total_patterns": 7,
       "packages": [
         "@expo/vector-icons",
         "expo-linear-gradient",
@@ -10631,11 +10760,13 @@
         "animated-styling",
         "derived-computation",
         "timing-animation",
+        "spring-animation",
         "value-interpolation",
         "reactive-styling-pattern"
       ],
       "techniques": [
         "timing-based-transitions",
+        "spring-physics",
         "value-mapping",
         "transform-animations"
       ],
@@ -10665,6 +10796,7 @@
         "onUpdate",
         "result.reverse",
         "updateInput",
+        "withSpring",
         "withTiming"
       ],
       "packages_detail": {
@@ -10738,6 +10870,7 @@
             "useAnimatedStyle",
             "useDerivedValue",
             "useSharedValue",
+            "withSpring",
             "withTiming"
           ],
           "hooks": [
@@ -10747,6 +10880,7 @@
           ],
           "functions": [
             "interpolate",
+            "withSpring",
             "withTiming"
           ],
           "components": [
@@ -10768,8 +10902,8 @@
     },
     {
       "slug": "fibonacci-shader-grid",
-      "total_files": 4,
-      "total_packages": 6,
+      "total_files": 3,
+      "total_packages": 5,
       "total_hooks": 7,
       "total_patterns": 10,
       "packages": [
@@ -10777,8 +10911,7 @@
         "react",
         "react-native",
         "react-native-gesture-handler",
-        "react-native-reanimated",
-        "react-native-worklets"
+        "react-native-reanimated"
       ],
       "hooks": [
         "useAnimatedReaction",
@@ -10825,7 +10958,6 @@
       ],
       "functions": [
         "Gesture.Pan",
-        "Gesture.Tap",
         "clamp",
         "interpolate",
         "mapXvalue",
@@ -10833,7 +10965,6 @@
         "onUpdate",
         "remapXcoord",
         "remapYcoord",
-        "scheduleOnRN",
         "withRepeat",
         "withSpring",
         "withTiming"
@@ -10926,16 +11057,6 @@
           "components": [
             "Animated.View"
           ]
-        },
-        "react-native-worklets": {
-          "imports": [
-            "scheduleOnRN"
-          ],
-          "hooks": [],
-          "functions": [
-            "scheduleOnRN"
-          ],
-          "components": []
         }
       }
     },
@@ -10944,7 +11065,7 @@
       "total_files": 2,
       "total_packages": 6,
       "total_hooks": 6,
-      "total_patterns": 9,
+      "total_patterns": 10,
       "packages": [
         "@shopify/react-native-skia",
         "pressto",
@@ -10967,6 +11088,7 @@
         "derived-computation",
         "animated-reaction",
         "timing-animation",
+        "spring-animation",
         "repeating-animation",
         "value-interpolation",
         "reactive-styling-pattern",
@@ -10975,6 +11097,7 @@
       "techniques": [
         "reactive-side-effects",
         "timing-based-transitions",
+        "spring-physics",
         "loop-animations",
         "value-mapping",
         "canvas-rendering",
@@ -11001,6 +11124,7 @@
         "interpolate",
         "onUpdate",
         "withRepeat",
+        "withSpring",
         "withTiming"
       ],
       "packages_detail": {
@@ -11076,12 +11200,14 @@
           "imports": [
             "Easing",
             "Extrapolation",
+            "clamp",
             "interpolate",
             "useAnimatedReaction",
             "useAnimatedStyle",
             "useDerivedValue",
             "useSharedValue",
             "withRepeat",
+            "withSpring",
             "withTiming"
           ],
           "hooks": [
@@ -11091,8 +11217,10 @@
             "useSharedValue"
           ],
           "functions": [
+            "clamp",
             "interpolate",
             "withRepeat",
+            "withSpring",
             "withTiming"
           ],
           "components": [
@@ -12059,13 +12187,13 @@
         "shared-value-state",
         "animated-styling",
         "derived-computation",
-        "timing-animation",
+        "spring-animation",
         "value-interpolation",
         "reactive-styling-pattern",
         "skia-graphics"
       ],
       "techniques": [
-        "timing-based-transitions",
+        "spring-physics",
         "value-mapping",
         "canvas-rendering",
         "transform-animations"
@@ -12091,7 +12219,7 @@
         "rect",
         "rrect",
         "scheduleOnRN",
-        "withTiming"
+        "withSpring"
       ],
       "packages_detail": {
         "@shopify/react-native-skia": {
@@ -12159,7 +12287,7 @@
             "useAnimatedStyle",
             "useDerivedValue",
             "useSharedValue",
-            "withTiming"
+            "withSpring"
           ],
           "hooks": [
             "useAnimatedStyle",
@@ -12168,7 +12296,7 @@
           ],
           "functions": [
             "interpolate",
-            "withTiming"
+            "withSpring"
           ],
           "components": [
             "Animated.View"
@@ -12974,14 +13102,13 @@
     {
       "slug": "image-cropper",
       "total_files": 8,
-      "total_packages": 9,
+      "total_packages": 8,
       "total_hooks": 12,
       "total_patterns": 5,
       "packages": [
         "@react-navigation/native",
         "@react-navigation/native-stack",
         "@shopify/react-native-skia",
-        "@shopify/react-native-skia/lib/typescript/src/skia/types",
         "pressto",
         "react",
         "react-native",
@@ -13098,12 +13225,6 @@
             "Path",
             "Rect"
           ]
-        },
-        "@shopify/react-native-skia/lib/typescript/src/skia/types": {
-          "imports": [],
-          "hooks": [],
-          "functions": [],
-          "components": []
         },
         "pressto": {
           "imports": [
@@ -13418,6 +13539,7 @@
         },
         "react-native-reanimated": {
           "imports": [
+            "Easing",
             "Extrapolation",
             "cancelAnimation",
             "interpolate",
@@ -13467,7 +13589,7 @@
       "total_files": 15,
       "total_packages": 10,
       "total_hooks": 9,
-      "total_patterns": 4,
+      "total_patterns": 5,
       "packages": [
         "@expo/vector-icons",
         "@shopify/react-native-skia",
@@ -13495,10 +13617,12 @@
         "animated-styling",
         "derived-computation",
         "timing-animation",
+        "spring-animation",
         "skia-graphics"
       ],
       "techniques": [
         "timing-based-transitions",
+        "spring-physics",
         "canvas-rendering",
         "blur-effects",
         "transform-animations"
@@ -13537,6 +13661,7 @@
         "rect",
         "rrect",
         "setTheme",
+        "withSpring",
         "withTiming"
       ],
       "packages_detail": {
@@ -13652,6 +13777,7 @@
             "makeMutable",
             "useAnimatedStyle",
             "useDerivedValue",
+            "withSpring",
             "withTiming"
           ],
           "hooks": [
@@ -13660,6 +13786,7 @@
           ],
           "functions": [
             "makeMutable",
+            "withSpring",
             "withTiming"
           ],
           "components": [
@@ -13923,7 +14050,7 @@
     {
       "slug": "ios-home-grid",
       "total_files": 9,
-      "total_packages": 16,
+      "total_packages": 15,
       "total_hooks": 14,
       "total_patterns": 9,
       "packages": [
@@ -13940,7 +14067,6 @@
         "react-native",
         "react-native-gesture-handler",
         "react-native-reanimated",
-        "react-native-reanimated/lib/typescript/commonTypes",
         "react-native-safe-area-context",
         "react-native-worklets"
       ],
@@ -14189,12 +14315,6 @@
             "Animated.createAnimatedComponent"
           ]
         },
-        "react-native-reanimated/lib/typescript/commonTypes": {
-          "imports": [],
-          "hooks": [],
-          "functions": [],
-          "components": []
-        },
         "react-native-safe-area-context": {
           "imports": [
             "useSafeAreaInsets"
@@ -14370,7 +14490,7 @@
       "total_files": 3,
       "total_packages": 7,
       "total_hooks": 9,
-      "total_patterns": 7,
+      "total_patterns": 8,
       "packages": [
         "@shopify/react-native-skia",
         "color",
@@ -14397,12 +14517,14 @@
         "derived-computation",
         "timing-animation",
         "repeating-animation",
+        "value-interpolation",
         "reactive-styling-pattern",
         "skia-graphics"
       ],
       "techniques": [
         "timing-based-transitions",
         "loop-animations",
+        "value-mapping",
         "canvas-rendering",
         "transform-animations"
       ],
@@ -14426,6 +14548,7 @@
         "LinearTransition.springify",
         "cancelAnimation",
         "fitbox",
+        "interpolate",
         "mutateAsync",
         "mutationFn",
         "path.addArc",
@@ -14524,6 +14647,7 @@
             "FadeOut",
             "LinearTransition",
             "cancelAnimation",
+            "interpolate",
             "useAnimatedStyle",
             "useDerivedValue",
             "useSharedValue",
@@ -14537,11 +14661,112 @@
           ],
           "functions": [
             "cancelAnimation",
+            "interpolate",
             "withRepeat",
             "withTiming"
           ],
           "components": [
             "Animated.Text",
+            "Animated.View"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "magnet-spring",
+      "total_files": 2,
+      "total_packages": 3,
+      "total_hooks": 4,
+      "total_patterns": 7,
+      "packages": [
+        "react-native",
+        "react-native-gesture-handler",
+        "react-native-reanimated"
+      ],
+      "hooks": [
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useMagnetDrag",
+        "useSharedValue"
+      ],
+      "patterns": [
+        "shared-value-state",
+        "animated-styling",
+        "derived-computation",
+        "spring-animation",
+        "value-interpolation",
+        "color-interpolation",
+        "reactive-styling-pattern"
+      ],
+      "techniques": [
+        "spring-physics",
+        "value-mapping",
+        "color-transitions",
+        "transform-animations"
+      ],
+      "components": [
+        "Animated.View",
+        "GestureDetector",
+        "Magnet",
+        "Magnets",
+        "View"
+      ],
+      "functions": [
+        "Gesture.Pan",
+        "Math.cos",
+        "Math.sin",
+        "createFibonacciPositions",
+        "getDistance",
+        "getNearestMagnet",
+        "interpolate",
+        "interpolateColor",
+        "withSpring"
+      ],
+      "packages_detail": {
+        "react-native": {
+          "imports": [
+            "Dimensions",
+            "StyleSheet",
+            "View"
+          ],
+          "hooks": [],
+          "functions": [],
+          "components": [
+            "View"
+          ]
+        },
+        "react-native-gesture-handler": {
+          "imports": [
+            "Gesture",
+            "GestureDetector"
+          ],
+          "hooks": [],
+          "functions": [],
+          "components": [
+            "GestureDetector"
+          ]
+        },
+        "react-native-reanimated": {
+          "imports": [
+            "Extrapolation",
+            "interpolate",
+            "interpolateColor",
+            "useAnimatedStyle",
+            "useDerivedValue",
+            "useSharedValue",
+            "withSpring"
+          ],
+          "hooks": [
+            "useAnimatedStyle",
+            "useDerivedValue",
+            "useSharedValue"
+          ],
+          "functions": [
+            "interpolate",
+            "interpolateColor",
+            "withSpring"
+          ],
+          "components": [
             "Animated.View"
           ]
         }
@@ -16546,13 +16771,13 @@
         "animated-styling",
         "derived-computation",
         "animated-reaction",
-        "timing-animation",
+        "spring-animation",
         "value-interpolation",
         "reactive-styling-pattern"
       ],
       "techniques": [
         "reactive-side-effects",
-        "timing-based-transitions",
+        "spring-physics",
         "value-mapping",
         "transform-animations"
       ],
@@ -16580,7 +16805,7 @@
         "scheduleOnRN",
         "setQRCode",
         "vec",
-        "withTiming"
+        "withSpring"
       ],
       "packages_detail": {
         "@expo/ui/swift-ui": {
@@ -16673,7 +16898,7 @@
             "useAnimatedStyle",
             "useDerivedValue",
             "useSharedValue",
-            "withTiming"
+            "withSpring"
           ],
           "hooks": [
             "useAnimatedProps",
@@ -16684,7 +16909,7 @@
           ],
           "functions": [
             "interpolate",
-            "withTiming"
+            "withSpring"
           ],
           "components": [
             "Animated.View",
@@ -18673,13 +18898,13 @@
       "patterns": [
         "shared-value-state",
         "animated-reaction",
-        "timing-animation",
+        "spring-animation",
         "value-interpolation",
         "skia-graphics"
       ],
       "techniques": [
         "reactive-side-effects",
-        "timing-based-transitions",
+        "spring-physics",
         "value-mapping",
         "canvas-rendering",
         "blur-effects"
@@ -18702,7 +18927,7 @@
         "makeMutable",
         "skPath.addCircle",
         "vec",
-        "withTiming"
+        "withSpring"
       ],
       "packages_detail": {
         "@shopify/react-native-skia": {
@@ -18769,7 +18994,7 @@
             "makeMutable",
             "useAnimatedReaction",
             "useSharedValue",
-            "withTiming"
+            "withSpring"
           ],
           "hooks": [
             "useAnimatedReaction",
@@ -18777,7 +19002,7 @@
           ],
           "functions": [
             "makeMutable",
-            "withTiming"
+            "withSpring"
           ],
           "components": []
         }
@@ -20737,7 +20962,6 @@
         },
         "react-native-reanimated": {
           "imports": [
-            "Easing",
             "interpolate",
             "makeMutable",
             "measure",
