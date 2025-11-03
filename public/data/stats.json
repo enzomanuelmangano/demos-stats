@@ -1,11 +1,11 @@
 {
-  "total_animations": 112,
+  "total_animations": 113,
   "packages": {
-    "react-native": 112,
-    "react-native-reanimated": 112,
-    "react": 107,
+    "react-native": 113,
+    "react-native-reanimated": 113,
+    "react": 108,
     "pressto": 66,
-    "@shopify/react-native-skia": 54,
+    "@shopify/react-native-skia": 55,
     "react-native-gesture-handler": 53,
     "react-native-worklets": 45,
     "@expo/vector-icons": 44,
@@ -39,10 +39,10 @@
   },
   "hooks": {
     "useSharedValue": 97,
+    "useDerivedValue": 91,
     "useAnimatedStyle": 90,
-    "useDerivedValue": 90,
-    "useCallback": 71,
-    "useMemo": 71,
+    "useCallback": 72,
+    "useMemo": 72,
     "useWindowDimensions": 59,
     "useState": 40,
     "useAnimatedReaction": 32,
@@ -65,6 +65,7 @@
     "useRectBuffer": 2,
     "useToast": 2,
     "useAtom": 2,
+    "useAnimatedSensor": 2,
     "useFocusEffect": 2,
     "useReanimatedKeyboardAnimation": 2,
     "use3DRotationStyle": 1,
@@ -125,7 +126,6 @@
     "useStackedModal": 1,
     "useSwipeControls": 1,
     "useSwitchTheme": 1,
-    "useAnimatedSensor": 1,
     "useDeviceTilt": 1,
     "useAtomValue": 1,
     "usePreviousRef": 1,
@@ -138,12 +138,12 @@
   },
   "functions": {
     "withSpring": 79,
-    "interpolate": 72,
+    "interpolate": 73,
     "withTiming": 58,
     "scheduleOnRN": 45,
     "Gesture.Pan": 37,
     "cancelAnimation": 23,
-    "vec": 18,
+    "vec": 19,
     "rect": 18,
     "clamp": 13,
     "interpolateColor": 13,
@@ -597,32 +597,32 @@
     "unwrapReanimatedValue": 1
   },
   "components": {
-    "View": 109,
+    "View": 110,
     "Text": 74,
-    "Canvas": 53,
+    "Canvas": 54,
     "PressableScale": 49,
     "GestureDetector": 44,
-    "Group": 32,
-    "LinearGradient": 26,
+    "Group": 33,
+    "LinearGradient": 27,
     "Path": 26,
     "GestureHandlerRootView": 21,
     "Image": 20,
     "Circle": 19,
     "FlatList": 18,
-    "Blur": 16,
+    "Blur": 17,
     "Rect": 16,
     "App": 15,
     "ScrollView": 14,
+    "BlurMask": 13,
     "AntDesign": 13,
-    "BlurMask": 12,
     "AnimatedBlurView": 12,
+    "RoundedRect": 11,
     "PressableOpacity": 10,
     "Ionicons": 10,
-    "RoundedRect": 10,
     "Provider": 10,
+    "Fill": 9,
     "SweepGradient": 9,
     "MaterialIcons": 9,
-    "Fill": 8,
     "Navigator": 8,
     "Screen": 8,
     "SafeAreaProvider": 8,
@@ -631,18 +631,18 @@
     "Paint": 6,
     "ListItem": 6,
     "ReText": 6,
+    "RadialGradient": 6,
     "BottomTabBar": 6,
     "ColorMatrix": 6,
     "Backdrop": 5,
     "AnimatedCount": 5,
     "AnimatedDigit": 5,
-    "RadialGradient": 5,
+    "Shadow": 5,
     "MaterialCommunityIcons": 4,
     "Atlas": 4,
     "BlurView": 4,
     "TabBarItem": 4,
     "Octicons": 4,
-    "Shadow": 4,
     "TextInput": 4,
     "BottomSheet": 3,
     "Feather": 3,
@@ -809,6 +809,10 @@
     "ExpansionProvider": 1,
     "MainScreenWrapper": 1,
     "NavigationItem": 1,
+    "GoodOldSquare": 1,
+    "Oval": 1,
+    "OvalComponent": 1,
+    "ReactNativeLogo": 1,
     "GlassView": 1,
     "Overlay": 1,
     "LoadingButton": 1,
@@ -930,13 +934,13 @@
   },
   "patterns": {
     "shared-value-state": 97,
+    "derived-computation": 91,
     "animated-styling": 90,
-    "derived-computation": 90,
     "reactive-styling-pattern": 79,
     "spring-animation": 79,
-    "value-interpolation": 72,
+    "value-interpolation": 73,
     "timing-animation": 58,
-    "skia-graphics": 53,
+    "skia-graphics": 54,
     "animated-reaction": 32,
     "scroll-animation": 25,
     "imperative-animation-api": 19,
@@ -949,10 +953,10 @@
   "techniques": {
     "transform-animations": 90,
     "spring-physics": 79,
-    "value-mapping": 72,
+    "value-mapping": 73,
     "timing-based-transitions": 58,
-    "canvas-rendering": 53,
-    "blur-effects": 40,
+    "canvas-rendering": 54,
+    "blur-effects": 41,
     "reactive-side-effects": 32,
     "scroll-based-animation": 25,
     "ref-based-control": 19,
@@ -995,6 +999,7 @@
       "image-cropper",
       "infinite-carousel",
       "interaction-appearance",
+      "linear-sensors",
       "loading-button",
       "metaball",
       "mnist",
@@ -1081,6 +1086,7 @@
       "interaction-appearance",
       "ios-home-bouncy",
       "ios-home-grid",
+      "linear-sensors",
       "liquid-glass-playground",
       "loading-button",
       "metaball",
@@ -1192,6 +1198,7 @@
       "interaction-appearance",
       "ios-home-bouncy",
       "ios-home-grid",
+      "linear-sensors",
       "liquid-glass-playground",
       "loading-button",
       "magnet-spring",
@@ -1306,6 +1313,7 @@
       "interaction-appearance",
       "ios-home-bouncy",
       "ios-home-grid",
+      "linear-sensors",
       "liquid-glass-playground",
       "loading-button",
       "magnet-spring",
@@ -1956,6 +1964,7 @@
       "interaction-appearance",
       "ios-home-bouncy",
       "ios-home-grid",
+      "linear-sensors",
       "loading-button",
       "miles-bar-chart",
       "mnist",
@@ -2041,6 +2050,7 @@
       "interaction-appearance",
       "ios-home-bouncy",
       "ios-home-grid",
+      "linear-sensors",
       "loading-button",
       "magnet-spring",
       "metaball",
@@ -2133,6 +2143,7 @@
       "interaction-appearance",
       "ios-home-bouncy",
       "ios-home-grid",
+      "linear-sensors",
       "loading-button",
       "metaball",
       "miles-bar-chart",
@@ -2709,6 +2720,10 @@
     "useRouter": [
       "ios-home-grid"
     ],
+    "useAnimatedSensor": [
+      "linear-sensors",
+      "threads-holo-ticket"
+    ],
     "useMutation": [
       "loading-button"
     ],
@@ -2780,9 +2795,6 @@
     ],
     "useSwitchTheme": [
       "telegram-theme-switch"
-    ],
-    "useAnimatedSensor": [
-      "threads-holo-ticket"
     ],
     "useDeviceTilt": [
       "threads-holo-ticket"
@@ -3062,6 +3074,7 @@
       "interaction-appearance",
       "ios-home-bouncy",
       "ios-home-grid",
+      "linear-sensors",
       "loading-button",
       "magnet-spring",
       "metaball",
@@ -3170,6 +3183,7 @@
       "infinite-carousel",
       "ios-home-bouncy",
       "ios-home-grid",
+      "linear-sensors",
       "loading-button",
       "magnet-spring",
       "miles-bar-chart",
@@ -3317,6 +3331,7 @@
       "image-cropper",
       "infinite-carousel",
       "interaction-appearance",
+      "linear-sensors",
       "loading-button",
       "metaball",
       "mnist",
@@ -3651,6 +3666,7 @@
       "infinite-carousel",
       "ios-home-bouncy",
       "ios-home-grid",
+      "linear-sensors",
       "loading-button",
       "magnet-spring",
       "miles-bar-chart",
@@ -3717,6 +3733,7 @@
       "image-cropper",
       "infinite-carousel",
       "interaction-appearance",
+      "linear-sensors",
       "loading-button",
       "metaball",
       "mnist",
@@ -3766,6 +3783,7 @@
       "interaction-appearance",
       "ios-home-bouncy",
       "ios-home-grid",
+      "linear-sensors",
       "liquid-glass-playground",
       "metaball",
       "mobile-input",
@@ -4123,31 +4141,32 @@
   },
   "components_by_package": {
     "@shopify/react-native-skia": {
-      "Canvas": 54,
-      "Group": 31,
+      "Canvas": 55,
+      "Group": 32,
       "Path": 26,
       "Circle": 19,
-      "Blur": 16,
+      "Blur": 17,
       "Rect": 16,
-      "BlurMask": 12,
-      "RoundedRect": 10,
+      "BlurMask": 13,
+      "RoundedRect": 11,
+      "Fill": 9,
       "SweepGradient": 9,
       "Text": 9,
-      "Fill": 8,
-      "LinearGradient": 8,
+      "LinearGradient": 9,
       "Shader": 7,
       "Mask": 6,
       "Paint": 6,
+      "RadialGradient": 6,
       "ColorMatrix": 6,
-      "RadialGradient": 5,
+      "Shadow": 5,
       "Image": 5,
       "Atlas": 4,
-      "Shadow": 4,
       "ImageSVG": 3,
       "FitBox": 3,
       "BackdropBlur": 2,
       "Line": 2,
       "ImageShader": 2,
+      "Oval": 1,
       "SkiaCircle": 1,
       "DiscretePathEffect": 1,
       "Points": 1,
@@ -4158,7 +4177,7 @@
       "Fragment": 1
     },
     "react-native": {
-      "View": 105,
+      "View": 106,
       "Text": 53,
       "ScrollView": 4,
       "TextInput": 4,
@@ -4259,8 +4278,8 @@
       "usePathInterpolation": 1
     },
     "react": {
-      "useCallback": 71,
-      "useMemo": 71,
+      "useCallback": 72,
+      "useMemo": 72,
       "useState": 40,
       "useRef": 31,
       "useEffect": 22,
@@ -4274,14 +4293,14 @@
     },
     "react-native-reanimated": {
       "useSharedValue": 97,
+      "useDerivedValue": 91,
       "useAnimatedStyle": 90,
-      "useDerivedValue": 90,
       "useAnimatedReaction": 32,
       "useAnimatedScrollHandler": 25,
       "useAnimatedProps": 12,
       "useAnimatedRef": 11,
-      "useFrameCallback": 1,
-      "useAnimatedSensor": 1
+      "useAnimatedSensor": 2,
+      "useFrameCallback": 1
     },
     "@expo/vector-icons": {},
     "pressto": {},
@@ -4332,7 +4351,7 @@
   },
   "functions_by_package": {
     "@shopify/react-native-skia": {
-      "vec": 18,
+      "vec": 19,
       "rect": 18,
       "rrect": 9,
       "interpolate": 6,
@@ -4350,7 +4369,7 @@
     "react-native": {},
     "react-native-reanimated": {
       "withSpring": 79,
-      "interpolate": 66,
+      "interpolate": 67,
       "withTiming": 58,
       "cancelAnimation": 23,
       "interpolateColor": 13,
@@ -14249,6 +14268,129 @@
           "hooks": [],
           "functions": [
             "scheduleOnRN"
+          ],
+          "components": []
+        }
+      }
+    },
+    {
+      "slug": "linear-sensors",
+      "total_files": 2,
+      "total_packages": 4,
+      "total_hooks": 4,
+      "total_patterns": 3,
+      "packages": [
+        "@shopify/react-native-skia",
+        "react",
+        "react-native",
+        "react-native-reanimated"
+      ],
+      "hooks": [
+        "useAnimatedSensor",
+        "useCallback",
+        "useDerivedValue",
+        "useMemo"
+      ],
+      "patterns": [
+        "derived-computation",
+        "value-interpolation",
+        "skia-graphics"
+      ],
+      "techniques": [
+        "value-mapping",
+        "canvas-rendering",
+        "blur-effects"
+      ],
+      "components": [
+        "Blur",
+        "BlurMask",
+        "Canvas",
+        "Fill",
+        "GoodOldSquare",
+        "Group",
+        "LinearGradient",
+        "Oval",
+        "OvalComponent",
+        "RadialGradient",
+        "ReactNativeLogo",
+        "RoundedRect",
+        "Shadow",
+        "View"
+      ],
+      "functions": [
+        "interpolate",
+        "vec"
+      ],
+      "packages_detail": {
+        "@shopify/react-native-skia": {
+          "imports": [
+            "Blur",
+            "BlurMask",
+            "Canvas",
+            "Fill",
+            "Group",
+            "LinearGradient",
+            "Oval",
+            "RadialGradient",
+            "RoundedRect",
+            "Shadow",
+            "vec"
+          ],
+          "hooks": [],
+          "functions": [
+            "vec"
+          ],
+          "components": [
+            "Blur",
+            "BlurMask",
+            "Canvas",
+            "Fill",
+            "Group",
+            "LinearGradient",
+            "Oval",
+            "RadialGradient",
+            "RoundedRect",
+            "Shadow"
+          ]
+        },
+        "react": {
+          "imports": [
+            "useCallback",
+            "useMemo"
+          ],
+          "hooks": [
+            "useCallback",
+            "useMemo"
+          ],
+          "functions": [],
+          "components": []
+        },
+        "react-native": {
+          "imports": [
+            "Dimensions",
+            "StyleSheet",
+            "View"
+          ],
+          "hooks": [],
+          "functions": [],
+          "components": [
+            "View"
+          ]
+        },
+        "react-native-reanimated": {
+          "imports": [
+            "Extrapolation",
+            "SensorType",
+            "interpolate",
+            "useAnimatedSensor",
+            "useDerivedValue"
+          ],
+          "hooks": [
+            "useAnimatedSensor",
+            "useDerivedValue"
+          ],
+          "functions": [
+            "interpolate"
           ],
           "components": []
         }
