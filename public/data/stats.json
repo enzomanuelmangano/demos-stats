@@ -1,17 +1,17 @@
 {
-  "total_animations": 113,
+  "total_animations": 114,
   "packages": {
-    "react-native": 113,
-    "react-native-reanimated": 113,
-    "react": 108,
+    "react-native": 114,
+    "react-native-reanimated": 114,
+    "react": 109,
     "pressto": 66,
     "@shopify/react-native-skia": 55,
-    "react-native-gesture-handler": 53,
-    "react-native-worklets": 45,
+    "react-native-gesture-handler": 54,
+    "react-native-worklets": 46,
     "@expo/vector-icons": 44,
     "react-native-safe-area-context": 30,
-    "expo-haptics": 23,
-    "expo-linear-gradient": 18,
+    "expo-haptics": 24,
+    "expo-linear-gradient": 19,
     "expo-blur": 16,
     "expo-image": 13,
     "react-native-skia-gesture": 10,
@@ -38,14 +38,14 @@
     "lottie-react-native": 1
   },
   "hooks": {
-    "useSharedValue": 97,
-    "useDerivedValue": 91,
-    "useAnimatedStyle": 90,
+    "useSharedValue": 98,
+    "useDerivedValue": 92,
+    "useAnimatedStyle": 91,
+    "useMemo": 73,
     "useCallback": 72,
-    "useMemo": 72,
-    "useWindowDimensions": 59,
+    "useWindowDimensions": 60,
     "useState": 40,
-    "useAnimatedReaction": 32,
+    "useAnimatedReaction": 33,
     "useRef": 31,
     "useSafeAreaInsets": 28,
     "useAnimatedScrollHandler": 25,
@@ -78,6 +78,7 @@
     "useAnimateThroughPath": 1,
     "useSharedControlPoint": 1,
     "useVec": 1,
+    "usePageFlipAnimation": 1,
     "useCuisines": 1,
     "useDemoStackedToast": 1,
     "useGradientHeight": 1,
@@ -137,15 +138,15 @@
     "usePathInterpolation": 1
   },
   "functions": {
-    "withSpring": 79,
-    "interpolate": 73,
+    "withSpring": 80,
+    "interpolate": 74,
     "withTiming": 58,
-    "scheduleOnRN": 45,
-    "Gesture.Pan": 37,
+    "scheduleOnRN": 46,
+    "Gesture.Pan": 38,
     "cancelAnimation": 23,
     "vec": 19,
     "rect": 18,
-    "clamp": 13,
+    "clamp": 14,
     "interpolateColor": 13,
     "Math.sin": 13,
     "Math.cos": 12,
@@ -166,11 +167,11 @@
     "measure": 6,
     "onUpdate": 6,
     "LinearTransition.springify": 6,
+    "Array.from": 6,
     "Platform.select": 6,
     "Haptics.impactAsync": 6,
     "Haptics.selectionAsync": 6,
     "scrollTo": 5,
-    "Array.from": 5,
     "skPath.moveTo": 5,
     "createBottomTabNavigator": 5,
     "text.split": 5,
@@ -597,13 +598,13 @@
     "unwrapReanimatedValue": 1
   },
   "components": {
-    "View": 110,
-    "Text": 74,
+    "View": 111,
+    "Text": 75,
     "Canvas": 54,
     "PressableScale": 49,
-    "GestureDetector": 44,
+    "GestureDetector": 45,
     "Group": 33,
-    "LinearGradient": 27,
+    "LinearGradient": 28,
     "Path": 26,
     "GestureHandlerRootView": 21,
     "Image": 20,
@@ -646,6 +647,7 @@
     "TextInput": 4,
     "BottomSheet": 3,
     "Feather": 3,
+    "AnimatedSlider": 3,
     "Entypo": 3,
     "ImageSVG": 3,
     "FitBox": 3,
@@ -655,7 +657,6 @@
     "PressableWithoutFeedback": 3,
     "ThemeProvider": 3,
     "AppItem": 3,
-    "AnimatedSlider": 2,
     "Host": 2,
     "ReanimatedSlider": 2,
     "FontAwesome": 2,
@@ -718,6 +719,16 @@
     "ImageScreen": 1,
     "BlurredItem": 1,
     "BottomTabItem": 1,
+    "Body": 1,
+    "CalendarCard": 1,
+    "DepthShadow": 1,
+    "FoldGradient": 1,
+    "FoldShadowBottom": 1,
+    "FoldShadowTop": 1,
+    "Header": 1,
+    "Page": 1,
+    "PageFace": 1,
+    "StaticPage": 1,
     "CardCanvas": 1,
     "CardCarousel": 1,
     "CardChip": 1,
@@ -933,15 +944,15 @@
     "InternalIcon": 1
   },
   "patterns": {
-    "shared-value-state": 97,
-    "derived-computation": 91,
-    "animated-styling": 90,
-    "reactive-styling-pattern": 79,
-    "spring-animation": 79,
-    "value-interpolation": 73,
+    "shared-value-state": 98,
+    "derived-computation": 92,
+    "animated-styling": 91,
+    "reactive-styling-pattern": 80,
+    "spring-animation": 80,
+    "value-interpolation": 74,
     "timing-animation": 58,
     "skia-graphics": 54,
-    "animated-reaction": 32,
+    "animated-reaction": 33,
     "scroll-animation": 25,
     "imperative-animation-api": 19,
     "color-interpolation": 13,
@@ -951,13 +962,13 @@
     "sequence-animation": 4
   },
   "techniques": {
-    "transform-animations": 90,
-    "spring-physics": 79,
-    "value-mapping": 73,
+    "transform-animations": 91,
+    "spring-physics": 80,
+    "value-mapping": 74,
     "timing-based-transitions": 58,
     "canvas-rendering": 54,
     "blur-effects": 41,
-    "reactive-side-effects": 32,
+    "reactive-side-effects": 33,
     "scroll-based-animation": 25,
     "ref-based-control": 19,
     "color-transitions": 13,
@@ -1045,6 +1056,7 @@
       "blur-circles",
       "blurred-bottom-bar",
       "bottom-bar-skia",
+      "calendar-days",
       "card-shader-reflections",
       "checkbox-interactions",
       "circular-carousel",
@@ -1157,6 +1169,7 @@
       "blurred-bottom-bar",
       "blurred-scroll",
       "bottom-bar-skia",
+      "calendar-days",
       "card-shader-reflections",
       "checkbox-interactions",
       "circular-carousel",
@@ -1272,6 +1285,7 @@
       "blurred-bottom-bar",
       "blurred-scroll",
       "bottom-bar-skia",
+      "calendar-days",
       "card-shader-reflections",
       "checkbox-interactions",
       "circular-carousel",
@@ -1488,6 +1502,7 @@
       "atlas-sphere",
       "audio-player",
       "balance-slider",
+      "calendar-days",
       "card-shader-reflections",
       "clerk-toast",
       "cuberto-slider",
@@ -1544,6 +1559,7 @@
       "bezier-curve-outline",
       "blur-circles",
       "bottom-bar-skia",
+      "calendar-days",
       "clerk-toast",
       "delete-button",
       "drag-to-sort",
@@ -1649,6 +1665,7 @@
     "expo-linear-gradient": [
       "airbnb-flip-interaction",
       "blurred-bottom-bar",
+      "calendar-days",
       "clerk-toast",
       "clock-time-picker",
       "drag-to-sort",
@@ -1711,6 +1728,7 @@
     ],
     "expo-haptics": [
       "bottom-bar-skia",
+      "calendar-days",
       "delete-button",
       "drag-to-sort",
       "duration-slider",
@@ -1852,6 +1870,7 @@
       "bezier-curve-outline",
       "blurred-bottom-bar",
       "blurred-scroll",
+      "calendar-days",
       "card-shader-reflections",
       "checkbox-interactions",
       "circular-carousel",
@@ -2020,6 +2039,7 @@
       "blurred-bottom-bar",
       "blurred-scroll",
       "bottom-bar-skia",
+      "calendar-days",
       "card-shader-reflections",
       "circular-carousel",
       "clock-time-picker",
@@ -2118,6 +2138,7 @@
       "blur-cards",
       "blur-circles",
       "bottom-bar-skia",
+      "calendar-days",
       "clerk-toast",
       "clock-time-picker",
       "composable-text",
@@ -2197,6 +2218,7 @@
       "blur-circles",
       "blurred-bottom-bar",
       "blurred-scroll",
+      "calendar-days",
       "card-shader-reflections",
       "circular-carousel",
       "clerk-toast",
@@ -2288,6 +2310,7 @@
       "blur-cards",
       "blurred-scroll",
       "bottom-bar-skia",
+      "calendar-days",
       "clerk-toast",
       "coverflow-carousel",
       "dot-sheet",
@@ -2496,6 +2519,7 @@
       "audio-player",
       "bezier-curve-outline",
       "blur-circles",
+      "calendar-days",
       "delete-button",
       "drag-to-sort",
       "duration-slider",
@@ -2594,6 +2618,9 @@
     ],
     "useVec": [
       "blur-circles"
+    ],
+    "usePageFlipAnimation": [
+      "calendar-days"
     ],
     "useCuisines": [
       "checkbox-interactions"
@@ -2852,6 +2879,7 @@
       "blur-circles",
       "blurred-bottom-bar",
       "blurred-scroll",
+      "calendar-days",
       "card-shader-reflections",
       "circular-carousel",
       "clerk-toast",
@@ -2950,6 +2978,7 @@
       "bezier-curve-outline",
       "blurred-bottom-bar",
       "blurred-scroll",
+      "calendar-days",
       "card-shader-reflections",
       "checkbox-interactions",
       "circular-carousel",
@@ -3044,6 +3073,7 @@
       "blurred-bottom-bar",
       "blurred-scroll",
       "bottom-bar-skia",
+      "calendar-days",
       "card-shader-reflections",
       "circular-carousel",
       "clock-time-picker",
@@ -3157,6 +3187,7 @@
       "atlas-sphere",
       "bezier-curve-outline",
       "blurred-scroll",
+      "calendar-days",
       "card-shader-reflections",
       "circular-carousel",
       "clock-time-picker",
@@ -3235,6 +3266,7 @@
       "bezier-curve-outline",
       "blurred-bottom-bar",
       "blurred-scroll",
+      "calendar-days",
       "card-shader-reflections",
       "circular-carousel",
       "clerk-toast",
@@ -3433,6 +3465,7 @@
       "bezier-curve-outline",
       "blur-cards",
       "bottom-bar-skia",
+      "calendar-days",
       "circular-carousel",
       "clerk-toast",
       "cuberto-slider",
@@ -3523,6 +3556,7 @@
       "audio-player",
       "bezier-curve-outline",
       "blur-circles",
+      "calendar-days",
       "delete-button",
       "drag-to-sort",
       "duration-slider",
@@ -3640,6 +3674,7 @@
       "atlas-sphere",
       "bezier-curve-outline",
       "blurred-scroll",
+      "calendar-days",
       "card-shader-reflections",
       "circular-carousel",
       "clock-time-picker",
@@ -3819,6 +3854,7 @@
       "bezier-curve-outline",
       "blurred-bottom-bar",
       "blurred-scroll",
+      "calendar-days",
       "card-shader-reflections",
       "checkbox-interactions",
       "circular-carousel",
@@ -3970,6 +4006,7 @@
       "bezier-curve-outline",
       "blur-cards",
       "bottom-bar-skia",
+      "calendar-days",
       "circular-carousel",
       "clerk-toast",
       "cuberto-slider",
@@ -4060,6 +4097,7 @@
       "audio-player",
       "bezier-curve-outline",
       "blur-circles",
+      "calendar-days",
       "delete-button",
       "drag-to-sort",
       "duration-slider",
@@ -4177,8 +4215,8 @@
       "Fragment": 1
     },
     "react-native": {
-      "View": 106,
-      "Text": 53,
+      "View": 107,
+      "Text": 54,
       "ScrollView": 4,
       "TextInput": 4,
       "Image": 3,
@@ -4190,7 +4228,7 @@
       "Pressable": 1
     },
     "react-native-reanimated": {
-      "View": 96,
+      "View": 97,
       "Text": 21,
       "FlatList": 16,
       "ScrollView": 9
@@ -4214,7 +4252,7 @@
       "PressablesGroup": 1
     },
     "react-native-gesture-handler": {
-      "GestureDetector": 44,
+      "GestureDetector": 45,
       "GestureHandlerRootView": 21,
       "ScrollView": 1
     },
@@ -4229,7 +4267,7 @@
       "BlurView": 4
     },
     "expo-linear-gradient": {
-      "LinearGradient": 18
+      "LinearGradient": 19
     },
     "@expo/ui/swift-ui": {
       "Host": 2,
@@ -4278,8 +4316,8 @@
       "usePathInterpolation": 1
     },
     "react": {
+      "useMemo": 73,
       "useCallback": 72,
-      "useMemo": 72,
       "useState": 40,
       "useRef": 31,
       "useEffect": 22,
@@ -4289,13 +4327,13 @@
       "useId": 1
     },
     "react-native": {
-      "useWindowDimensions": 59
+      "useWindowDimensions": 60
     },
     "react-native-reanimated": {
-      "useSharedValue": 97,
-      "useDerivedValue": 91,
-      "useAnimatedStyle": 90,
-      "useAnimatedReaction": 32,
+      "useSharedValue": 98,
+      "useDerivedValue": 92,
+      "useAnimatedStyle": 91,
+      "useAnimatedReaction": 33,
       "useAnimatedScrollHandler": 25,
       "useAnimatedProps": 12,
       "useAnimatedRef": 11,
@@ -4368,16 +4406,16 @@
     },
     "react-native": {},
     "react-native-reanimated": {
-      "withSpring": 79,
-      "interpolate": 67,
+      "withSpring": 80,
+      "interpolate": 68,
       "withTiming": 58,
       "cancelAnimation": 23,
       "interpolateColor": 13,
       "makeMutable": 11,
       "withRepeat": 10,
       "measure": 6,
+      "clamp": 6,
       "withDelay": 5,
-      "clamp": 5,
       "withSequence": 4,
       "scrollTo": 3,
       "withDecay": 3,
@@ -4390,7 +4428,7 @@
     },
     "react-native-gesture-handler": {},
     "react-native-worklets": {
-      "scheduleOnRN": 45,
+      "scheduleOnRN": 46,
       "scheduleOnUI": 1
     },
     "expo-image": {},
@@ -7494,6 +7532,163 @@
           "hooks": [],
           "functions": [],
           "components": []
+        },
+        "react-native-worklets": {
+          "imports": [
+            "scheduleOnRN"
+          ],
+          "hooks": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
+          "components": []
+        }
+      }
+    },
+    {
+      "slug": "calendar-days",
+      "total_files": 12,
+      "total_packages": 7,
+      "total_hooks": 7,
+      "total_patterns": 7,
+      "packages": [
+        "expo-haptics",
+        "expo-linear-gradient",
+        "react",
+        "react-native",
+        "react-native-gesture-handler",
+        "react-native-reanimated",
+        "react-native-worklets"
+      ],
+      "hooks": [
+        "useAnimatedReaction",
+        "useAnimatedStyle",
+        "useDerivedValue",
+        "useMemo",
+        "usePageFlipAnimation",
+        "useSharedValue",
+        "useWindowDimensions"
+      ],
+      "patterns": [
+        "shared-value-state",
+        "animated-styling",
+        "derived-computation",
+        "animated-reaction",
+        "spring-animation",
+        "value-interpolation",
+        "reactive-styling-pattern"
+      ],
+      "techniques": [
+        "reactive-side-effects",
+        "spring-physics",
+        "value-mapping",
+        "transform-animations"
+      ],
+      "components": [
+        "Animated.View",
+        "AnimatedSlider",
+        "Body",
+        "CalendarCard",
+        "DepthShadow",
+        "FoldGradient",
+        "FoldShadowBottom",
+        "FoldShadowTop",
+        "GestureDetector",
+        "Header",
+        "LinearGradient",
+        "Page",
+        "PageFace",
+        "StaticPage",
+        "Text",
+        "View"
+      ],
+      "functions": [
+        "Array.from",
+        "Gesture.Pan",
+        "clamp",
+        "interpolate",
+        "scheduleOnRN",
+        "withSpring"
+      ],
+      "packages_detail": {
+        "expo-haptics": {
+          "imports": [],
+          "hooks": [],
+          "functions": [],
+          "components": []
+        },
+        "expo-linear-gradient": {
+          "imports": [
+            "LinearGradient"
+          ],
+          "hooks": [],
+          "functions": [],
+          "components": [
+            "LinearGradient"
+          ]
+        },
+        "react": {
+          "imports": [
+            "useMemo"
+          ],
+          "hooks": [
+            "useMemo"
+          ],
+          "functions": [],
+          "components": []
+        },
+        "react-native": {
+          "imports": [
+            "StyleSheet",
+            "Text",
+            "View",
+            "useWindowDimensions"
+          ],
+          "hooks": [
+            "useWindowDimensions"
+          ],
+          "functions": [],
+          "components": [
+            "Text",
+            "View"
+          ]
+        },
+        "react-native-gesture-handler": {
+          "imports": [
+            "Gesture",
+            "GestureDetector"
+          ],
+          "hooks": [],
+          "functions": [],
+          "components": [
+            "GestureDetector"
+          ]
+        },
+        "react-native-reanimated": {
+          "imports": [
+            "Extrapolation",
+            "clamp",
+            "interpolate",
+            "useAnimatedReaction",
+            "useAnimatedStyle",
+            "useDerivedValue",
+            "useSharedValue",
+            "withSpring"
+          ],
+          "hooks": [
+            "useAnimatedReaction",
+            "useAnimatedStyle",
+            "useDerivedValue",
+            "useSharedValue"
+          ],
+          "functions": [
+            "clamp",
+            "interpolate",
+            "withSpring"
+          ],
+          "components": [
+            "Animated.View"
+          ]
         },
         "react-native-worklets": {
           "imports": [
