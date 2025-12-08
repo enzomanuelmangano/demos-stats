@@ -1,16 +1,16 @@
 {
-  "total_animations": 114,
+  "total_animations": 115,
   "packages": {
-    "react-native": 114,
-    "react-native-reanimated": 114,
-    "react": 109,
+    "react-native": 115,
+    "react-native-reanimated": 115,
+    "react": 110,
     "pressto": 66,
-    "@shopify/react-native-skia": 55,
-    "react-native-gesture-handler": 54,
-    "react-native-worklets": 46,
+    "@shopify/react-native-skia": 56,
+    "react-native-gesture-handler": 55,
+    "react-native-worklets": 47,
     "@expo/vector-icons": 44,
     "react-native-safe-area-context": 30,
-    "expo-haptics": 24,
+    "expo-haptics": 25,
     "expo-linear-gradient": 19,
     "expo-blur": 16,
     "expo-image": 13,
@@ -23,11 +23,11 @@
     "date-fns": 3,
     "react-native-qrcode-skia": 3,
     "expo-router": 3,
+    "lodash.debounce": 3,
     "@expo/ui/swift-ui": 2,
     "@expo/vector-icons/build/createIconSet": 2,
     "@react-native-seoul/masonry-list": 2,
     "jotai": 2,
-    "lodash.debounce": 2,
     "react-native-keyboard-controller": 2,
     "simplex-noise": 1,
     "@react-native-masked-view/masked-view": 1,
@@ -38,18 +38,18 @@
     "lottie-react-native": 1
   },
   "hooks": {
-    "useSharedValue": 98,
-    "useDerivedValue": 92,
+    "useSharedValue": 99,
+    "useDerivedValue": 93,
     "useAnimatedStyle": 91,
     "useMemo": 73,
     "useCallback": 72,
     "useWindowDimensions": 60,
     "useState": 40,
     "useAnimatedReaction": 33,
-    "useRef": 31,
+    "useRef": 32,
     "useSafeAreaInsets": 28,
     "useAnimatedScrollHandler": 25,
-    "useEffect": 22,
+    "useEffect": 23,
     "useImperativeHandle": 19,
     "useAnimatedProps": 12,
     "useAnimatedRef": 11,
@@ -66,6 +66,7 @@
     "useToast": 2,
     "useAtom": 2,
     "useAnimatedSensor": 2,
+    "usePathValue": 2,
     "useFocusEffect": 2,
     "useReanimatedKeyboardAnimation": 2,
     "use3DRotationStyle": 1,
@@ -117,7 +118,6 @@
     "useShakingAnimation": 1,
     "useConst": 1,
     "useFrameCallback": 1,
-    "usePathValue": 1,
     "useDemoStackedSheet": 1,
     "useInternalStackedSheet": 1,
     "useStackedSheet": 1,
@@ -138,22 +138,22 @@
     "usePathInterpolation": 1
   },
   "functions": {
-    "withSpring": 80,
-    "interpolate": 74,
-    "withTiming": 58,
-    "scheduleOnRN": 46,
+    "withSpring": 81,
+    "interpolate": 75,
+    "withTiming": 59,
+    "scheduleOnRN": 47,
     "Gesture.Pan": 38,
     "cancelAnimation": 23,
-    "vec": 19,
+    "vec": 20,
     "rect": 18,
     "clamp": 14,
+    "Math.sin": 14,
     "interpolateColor": 13,
-    "Math.sin": 13,
-    "Math.cos": 12,
-    "Gesture.Tap": 11,
+    "Math.cos": 13,
+    "Gesture.Tap": 12,
     "makeMutable": 11,
+    "withRepeat": 11,
     "font.measureText": 10,
-    "withRepeat": 10,
     "Color": 10,
     "createContext": 10,
     "rrect": 9,
@@ -163,14 +163,14 @@
     "FadeIn.duration": 7,
     "Array": 7,
     "navigation.navigate": 7,
+    "Haptics.impactAsync": 7,
+    "Haptics.selectionAsync": 7,
     "Boolean": 6,
     "measure": 6,
     "onUpdate": 6,
     "LinearTransition.springify": 6,
     "Array.from": 6,
     "Platform.select": 6,
-    "Haptics.impactAsync": 6,
-    "Haptics.selectionAsync": 6,
     "scrollTo": 5,
     "skPath.moveTo": 5,
     "createBottomTabNavigator": 5,
@@ -186,6 +186,7 @@
     "path.addCircle": 4,
     "withSequence": 4,
     "onProgressChange": 4,
+    "skPath.addCircle": 4,
     "font.getSize": 3,
     "data.findIndex": 3,
     "fitbox": 3,
@@ -194,6 +195,7 @@
     "dismissItem": 3,
     "stackedSheet.children": 3,
     "format": 3,
+    "Gesture.Simultaneous": 3,
     "onTabPress": 3,
     "onReset": 3,
     "setTheme": 3,
@@ -201,11 +203,11 @@
     "createNativeStackNavigator": 3,
     "snapPoint": 3,
     "withDecay": 3,
+    "debounce": 3,
     "path.lineTo": 3,
     "path.moveTo": 3,
     "shake": 3,
     "setItems": 3,
-    "skPath.addCircle": 3,
     "close": 2,
     "createRef": 2,
     "val.setXYWH": 2,
@@ -227,7 +229,6 @@
     "onTabChange": 2,
     "path.addRRect": 2,
     "setActiveTabIndex": 2,
-    "Gesture.Simultaneous": 2,
     "onBackspace": 2,
     "Skia.Matrix": 2,
     "startOfWeek": 2,
@@ -237,7 +238,6 @@
     "processed.join": 2,
     "source.flatMap": 2,
     "transition": 2,
-    "debounce": 2,
     "onComplete": 2,
     "reset": 2,
     "Math.exp": 2,
@@ -508,6 +508,8 @@
     "snakeGame.changeDirection": 1,
     "snakeGame.getState": 1,
     "snakeGame.move": 1,
+    "Gesture.Pinch": 1,
+    "createEnhancedFibonacciPath": 1,
     "logarithmicSpiral": 1,
     "onLeft": 1,
     "onRight": 1,
@@ -598,14 +600,14 @@
     "unwrapReanimatedValue": 1
   },
   "components": {
-    "View": 111,
+    "View": 112,
     "Text": 75,
-    "Canvas": 54,
+    "Canvas": 55,
     "PressableScale": 49,
-    "GestureDetector": 45,
+    "GestureDetector": 46,
     "Group": 33,
-    "LinearGradient": 28,
-    "Path": 26,
+    "LinearGradient": 29,
+    "Path": 27,
     "GestureHandlerRootView": 21,
     "Image": 20,
     "Circle": 19,
@@ -944,35 +946,35 @@
     "InternalIcon": 1
   },
   "patterns": {
-    "shared-value-state": 98,
-    "derived-computation": 92,
+    "shared-value-state": 99,
+    "derived-computation": 93,
     "animated-styling": 91,
+    "spring-animation": 81,
     "reactive-styling-pattern": 80,
-    "spring-animation": 80,
-    "value-interpolation": 74,
-    "timing-animation": 58,
-    "skia-graphics": 54,
+    "value-interpolation": 75,
+    "timing-animation": 59,
+    "skia-graphics": 55,
     "animated-reaction": 33,
     "scroll-animation": 25,
     "imperative-animation-api": 19,
     "color-interpolation": 13,
-    "repeating-animation": 10,
+    "repeating-animation": 11,
     "delayed-animation": 5,
     "staggered-derived-values": 4,
     "sequence-animation": 4
   },
   "techniques": {
     "transform-animations": 91,
-    "spring-physics": 80,
-    "value-mapping": 74,
-    "timing-based-transitions": 58,
-    "canvas-rendering": 54,
+    "spring-physics": 81,
+    "value-mapping": 75,
+    "timing-based-transitions": 59,
+    "canvas-rendering": 55,
     "blur-effects": 41,
     "reactive-side-effects": 33,
     "scroll-based-animation": 25,
     "ref-based-control": 19,
     "color-transitions": 13,
-    "loop-animations": 10,
+    "loop-animations": 11,
     "staggered-timing": 5,
     "character-level-staggering": 4,
     "sequential-animations": 4,
@@ -1026,6 +1028,7 @@
       "skia-color-picker",
       "slide-to-reveal",
       "snake",
+      "sphere-waves",
       "spiral",
       "steddy-graph-interaction",
       "telegram-theme-switch",
@@ -1124,6 +1127,7 @@
       "slide-to-reveal",
       "smooth-dropdown",
       "snake",
+      "sphere-waves",
       "spiral",
       "split-button",
       "stacked-bottom-sheet",
@@ -1239,6 +1243,7 @@
       "slide-to-reveal",
       "smooth-dropdown",
       "snake",
+      "sphere-waves",
       "spiral",
       "split-button",
       "stacked-bottom-sheet",
@@ -1355,6 +1360,7 @@
       "slide-to-reveal",
       "smooth-dropdown",
       "snake",
+      "sphere-waves",
       "spiral",
       "split-button",
       "stacked-bottom-sheet",
@@ -1536,6 +1542,7 @@
       "skia-color-picker",
       "slide-to-reveal",
       "snake",
+      "sphere-waves",
       "split-button",
       "stacked-bottom-sheet",
       "steddy-graph-interaction",
@@ -1584,6 +1591,7 @@
       "selectable-grid-list",
       "skia-color-picker",
       "snake",
+      "sphere-waves",
       "stacked-bottom-sheet",
       "stacked-carousel",
       "steps",
@@ -1744,6 +1752,7 @@
       "prequel-slider",
       "record-button",
       "snake",
+      "sphere-waves",
       "stacked-carousel",
       "sudoku",
       "theme-canvas-animation",
@@ -1805,6 +1814,7 @@
     ],
     "lodash.debounce": [
       "ios-home-grid",
+      "sphere-waves",
       "twodos-slide"
     ],
     "expo-glass-effect": [
@@ -2095,6 +2105,7 @@
       "slide-to-reveal",
       "smooth-dropdown",
       "snake",
+      "sphere-waves",
       "stacked-carousel",
       "stacked-list",
       "stacked-modals",
@@ -2279,6 +2290,7 @@
       "slide-to-reveal",
       "smooth-dropdown",
       "snake",
+      "sphere-waves",
       "spiral",
       "stacked-bottom-sheet",
       "stacked-carousel",
@@ -2419,6 +2431,7 @@
       "scrollable-bottom-sheet",
       "selectable-grid-list",
       "snake",
+      "sphere-waves",
       "stacked-bottom-sheet",
       "stacked-modals",
       "sudoku",
@@ -2567,6 +2580,7 @@
       "motion-blur",
       "pomodoro-timer",
       "radar-chart",
+      "sphere-waves",
       "stacked-bottom-sheet",
       "stacked-modals",
       "sudoku",
@@ -2794,6 +2808,7 @@
       "snake"
     ],
     "usePathValue": [
+      "sphere-waves",
       "spiral"
     ],
     "useDemoStackedSheet": [
@@ -2940,6 +2955,7 @@
       "slide-to-reveal",
       "smooth-dropdown",
       "snake",
+      "sphere-waves",
       "spiral",
       "stacked-bottom-sheet",
       "stacked-carousel",
@@ -3129,6 +3145,7 @@
       "slide-to-reveal",
       "smooth-dropdown",
       "snake",
+      "sphere-waves",
       "stacked-carousel",
       "stacked-list",
       "stacked-modals",
@@ -3233,6 +3250,7 @@
       "shake-to-delete",
       "slide-to-reveal",
       "smooth-dropdown",
+      "sphere-waves",
       "spiral",
       "stacked-carousel",
       "stacked-list",
@@ -3378,6 +3396,7 @@
       "skia-color-picker",
       "slide-to-reveal",
       "snake",
+      "sphere-waves",
       "spiral",
       "steddy-graph-interaction",
       "telegram-theme-switch",
@@ -3433,6 +3452,7 @@
       "shake-to-delete",
       "slide-to-reveal",
       "snake",
+      "sphere-waves",
       "split-button",
       "stacked-bottom-sheet",
       "stacked-carousel",
@@ -3510,6 +3530,7 @@
       "skia-bottom-sheet",
       "smooth-dropdown",
       "snake",
+      "sphere-waves",
       "spiral",
       "split-button",
       "stacked-bottom-sheet",
@@ -3609,6 +3630,7 @@
       "loading-button",
       "mobile-input",
       "shake-to-delete",
+      "sphere-waves",
       "time-machine",
       "verification-code-face",
       "verification-code"
@@ -3720,6 +3742,7 @@
       "shake-to-delete",
       "slide-to-reveal",
       "smooth-dropdown",
+      "sphere-waves",
       "spiral",
       "stacked-carousel",
       "stacked-list",
@@ -3783,6 +3806,7 @@
       "skia-color-picker",
       "slide-to-reveal",
       "snake",
+      "sphere-waves",
       "spiral",
       "steddy-graph-interaction",
       "telegram-theme-switch",
@@ -3974,6 +3998,7 @@
       "shake-to-delete",
       "slide-to-reveal",
       "snake",
+      "sphere-waves",
       "split-button",
       "stacked-bottom-sheet",
       "stacked-carousel",
@@ -4051,6 +4076,7 @@
       "skia-bottom-sheet",
       "smooth-dropdown",
       "snake",
+      "sphere-waves",
       "spiral",
       "split-button",
       "stacked-bottom-sheet",
@@ -4150,6 +4176,7 @@
       "loading-button",
       "mobile-input",
       "shake-to-delete",
+      "sphere-waves",
       "time-machine",
       "verification-code-face",
       "verification-code"
@@ -4179,18 +4206,18 @@
   },
   "components_by_package": {
     "@shopify/react-native-skia": {
-      "Canvas": 55,
+      "Canvas": 56,
       "Group": 32,
-      "Path": 26,
+      "Path": 27,
       "Circle": 19,
       "Blur": 17,
       "Rect": 16,
       "BlurMask": 13,
       "RoundedRect": 11,
+      "LinearGradient": 10,
       "Fill": 9,
       "SweepGradient": 9,
       "Text": 9,
-      "LinearGradient": 9,
       "Shader": 7,
       "Mask": 6,
       "Paint": 6,
@@ -4215,7 +4242,7 @@
       "Fragment": 1
     },
     "react-native": {
-      "View": 107,
+      "View": 108,
       "Text": 54,
       "ScrollView": 4,
       "TextInput": 4,
@@ -4252,7 +4279,7 @@
       "PressablesGroup": 1
     },
     "react-native-gesture-handler": {
-      "GestureDetector": 45,
+      "GestureDetector": 46,
       "GestureHandlerRootView": 21,
       "ScrollView": 1
     },
@@ -4311,16 +4338,16 @@
       "useRSXformBuffer": 4,
       "useTexture": 4,
       "useRectBuffer": 2,
+      "usePathValue": 2,
       "useSVG": 1,
-      "usePathValue": 1,
       "usePathInterpolation": 1
     },
     "react": {
       "useMemo": 73,
       "useCallback": 72,
       "useState": 40,
-      "useRef": 31,
-      "useEffect": 22,
+      "useRef": 32,
+      "useEffect": 23,
       "useImperativeHandle": 19,
       "useContext": 10,
       "useLayoutEffect": 1,
@@ -4330,8 +4357,8 @@
       "useWindowDimensions": 60
     },
     "react-native-reanimated": {
-      "useSharedValue": 98,
-      "useDerivedValue": 92,
+      "useSharedValue": 99,
+      "useDerivedValue": 93,
       "useAnimatedStyle": 91,
       "useAnimatedReaction": 33,
       "useAnimatedScrollHandler": 25,
@@ -4389,7 +4416,7 @@
   },
   "functions_by_package": {
     "@shopify/react-native-skia": {
-      "vec": 19,
+      "vec": 20,
       "rect": 18,
       "rrect": 9,
       "interpolate": 6,
@@ -4406,13 +4433,13 @@
     },
     "react-native": {},
     "react-native-reanimated": {
-      "withSpring": 80,
-      "interpolate": 68,
-      "withTiming": 58,
+      "withSpring": 81,
+      "interpolate": 69,
+      "withTiming": 59,
       "cancelAnimation": 23,
       "interpolateColor": 13,
       "makeMutable": 11,
-      "withRepeat": 10,
+      "withRepeat": 11,
       "measure": 6,
       "clamp": 6,
       "withDelay": 5,
@@ -4428,7 +4455,7 @@
     },
     "react-native-gesture-handler": {},
     "react-native-worklets": {
-      "scheduleOnRN": 46,
+      "scheduleOnRN": 47,
       "scheduleOnUI": 1
     },
     "expo-image": {},
@@ -4448,8 +4475,8 @@
     },
     "@react-navigation/native": {},
     "expo-haptics": {
-      "impactAsync": 6,
-      "selectionAsync": 6,
+      "impactAsync": 7,
+      "selectionAsync": 7,
       "notificationAsync": 1
     },
     "color": {},
@@ -19118,6 +19145,177 @@
             "Animated.View",
             "Animated.createAnimatedComponent"
           ]
+        },
+        "react-native-worklets": {
+          "imports": [
+            "scheduleOnRN"
+          ],
+          "hooks": [],
+          "functions": [
+            "scheduleOnRN"
+          ],
+          "components": []
+        }
+      }
+    },
+    {
+      "slug": "sphere-waves",
+      "total_files": 1,
+      "total_packages": 8,
+      "total_hooks": 5,
+      "total_patterns": 7,
+      "packages": [
+        "@shopify/react-native-skia",
+        "expo-haptics",
+        "lodash.debounce",
+        "react",
+        "react-native",
+        "react-native-gesture-handler",
+        "react-native-reanimated",
+        "react-native-worklets"
+      ],
+      "hooks": [
+        "useDerivedValue",
+        "useEffect",
+        "usePathValue",
+        "useRef",
+        "useSharedValue"
+      ],
+      "patterns": [
+        "shared-value-state",
+        "derived-computation",
+        "timing-animation",
+        "spring-animation",
+        "repeating-animation",
+        "value-interpolation",
+        "skia-graphics"
+      ],
+      "techniques": [
+        "timing-based-transitions",
+        "spring-physics",
+        "loop-animations",
+        "value-mapping",
+        "canvas-rendering"
+      ],
+      "components": [
+        "Canvas",
+        "GestureDetector",
+        "LinearGradient",
+        "Path",
+        "View"
+      ],
+      "functions": [
+        "Gesture.Pinch",
+        "Gesture.Simultaneous",
+        "Gesture.Tap",
+        "Haptics.impactAsync",
+        "Haptics.selectionAsync",
+        "Math.cos",
+        "Math.sin",
+        "createEnhancedFibonacciPath",
+        "debounce",
+        "interpolate",
+        "scheduleOnRN",
+        "skPath.addCircle",
+        "vec",
+        "withRepeat",
+        "withSpring",
+        "withTiming"
+      ],
+      "packages_detail": {
+        "@shopify/react-native-skia": {
+          "imports": [
+            "Canvas",
+            "LinearGradient",
+            "Path",
+            "SkPath",
+            "usePathValue",
+            "vec"
+          ],
+          "hooks": [
+            "usePathValue"
+          ],
+          "functions": [
+            "vec"
+          ],
+          "components": [
+            "Canvas",
+            "LinearGradient",
+            "Path"
+          ]
+        },
+        "expo-haptics": {
+          "imports": [],
+          "hooks": [],
+          "functions": [
+            "impactAsync",
+            "selectionAsync"
+          ],
+          "components": []
+        },
+        "lodash.debounce": {
+          "imports": [],
+          "hooks": [],
+          "functions": [],
+          "components": []
+        },
+        "react": {
+          "imports": [
+            "useEffect",
+            "useRef"
+          ],
+          "hooks": [
+            "useEffect",
+            "useRef"
+          ],
+          "functions": [],
+          "components": []
+        },
+        "react-native": {
+          "imports": [
+            "Dimensions",
+            "StyleSheet",
+            "View"
+          ],
+          "hooks": [],
+          "functions": [],
+          "components": [
+            "View"
+          ]
+        },
+        "react-native-gesture-handler": {
+          "imports": [
+            "Gesture",
+            "GestureDetector"
+          ],
+          "hooks": [],
+          "functions": [],
+          "components": [
+            "GestureDetector"
+          ]
+        },
+        "react-native-reanimated": {
+          "imports": [
+            "Easing",
+            "Extrapolation",
+            "interpolate",
+            "useDerivedValue",
+            "useSharedValue",
+            "withRepeat",
+            "withSpring",
+            "withTiming"
+          ],
+          "hooks": [
+            "useDerivedValue",
+            "useSharedValue"
+          ],
+          "functions": [
+            "interpolate",
+            "withRepeat",
+            "withSpring",
+            "withTiming"
+          ],
+          "components": []
         },
         "react-native-worklets": {
           "imports": [
