@@ -1,11 +1,11 @@
 {
-  "total_animations": 115,
+  "total_animations": 116,
   "packages": {
-    "react-native": 115,
-    "react-native-reanimated": 115,
-    "react": 110,
+    "react-native": 116,
+    "react-native-reanimated": 116,
+    "react": 111,
     "pressto": 66,
-    "@shopify/react-native-skia": 56,
+    "@shopify/react-native-skia": 57,
     "react-native-gesture-handler": 55,
     "react-native-worklets": 47,
     "@expo/vector-icons": 44,
@@ -28,28 +28,28 @@
     "@expo/vector-icons/build/createIconSet": 2,
     "@react-native-seoul/masonry-list": 2,
     "jotai": 2,
+    "expo-status-bar": 2,
     "react-native-keyboard-controller": 2,
     "simplex-noise": 1,
     "@react-native-masked-view/masked-view": 1,
     "fft.js": 1,
     "expo-glass-effect": 1,
-    "expo-status-bar": 1,
     "react-native-fast-confetti": 1,
     "lottie-react-native": 1
   },
   "hooks": {
-    "useSharedValue": 99,
+    "useSharedValue": 100,
     "useDerivedValue": 93,
-    "useAnimatedStyle": 91,
+    "useAnimatedStyle": 92,
     "useMemo": 73,
     "useCallback": 72,
-    "useWindowDimensions": 60,
+    "useWindowDimensions": 61,
     "useState": 40,
     "useAnimatedReaction": 33,
     "useRef": 32,
     "useSafeAreaInsets": 28,
-    "useAnimatedScrollHandler": 25,
-    "useEffect": 23,
+    "useAnimatedScrollHandler": 26,
+    "useEffect": 24,
     "useImperativeHandle": 19,
     "useAnimatedProps": 12,
     "useAnimatedRef": 11,
@@ -62,11 +62,11 @@
     "useAnimatedShake": 4,
     "useNavigation": 4,
     "useTheme": 3,
+    "usePathValue": 3,
     "useRectBuffer": 2,
     "useToast": 2,
     "useAtom": 2,
     "useAnimatedSensor": 2,
-    "usePathValue": 2,
     "useFocusEffect": 2,
     "useReanimatedKeyboardAnimation": 2,
     "use3DRotationStyle": 1,
@@ -139,20 +139,20 @@
   },
   "functions": {
     "withSpring": 81,
-    "interpolate": 75,
-    "withTiming": 59,
+    "interpolate": 76,
+    "withTiming": 60,
     "scheduleOnRN": 47,
     "Gesture.Pan": 38,
     "cancelAnimation": 23,
-    "vec": 20,
+    "vec": 21,
     "rect": 18,
+    "Math.sin": 15,
     "clamp": 14,
-    "Math.sin": 14,
+    "Math.cos": 14,
     "interpolateColor": 13,
-    "Math.cos": 13,
     "Gesture.Tap": 12,
+    "withRepeat": 12,
     "makeMutable": 11,
-    "withRepeat": 11,
     "font.measureText": 10,
     "Color": 10,
     "createContext": 10,
@@ -161,6 +161,7 @@
     "FadeOut.duration": 8,
     "parseInt": 7,
     "FadeIn.duration": 7,
+    "Array.from": 7,
     "Array": 7,
     "navigation.navigate": 7,
     "Haptics.impactAsync": 7,
@@ -169,7 +170,6 @@
     "measure": 6,
     "onUpdate": 6,
     "LinearTransition.springify": 6,
-    "Array.from": 6,
     "Platform.select": 6,
     "scrollTo": 5,
     "skPath.moveTo": 5,
@@ -178,6 +178,7 @@
     "Math.atan2": 5,
     "withDelay": 5,
     "createAnimatedPressable": 5,
+    "skPath.addCircle": 5,
     "getDigitByIndex": 4,
     "LinearTransition.duration": 4,
     "skPath.lineTo": 4,
@@ -186,7 +187,6 @@
     "path.addCircle": 4,
     "withSequence": 4,
     "onProgressChange": 4,
-    "skPath.addCircle": 4,
     "font.getSize": 3,
     "data.findIndex": 3,
     "fitbox": 3,
@@ -481,6 +481,16 @@
     "skPath.transform": 1,
     "getReadingTime": 1,
     "scrollToY": 1,
+    "Math.acos": 1,
+    "fibonacciPoint": 1,
+    "generateCubePoints": 1,
+    "generateHeartPoints": 1,
+    "generateSpherePoints": 1,
+    "generateTorusPoints": 1,
+    "normalizeShape": 1,
+    "rotateX": 1,
+    "rotateY": 1,
+    "scaleShape": 1,
     "Gesture.Exclusive": 1,
     "calculateGridItemIndex": 1,
     "calculateGridItemPosition": 1,
@@ -600,23 +610,23 @@
     "unwrapReanimatedValue": 1
   },
   "components": {
-    "View": 112,
+    "View": 113,
     "Text": 75,
-    "Canvas": 55,
+    "Canvas": 56,
     "PressableScale": 49,
     "GestureDetector": 46,
     "Group": 33,
-    "LinearGradient": 29,
-    "Path": 27,
+    "LinearGradient": 30,
+    "Path": 28,
     "GestureHandlerRootView": 21,
     "Image": 20,
-    "Circle": 19,
+    "Circle": 20,
     "FlatList": 18,
-    "Blur": 17,
+    "Blur": 18,
     "Rect": 16,
+    "ScrollView": 15,
     "App": 15,
-    "ScrollView": 14,
-    "BlurMask": 13,
+    "BlurMask": 14,
     "AntDesign": 13,
     "AnimatedBlurView": 12,
     "RoundedRect": 11,
@@ -629,12 +639,12 @@
     "Navigator": 8,
     "Screen": 8,
     "SafeAreaProvider": 8,
+    "RadialGradient": 7,
     "Shader": 7,
     "Mask": 6,
     "Paint": 6,
     "ListItem": 6,
     "ReText": 6,
-    "RadialGradient": 6,
     "BottomTabBar": 6,
     "ColorMatrix": 6,
     "Backdrop": 5,
@@ -681,11 +691,13 @@
     "Grid": 2,
     "Modal": 2,
     "AppsList": 2,
+    "StatusBar": 2,
     "Dot": 2,
     "Dots": 2,
     "BoundaryGradient": 2,
     "DraggableSlider": 2,
     "TouchableWithoutFeedback": 2,
+    "Paginator": 2,
     "StoryListItem": 2,
     "ActiveScreen": 2,
     "AnimatedCodeNumber": 2,
@@ -840,7 +852,6 @@
     "PredictionItem": 1,
     "Predictions": 1,
     "Square": 1,
-    "StatusBar": 1,
     "AnimatedFace": 1,
     "CircleStroke": 1,
     "LockScreen": 1,
@@ -874,6 +885,7 @@
     "SectionContentList": 1,
     "BottomSheetPage": 1,
     "ScrollableBottomSheet": 1,
+    "PaginatorDot": 1,
     "SelectableGridList": 1,
     "SelectableListItem": 1,
     "ColorPicker": 1,
@@ -891,7 +903,6 @@
     "StackedSheetProvider": 1,
     "AnimatedCard": 1,
     "AnimatedDot": 1,
-    "Paginator": 1,
     "StackedCarousel": 1,
     "DismissButton": 1,
     "HighlightedConfirmButton": 1,
@@ -946,35 +957,35 @@
     "InternalIcon": 1
   },
   "patterns": {
-    "shared-value-state": 99,
+    "shared-value-state": 100,
     "derived-computation": 93,
-    "animated-styling": 91,
+    "animated-styling": 92,
+    "reactive-styling-pattern": 81,
     "spring-animation": 81,
-    "reactive-styling-pattern": 80,
-    "value-interpolation": 75,
-    "timing-animation": 59,
-    "skia-graphics": 55,
+    "value-interpolation": 76,
+    "timing-animation": 60,
+    "skia-graphics": 56,
     "animated-reaction": 33,
-    "scroll-animation": 25,
+    "scroll-animation": 26,
     "imperative-animation-api": 19,
     "color-interpolation": 13,
-    "repeating-animation": 11,
+    "repeating-animation": 12,
     "delayed-animation": 5,
     "staggered-derived-values": 4,
     "sequence-animation": 4
   },
   "techniques": {
-    "transform-animations": 91,
+    "transform-animations": 92,
     "spring-physics": 81,
-    "value-mapping": 75,
-    "timing-based-transitions": 59,
-    "canvas-rendering": 55,
-    "blur-effects": 41,
+    "value-mapping": 76,
+    "timing-based-transitions": 60,
+    "canvas-rendering": 56,
+    "blur-effects": 42,
     "reactive-side-effects": 33,
-    "scroll-based-animation": 25,
+    "scroll-based-animation": 26,
     "ref-based-control": 19,
     "color-transitions": 13,
-    "loop-animations": 11,
+    "loop-animations": 12,
     "staggered-timing": 5,
     "character-level-staggering": 4,
     "sequential-animations": 4,
@@ -1024,6 +1035,7 @@
       "qrcode",
       "radar-chart",
       "record-button",
+      "scrollable-shapes",
       "skia-bottom-sheet",
       "skia-color-picker",
       "slide-to-reveal",
@@ -1119,6 +1131,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "shake-to-delete",
       "shared-transition",
@@ -1235,6 +1248,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "shake-to-delete",
       "shared-transition",
@@ -1352,6 +1366,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "shake-to-delete",
       "shared-transition",
@@ -1821,7 +1836,8 @@
       "liquid-glass-playground"
     ],
     "expo-status-bar": [
-      "mnist"
+      "mnist",
+      "scrollable-shapes"
     ],
     "react-native-fast-confetti": [
       "sudoku"
@@ -1854,6 +1870,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "stacked-carousel",
       "stacked-list",
@@ -1929,6 +1946,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "shake-to-delete",
       "smooth-dropdown",
@@ -2284,6 +2302,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "skia-bottom-sheet",
       "skia-color-picker",
@@ -2354,6 +2373,7 @@
       "qrcode",
       "radar-chart",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "shake-to-delete",
       "skia-bottom-sheet",
@@ -2580,6 +2600,7 @@
       "motion-blur",
       "pomodoro-timer",
       "radar-chart",
+      "scrollable-shapes",
       "sphere-waves",
       "stacked-bottom-sheet",
       "stacked-modals",
@@ -2795,6 +2816,11 @@
     "useUnwrappedValues": [
       "radar-chart"
     ],
+    "usePathValue": [
+      "scrollable-shapes",
+      "sphere-waves",
+      "spiral"
+    ],
     "useIsShaking": [
       "shake-to-delete"
     ],
@@ -2806,10 +2832,6 @@
     ],
     "useFrameCallback": [
       "snake"
-    ],
-    "usePathValue": [
-      "sphere-waves",
-      "spiral"
     ],
     "useDemoStackedSheet": [
       "stacked-bottom-sheet"
@@ -2949,6 +2971,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "skia-bottom-sheet",
       "skia-color-picker",
@@ -3043,6 +3066,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "shake-to-delete",
       "smooth-dropdown",
@@ -3183,6 +3207,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "stacked-carousel",
       "stacked-list",
@@ -3247,6 +3272,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "shake-to-delete",
       "slide-to-reveal",
       "smooth-dropdown",
@@ -3329,6 +3355,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "smooth-dropdown",
       "snake",
@@ -3392,6 +3419,7 @@
       "prequel-slider",
       "radar-chart",
       "record-button",
+      "scrollable-shapes",
       "skia-bottom-sheet",
       "skia-color-picker",
       "slide-to-reveal",
@@ -3448,6 +3476,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "shake-to-delete",
       "slide-to-reveal",
@@ -3629,6 +3658,7 @@
       "fibonacci-shader",
       "loading-button",
       "mobile-input",
+      "scrollable-shapes",
       "shake-to-delete",
       "sphere-waves",
       "time-machine",
@@ -3675,6 +3705,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "stacked-carousel",
       "stacked-list",
@@ -3739,6 +3770,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "shake-to-delete",
       "slide-to-reveal",
       "smooth-dropdown",
@@ -3802,6 +3834,7 @@
       "prequel-slider",
       "radar-chart",
       "record-button",
+      "scrollable-shapes",
       "skia-bottom-sheet",
       "skia-color-picker",
       "slide-to-reveal",
@@ -3850,6 +3883,7 @@
       "paper-folding",
       "pomodoro-timer",
       "popup-handler",
+      "scrollable-shapes",
       "skia-bottom-sheet",
       "skia-color-picker",
       "slide-to-reveal",
@@ -3927,6 +3961,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "shake-to-delete",
       "smooth-dropdown",
@@ -3994,6 +4029,7 @@
       "record-button",
       "scroll-progress",
       "scrollable-bottom-sheet",
+      "scrollable-shapes",
       "selectable-grid-list",
       "shake-to-delete",
       "slide-to-reveal",
@@ -4175,6 +4211,7 @@
       "fibonacci-shader",
       "loading-button",
       "mobile-input",
+      "scrollable-shapes",
       "shake-to-delete",
       "sphere-waves",
       "time-machine",
@@ -4206,22 +4243,22 @@
   },
   "components_by_package": {
     "@shopify/react-native-skia": {
-      "Canvas": 56,
+      "Canvas": 57,
       "Group": 32,
-      "Path": 27,
-      "Circle": 19,
-      "Blur": 17,
+      "Path": 28,
+      "Circle": 20,
+      "Blur": 18,
       "Rect": 16,
-      "BlurMask": 13,
+      "BlurMask": 14,
+      "LinearGradient": 11,
       "RoundedRect": 11,
-      "LinearGradient": 10,
       "Fill": 9,
       "SweepGradient": 9,
       "Text": 9,
+      "RadialGradient": 7,
       "Shader": 7,
       "Mask": 6,
       "Paint": 6,
-      "RadialGradient": 6,
       "ColorMatrix": 6,
       "Shadow": 5,
       "Image": 5,
@@ -4242,7 +4279,7 @@
       "Fragment": 1
     },
     "react-native": {
-      "View": 108,
+      "View": 109,
       "Text": 54,
       "ScrollView": 4,
       "TextInput": 4,
@@ -4255,10 +4292,10 @@
       "Pressable": 1
     },
     "react-native-reanimated": {
-      "View": 97,
+      "View": 98,
       "Text": 21,
       "FlatList": 16,
-      "ScrollView": 9
+      "ScrollView": 10
     },
     "@expo/vector-icons": {
       "AntDesign": 13,
@@ -4323,7 +4360,7 @@
       "GlassView": 1
     },
     "expo-status-bar": {
-      "StatusBar": 1
+      "StatusBar": 2
     },
     "react-native-fast-confetti": {
       "PIConfetti": 1
@@ -4337,8 +4374,8 @@
       "useImage": 5,
       "useRSXformBuffer": 4,
       "useTexture": 4,
+      "usePathValue": 3,
       "useRectBuffer": 2,
-      "usePathValue": 2,
       "useSVG": 1,
       "usePathInterpolation": 1
     },
@@ -4347,21 +4384,21 @@
       "useCallback": 72,
       "useState": 40,
       "useRef": 32,
-      "useEffect": 23,
+      "useEffect": 24,
       "useImperativeHandle": 19,
       "useContext": 10,
       "useLayoutEffect": 1,
       "useId": 1
     },
     "react-native": {
-      "useWindowDimensions": 60
+      "useWindowDimensions": 61
     },
     "react-native-reanimated": {
-      "useSharedValue": 99,
+      "useSharedValue": 100,
       "useDerivedValue": 93,
-      "useAnimatedStyle": 91,
+      "useAnimatedStyle": 92,
       "useAnimatedReaction": 33,
-      "useAnimatedScrollHandler": 25,
+      "useAnimatedScrollHandler": 26,
       "useAnimatedProps": 12,
       "useAnimatedRef": 11,
       "useAnimatedSensor": 2,
@@ -4416,10 +4453,10 @@
   },
   "functions_by_package": {
     "@shopify/react-native-skia": {
-      "vec": 20,
+      "vec": 21,
       "rect": 18,
       "rrect": 9,
-      "interpolate": 6,
+      "interpolate": 7,
       "fitbox": 3,
       "matchFont": 2,
       "makeImageFromView": 2,
@@ -4435,11 +4472,11 @@
     "react-native-reanimated": {
       "withSpring": 81,
       "interpolate": 69,
-      "withTiming": 59,
+      "withTiming": 60,
       "cancelAnimation": 23,
       "interpolateColor": 13,
+      "withRepeat": 12,
       "makeMutable": 11,
-      "withRepeat": 11,
       "measure": 6,
       "clamp": 6,
       "withDelay": 5,
@@ -17899,6 +17936,172 @@
             "scheduleOnRN"
           ],
           "components": []
+        }
+      }
+    },
+    {
+      "slug": "scrollable-shapes",
+      "total_files": 11,
+      "total_packages": 5,
+      "total_hooks": 6,
+      "total_patterns": 8,
+      "packages": [
+        "@shopify/react-native-skia",
+        "expo-status-bar",
+        "react",
+        "react-native",
+        "react-native-reanimated"
+      ],
+      "hooks": [
+        "useAnimatedScrollHandler",
+        "useAnimatedStyle",
+        "useEffect",
+        "usePathValue",
+        "useSharedValue",
+        "useWindowDimensions"
+      ],
+      "patterns": [
+        "shared-value-state",
+        "animated-styling",
+        "scroll-animation",
+        "timing-animation",
+        "repeating-animation",
+        "value-interpolation",
+        "reactive-styling-pattern",
+        "skia-graphics"
+      ],
+      "techniques": [
+        "scroll-based-animation",
+        "timing-based-transitions",
+        "loop-animations",
+        "value-mapping",
+        "canvas-rendering",
+        "blur-effects",
+        "transform-animations"
+      ],
+      "components": [
+        "Animated.ScrollView",
+        "Animated.View",
+        "Blur",
+        "BlurMask",
+        "Canvas",
+        "Circle",
+        "LinearGradient",
+        "Paginator",
+        "PaginatorDot",
+        "Path",
+        "RadialGradient",
+        "StatusBar",
+        "View"
+      ],
+      "functions": [
+        "Array.from",
+        "Math.acos",
+        "Math.cos",
+        "Math.sin",
+        "fibonacciPoint",
+        "generateCubePoints",
+        "generateHeartPoints",
+        "generateSpherePoints",
+        "generateTorusPoints",
+        "interpolate",
+        "normalizeShape",
+        "rotateX",
+        "rotateY",
+        "scaleShape",
+        "skPath.addCircle",
+        "vec",
+        "withRepeat",
+        "withTiming"
+      ],
+      "packages_detail": {
+        "@shopify/react-native-skia": {
+          "imports": [
+            "Blur",
+            "BlurMask",
+            "Canvas",
+            "Circle",
+            "Extrapolate",
+            "LinearGradient",
+            "Path",
+            "RadialGradient",
+            "interpolate",
+            "usePathValue",
+            "vec"
+          ],
+          "hooks": [
+            "usePathValue"
+          ],
+          "functions": [
+            "interpolate",
+            "vec"
+          ],
+          "components": [
+            "Blur",
+            "BlurMask",
+            "Canvas",
+            "Circle",
+            "LinearGradient",
+            "Path",
+            "RadialGradient"
+          ]
+        },
+        "expo-status-bar": {
+          "imports": [
+            "StatusBar"
+          ],
+          "hooks": [],
+          "functions": [],
+          "components": [
+            "StatusBar"
+          ]
+        },
+        "react": {
+          "imports": [
+            "useEffect"
+          ],
+          "hooks": [
+            "useEffect"
+          ],
+          "functions": [],
+          "components": []
+        },
+        "react-native": {
+          "imports": [
+            "StyleSheet",
+            "View",
+            "useWindowDimensions"
+          ],
+          "hooks": [
+            "useWindowDimensions"
+          ],
+          "functions": [],
+          "components": [
+            "View"
+          ]
+        },
+        "react-native-reanimated": {
+          "imports": [
+            "Easing",
+            "useAnimatedScrollHandler",
+            "useAnimatedStyle",
+            "useSharedValue",
+            "withRepeat",
+            "withTiming"
+          ],
+          "hooks": [
+            "useAnimatedScrollHandler",
+            "useAnimatedStyle",
+            "useSharedValue"
+          ],
+          "functions": [
+            "withRepeat",
+            "withTiming"
+          ],
+          "components": [
+            "Animated.ScrollView",
+            "Animated.View"
+          ]
         }
       }
     },
